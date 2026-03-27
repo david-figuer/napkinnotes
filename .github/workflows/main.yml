@@ -20,8 +20,9 @@ jobs:
 
       - name: Install Pelican
         run: |
-          pip install pelican markdown
+          pip install pelican markdown pelican-render-math pelican-yaml-metadata
 
+         
       - name: Build site
         run: |
           pelican documentation/content -o output -s documentation/pelicanconf.py

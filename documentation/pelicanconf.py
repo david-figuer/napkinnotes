@@ -40,7 +40,9 @@ PLUGINS = [
     "tipue_search",
     "yaml_metadata",
 ]
-
+MATH_JAX = {
+    "auto_insert": True,
+}
 SITEMAP = {
     "format": "xml",
     "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},

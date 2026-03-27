@@ -1,3 +1,4 @@
+{% macro article_author(article) %}
 {% if article and article.author and AUTHORS and AUTHORS.get(article.author) %}
 {% set author_data = AUTHORS.get(article.author) %}
 
@@ -24,3 +25,4 @@
     </div>
 </div>
 {% endif %}
+{% endmacro %}

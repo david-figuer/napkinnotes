@@ -24,24 +24,49 @@
                 <div class="nn-player-card__number">{{ loop.index }}</div>
             </div>
 
-            <div class="nn-player-card__content">
-                {% if author_data.blurb %}
-                <div class="nn-player-card__role">Equipo</div>
-                {% endif %}
-
-                <h2 class="nn-player-card__name">{{ author_name }}</h2>
-
-                {% if author_data.blurb %}
-                <div class="nn-player-card__description">
-                    {{ author_data.blurb }}
+            <div class="nn-player-card__base">
+                <div class="nn-player-card__role">
+                    {% if "fundador" in author_data.blurb|lower or "creator" in author_data.blurb|lower %}
+                        Creador
+                    {% elif "co-fundador" in author_data.blurb|lower or "cofundador" in author_data.blurb|lower %}
+                        Cofundador
+                    {% elif "editor" in author_data.blurb|lower %}
+                        Editor
+                    {% else %}
+                        Equipo
+                    {% endif %}
                 </div>
-                {% endif %}
+                <h2 class="nn-player-card__name">{{ author_name }}</h2>
+            </div>
 
-                {% if author_data.url %}
-                <a class="nn-player-card__link" href="{{ author_data.url }}" target="_blank" rel="noopener noreferrer">
-                    Ver perfil
-                </a>
-                {% endif %}
+            <div class="nn-player-card__hover">
+                <div class="nn-player-card__hover-inner">
+                    <div class="nn-player-card__role nn-player-card__role--hover">
+                        {% if "fundador" in author_data.blurb|lower or "creator" in author_data.blurb|lower %}
+                            Creador
+                        {% elif "co-fundador" in author_data.blurb|lower or "cofundador" in author_data.blurb|lower %}
+                            Cofundador
+                        {% elif "editor" in author_data.blurb|lower %}
+                            Editor
+                        {% else %}
+                            Equipo
+                        {% endif %}
+                    </div>
+
+                    <h2 class="nn-player-card__name nn-player-card__name--hover">{{ author_name }}</h2>
+
+                    {% if author_data.blurb %}
+                    <div class="nn-player-card__description">
+                        {{ author_data.blurb }}
+                    </div>
+                    {% endif %}
+
+                    {% if author_data.url %}
+                    <a class="nn-player-card__link" href="{{ author_data.url }}" target="_blank" rel="noopener noreferrer">
+                        Ver perfil
+                    </a>
+                    {% endif %}
+                </div>
             </div>
         </article>
         {% endfor %}

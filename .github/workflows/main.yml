@@ -24,7 +24,7 @@ jobs:
 
       - name: Build site
         run: |
-          pelican documentation/content -o output -s pelicanconf.py
+          pelican documentation/content -o output -s documentation/pelicanconf.py
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3

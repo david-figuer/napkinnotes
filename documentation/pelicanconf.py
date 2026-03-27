@@ -172,16 +172,18 @@ AUTHORS = {
     },
     "Gretel Quintero Angulo": {
         "url": "https://www.linkedin.com/in/gretel-quintero-angulo/?originalSubdomain=de",
-        "blurb": " Editor",
-        "avatar": "https://avatars.githubusercontent.com/u/312463",
+        "blurb": "Editor",
+        "avatar": "images/gretel.png",
     },
     "David Figuer": {
         "url": "https://produccioncientifica.usal.es/investigadores/148090/detalle",
         "blurb": "Editor",
+        "avatar": "images/david.jpg",
     },
     "Gabriel": {
         "url": "https://www.linkedin.com/in/gasape21/",
         "blurb": "Editor.",
+        "avatar": "images/gabriel.jpeg",
     },
 }
 

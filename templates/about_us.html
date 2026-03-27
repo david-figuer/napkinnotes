@@ -1,72 +1,59 @@
 {% extends "base.html" %}
 
-{# -----------------------------------------------------------
-   CARGA CSS (ajusta la ruta según dónde lo tengas)
-   Si usas STATIC_PATHS → output/static/custom-about.css
------------------------------------------------------------- #}
-{% block extra_head %}
-    {{ super() }}
-    <link rel="stylesheet" href="{{ SITEURL }}/static/custom-about.css">
-{% endblock %}
-
-
 {% block content %}
-<main class="about-us page page--about-us">
+<main class="nn-about">
 
-    <header class="about-us__header">
-        <h1 class="about-us__title">{{ page.title }}</h1>
+    <header class="nn-about__header">
+        <span class="nn-kicker">Equipo</span>
+        <h1 class="nn-about__title">{{ page.title }}</h1>
     </header>
-
-    {# =========================================================
-       RESOLVER LISTA DE AUTORES
-       Pelican NORMALIZA metadata a minúsculas → "authors"
-       pero tú defines "Authors", así que revisamos ambos.
-       ========================================================= #}
 
     {% set authors = page.metadata.get('Authors') 
                      or page.metadata.get('authors')
                      or [] %}
 
-    {# Si llega como string (caso sin plugin YAML), no sirve. #}
     {% if authors is string %}
-        <!-- Authors llegó como texto, Pelican no parseó YAML -->
         {% set authors = [] %}
     {% endif %}
 
-    <section class="about-us__authors">
-        <div class="authors-grid">
+    <section class="nn-about__grid">
 
-            {% for a in authors %}
-                <article class="author-card">
+        {% for a in authors %}
+        <article class="nn-author-card">
 
-                    <figure class="author-card__figure">
-                        <img class="author-card__image"
-                             src="{{ SITEURL }}/{{ a.image }}"
-                             alt="{{ a.name }}">
-                    </figure>
+            <div class="nn-author-card__image-wrapper">
+                <img src="{{ SITEURL }}/{{ a.image }}" alt="{{ a.name }}">
+            </div>
 
-                    <div class="author-card__body">
-                        <h3 class="author-card__name">{{ a.name }}</h3>
-                        <div class="author-card__description">
-                            {{ a.description }}
-                        </div>
-                    </div>
+            <div class="nn-author-card__body">
+                <h3 class="nn-author-card__name">{{ a.name }}</h3>
 
-                </article>
-            {% else %}
-                <p class="about-us__no-authors">
-                    No hay autores definidos en la metadata.
-                </p>
-            {% endfor %}
+                {% if a.role %}
+                <div class="nn-author-card__role">{{ a.role }}</div>
+                {% endif %}
 
-        </div>
+                <div class="nn-author-card__description">
+                    {{ a.description }}
+                </div>
+
+                {% if a.url %}
+                <a class="nn-inline-link" href="{{ a.url }}" target="_blank">Ver perfil</a>
+                {% endif %}
+            </div>
+
+        </article>
+        {% else %}
+        <p>No hay autores definidos.</p>
+        {% endfor %}
+
     </section>
 
-    {# CONTENIDO OPCIONAL DEL ARCHIVO MD #}
     {% if page.content %}
-        <section class="about-us__extra">
+    <section class="nn-about__extra">
+        <div class="nn-section-card">
             {{ page.content }}
-        </section>
+        </div>
+    </section>
     {% endif %}
 
 </main>

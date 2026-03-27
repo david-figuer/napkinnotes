@@ -188,7 +188,7 @@ AUTHORS = {
     "Gretel Quintero Angulo": {
         "url": "https://www.linkedin.com/in/gretel-quintero-angulo/?originalSubdomain=de",
         "role": "Editora",
-        "blurb": "Gretel es científica de formación, escritora por placer y feminista por necesidad. Observa el mundo con la precisión de quien ha sido educada en el método científico y la sensibilidad de quien encuentra en la escritura una forma de interpretar lo cotidiano.",
+        "blurb": "Gretel es científica de formación, escritora por placer y feminista por necesidad. Observa el mundo con la precisión de quien ha sido educada en el método científico y la sensibilidad de quien encuentra en la escritura una forma de interpretar lo cotidiano. Su trabajo combina pensamiento crítico y voz propia, explorando las estructuras —visibles e invisibles— que moldean nuestras vidas.",
         "avatar": "images/gretel.png",
     },
     "David Figueruelo": {

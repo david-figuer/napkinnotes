@@ -194,7 +194,7 @@ AUTHORS = {
     "David Figueruelo": {
         "url": "https://produccioncientifica.usal.es/investigadores/148090/detalle",
         "role": "Editor",
-        "blurb": "Investigador en cosmología que busca comprender el universo y el rol de la materia y energía oscuras en él. Interesado las ecuaciones y las preguntas fundamentales: qué significa entender en física y qué es "verdad" al observar solo una fracción mínima del cosmos. Trabaja interpretando las pistas que el universo nos deja en forma de datos, intentando averiguar qué historias encajan con ellas y cuáles no. Financiación: Personal investigador doctor de la UPV/EHU (2024).",
+        "blurb": "Investigador en cosmología que busca comprender el universo y el rol de la materia y energía oscuras en él. Interesado las ecuaciones y las preguntas fundamentales: qué significa entender en física y qué es *verdad* al observar solo una fracción mínima del cosmos. Trabaja interpretando las pistas que el universo nos deja en forma de datos, intentando averiguar qué historias encajan con ellas y cuáles no. Financiación: Personal investigador doctor de la UPV/EHU (2024).",
         "avatar": "images/david.jpg",
     },
     "Gabriel": {

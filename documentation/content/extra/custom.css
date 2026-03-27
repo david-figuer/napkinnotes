@@ -1467,3 +1467,114 @@ input[type="submit"]:hover {
     color: var(--richcarmine);
   }
 }
+.nn-player-card--expand {
+  position: relative;
+  min-height: 470px;
+  overflow: visible;
+}
+
+.nn-player-card__preview {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.nn-player-card__expanded {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(920px, 92vw);
+  min-height: 430px;
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: 0 28px 70px rgba(20, 10, 10, 0.22);
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+  z-index: 30;
+}
+
+.nn-player-card--expand:hover {
+  z-index: 40;
+}
+
+.nn-player-card--expand:hover .nn-player-card__expanded {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(-6px);
+}
+
+.nn-player-card--expand:hover .nn-player-card__preview {
+  opacity: 0.08;
+  transform: scale(0.98);
+}
+
+.nn-player-card__expanded-media {
+  position: relative;
+  min-height: 100%;
+  background: #d8d0c6;
+}
+
+.nn-player-card__expanded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.nn-player-card__expanded-content {
+  padding: 34px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nn-player-card__name--hover {
+  margin-bottom: 14px;
+}
+
+.nn-player-card__description {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+@media (max-width: 980px) {
+  .nn-player-card--expand {
+    min-height: auto;
+  }
+
+  .nn-player-card__expanded {
+    position: static;
+    transform: none;
+    width: 100%;
+    opacity: 1;
+    pointer-events: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    border-radius: 0 0 24px 24px;
+    box-shadow: none;
+    border-top: 1px solid var(--line);
+  }
+
+  .nn-player-card--expand:hover .nn-player-card__preview {
+    opacity: 1;
+    transform: none;
+  }
+
+  .nn-player-card__expanded-media {
+    height: 260px;
+  }
+
+  .nn-player-card__expanded-content {
+    padding: 22px 20px;
+  }
+}

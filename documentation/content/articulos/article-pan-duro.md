@@ -1,6 +1,6 @@
 ---
 title: ¿Por qué el pan se pone duro (y por qué la bolsa es su única amiga)?
-author: David Figueruelo Hernán
+author: David Figueruelo
 date: 2026-02-12
 layout: articles
 status: published

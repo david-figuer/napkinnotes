@@ -181,22 +181,26 @@ LANDING_PAGE_TITLE = "Napkin Notes"
 AUTHORS = {
     "Duvier Suarez Fontanella": {
         "url": "https://produccioncientifica.usal.es/investigadores/819473/detalle",
-        "blurb": "Físico teórico y curioso incorregible...",
+        "role": "Creador",
+        "blurb": "Físico teórico y curioso incorregible, dedicado a rastrear las leyes secretas que gobiernan tanto al cosmos como a los detalles más triviales de la vida diaria. Sus textos buscan lo mismo que la antigua Fundación: preservar el conocimiento, iluminar lo oculto y demostrar que incluso en una servilleta puede comenzar una nueva era científica.",
         "avatar": "images/duvier.jpeg",
     },
     "Gretel Quintero Angulo": {
         "url": "https://www.linkedin.com/in/gretel-quintero-angulo/?originalSubdomain=de",
-        "blurb": "Editora.",
+        "role": "Editora",
+        "blurb": "Gretel es científica de formación, escritora por placer y feminista por necesidad. Observa el mundo con la precisión de quien ha sido educada en el método científico y la sensibilidad de quien encuentra en la escritura una forma de interpretar lo cotidiano.",
         "avatar": "images/gretel.png",
     },
-    "David Figuer": {
+    "David Figueruelo": {
         "url": "https://produccioncientifica.usal.es/investigadores/148090/detalle",
-        "blurb": "Editor.",
+        "role": "Editor",
+        "blurb": "Investigador en cosmología que busca comprender el universo y el rol de la materia y energía oscuras en él. Trabaja interpretando las pistas que el universo nos deja en forma de datos.",
         "avatar": "images/david.jpg",
     },
     "Gabriel": {
         "url": "https://www.linkedin.com/in/gasape21/",
-        "blurb": "Co-fundador · Diseño.",
+        "role": "Co-fundador · Diseño",
+        "blurb": "Diseño y dirección visual del proyecto.",
         "avatar": "images/gabriel.jpeg",
     },
 }

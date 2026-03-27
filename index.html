@@ -27,173 +27,10 @@
 <meta property="og:site_name" content="Napkin Notes" />
 <meta property="og:article:author" content="" />
 <meta property="og:image" content="/theme/images/nn_logo.png" />
-<meta name="twitter:image" content="/theme/images/nn_logo.png" >
+<meta name="twitter:image" content="/theme/images/nn_logo.png">
 <meta property="og:description" content="Documentation of Elegant, a theme for Pelican, originally created by Talha Mansoor" />
 <meta name="twitter:description" content="Documentation of Elegant, a theme for Pelican, originally created by Talha Mansoor">
 <meta name="keywords" content=" alimentos,  "champán",  ["física",  microondas,  redes sociales,  seis grados de separación,  small world,  "supersónico"],  teoría de grafos,  "termodinámica",  Ciencia de Datos,  "Dinámica de Fluidos",  Termodinámica, " />
-
-
-<style>
-:root{
-  --max-width: 1200px;
-  --accent: #8b0000;
-  --bg-muted: #fafafa;
-  --text-muted: #6b6b6b;
-  --hero-min-height: 64vh;
-  --hero-dark-overlay: rgba(0,0,0,0.45);
-  --radius: 8px;
-  --gap: 1.5rem;
-}
-
-/* Hero con imagen a full width */
-.landing-hero-split {
-  position: relative;
-  width: 100%;
-  min-height: var(--hero-min-height);
-  overflow: hidden;
-  color: #fff;
-  display: block;
-  background: #111;
-}
-
-.hero-image {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  z-index: 0;
-  min-height: var(--hero-min-height);
-}
-
-.hero-image::after{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.28);
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* TEXTO CENTRADO SOBRE LA IMAGEN */
-.hero-text {
-  position: relative;
-  z-index: 2;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;   /* centrado horizontal */
-
-  text-align: center;        /* centrado del contenido */
-  width: 100%;               /* ocupa todo el ancho */
-  min-height: var(--hero-min-height);
-
-  padding: clamp(2rem, 4vw, 4rem);
-  box-sizing: border-box;
-
-  background: linear-gradient(
-      180deg,
-      rgba(17,17,17,0.35),
-      rgba(17,17,17,0.20)
-  );
-}
-
-.hero-text .hero-inner {
-  max-width: 650px;
-}
-
-/* Tipografía */
-.hero-text h1 {
-  margin: 0 0 0.4rem 0;
-  font-size: clamp(2.1rem, 4.6vw, 3.6rem);
-  line-height: 1.02;
-  letter-spacing: -0.02em;
-}
-
-.hero-text .subtitle {
-  margin: 0 0 1rem 0;
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  color: rgba(255,255,255,0.92);
-}
-
-.hero-text .meta-line {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  margin-bottom: 1.2rem;
-}
-
-/* Botón */
-.btn-hero {
-  display: inline-block;
-  background: rgba(0,0,0,0.35);
-  color: #fff;
-  border: 1px solid rgba(255,255,255,0.9);
-  padding: .55rem 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-.btn-hero:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-}
-
-/* Contenido inferior (sin cambios) */
-.landing-container {
-  max-width: var(--max-width);
-  margin: 2.25rem auto;
-  padding: 0 1rem;
-  box-sizing: border-box;
-}
-
-.landing-grid {
-  display: grid;
-  grid-template-columns: 1fr 340px;
-  gap: var(--gap);
-  align-items: start;
-}
-
-.panel {
-  background: white;
-  border-radius: var(--radius);
-  padding: 1.1rem;
-  box-shadow: 0 6px 18px rgba(20,20,20,0.03);
-  color: #111;
-}
-
-.recent-list { list-style: none; padding: 0; margin: 0; }
-.recent-list li { padding: .6rem 0; border-bottom: 1px solid rgba(0,0,0,0.04); }
-.recent-list li:last-child { border-bottom: none; }
-.recent-list a { text-decoration: none; color: inherit; font-weight: 600; display:inline-block; }
-.recent-list .meta { display:block; font-size: .9rem; color: var(--text-muted); margin-top: .15rem; }
-
-/* Responsive */
-@media (max-width: 980px) {
-  .landing-hero-split { min-height: 100vh; }
-  .hero-image { position: relative; min-height: 100vh; }
-
-  .hero-text {
-    width: 100%;
-    text-align: center;
-    min-height: 40vh;
-    padding: 1.5rem;
-    background: linear-gradient(
-        180deg,
-        rgba(17,17,17,0.65),
-        rgba(17,17,17,0.65)
-    );
-  }
-
-  .landing-grid { grid-template-columns: 1fr; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .btn-hero { transition: none; }
-  .hero-text h1 { transition: none; }
-}
-</style>
-
 
         <title>Napkin Notes
 </title>
@@ -246,31 +83,34 @@
 
 
 
-<div class="landing-hero-split" role="banner" aria-label="Hero">
-    <div class="hero-image"
- style="background-image: url('./images/Imagen_3.png');" >
-    </div>
+<section class="nn-hero">
+    <div class="nn-hero__bg" style="background-image: url('./images/Imagen_3.png');"></div>
 
-    <div class="hero-text">
-        <div class="hero-inner">
-              <h1>Napkin Notes</h1>
+    <div class="nn-hero__overlay"></div>
 
-              <div class="subtitle">Matemáticas rápidas y ciencia cotidiana</div>
+    <div class="nn-hero__content">
+        <div class="nn-hero__eyebrow">Ciencia clara · ideas que caben en una servilleta</div>
 
-            <a class="btn-hero" href="#about-me">Conoce más</a>
+        <h1 class="nn-hero__title">Napkin Notes</h1>
+
+        <p class="nn-hero__subtitle">Matemáticas rápidas y ciencia cotidiana</p>
+
+        <div class="nn-hero__actions">
+            <a class="nn-button nn-button--primary" href="#about-project">Conoce más</a>
+            <a class="nn-button nn-button--ghost" href="./archives">Ver artículos</a>
         </div>
     </div>
-</div>
+</section>
 
-
-<div class="landing-container">
-  <div class="landing-grid">
-
-    <main>
-      <section class="panel" id="about-me">
-        <h2 style="margin-top:0;">Acerca del&nbsp;Proyecto</h2>
-        <div class="article-content">
-          <p><img src="../images/Logo.jpg"
+<section class="nn-home-grid">
+    <main class="nn-home-main">
+        <section class="nn-section-card" id="about-project">
+            <div class="nn-section-card__header">
+                <span class="nn-kicker">Proyecto</span>
+                <h2>Acerca del&nbsp;Proyecto</h2>
+            </div>
+            <div class="nn-richtext">
+                <p><img src="../images/Logo.jpg"
      alt="Ejemplo de imagen"
      style="float:right; margin-left:10px; width:250px; height:150px;"></p>
 <p>Napkin Notes es un pequeño blog–revista nacido de un grupo de amigos
@@ -303,77 +143,125 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
 <li><a href="{filename}/Contributing/invitation.md">Invitation to&nbsp;Participate</a></li>
 <li><a href="{filename}/Contributing/contributing-to-the-project.md">How Do I&nbsp;Contribute?</a></li>
 </ul>
-        </div>
-      </section>
+            </div>
+        </section>
 
-      <section class="panel" style="margin-top: var(--gap);">
-        <header style="display:flex; align-items:center; justify-content:space-between;">
-          <h3 style="margin:0;">Artículos recientes</h3>
-          <a href="./archives" style="font-size:.95rem; color:var(--text-muted); text-decoration:none;">Ver todos</a>
-        </header>
+        <section class="nn-section-card nn-section-card--articles">
+            <div class="nn-section-card__header nn-section-card__header--row">
+                <div>
+                    <span class="nn-kicker">Publicaciones</span>
+                    <h2>Artículos recientes</h2>
+                </div>
+                <a class="nn-inline-link" href="./archives">Ver todos</a>
+            </div>
 
-        <div style="margin-top:1rem;">
-            <article style="margin-bottom:1rem;">
-              <a href="./distancia-facebook"><strong><span class="dquo">&#8220;</span>¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?&#8221;</strong></a>
-              <div style="font-size:.9rem; color:var(--text-muted); margin-top:.25rem;">
-               Publicado en <a href="./categories#ciencia-de-datos-ref">Ciencia de Datos</a> • <time datetime="2025-12-06T00:00:00+05:00">Dec 06, 2025</time>
-              </div>
-            </article>
-            <article style="margin-bottom:1rem;">
-              <a href="./que-tan-rapido-sale-el-corcho-de-una-botella-de-champan"><strong><span class="dquo">&#8220;</span>¿Qué tan rápido sale el corcho de una botella de&nbsp;champán?&#8221;</strong></a>
-              <div style="font-size:.9rem; color:var(--text-muted); margin-top:.25rem;">
-               Publicado en <a href="./categories#dinamica-de-fluidos-ref">"Dinámica de Fluidos"</a> • <time datetime="2025-12-03T00:00:00+05:00">Dec 03, 2025</time>
-              </div>
-            </article>
-            <article style="margin-bottom:1rem;">
-              <a href="./por-que-las-palomitas-revientan-en-el-microondas"><strong>¿Por qué las palomitas revientan en el&nbsp;microondas?</strong></a>
-              <div style="font-size:.9rem; color:var(--text-muted); margin-top:.25rem;">
-               Publicado en <a href="./categories#termodinamica-ref">Termodinámica</a> • <time datetime="2025-11-03T00:00:00+05:00">Nov 03, 2025</time>
-              </div>
-            </article>
-        </div>
-      </section>
+            <div class="nn-article-list">
+                    <article class="nn-article-card">
+                        <a class="nn-article-card__image-link" href="./distancia-facebook">
+                            <img class="nn-article-card__image" src="./images/face_dist.png" alt="<span class="dquo">&#8220;</span>¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?&#8221;">
+                        </a>
+
+                        <div class="nn-article-card__body">
+                            <div class="nn-article-card__meta">
+                                <span class="nn-article-card__category">
+                                    <a href="./categories#ciencia-de-datos-ref">Ciencia de Datos</a>
+                                </span>
+                                <span class="nn-article-card__dot">•</span>
+                                <time datetime="2025-12-06T00:00:00+05:00">Dec 06, 2025</time>
+                            </div>
+
+                            <h3 class="nn-article-card__title">
+                                <a href="./distancia-facebook"><span class="dquo">&#8220;</span>¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?&#8221;</a>
+                            </h3>
+
+
+                        </div>
+                    </article>
+                    <article class="nn-article-card">
+                        <a class="nn-article-card__image-link" href="./que-tan-rapido-sale-el-corcho-de-una-botella-de-champan">
+                            <img class="nn-article-card__image" src="./"images/champan_corcho.png"" alt="<span class="dquo">&#8220;</span>¿Qué tan rápido sale el corcho de una botella de&nbsp;champán?&#8221;">
+                        </a>
+
+                        <div class="nn-article-card__body">
+                            <div class="nn-article-card__meta">
+                                <span class="nn-article-card__category">
+                                    <a href="./categories#dinamica-de-fluidos-ref">"Dinámica de Fluidos"</a>
+                                </span>
+                                <span class="nn-article-card__dot">•</span>
+                                <time datetime="2025-12-03T00:00:00+05:00">Dec 03, 2025</time>
+                            </div>
+
+                            <h3 class="nn-article-card__title">
+                                <a href="./que-tan-rapido-sale-el-corcho-de-una-botella-de-champan"><span class="dquo">&#8220;</span>¿Qué tan rápido sale el corcho de una botella de&nbsp;champán?&#8221;</a>
+                            </h3>
+
+
+                        </div>
+                    </article>
+                    <article class="nn-article-card">
+                        <a class="nn-article-card__image-link" href="./por-que-las-palomitas-revientan-en-el-microondas">
+                            <img class="nn-article-card__image" src="./images/palomitas.png" alt="¿Por qué las palomitas revientan en el&nbsp;microondas?">
+                        </a>
+
+                        <div class="nn-article-card__body">
+                            <div class="nn-article-card__meta">
+                                <span class="nn-article-card__category">
+                                    <a href="./categories#termodinamica-ref">Termodinámica</a>
+                                </span>
+                                <span class="nn-article-card__dot">•</span>
+                                <time datetime="2025-11-03T00:00:00+05:00">Nov 03, 2025</time>
+                            </div>
+
+                            <h3 class="nn-article-card__title">
+                                <a href="./por-que-las-palomitas-revientan-en-el-microondas">¿Por qué las palomitas revientan en el&nbsp;microondas?</a>
+                            </h3>
+
+
+                        </div>
+                    </article>
+            </div>
+        </section>
     </main>
 
-    <aside>
-      <div class="panel" style="margin-bottom: var(--gap);">
-        <h4 style="margin:0 0 .6rem 0;">Últimos</h4>
-        <ul class="recent-list">
-            <li>
-              <a href="./distancia-facebook"><span class="dquo">&#8220;</span>¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?&#8221;</a>
-              <span class="meta">Dec 06, 2025</span>
-            </li>
-            <li>
-              <a href="./que-tan-rapido-sale-el-corcho-de-una-botella-de-champan"><span class="dquo">&#8220;</span>¿Qué tan rápido sale el corcho de una botella de&nbsp;champán?&#8221;</a>
-              <span class="meta">Dec 03, 2025</span>
-            </li>
-            <li>
-              <a href="./por-que-las-palomitas-revientan-en-el-microondas">¿Por qué las palomitas revientan en el&nbsp;microondas?</a>
-              <span class="meta">Nov 03, 2025</span>
-            </li>
-        </ul>
-      </div>
+    <aside class="nn-home-sidebar">
+        <section class="nn-sidebar-card">
+            <span class="nn-kicker">Actualidad</span>
+            <h3>Últimos</h3>
+            <ul class="nn-mini-list">
+                    <li>
+                        <a href="./distancia-facebook"><span class="dquo">&#8220;</span>¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?&#8221;</a>
+                        <span>Dec 06, 2025</span>
+                    </li>
+                    <li>
+                        <a href="./que-tan-rapido-sale-el-corcho-de-una-botella-de-champan"><span class="dquo">&#8220;</span>¿Qué tan rápido sale el corcho de una botella de&nbsp;champán?&#8221;</a>
+                        <span>Dec 03, 2025</span>
+                    </li>
+                    <li>
+                        <a href="./por-que-las-palomitas-revientan-en-el-microondas">¿Por qué las palomitas revientan en el&nbsp;microondas?</a>
+                        <span>Nov 03, 2025</span>
+                    </li>
+            </ul>
+        </section>
 
-      <div class="panel" style="margin-bottom: var(--gap);">
-        <h4 style="margin:0 0 .6rem 0;">Participa</h4>
-        <p style="margin:0;">
-          ¿Tienes una pregunta tipo Fermi o quieres colaborar?
-          <a href="./Contributing/invitation.html">Únete</a>.
-        </p>
-      </div>
+        <section class="nn-sidebar-card">
+            <span class="nn-kicker">Participa</span>
+            <h3>Únete al proyecto</h3>
+            <p>¿Tienes una pregunta tipo Fermi o quieres colaborar?</p>
+            <a class="nn-inline-link" href="./Contributing/invitation.html">Ver invitación</a>
+        </section>
 
-      <div class="panel">
-        <h4 style="margin:0 0 .6rem 0;">Explorar</h4>
-        <p style="margin:0;">
-          <a href="./tags.html">Tags</a> • 
-          <a href="./categories.html">Categorías</a>
-        </p>
-      </div>
+        <section class="nn-sidebar-card">
+            <span class="nn-kicker">Explorar</span>
+            <h3>Navega por temas</h3>
+            <div class="nn-link-cloud">
+                <a href="./tags">Tags</a>
+                <a href="./categories">Categorías</a>
+                <a href="./archives">Archivo</a>
+                <a href="./about">Nosotros</a>
+            </div>
+        </section>
     </aside>
-
-  </div>
-</div>
-
+</section>
                 </div>
             </main>
         </div>

@@ -24,19 +24,19 @@
 
 <meta name="keywords" content="redes sociales, teoría de grafos, small world, seis grados de separación, Ciencia de Datos, " />
 
-<meta property="og:title" content="“¿Cuál es la distancia promedio entre dos personas en Facebook?” "/>
+<meta property="og:title" content="¿Cuál es la distancia promedio entre dos personas en Facebook? "/>
 <meta property="og:url" content="./distancia-facebook" />
 <meta property="og:description" content="1. La medida real: ¿a cuántos saltos estamos en Facebook? 2. ¿Por qué tan pocos? Fundamentos matemáticos 2.1 El grafo social como red compleja 2.2 La magia de los mundos pequeños 3. Los seis grados de separación: historia, mito y validación 3.1 Milgram y sus cadenas de …" />
 <meta property="og:site_name" content="Napkin Notes" />
 <meta property="og:article:author" content="Duvier Suarez Fontanella" />
 <meta property="og:article:published_time" content="2025-12-06T00:00:00+05:00" />
-<meta name="twitter:title" content="“¿Cuál es la distancia promedio entre dos personas en Facebook?” ">
+<meta name="twitter:title" content="¿Cuál es la distancia promedio entre dos personas en Facebook? ">
 <meta name="twitter:description" content="1. La medida real: ¿a cuántos saltos estamos en Facebook? 2. ¿Por qué tan pocos? Fundamentos matemáticos 2.1 El grafo social como red compleja 2.2 La magia de los mundos pequeños 3. Los seis grados de separación: historia, mito y validación 3.1 Milgram y sus cadenas de …">
 <meta property="og:image" content="/theme/images/nn_logo.png" />
 <meta name="twitter:image" content="/theme/images/nn_logo.png" >
 
 
-        <title>“¿Cuál es la distancia promedio entre dos personas en Facebook?”  · Napkin Notes
+        <title>¿Cuál es la distancia promedio entre dos personas en Facebook?  · Napkin Notes
 </title>
 
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Napkin Notes - Full Atom Feed" />
@@ -89,7 +89,7 @@
     <header class="page-header span10 offset2">
         <h1>
             <a href="./distancia-facebook">
-                <span class="dquo">&#8220;</span>¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?&#8221;
+                ¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?
             </a>
         </h1>
     </header>
@@ -134,29 +134,29 @@
 <hr />
 <h2 id="2-por-que-tan-pocos-fundamentos-matematicos">2. ¿Por qué tan pocos? Fundamentos matemáticos<a class="headerlink" href="#2-por-que-tan-pocos-fundamentos-matematicos" title="Permanent link"> </a></h2>
 <h3 id="21-el-grafo-social-como-red-compleja">2.1 El grafo social como red compleja<a class="headerlink" href="#21-el-grafo-social-como-red-compleja" title="Permanent link"> </a></h3>
-<p>Podemos representar Facebook como un grafo no dirigido $G = (V, E)$, donde:
-- $V$ es el conjunto de usuarios<br />
-- $E$ es el conjunto de relaciones de&nbsp;amistad  </p>
-<p>La <strong>distancia</strong> entre dos vértices $u$ y $v$, denotada $d(u,v)$, es la longitud mínima del camino que los&nbsp;conecta.</p>
+<p>Podemos representar Facebook como un grafo no&nbsp;dirigido <span class="math">\(G = (V, E)\)</span>, donde:&nbsp;- <span class="math">\(V\)</span> es el conjunto de usuarios<br />&nbsp;- <span class="math">\(E\)</span> es el conjunto de relaciones de&nbsp;amistad  </p>
+<p>La <strong>distancia</strong> entre dos&nbsp;vértices <span class="math">\(u\)</span> y <span class="math">\(v\)</span>,&nbsp;denotada <span class="math">\(d(u,v)\)</span>, es la longitud mínima del camino que los&nbsp;conecta.</p>
 <p>El objetivo es calcular el <strong>average path length</strong> (<span class="caps">APL</span>):</p>
-<p>$$
-L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)&nbsp;$$</p>
+<div class="math">$$
+L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)
+$$</div>
 <p>En redes a gran escala esta suma explícita es inviable. Facebook utiliza técnicas como <strong><span class="caps">BFS</span> aproximado</strong>, <strong>muestreo aleatorio de vértices</strong> y algoritmos distribuidos tipo <strong>HyperANF</strong> para estimar la distribución de&nbsp;distancias.</p>
 <h3 id="22-la-magia-de-los-mundos-pequenos">2.2 La magia de los mundos pequeños<a class="headerlink" href="#22-la-magia-de-los-mundos-pequenos" title="Permanent link"> </a></h3>
 <p>El comportamiento observado en Facebook coincide con el modelo de <strong>redes de mundo pequeño</strong> (Watts <span class="amp">&amp;</span> Strogatz, 1998), caracterizado&nbsp;por:</p>
 <ol>
-<li><strong>Alta agrupación (clustering coefficient&nbsp;$C$)</strong>  </li>
-<li><strong>Caminos cortos con crecimiento logarítmico: $L \sim \log&nbsp;N$</strong></li>
+<li><strong>Alta agrupación (clustering&nbsp;coefficient <span class="math">\(C\)</span>)</strong>  </li>
+<li><strong>Caminos cortos con crecimiento&nbsp;logarítmico: <span class="math">\(L \sim \log N\)</span></strong></li>
 </ol>
-<p>Si $N \approx 10^9$,&nbsp;entonces:</p>
-<p>$$
-\log(N) \approx 21&nbsp;$$</p>
+<p>Si <span class="math">\(N \approx 10^9\)</span>,&nbsp;entonces:</p>
+<div class="math">$$
+\log(N) \approx 21
+$$</div>
 <p>Esto sugiere que incluso una red inmensa puede tener caminos sorprendentemente cortos si se cumplen dos&nbsp;condiciones:</p>
 <ul>
 <li>Existe fuerte conectividad local&nbsp;(comunidades).  </li>
 <li>Hay enlaces aleatorios que actúan como “atalayos” en el&nbsp;grafo.</li>
 </ul>
-<p>Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen drásticamente&nbsp;$L$.</p>
+<p>Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen&nbsp;drásticamente <span class="math">\(L\)</span>.</p>
 <hr />
 <h2 id="3-los-seis-grados-de-separacion-historia-mito-y-validacion">3. Los seis grados de separación: historia, mito y validación<a class="headerlink" href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion" title="Permanent link"> </a></h2>
 <p>La idea nació en 1929 con Frigyes Karinthy, se popularizó en 1967 con el experimento de Stanley Milgram y terminó convertida en un concepto cultural. Pero matemáticamente, el fenómeno posee base&nbsp;sólida.</p>
@@ -190,7 +190,7 @@ L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)&nbsp;$$</p>
 <ul>
 <li>Mejora de algoritmos de recomendación&nbsp;(friends-of-friends).  </li>
 <li>Optimización de buscadores sociales y privacidad basada en&nbsp;distancias.  </li>
-<li>Diseño de sistemas distribuidos que explotan el comportamiento logarítmico de&nbsp;$L$.</li>
+<li>Diseño de sistemas distribuidos que explotan el comportamiento logarítmico&nbsp;de <span class="math">\(L\)</span>.</li>
 </ul>
 <hr />
 <h2 id="5-conclusion">5. Conclusión<a class="headerlink" href="#5-conclusion" title="Permanent link"> </a></h2>
@@ -201,6 +201,68 @@ L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)&nbsp;$$</p>
 <li>Los <strong>seis grados de separación</strong> no solo se mantienen: se&nbsp;comprimen.</li>
 </ul>
 <p>La combinación de teoría matemática, datos masivos y modelización computacional revela que vivimos en un mundo sorprendentemente bien&nbsp;conectado.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 
 
              
@@ -238,16 +300,7 @@ L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)&nbsp;$$</p>
             <a class="category-link" href="./categories#ciencia-de-datos-ref">Ciencia de Datos</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="./tags#redes-sociales-ref">redes sociales
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#seis-grados-de-separacion-ref">seis grados de separación
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#small-world-ref">small world
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#teoria-de-grafos-ref">teoría de grafos
+                <li><a href="./tags#redes-sociales-teoria-de-grafos-small-world-seis-grados-de-separacion-ref">redes sociales, teoría de grafos, small world, seis grados de separación
                     <span class="superscript">1</span>
 </a></li>
             </ul>

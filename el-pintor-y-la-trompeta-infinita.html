@@ -125,8 +125,9 @@
 <p>¿Qué significa realmente pintar algo? Cuando pintas, cubres la superficie exterior con una capa de grosor positivo, por pequeña que sea. La cantidad de pintura necesaria es proporcional al área. A mayor superficie, mayor consumo. Hasta ahora, todo coincide con tu&nbsp;experiencia.  </p>
 <p>Pero esta trompeta no es una pared ni una estatua convencional. Es otra&nbsp;cosa.  </p>
 <p>En el caso del cuerno de Gabriel, el área viene dada por la fórmula de las superficies de&nbsp;revolución:</p>
-<p>$$
-A = 2\pi \int_1^{\infty} \frac{1}{x} \sqrt{1 + \left(\frac{1}{x^2}\right)^2} \, dx&nbsp;$$</p>
+<div class="math">$$
+A = 2\pi \int_1^{\infty} \frac{1}{x} \sqrt{1 + \left(\frac{1}{x^2}\right)^2} \, dx
+$$</div>
 <p>La expresión puede parecer abstracta, pero su significado es claro: estamos sumando infinitos fragmentos diminutos de superficie. Llamas a tu matemático de confianza. Tras unos minutos de silencio, te explica el resultado: esa integral diverge. Es la manera elegante que tienen los matemáticos de afirmar que el área es&nbsp;infinita.  </p>
 <p>Aunque el radio se haga cada vez más pequeño, la longitud infinita compensa esa reducción. La superficie nunca deja de acumularse. Siempre hay un nuevo tramo que&nbsp;añadir.  </p>
 <p>En términos prácticos, eso significa que no existe una cantidad finita de pintura que permita cubrir completamente el exterior. Siempre quedará un segmento por pintar, por pequeño que&nbsp;sea.  </p>
@@ -135,17 +136,21 @@ A = 2\pi \int_1^{\infty} \frac{1}{x} \sqrt{1 + \left(\frac{1}{x^2}\right)^2} \, 
 <p>Entonces surge una&nbsp;idea.  </p>
 <p>En lugar de cubrir el exterior, decides llenar la trompeta de pintura roja y sellarla. A primera vista parece aún peor: si cubrir el área requiere pintura infinita, llenar el interior debería ser todavía más costoso. Pero ahora el problema ya no es el área, sino el&nbsp;volumen.</p>
 <p>El volumen del cuerno de Gabriel se calcula también con&nbsp;integrales:</p>
-<p>$$
-V = \pi \int_1^{\infty} \left(\frac{1}{x}\right)^2 dx&nbsp;$$</p>
+<div class="math">$$
+V = \pi \int_1^{\infty} \left(\frac{1}{x}\right)^2 dx
+$$</div>
 <p>es&nbsp;decir,</p>
-<p>$$
-V = \pi \int_1^{\infty} \frac{1}{x^2} dx&nbsp;$$</p>
+<div class="math">$$
+V = \pi \int_1^{\infty} \frac{1}{x^2} dx
+$$</div>
 <p>A diferencia de la anterior, esta integral sí&nbsp;converge:</p>
-<p>$$
-\int_1^{\infty} \frac{1}{x^2} dx = 1&nbsp;$$</p>
+<div class="math">$$
+\int_1^{\infty} \frac{1}{x^2} dx = 1
+$$</div>
 <p>Por&nbsp;tanto,</p>
-<p>$$
-V = \pi&nbsp;$$</p>
+<div class="math">$$
+V = \pi
+$$</div>
 <p>La trompeta se extiende hasta el infinito, pero el volumen total contenido en su interior es finito. Exactamente ( \pi ) unidades cúbicas. Puedes llenarla completamente con una cantidad limitada de&nbsp;pintura.  </p>
 <p>Volumen finito. Área infinita. A esto se le puede llamar <em>una paradoja</em>.</p>
 <hr />
@@ -156,6 +161,68 @@ V = \pi&nbsp;$$</p>
 <p>Tu intuición te decía que si algo es infinito, todo en él debía serlo. El cuerno de Gabriel demuestra que no. Superficie y volumen pueden separarse de manera radical cuando entra en juego el&nbsp;infinito.  </p>
 <p>El infinito no contradice la lógica. Solo contradice nuestras&nbsp;expectativas.  </p>
 <p>Y ahora, cada vez que sostienes un pincel, sabes que incluso aquello que parece perfectamente manejable puede ocultar una estructura que desborda el sentido común. Un día más en&nbsp;Tivoli.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 
 
              
@@ -193,13 +260,7 @@ V = \pi&nbsp;$$</p>
             <a class="category-link" href="./categories#matematicas-ref">Matemáticas</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="./tags#calculo-ref">cálculo
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#infinito-ref">infinito
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#paradojas-ref">paradojas
+                <li><a href="./tags#infinito-calculo-paradojas-ref">infinito, cálculo, paradojas
                     <span class="superscript">1</span>
 </a></li>
             </ul>

@@ -116,73 +116,85 @@
 <hr />
 <p><img alt="Ejemplo de imagen" src="../images/palomitas.png" /></p>
 <h2 id="estructura-del-grano">Estructura del grano<a class="headerlink" href="#estructura-del-grano" title="Permanent link"> </a></h2>
-<p>Empesemos por el protoganista de este fenomeno el grano de maiz (<em>Zea mays everta</em>), cada uno de estos puede ser dividido en tres partes principales: (1) El endospermo, que contiene almidón y un poco de agua ($w \approx 13\text{–}15\,\%$ de su masa). (2) El pericarpio, una cáscara muy dura e impermeable. (3) El germen, no no ese tipo de germen, es simplemente la parte viva de la semilla. El secreto está en esa pequeña cantidad de agua atrapada dentro. Cuando se calienta, genera vapor y presión hasta que la cáscara no puede resistir más y explota. Buenos si querias la version corta dejalo aqui, pero si sigues curioso dejame&nbsp;continuar.</p>
+<p>Empesemos por el protoganista de este fenomeno el grano de maiz (<em>Zea mays everta</em>), cada uno de estos puede ser dividido en tres partes principales: (1) El endospermo, que contiene almidón y un poco de agua&nbsp;(<span class="math">\(w \approx 13\text{–}15\,\%\)</span> de su masa). (2) El pericarpio, una cáscara muy dura e impermeable. (3) El germen, no no ese tipo de germen, es simplemente la parte viva de la semilla. El secreto está en esa pequeña cantidad de agua atrapada dentro. Cuando se calienta, genera vapor y presión hasta que la cáscara no puede resistir más y explota. Buenos si querias la version corta dejalo aqui, pero si sigues curioso dejame&nbsp;continuar.</p>
 <hr />
 <h2 id="interaccion-con-el-microondas">Interacción con el microondas<a class="headerlink" href="#interaccion-con-el-microondas" title="Permanent link"> </a></h2>
 <p>El horno microondas opera típicamente a una frecuencia de 2.45 GHz, correspondiente a una longitud de onda de 12.2 cm.<br />
 Esta radiación electromagnética interactúa con los dipolos eléctricos del agua mediante el proceso de <em>calentamiento dieléctrico</em>.<br />
 Las moléculas de agua rotan en fase con el campo alterno, generando disipación térmica a escala&nbsp;molecular.</p>
 <p>El flujo de calor neto puede describirse de forma simplificada mediante la ecuación de difusión del&nbsp;calor:</p>
-<p>$$
-\rho c_p \frac{\partial T}{\partial t} = k \nabla^2 T + Q_{\text{abs}}&nbsp;$$</p>
-<p>donde $\rho$ es la densidad, $c_p$ el calor específico, $k$ la conductividad térmica y $Q_{\text{abs}}$ la potencia volumétrica absorbida del campo&nbsp;electromagnético.</p>
+<div class="math">$$
+\rho c_p \frac{\partial T}{\partial t} = k \nabla^2 T + Q_{\text{abs}}
+$$</div>
+<p>donde <span class="math">\(\rho\)</span> es la&nbsp;densidad, <span class="math">\(c_p\)</span> el calor&nbsp;específico, <span class="math">\(k\)</span> la conductividad térmica&nbsp;y <span class="math">\(Q_{\text{abs}}\)</span> la potencia volumétrica absorbida del campo&nbsp;electromagnético.</p>
 <hr />
 <h2 id="presurizacion-interna">Presurización interna<a class="headerlink" href="#presurizacion-interna" title="Permanent link"> </a></h2>
 <p>Al subir la temperatura, el agua dentro del grano se convierte en vapor y aumenta la presión interna como estudiante de doctorado a final de su etapa (comentario inecesario quizas pero al fin y al cabo este blog cumple tambien la funcion  entretenerme).
 En Cualquier caso, esa presión depende de la temperatura según la ecuación de Clausius–Clapeyron (si lo se complicado de pronunciar sobre todo el señor&nbsp;Clapeyron):</p>
-<p>$$
-\frac{dP_v}{dT} = \frac{L P_v}{R T^2}&nbsp;$$</p>
+<div class="math">$$
+\frac{dP_v}{dT} = \frac{L P_v}{R T^2}
+$$</div>
 <p>cuya integración da lugar&nbsp;a:</p>
-<p>$$
-\ln \left( \frac{P_v}{P_0} \right) = - \frac{L}{R} \left( \frac{1}{T} - \frac{1}{T_0} \right)&nbsp;$$</p>
-<p>donde $L = 2.26\times10^6~\text{J/kg}$ es el calor latente de vaporización del agua y $R = 8.31~\text{J/mol·K}$ la constante de los gases ideales. Sustituyendo $T_0 = 373~\text{K}$, $P_0 = 1~\text{atm}$ y $T = 453~\text{K}$ (≈ 180 °C), se&nbsp;obtiene:</p>
-<p>$$
-P_v(453~\text{K}) \approx 9~\text{atm}&nbsp;$$</p>
+<div class="math">$$
+\ln \left( \frac{P_v}{P_0} \right) = - \frac{L}{R} \left( \frac{1}{T} - \frac{1}{T_0} \right)
+$$</div>
+<p>donde <span class="math">\(L = 2.26\times10^6~\text{J/kg}\)</span> es el calor latente de vaporización del agua&nbsp;y <span class="math">\(R = 8.31~\text{J/mol·K}\)</span> la constante de los gases ideales.&nbsp;Sustituyendo <span class="math">\(T_0 = 373~\text{K}\)</span>, <span class="math">\(P_0 = 1~\text{atm}\)</span> y <span class="math">\(T = 453~\text{K}\)</span> (≈ 180 °C), se&nbsp;obtiene:</p>
+<div class="math">$$
+P_v(453~\text{K}) \approx 9~\text{atm}
+$$</div>
 <p>valor que coincide con la presión crítica de ruptura observada experimentalmente para el&nbsp;pericarpio. </p>
 <hr />
 <h2 id="explosion-y-expansion-adiabatica">Explosión y expansión adiabática<a class="headerlink" href="#explosion-y-expansion-adiabatica" title="Permanent link"> </a></h2>
-<p>Una vez que la presión interna excede la resistencia del pericarpio $( P_{\text{rupt}} \sim 9\text{–}10~\text{atm})$, se produce una fractura súbita.<br />
+<p>Una vez que la presión interna excede la resistencia del&nbsp;pericarpio <span class="math">\(( P_{\text{rupt}} \sim 9\text{–}10~\text{atm})\)</span>, se produce una fractura súbita.<br />
 El vapor se expande rápidamente, realizando trabajo sobre el almidón circundante y provocando una expansión casi adiabática del&nbsp;gas.</p>
 <p>Si suponemos una expansión adiabática reversible para el vapor de&nbsp;agua:</p>
-<p>$$
-P V^{\gamma} = \text{constante}&nbsp;$$</p>
-<p>donde $\gamma = c_p/c_v \approx 1.33$ para el vapor, el trabajo realizado por el gas durante la expansión&nbsp;es:</p>
-<p>$$
-W = \frac{P_i V_i - P_f V_f}{\gamma - 1}&nbsp;$$</p>
-<p>Tomando $P_i = 9~\text{atm}$, $P_f = 1~\text{atm}$ y considerando que el volumen final del gas es unas $V_f/V_i \approx 10$ veces mayor, se obtiene un trabajo del orden&nbsp;de:</p>
-<p>$$
-W \sim 10^{-3}~\text{J}&nbsp;$$</p>
+<div class="math">$$
+P V^{\gamma} = \text{constante}
+$$</div>
+<p>donde <span class="math">\(\gamma = c_p/c_v \approx 1.33\)</span> para el vapor, el trabajo realizado por el gas durante la expansión&nbsp;es:</p>
+<div class="math">$$
+W = \frac{P_i V_i - P_f V_f}{\gamma - 1}
+$$</div>
+<p>Tomando <span class="math">\(P_i = 9~\text{atm}\)</span>, <span class="math">\(P_f = 1~\text{atm}\)</span> y considerando que el volumen final del gas es&nbsp;unas <span class="math">\(V_f/V_i \approx 10\)</span> veces mayor, se obtiene un trabajo del orden&nbsp;de:</p>
+<div class="math">$$
+W \sim 10^{-3}~\text{J}
+$$</div>
 <p>A pesar de parecer pequeño, este trabajo se distribuye en escalas microscópicas, generando velocidades de expansión del orden de varios metros por segundo, suficientes para inflar el almidón y solidificarlo instantáneamente por&nbsp;enfriamiento.</p>
 <hr />
 <p><img alt="Ejemplo de imagen" src="../images/palomitas_1.png" /></p>
 <h2 id="energia-total-liberada">Energía total liberada<a class="headerlink" href="#energia-total-liberada" title="Permanent link"> </a></h2>
 <p>El contenido energético total asociado al cambio de fase del agua en un solo grano&nbsp;es:</p>
-<p>$$
-E = m L&nbsp;$$</p>
-<p>donde $m$ es la masa de agua. Si $m \approx 10^{-5}~\text{kg}$ ,&nbsp;entonces:</p>
-<p>$$
-E = 2.26 \times 10^{6} \times 10^{-5} = 22.6~\text{J}&nbsp;$$</p>
+<div class="math">$$
+E = m L
+$$</div>
+<p>donde <span class="math">\(m\)</span> es la masa de agua.&nbsp;Si <span class="math">\(m \approx 10^{-5}~\text{kg}\)</span> ,&nbsp;entonces:</p>
+<div class="math">$$
+E = 2.26 \times 10^{6} \times 10^{-5} = 22.6~\text{J}
+$$</div>
 <p>Solo una pequeña fracción de esta energía se convierte en trabajo mecánico y sonido; el resto se disipa en forma de calor y energía interna del&nbsp;vapor.</p>
 <hr />
 <h2 id="factores-que-impiden-el-estallido">Factores que impiden el estallido<a class="headerlink" href="#factores-que-impiden-el-estallido" title="Permanent link"> </a></h2>
 <p>Los granos que no revientan (<em>“old maids”</em>)&nbsp;presentan:</p>
 <ul>
-<li>Bajo contenido de humedad $w &lt; 10\,\%$, insuficiente para generar la presión&nbsp;crítica.  </li>
-<li>Fisuras microscópicas en el pericarpio, que permiten la fuga de vapor antes de alcanzar&nbsp;$P_{\text{rupt}}$.  </li>
+<li>Bajo contenido de&nbsp;humedad <span class="math">\(w &lt; 10\,\%\)</span>, insuficiente para generar la presión&nbsp;crítica.  </li>
+<li>Fisuras microscópicas en el pericarpio, que permiten la fuga de vapor antes de&nbsp;alcanzar <span class="math">\(P_{\text{rupt}}\)</span>.  </li>
 <li>Distribución térmica no uniforme, que evita una presurización&nbsp;homogénea.</li>
 </ul>
 <hr />
 <h2 id="eficiencia-termodinamica-aproximada">Eficiencia termodinámica aproximada<a class="headerlink" href="#eficiencia-termodinamica-aproximada" title="Permanent link"> </a></h2>
-<p>Si un horno microondas de potencia $P = 800~\text{W}$ opera durante $t =&nbsp;120~\text{s}$:</p>
-<p>$$
-E_{\text{in}} = P t = 9.6 \times 10^{4}~\text{J}&nbsp;$$</p>
-<p>Una bolsa de 100 g contiene aproximadamente $N = 3000$ granos.<br />
+<p>Si un horno microondas de&nbsp;potencia <span class="math">\(P = 800~\text{W}\)</span> opera&nbsp;durante <span class="math">\(t = 120~\text{s}\)</span>:</p>
+<div class="math">$$
+E_{\text{in}} = P t = 9.6 \times 10^{4}~\text{J}
+$$</div>
+<p>Una bolsa de 100 g contiene&nbsp;aproximadamente <span class="math">\(N = 3000\)</span> granos.<br />
 Si cada uno libera ≈ 20 J en el proceso de&nbsp;vaporización:</p>
-<p>$$
-E_{\text{total}} = N \times 20~\text{J} = 6.0 \times 10^{4}~\text{J}&nbsp;$$</p>
+<div class="math">$$
+E_{\text{total}} = N \times 20~\text{J} = 6.0 \times 10^{4}~\text{J}
+$$</div>
 <p>Por tanto, la eficiencia energética del proceso&nbsp;es:</p>
-<p>$$
-\eta = \frac{E_{\text{total}}}{E_{\text{in}}} \approx 0.6&nbsp;$$</p>
+<div class="math">$$
+\eta = \frac{E_{\text{total}}}{E_{\text{in}}} \approx 0.6
+$$</div>
 <p>es decir, un rendimiento del 60 %, notablemente alto para un proceso de cocción doméstico basado en calentamiento&nbsp;dieléctrico.</p>
 <hr />
 <h2 id="conclusiones">Conclusiones<a class="headerlink" href="#conclusiones" title="Permanent link"> </a></h2>
@@ -190,6 +202,68 @@ E_{\text{total}} = N \times 20~\text{J} = 6.0 \times 10^{4}~\text{J}&nbsp;$$</p>
 Cada grano actúa como una <em>microcápsula de presión</em> donde el agua, confinada, pasa de líquido a vapor hasta romper la envoltura.<br />
 El resultado visible —la expansión blanca del almidón— es consecuencia directa de un proceso adiabático impulsado por energía térmica&nbsp;electromagnética.</p>
 <hr />
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 
 
              
@@ -227,17 +301,8 @@ El resultado visible —la expansión blanca del almidón— es consecuencia dir
             <a class="category-link" href="./categories#termodinamica-ref">Termodinámica</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="./tags#alimentos-ref">alimentos
+                <li><a href="./tags#fisica-termodinamica-microondas-alimentos-ref">física, termodinámica, microondas, alimentos
                     <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#fisica-ref">física
-                    <span class="superscript">2</span>
-</a></li>
-                <li><a href="./tags#microondas-ref">microondas
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#termodinamica-ref">termodinámica
-                    <span class="superscript">3</span>
 </a></li>
             </ul>
 <h4>Stay in Touch</h4>

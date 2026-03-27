@@ -126,8 +126,9 @@
 <p>El pan contiene más agua de la que parece. Quizá hasta que no lo hiciste por primera vez en casa durante la pandemia no te diste cuenta. Es cierto que durante el horneado parte se evapora desde la corteza, pero la miga sigue siendo un pequeño reservorio húmedo. El problema es que el aire casi siempre está más seco que el interior del&nbsp;pan.  </p>
 <p>Y cuando existe una diferencia de humedad, la física hace lo que siempre hace:&nbsp;igualar.</p>
 <p>El proceso de igualar en física tiene un nombre: difusión. La difusión responde a la ley de Fick, que en versión compacta se escribe&nbsp;como</p>
-<p>$$
-J = -D \nabla c&nbsp;$$</p>
+<div class="math">$$
+J = -D \nabla c
+$$</div>
 <p>Aquí ( J ) es el flujo de agua que abandona el pan, ( D ) mide qué tan fácil se difunde y ( \nabla c ) representa la diferencia de concentración entre el interior húmedo y el aire&nbsp;seco.  </p>
 <p>Traducción: si fuera hay menos agua que dentro, el agua se va. No porque quiera. Porque&nbsp;puede.  </p>
 <p>Dejar el pan al aire es básicamente invitar al ambiente a beberse su&nbsp;humedad.</p>
@@ -135,8 +136,9 @@ J = -D \nabla c&nbsp;$$</p>
 <h3 id="la-bolsa-un-heroe-infravalorado">La bolsa: un héroe infravalorado<a class="headerlink" href="#la-bolsa-un-heroe-infravalorado" title="Permanent link"> </a></h3>
 <p>Tu bisabuela, tu abuela, tu madre… siempre metían las barras de pan en bolsas colgadas en algún lugar de la cocina. Tú no lo haces, ¿a que no? Probemos a hacerlo. Metes el pan en una bolsa cerrada. ¿Qué cambia? La física sigue siendo la misma. Pero el volumen de aire ahora es pequeño y se humedece&nbsp;rápidamente.  </p>
 <p>Eso hace que el gradiente&nbsp;baje:</p>
-<p>$$
-\nabla c \approx 0 \Rightarrow J \approx 0&nbsp;$$</p>
+<div class="math">$$
+\nabla c \approx 0 \Rightarrow J \approx 0
+$$</div>
 <p>No es magia. Es control de daños. La bolsa no conserva el pan por cariño. Lo hace porque elimina el desequilibrio que estaba drenando su&nbsp;agua.  </p>
 <p>La bolsa es menos romántica de lo que pensabas. Pero es&nbsp;eficaz.</p>
 <hr />
@@ -146,8 +148,9 @@ J = -D \nabla c&nbsp;$$</p>
 <p>Pero el orden siempre regresa,&nbsp;siempre.</p>
 <p>Con el tiempo, esas cadenas comienzan a reorganizarse. Se alinean. Se compactan. Expulsan parte del agua atrapada. Y la miga pierde&nbsp;elasticidad.  </p>
 <p>Ese proceso, llamado retrogradación, suele seguir una ley tipo Arrhenius. Matemáticamente es algo&nbsp;así:</p>
-<p>$$
-k = A e^{-E_a/(<span class="caps">RT</span>)}&nbsp;$$</p>
+<div class="math">$$
+k = A e^{-E_a/(RT)}
+$$</div>
 <p>No hace falta hacer números. Solo entender lo importante: la temperatura, esa ( T ) de la fórmula, importa. Importa&nbsp;mucho.</p>
 <hr />
 <h2 id="la-nevera-el-falso-amigo">La nevera: el falso amigo<a class="headerlink" href="#la-nevera-el-falso-amigo" title="Permanent link"> </a></h2>
@@ -166,6 +169,68 @@ Nevera: aceleras el endurecimiento&nbsp;interno.  </p>
 <p>No es mala suerte.<br />
 Es física haciendo exactamente lo que prometió hacer.<br />
 Y sí, a veces la vida es así de&nbsp;eficiente.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 
 
              
@@ -195,14 +260,8 @@ Y sí, a veces la vida es así de&nbsp;eficiente.</p>
             <a class="category-link" href="./categories#fisica-cotidiana-ref">Física cotidiana</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="./tags#almidon-ref">almidón
+                <li><a href="./tags#difusion-termodinamica-almidon-ref">difusión, termodinámica, almidón
                     <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#difusion-ref">difusión
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#termodinamica-ref">termodinámica
-                    <span class="superscript">3</span>
 </a></li>
             </ul>
 <h4>Stay in Touch</h4>

@@ -7,9 +7,9 @@ slug: landing-page-about-hidden
 image: images/Imagen_3.png
 subtitle: Matemáticas rápidas y ciencia cotidiana
 ---
-<img src="../images/Logo.jpg"
-     alt="Ejemplo de imagen"
-     style="float:right; margin-left:10px; width:250px; height:150px;">
+<img src="/napkinnotes_prueba/images/Logo.jpg"
+     alt="Logo de Napkin Notes"
+     style="float:right; margin-left:10px; width:250px; height:auto;">
 
 Napkin Notes es un pequeño blog–revista nacido de un grupo de amigos
 curiosos, fans profesionales de las preguntas improbables y expertos en

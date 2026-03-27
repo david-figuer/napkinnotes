@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pelican markdown smartypants typogrify
+          pip install pelican markdown smartypants typogrify pelican-render-math pelican-yaml-metadata
 
       - name: Build site
         run: |

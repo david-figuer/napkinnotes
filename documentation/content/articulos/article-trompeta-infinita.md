@@ -7,7 +7,7 @@ status: published
 category: Matemáticas
 tags: infinito, cálculo, paradojas
 summary: Un objeto infinito que desafía la intuición...no puede pintarse por fuera con pintura finita, pero sí puede llenarse completamente.
-image: images/imagen.png
+image: images/cuerno.png
 ---
 
 [TOC]

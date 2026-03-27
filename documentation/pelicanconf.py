@@ -50,7 +50,7 @@ SITEMAP = {
 # Appearance
 THEME = "../"
 TYPOGRIFY = True
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 10
 
 # Defaults
 DEFAULT_CATEGORY = "Miscellaneous"

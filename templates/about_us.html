@@ -1,12 +1,16 @@
-<p style="color:red;">TEST ABOUT TEMPLATE</p>
 {% extends "base.html" %}
 
 {% block content %}
-<main class="nn-about">
+<main class="nn-squad-page">
 
-    <header class="nn-about__header">
-        <span class="nn-kicker">Equipo</span>
-        <h1 class="nn-about__title">{{ page.title }}</h1>
+    <header class="nn-squad-hero">
+        <div class="nn-squad-hero__inner">
+            <span class="nn-kicker">Equipo</span>
+            <h1 class="nn-squad-hero__title">{{ page.title }}</h1>
+            <p class="nn-squad-hero__subtitle">
+                Las personas detrás de Napkin Notes. Ciencia, edición y diseño en la misma alineación.
+            </p>
+        </div>
     </header>
 
     {% set authors = page.metadata.get('Authors') 
@@ -17,28 +21,31 @@
         {% set authors = [] %}
     {% endif %}
 
-    <section class="nn-about__grid">
-
+    <section class="nn-squad-grid">
         {% for a in authors %}
-        <article class="nn-author-card">
+        <article class="nn-player-card">
 
-            <div class="nn-author-card__image-wrapper">
-                <img src="{{ SITEURL }}/{{ a.image }}" alt="{{ a.name }}">
+            <div class="nn-player-card__media">
+                <img class="nn-player-card__image" src="{{ SITEURL }}/{{ a.image }}" alt="{{ a.name }}">
+                <div class="nn-player-card__overlay"></div>
+                <div class="nn-player-card__number">{{ loop.index }}</div>
             </div>
 
-            <div class="nn-author-card__body">
-                <h3 class="nn-author-card__name">{{ a.name }}</h3>
-
+            <div class="nn-player-card__content">
                 {% if a.role %}
-                <div class="nn-author-card__role">{{ a.role }}</div>
+                <div class="nn-player-card__role">{{ a.role }}</div>
                 {% endif %}
 
-                <div class="nn-author-card__description">
+                <h2 class="nn-player-card__name">{{ a.name }}</h2>
+
+                <div class="nn-player-card__description">
                     {{ a.description }}
                 </div>
 
                 {% if a.url %}
-                <a class="nn-inline-link" href="{{ a.url }}" target="_blank">Ver perfil</a>
+                <a class="nn-player-card__link" href="{{ a.url }}" target="_blank" rel="noopener noreferrer">
+                    Ver perfil
+                </a>
                 {% endif %}
             </div>
 
@@ -46,11 +53,10 @@
         {% else %}
         <p>No hay autores definidos.</p>
         {% endfor %}
-
     </section>
 
     {% if page.content %}
-    <section class="nn-about__extra">
+    <section class="nn-squad-extra">
         <div class="nn-section-card">
             {{ page.content }}
         </div>

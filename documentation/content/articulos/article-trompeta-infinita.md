@@ -16,6 +16,8 @@ image: images/imagen.png
 
 Estás en tu taller cuando un hombre trajeado, con gafas de sol y un maletín impecable, entra sin previo aviso. Trae un encargo extraño: una escultura de vidrio transparente con forma de trompeta que se estrecha sin terminar nunca. Solo tiene una condición: debe verse completamente roja. Lo que parece un trabajo más termina convirtiéndose en una lección profunda sobre el infinito.
 
+---
+
 ## Introducción
 
 Imagina que eres un humilde pintor en tu pequeño taller de Tivoli, donde las fachadas ocres retienen el calor del sol y la calle empedrada desciende lentamente hacia el murmullo constante del río Aniene. Tus días transcurren entre cal, pigmentos y madera antigua. Restauras frescos que el tiempo ha ido apagando, devuelves color a puertas vencidas por los inviernos, retocas santos desvaídos que observan en silencio desde capillas en penumbra. La vida es sencilla, casi previsible, hasta que una mañana la campanilla de la puerta rompe el aire con un timbre más seco de lo habitual.  
@@ -33,6 +35,8 @@ El encargo parece simple: la escultura debe verse completamente roja. Piensas en
 > **¿Cuánta pintura necesitas para pintar una trompeta infinita?**
 
 Tu intuición responde con rapidez: infinita. Si el objeto no termina nunca, tampoco lo hará la superficie que debes cubrir. Pero las matemáticas no siempre obedecen al sentido común.
+
+---
 
 ## Desarrollo
 
@@ -87,6 +91,8 @@ $$
 La trompeta se extiende hasta el infinito, pero el volumen total contenido en su interior es finito. Exactamente \( \pi \) unidades cúbicas. Puedes llenarla completamente con una cantidad limitada de pintura.  
 
 Volumen finito. Área infinita. A esto se le puede llamar *una paradoja*.
+
+---
 
 ## Conclusiones
 

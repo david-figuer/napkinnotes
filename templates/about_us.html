@@ -13,45 +13,37 @@
         </div>
     </header>
 
-    {% set authors = page.metadata.get('Authors') 
-                     or page.metadata.get('authors')
-                     or [] %}
-
-    {% if authors is string %}
-        {% set authors = [] %}
-    {% endif %}
-
     <section class="nn-squad-grid">
-        {% for a in authors %}
+        {% for author_name, author_data in AUTHORS.items() %}
         <article class="nn-player-card">
-
             <div class="nn-player-card__media">
-                <img class="nn-player-card__image" src="{{ SITEURL }}/{{ a.image }}" alt="{{ a.name }}">
+                {% if author_data.avatar %}
+                <img class="nn-player-card__image" src="{{ SITEURL }}/{{ author_data.avatar }}" alt="{{ author_name }}">
+                {% endif %}
                 <div class="nn-player-card__overlay"></div>
                 <div class="nn-player-card__number">{{ loop.index }}</div>
             </div>
 
             <div class="nn-player-card__content">
-                {% if a.role %}
-                <div class="nn-player-card__role">{{ a.role }}</div>
+                {% if author_data.blurb %}
+                <div class="nn-player-card__role">Equipo</div>
                 {% endif %}
 
-                <h2 class="nn-player-card__name">{{ a.name }}</h2>
+                <h2 class="nn-player-card__name">{{ author_name }}</h2>
 
+                {% if author_data.blurb %}
                 <div class="nn-player-card__description">
-                    {{ a.description }}
+                    {{ author_data.blurb }}
                 </div>
+                {% endif %}
 
-                {% if a.url %}
-                <a class="nn-player-card__link" href="{{ a.url }}" target="_blank" rel="noopener noreferrer">
+                {% if author_data.url %}
+                <a class="nn-player-card__link" href="{{ author_data.url }}" target="_blank" rel="noopener noreferrer">
                     Ver perfil
                 </a>
                 {% endif %}
             </div>
-
         </article>
-        {% else %}
-        <p>No hay autores definidos.</p>
         {% endfor %}
     </section>
 

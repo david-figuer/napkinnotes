@@ -7,7 +7,7 @@ status: published
 category: "Dinámica de Fluidos"
 tags: ["física", "termodinámica", "champán", "supersónico"]
 summary: "Un recorrido por la física explosiva detrás del clásico \"pop\" del champán: desde la presión atrapada en la botella hasta la sorprendente posibilidad de velocidades supersónicas."
-image: "images/champan_corcho.png"
+image: images/corcho.png
 ---
 
 [TOC]

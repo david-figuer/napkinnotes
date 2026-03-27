@@ -10,27 +10,27 @@
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-        <meta name="author" content="Duvier Suarez Fontanella" />
+        <meta name="author" content="David Figueruelo" />
 
-        <meta name="description" content="Un recorrido por la física explosiva detrás del clásico &#34;pop&#34; del champán: desde la presión atrapada en la botella hasta la sorprendente posibilidad de velocidades supersónicas.
+        <meta name="description" content="Un objeto infinito que desafía la intuición: no puede pintarse por fuera con pintura finita, pero sí puede llenarse completamente.
 " />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="física, termodinámica, champán, supersónico, Dinámica de Fluidos, " />
+<meta name="keywords" content="infinito, cálculo, paradojas, Matemáticas, " />
 
-<meta property="og:title" content="¿Qué tan rápido sale el corcho de una botella de champán? "/>
-<meta property="og:url" content="./que-tan-rapido-sale-el-corcho-de-una-botella-de-champan" />
-<meta property="og:description" content="Un recorrido por la física explosiva detrás del clásico &#34;pop&#34; del champán: desde la presión atrapada en la botella hasta la sorprendente posibilidad de velocidades supersónicas." />
+<meta property="og:title" content="El pintor y la trompeta infinita "/>
+<meta property="og:url" content="./el-pintor-y-la-trompeta-infinita" />
+<meta property="og:description" content="Un objeto infinito que desafía la intuición: no puede pintarse por fuera con pintura finita, pero sí puede llenarse completamente." />
 <meta property="og:site_name" content="Napkin Notes" />
-<meta property="og:article:author" content="Duvier Suarez Fontanella" />
-<meta property="og:article:published_time" content="2025-12-03T00:00:00+05:00" />
-<meta name="twitter:title" content="¿Qué tan rápido sale el corcho de una botella de champán? ">
-<meta name="twitter:description" content="Un recorrido por la física explosiva detrás del clásico &#34;pop&#34; del champán: desde la presión atrapada en la botella hasta la sorprendente posibilidad de velocidades supersónicas.">
+<meta property="og:article:author" content="David Figueruelo" />
+<meta property="og:article:published_time" content="2026-02-12T00:00:00+05:00" />
+<meta name="twitter:title" content="El pintor y la trompeta infinita ">
+<meta name="twitter:description" content="Un objeto infinito que desafía la intuición: no puede pintarse por fuera con pintura finita, pero sí puede llenarse completamente.">
 <meta property="og:image" content="/theme/images/nn_logo.png" />
 <meta name="twitter:image" content="/theme/images/nn_logo.png" >
 
-        <title>¿Qué tan rápido sale el corcho de una botella de champán?  · Napkin Notes
+        <title>El pintor y la trompeta infinita  · Napkin Notes
 </title>
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Napkin Notes - Full Atom Feed" />
 
@@ -73,8 +73,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="./que-tan-rapido-sale-el-corcho-de-una-botella-de-champan">
-                ¿Qué tan rápido sale el corcho de una botella de champán?
+            <a href="./el-pintor-y-la-trompeta-infinita">
+                El pintor y la trompeta infinita
             </a>
         </h1>
     </header>
@@ -86,149 +86,63 @@
             <div class="toc">
 <ul>
 <li><a href="#resumen">Resumen</a></li>
-<li><a href="#1-una-botella-aparentemente-tranquila-pero-llena-de-presion">1. Una botella aparentemente tranquila (pero llena de presión)</a></li>
-<li><a href="#2-el-momento-critico-el-corcho-cede">2. El momento crítico: el corcho cede</a></li>
-<li><a href="#3-puede-ser-supersonico">3. ¿Puede ser supersónico?</a></li>
-<li><a href="#4-un-modelo-mas-riguroso-aceleracion-no-constante">4. Un modelo más riguroso: aceleración no constante</a></li>
-<li><a href="#5-por-que-no-todos-los-corchos-salen-igual">5. ¿Por qué no todos los corchos salen igual?</a><ul>
-<li><a href="#temperatura">Temperatura</a></li>
-<li><a href="#rugosidad-y-forma-del-corcho">Rugosidad y forma del corcho</a></li>
-<li><a href="#contenido-de-co2">Contenido de CO₂</a></li>
-<li><a href="#friccion-en-el-cuello">Fricción en el cuello</a></li>
-</ul>
-</li>
-<li><a href="#6-es-peligroso">6. ¿Es peligroso?</a></li>
-<li><a href="#7-conclusion-un-cohete-de-bolsillo-con-denominacion-de-origen">7. Conclusión: un cohete de bolsillo con denominación de origen</a></li>
-<li><a href="#apendice-valores-tipicos-de-referencia">Apéndice: valores típicos de referencia</a></li>
+<li><a href="#introduccion">Introducción</a></li>
+<li><a href="#desarrollo">Desarrollo</a></li>
+<li><a href="#conclusiones">Conclusiones</a></li>
 </ul>
 </div>
 <h2 id="resumen">Resumen<a class="headerlink" href="#resumen" title="Permanent link"> </a></h2>
-<p>Cada vez que descorchamos una botella de champán, ejecutamos sin querer una demostración práctica de física de alta energía.<br />
-En un solo <em>pop</em> se combinan <strong>termodinámica</strong>, <strong>gases comprimidos</strong>, <strong>ondas de choque</strong>, y un proyectil diminuto con aspiraciones balísticas.<br />
-En este artículo exploraremos cuánta fuerza impulsa al corcho, cómo evoluciona la presión interna y por qué, bajo ciertas condiciones, el gas que escapa puede alcanzar velocidades <strong>cercanas al sonido</strong>.</p>
-<hr />
-<p><img alt="Ejemplo de imagen" src="../images/champan_corcho.png" /></p>
-<h2 id="1-una-botella-aparentemente-tranquila-pero-llena-de-presion">1. Una botella aparentemente tranquila (pero llena de presión)<a class="headerlink" href="#1-una-botella-aparentemente-tranquila-pero-llena-de-presion" title="Permanent link"> </a></h2>
-<p>Cuando ves una botella de champán en la mesa, mayestática, elegante, ajena al caos, parece un objeto pacífico.<br />
-No lo es.</p>
-<p>Su interior contiene CO₂ disuelto a presiones que oscilan entre <strong>5 y 7 atm</strong>. Es decir, un ambiente ideal para un pequeño festival termodinámico.</p>
-<p>Podemos estimar la fuerza que empuja al corcho mediante:</p>
+<p>Estás en tu taller cuando un hombre trajeado, con gafas de sol y un maletín impecable, entra sin previo aviso. Trae un encargo extraño: una escultura de vidrio transparente con forma de trompeta que se estrecha sin terminar nunca. Solo tiene una condición: debe verse completamente roja. Lo que parece un trabajo más termina convirtiéndose en una lección profunda sobre el infinito.</p>
+<h2 id="introduccion">Introducción<a class="headerlink" href="#introduccion" title="Permanent link"> </a></h2>
+<p>Imagina que eres un humilde pintor en tu pequeño taller de Tivoli, donde las fachadas ocres retienen el calor del sol y la calle empedrada desciende lentamente hacia el murmullo constante del río Aniene. Tus días transcurren entre cal, pigmentos y madera antigua. Restauras frescos que el tiempo ha ido apagando, devuelves color a puertas vencidas por los inviernos, retocas santos desvaídos que observan en silencio desde capillas en penumbra. La vida es sencilla, casi previsible, hasta que una mañana la campanilla de la puerta rompe el aire con un timbre más seco de lo habitual.  </p>
+<p>En el umbral aparece un hombre trajeado, gafas oscuras pese a la sombra del taller, un maletín impecable en la mano. No sonríe. No se presenta. Solo examina el espacio como si evaluara algo invisible. Después, con un gesto medido, deposita sobre tu mesa el objeto de su visita.  </p>
+<p>Lo observas sin comprender del todo. Comienza ancho, casi familiar, pero pronto se afina mientras se extiende hacia la derecha, cada vez más delgado, cada vez más largo. La forma parece huir de sí misma, escapar en una dirección que no promete final alguno. Sigues su perfil con la vista esperando que termine en algún punto razonable, pero no hay borde, no hay límite. Solo una prolongación que parece negarse a concluir.  </p>
+<p>Antes de marcharse, el hombre pronuncia el nombre con una solemnidad que no admite preguntas: el cuerno de Gabriel.  </p>
+<p>Desde el punto de vista matemático, la forma no es caprichosa. Se obtiene al girar la curva ( y = \frac{1}{x} ) para ( x \geq 1 ) alrededor del eje horizontal. El resultado es un sólido de revolución que se extiende indefinidamente mientras su radio disminuye sin cesar. Es infinito en longitud, pero cada vez más fino.  </p>
+<p>El encargo parece simple: la escultura debe verse completamente roja. Piensas en lo obvio. Bastará con calcular cuánta pintura necesitas para cubrirla por fuera.  </p>
+<blockquote>
+<p><strong>¿Cuánta pintura necesitas para pintar una trompeta infinita?</strong></p>
+</blockquote>
+<p>Tu intuición responde con rapidez: infinita. Si el objeto no termina nunca, tampoco lo hará la superficie que debes cubrir. Pero las matemáticas no siempre obedecen al sentido común.</p>
+<h2 id="desarrollo">Desarrollo<a class="headerlink" href="#desarrollo" title="Permanent link"> </a></h2>
+<p>¿Qué significa realmente pintar algo? Cuando pintas, cubres la superficie exterior con una capa de grosor positivo, por pequeña que sea. La cantidad de pintura necesaria es proporcional al área. A mayor superficie, mayor consumo. Hasta ahora, todo coincide con tu experiencia.  </p>
+<p>Pero esta trompeta no es una pared ni una estatua convencional. Es otra cosa.  </p>
+<p>En el caso del cuerno de Gabriel, el área viene dada por la fórmula de las superficies de revolución:</p>
 <div class="math">$$
-F = P\,A
+A = 2\pi \int_1^{\infty} \frac{1}{x} \sqrt{1 + \left(\frac{1}{x^2}\right)^2} \, dx
 $$</div>
-<p>donde<br />
-- <span class="math">\(P \approx 6\times10^5\,\text{Pa}\)</span><br />
-- <span class="math">\(A = \pi r^2\)</span> con <span class="math">\(r \approx 9\times10^{-3}\,\text{m}\)</span></p>
-<p>Entonces:</p>
+<p>La expresión puede parecer abstracta, pero su significado es claro: estamos sumando infinitos fragmentos diminutos de superficie. Llamas a tu matemático de confianza. Tras unos minutos de silencio, te explica el resultado: esa integral diverge. Es la manera elegante que tienen los matemáticos de afirmar que el área es infinita.  </p>
+<p>Aunque el radio se haga cada vez más pequeño, la longitud infinita compensa esa reducción. La superficie nunca deja de acumularse. Siempre hay un nuevo tramo que añadir.  </p>
+<p>En términos prácticos, eso significa que no existe una cantidad finita de pintura que permita cubrir completamente el exterior. Siempre quedará un segmento por pintar, por pequeño que sea.  </p>
+<p>Miras el objeto en tu taller. Está ahí, sólido, tangible, casi frágil. Pero si intentas pintarlo por fuera, jamás terminarás. Cada litro adicional solo retrasa lo inevitable.  </p>
+<p>Durante un momento, el encargo parece imposible. Sin embargo, el hombre trajeado no especificó el método, solo el resultado. Quiere la trompeta roja. La escultura es completamente transparente. Desde fuera, nadie distinguiría si el color está en la superficie o en el interior.  </p>
+<p>Entonces surge una idea.  </p>
+<p>En lugar de cubrir el exterior, decides llenar la trompeta de pintura roja y sellarla. A primera vista parece aún peor: si cubrir el área requiere pintura infinita, llenar el interior debería ser todavía más costoso. Pero ahora el problema ya no es el área, sino el volumen.</p>
+<p>El volumen del cuerno de Gabriel se calcula también con integrales:</p>
 <div class="math">$$
-A \approx 2.54\times10^{-4}\,\text{m}^2
+V = \pi \int_1^{\infty} \left(\frac{1}{x}\right)^2 dx
 $$</div>
+<p>es decir,</p>
 <div class="math">$$
-F \approx (6\times10^5)(2.54\times10^{-4}) \approx 150\,\text{N}
+V = \pi \int_1^{\infty} \frac{1}{x^2} dx
 $$</div>
-<p>Esto equivale al peso de un niño pequeño apoyado sobre un área del tamaño de una moneda.  </p>
-<p>Y sí: todo eso está intentando expulsar el corcho hacia tu lámpara del salón.</p>
-<hr />
-<h2 id="2-el-momento-critico-el-corcho-cede">2. El momento crítico: el corcho cede<a class="headerlink" href="#2-el-momento-critico-el-corcho-cede" title="Permanent link"> </a></h2>
-<p>Cuando se retira el bozal, el corcho queda sostenido únicamente por fricción.<br />
-El gas, mientras tanto, grita como un aficionado de fútbol encerrado en una cabina de teléfono.</p>
-<p>La expansión del gas es tan rápida que puede aproximarse como <strong>adiabática</strong>:</p>
+<p>A diferencia de la anterior, esta integral sí converge:</p>
 <div class="math">$$
-P\,V^\gamma = \text{constante}
+\int_1^{\infty} \frac{1}{x^2} dx = 1
 $$</div>
-<p>con <span class="math">\(\gamma \approx 1.3\)</span> para el CO₂.</p>
-<p>Durante los primeros milímetros, la presión apenas cae, lo que permite estimar el trabajo inicial como:</p>
+<p>Por tanto,</p>
 <div class="math">$$
-W \approx F_0\,\Delta x
+V = \pi
 $$</div>
-<p>Tomemos <span class="math">\(\Delta x \approx 0.02\,\text{m}\)</span>:</p>
-<div class="math">$$
-W \approx 150\times0.02 = 3\,\text{J}
-$$</div>
-<p>La energía disponible se convierte en velocidad para un corcho típico de masa <span class="math">\(m \approx 0.007\,\text{kg}\)</span>:</p>
-<div class="math">$$
-v = \sqrt{\frac{2W}{m}}
-$$</div>
-<div class="math">$$
-v \approx \sqrt{ \frac{6}{0.007} } \approx 29\,\text{m/s}
-$$</div>
-<p>Equivalente a <strong>105 km/h</strong>.<br />
-Si el corcho fuera un atleta olímpico, sería plusmarquista mundial… durante un solo segundo.</p>
-<hr />
-<h2 id="3-puede-ser-supersonico">3. ¿Puede ser supersónico?<a class="headerlink" href="#3-puede-ser-supersonico" title="Permanent link"> </a></h2>
-<p>El corcho: normalmente no.<br />
-El gas detrás del corcho: absolutamente sí.</p>
-<p>Cuando la botella está muy presurizada, el gas sale por el cuello con tal velocidad que alcanza el <strong>flujo ahogado</strong>:</p>
-<div class="math">$$
-v_{\text{gas}} \approx c_s
-$$</div>
-<p>La velocidad del sonido en CO₂ es aproximadamente:</p>
-<div class="math">$$
-c_s \approx 260\,\text{m/s}
-$$</div>
-<p>Y estudios recientes han medido jets de champán alrededor de <span class="math">\(v \sim 300\,\text{m/s}\)</span>.</p>
-<p>Es decir:<br />
-Aunque el corcho no sea supersónico, la <strong>explosión gaseosa que lo acompaña sí puede serlo</strong>.</p>
-<hr />
-<h2 id="4-un-modelo-mas-riguroso-aceleracion-no-constante">4. Un modelo más riguroso: aceleración no constante<a class="headerlink" href="#4-un-modelo-mas-riguroso-aceleracion-no-constante" title="Permanent link"> </a></h2>
-<p>A medida que el corcho avanza una distancia <span class="math">\(x\)</span>, el volumen disponible aumenta y la presión disminuye según:</p>
-<div class="math">$$
-P(x) = P_0 \left( \frac{V_0}{V_0 + A x} \right)^{\gamma}
-$$</div>
-<p>La fuerza es:</p>
-<div class="math">$$
-F(x) = P(x)\,A
-$$</div>
-<p>Y la velocidad de salida tras recorrer el cuello de longitud <span class="math">\(L\)</span> se calcula como:</p>
-<div class="math">$$
-v = \sqrt{\frac{2}{m} \int_0^{L} P(x)\,A\,dx }
-$$</div>
-<p>Para valores típicos:</p>
-<div class="math">$$
-20\,\text{m/s} \le v \le 40\,\text{m/s}
-$$</div>
-<p>En condiciones extremas:</p>
-<div class="math">$$
-v_{\text{ext}} \approx 100\text{–}120\,\text{m/s}
-$$</div>
-<p>No es un misil intercontinental, pero tampoco algo que quieras recibir en la ceja.</p>
-<hr />
-<h2 id="5-por-que-no-todos-los-corchos-salen-igual">5. ¿Por qué no todos los corchos salen igual?<a class="headerlink" href="#5-por-que-no-todos-los-corchos-salen-igual" title="Permanent link"> </a></h2>
-<h3 id="temperatura">Temperatura<a class="headerlink" href="#temperatura" title="Permanent link"> </a></h3>
-<p>Más temperatura = más presión.<br />
-Más presión = más energía almacenada.<br />
-Champán caliente = mala idea.</p>
-<h3 id="rugosidad-y-forma-del-corcho">Rugosidad y forma del corcho<a class="headerlink" href="#rugosidad-y-forma-del-corcho" title="Permanent link"> </a></h3>
-<p>Algunos sellan más herméticamente, aumentando la presión antes del despegue.</p>
-<h3 id="contenido-de-co2">Contenido de CO₂<a class="headerlink" href="#contenido-de-co2" title="Permanent link"> </a></h3>
-<p>Las botellas jóvenes suelen tener más gas residual.</p>
-<h3 id="friccion-en-el-cuello">Fricción en el cuello<a class="headerlink" href="#friccion-en-el-cuello" title="Permanent link"> </a></h3>
-<p>Cuanto más difícil sea que el corcho empiece a moverse, mayor será el “latigazo inicial”.</p>
-<p>En otras palabras: cada botella tiene su personalidad… y su carácter explosivo.</p>
-<hr />
-<h2 id="6-es-peligroso">6. ¿Es peligroso?<a class="headerlink" href="#6-es-peligroso" title="Permanent link"> </a></h2>
-<p>A 30–40 m/s, un corcho puede causar lesiones serias, desde hematomas hasta daños oculares.<br />
-A más de 100 m/s, estás manejando un proyectil digno de un campo de pruebas de ingeniería.</p>
-<p>Consejo universal:</p>
-<p><strong>Nunca apuntes la botella hacia una persona, un animal o un televisor que te haya costado dinero.</strong></p>
-<hr />
-<h2 id="7-conclusion-un-cohete-de-bolsillo-con-denominacion-de-origen">7. Conclusión: un cohete de bolsillo con denominación de origen<a class="headerlink" href="#7-conclusion-un-cohete-de-bolsillo-con-denominacion-de-origen" title="Permanent link"> </a></h2>
-<p>El despegue del corcho de champán es uno de los ejemplos más entretenidos de física cotidiana.<br />
-Un pequeño objeto de madera comprimida, impulsado por un gas desesperado por expandirse, alcanza velocidades dignas de un vehículo deportivo.</p>
-<p>La próxima vez que brindes, recuerda:<br />
-Acabas de asistir al lanzamiento de un <em>microcohete carbónico</em> cortesía de la fermentación.</p>
-<p>Salud, y buena puntería (pero nunca hacia algo valioso).</p>
-<hr />
-<h2 id="apendice-valores-tipicos-de-referencia">Apéndice: valores típicos de referencia<a class="headerlink" href="#apendice-valores-tipicos-de-referencia" title="Permanent link"> </a></h2>
-<ul>
-<li>Presión interna: 5–7 atm  </li>
-<li>Masa del corcho: 6–8 g  </li>
-<li>Aceleración inicial: hasta <span class="math">\(10^4\,\text{m/s}^2\)</span>  </li>
-<li>Velocidad típica del corcho: 20–40 m/s  </li>
-<li>Velocidad extrema: 120 m/s  </li>
-<li>Velocidad del gas: 260–300 m/s  </li>
-</ul>
-<hr />
+<p>La trompeta se extiende hasta el infinito, pero el volumen total contenido en su interior es finito. Exactamente ( \pi ) unidades cúbicas. Puedes llenarla completamente con una cantidad limitada de pintura.  </p>
+<p>Volumen finito. Área infinita. A esto se le puede llamar <em>una paradoja</em>.</p>
+<h2 id="conclusiones">Conclusiones<a class="headerlink" href="#conclusiones" title="Permanent link"> </a></h2>
+<p>Has resuelto el encargo. Llenas la trompeta y la sellas. Desde fuera, la pieza se ve roja, uniforme, impecable. El hombre trajeado regresa, asiente en silencio y desaparece sin añadir una palabra.  </p>
+<p>Pero lo que te llevas no es solo el pago. Es la lección.  </p>
+<p>Un mismo objeto puede tener área superficial infinita y volumen finito porque ambas magnitudes miden propiedades distintas. El infinito no actúa igual sobre todas las dimensiones.  </p>
+<p>Tu intuición te decía que si algo es infinito, todo en él debía serlo. El cuerno de Gabriel demuestra que no. Superficie y volumen pueden separarse de manera radical cuando entra en juego el infinito.  </p>
+<p>El infinito no contradice la lógica. Solo contradice nuestras expectativas.  </p>
+<p>Y ahora, cada vez que sostienes un pincel, sabes que incluso aquello que parece perfectamente manejable puede ocultar una estructura que desborda el sentido común. Un día más en Tivoli.</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -297,20 +211,12 @@ Acabas de asistir al lanzamiento de un <em>microcohete carbónico</em> cortesía
 
 
 <div class="applause_button">
-    <applause-button url=./que-tan-rapido-sale-el-corcho-de-una-botella-de-champan> </applause-button>
+    <applause-button url=./el-pintor-y-la-trompeta-infinita> </applause-button>
 </div>
 
  
             
-                <hr />
-    <div class="author-blurb">
-        <a href="https://produccioncientifica.usal.es/investigadores/819473/detalle" target="_blank" rel="nofollow noopener noreferrer">
-            <img src=/images/duvier.jpeg alt="Duvier Suarez Fontanella Avatar" title="Duvier Suarez Fontanella">
-            <span class="author-name">Duvier Suarez Fontanella</span>
-        </a>
-        is the creator and lead developer of Napkin Notes.
-    </div>
-
+            
             
 
 
@@ -323,21 +229,12 @@ Acabas de asistir al lanzamiento de un <em>microcohete carbónico</em> cortesía
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2025-12-03T00:00:00+05:00">Dec 03, 2025</time>
+            <time itemprop="dateCreated" datetime="2026-02-12T00:00:00+05:00">Feb 12, 2026</time>
             <h4>Category</h4>
-            <a class="category-link" href="./categories#dinamica-de-fluidos-ref">Dinámica de Fluidos</a>
+            <a class="category-link" href="./categories#matematicas-ref">Matemáticas</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="./tags#champan-ref">champán
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#fisica-ref">física
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#supersonico-ref">supersónico
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="./tags#termodinamica-ref">termodinámica
+                <li><a href="./tags#infinito-calculo-paradojas-ref">infinito, cálculo, paradojas
                     <span class="superscript">1</span>
 </a></li>
             </ul>

@@ -1,5 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Napkin Notes</title><link href="/" rel="alternate"/><link href="feeds/all.atom.xml" rel="self"/><id>/</id><updated>2025-12-06T00:00:00+05:00</updated><entry><title>"¿Cuál es la distancia promedio entre dos personas en Facebook?"</title><link href="distancia-facebook" rel="alternate"/><published>2025-12-06T00:00:00+05:00</published><updated>2025-12-06T00:00:00+05:00</updated><author><name>Duvier Suarez Fontanella</name></author><id>tag:None,2025-12-06:distancia-facebook</id><summary type="html">&lt;div class="toc"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Napkin Notes</title><link href="/" rel="alternate"/><link href="feeds/all.atom.xml" rel="self"/><id>/</id><updated>2026-02-12T00:00:00+05:00</updated><entry><title>El pintor y la trompeta infinita</title><link href="el-pintor-y-la-trompeta-infinita" rel="alternate"/><published>2026-02-12T00:00:00+05:00</published><updated>2026-02-12T00:00:00+05:00</updated><author><name>David Figueruelo</name></author><id>tag:None,2026-02-12:el-pintor-y-la-trompeta-infinita</id><summary type="html">&lt;p&gt;Un objeto infinito que desafía la intuición: no puede pintarse por fuera con pintura finita, pero sí puede llenarse completamente.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#resumen"&gt;Resumen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#introduccion"&gt;Introducción&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#desarrollo"&gt;Desarrollo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#conclusiones"&gt;Conclusiones&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id="resumen"&gt;Resumen&lt;a class="headerlink" href="#resumen" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Estás en tu taller cuando un hombre trajeado, con gafas de sol y un maletín impecable, entra sin previo aviso. Trae un encargo extraño: una escultura de vidrio transparente con forma de trompeta que se estrecha sin terminar nunca. Solo tiene una condición: debe verse completamente roja. Lo que parece un trabajo más termina convirtiéndose en una lección profunda sobre el infinito.&lt;/p&gt;
+&lt;h2 id="introduccion"&gt;Introducción&lt;a class="headerlink" href="#introduccion" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Imagina que eres un humilde pintor en tu pequeño taller de Tivoli, donde las fachadas ocres retienen el calor del sol y la calle empedrada desciende lentamente hacia el murmullo constante del río Aniene. Tus días transcurren entre cal, pigmentos y madera antigua. Restauras frescos que el tiempo ha ido apagando, devuelves color a puertas vencidas por los inviernos, retocas santos desvaídos que observan en silencio desde capillas en penumbra. La vida es sencilla, casi previsible, hasta que una mañana la campanilla de la puerta rompe el aire con un timbre más seco de lo habitual.  &lt;/p&gt;
+&lt;p&gt;En el umbral aparece un hombre trajeado, gafas oscuras pese a la sombra del taller, un maletín impecable en la mano. No sonríe. No se presenta. Solo examina el espacio como si evaluara algo invisible. Después, con un gesto medido, deposita sobre tu mesa el objeto de su visita.  &lt;/p&gt;
+&lt;p&gt;Lo observas sin comprender del todo. Comienza ancho, casi familiar, pero pronto se afina mientras se extiende hacia la derecha, cada vez más delgado, cada vez más largo. La forma parece huir de sí misma, escapar en una dirección que no promete final alguno. Sigues su perfil con la vista esperando que termine en algún punto razonable, pero no hay borde, no hay límite. Solo una prolongación que parece negarse a concluir.  &lt;/p&gt;
+&lt;p&gt;Antes de marcharse, el hombre pronuncia el nombre con una solemnidad que no admite preguntas: el cuerno de Gabriel.  &lt;/p&gt;
+&lt;p&gt;Desde el punto de vista matemático, la forma no es caprichosa. Se obtiene al girar la curva ( y = \frac{1}{x} ) para ( x \geq 1 ) alrededor del eje horizontal. El resultado es un sólido de revolución que se extiende indefinidamente mientras su radio disminuye sin cesar. Es infinito en longitud, pero cada vez más fino.  &lt;/p&gt;
+&lt;p&gt;El encargo parece simple: la escultura debe verse completamente roja. Piensas en lo obvio. Bastará con calcular cuánta pintura necesitas para cubrirla por fuera.  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;¿Cuánta pintura necesitas para pintar una trompeta infinita?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Tu intuición responde con rapidez: infinita. Si el objeto no termina nunca, tampoco lo hará la superficie que debes cubrir. Pero las matemáticas no siempre obedecen al sentido común.&lt;/p&gt;
+&lt;h2 id="desarrollo"&gt;Desarrollo&lt;a class="headerlink" href="#desarrollo" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;¿Qué significa realmente pintar algo? Cuando pintas, cubres la superficie exterior con una capa de grosor positivo, por pequeña que sea. La cantidad de pintura necesaria es proporcional al área. A mayor superficie, mayor consumo. Hasta ahora, todo coincide con tu experiencia.  &lt;/p&gt;
+&lt;p&gt;Pero esta trompeta no es una pared ni una estatua convencional. Es otra cosa.  &lt;/p&gt;
+&lt;p&gt;En el caso del cuerno de Gabriel, el área viene dada por la fórmula de las superficies de revolución:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+A = 2\pi \int_1^{\infty} \frac{1}{x} \sqrt{1 + \left(\frac{1}{x^2}\right)^2} \, dx
+$$&lt;/div&gt;
+&lt;p&gt;La expresión puede parecer abstracta, pero su significado es claro: estamos sumando infinitos fragmentos diminutos de superficie. Llamas a tu matemático de confianza. Tras unos minutos de silencio, te explica el resultado: esa integral diverge. Es la manera elegante que tienen los matemáticos de afirmar que el área es infinita.  &lt;/p&gt;
+&lt;p&gt;Aunque el radio se haga cada vez más pequeño, la longitud infinita compensa esa reducción. La superficie nunca deja de acumularse. Siempre hay un nuevo tramo que añadir.  &lt;/p&gt;
+&lt;p&gt;En términos prácticos, eso significa que no existe una cantidad finita de pintura que permita cubrir completamente el exterior. Siempre quedará un segmento por pintar, por pequeño que sea.  &lt;/p&gt;
+&lt;p&gt;Miras el objeto en tu taller. Está ahí, sólido, tangible, casi frágil. Pero si intentas pintarlo por fuera, jamás terminarás. Cada litro adicional solo retrasa lo inevitable.  &lt;/p&gt;
+&lt;p&gt;Durante un momento, el encargo parece imposible. Sin embargo, el hombre trajeado no especificó el método, solo el resultado. Quiere la trompeta roja. La escultura es completamente transparente. Desde fuera, nadie distinguiría si el color está en la superficie o en el interior.  &lt;/p&gt;
+&lt;p&gt;Entonces surge una idea.  &lt;/p&gt;
+&lt;p&gt;En lugar de cubrir el exterior, decides llenar la trompeta de pintura roja y sellarla. A primera vista parece aún peor: si cubrir el área requiere pintura infinita, llenar el interior debería ser todavía más costoso. Pero ahora el problema ya no es el área, sino el volumen.&lt;/p&gt;
+&lt;p&gt;El volumen del cuerno de Gabriel se calcula también con integrales:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+V = \pi \int_1^{\infty} \left(\frac{1}{x}\right)^2 dx
+$$&lt;/div&gt;
+&lt;p&gt;es decir,&lt;/p&gt;
+&lt;div class="math"&gt;$$
+V = \pi \int_1^{\infty} \frac{1}{x^2} dx
+$$&lt;/div&gt;
+&lt;p&gt;A diferencia de la anterior, esta integral sí converge:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\int_1^{\infty} \frac{1}{x^2} dx = 1
+$$&lt;/div&gt;
+&lt;p&gt;Por tanto,&lt;/p&gt;
+&lt;div class="math"&gt;$$
+V = \pi
+$$&lt;/div&gt;
+&lt;p&gt;La trompeta se extiende hasta el infinito, pero el volumen total contenido en su interior es finito. Exactamente ( \pi ) unidades cúbicas. Puedes llenarla completamente con una cantidad limitada de pintura.  &lt;/p&gt;
+&lt;p&gt;Volumen finito. Área infinita. A esto se le puede llamar &lt;em&gt;una paradoja&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="conclusiones"&gt;Conclusiones&lt;a class="headerlink" href="#conclusiones" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Has resuelto el encargo. Llenas la trompeta y la sellas. Desde fuera, la pieza se ve roja, uniforme, impecable. El hombre trajeado regresa, asiente en silencio y desaparece sin añadir una palabra.  &lt;/p&gt;
+&lt;p&gt;Pero lo que te llevas no es solo el pago. Es la lección.  &lt;/p&gt;
+&lt;p&gt;Un mismo objeto puede tener área superficial infinita y volumen finito porque ambas magnitudes miden propiedades distintas. El infinito no actúa igual sobre todas las dimensiones.  &lt;/p&gt;
+&lt;p&gt;Tu intuición te decía que si algo es infinito, todo en él debía serlo. El cuerno de Gabriel demuestra que no. Superficie y volumen pueden separarse de manera radical cuando entra en juego el infinito.  &lt;/p&gt;
+&lt;p&gt;El infinito no contradice la lógica. Solo contradice nuestras expectativas.  &lt;/p&gt;
+&lt;p&gt;Y ahora, cada vez que sostienes un pincel, sabes que incluso aquello que parece perfectamente manejable puede ocultar una estructura que desborda el sentido común. Un día más en Tivoli.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Matemáticas"/><category term="infinito, cálculo, paradojas"/></entry><entry><title>¿Por qué el pan se pone duro (y por qué la bolsa es su única amiga)?</title><link href="por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga" rel="alternate"/><published>2026-02-12T00:00:00+05:00</published><updated>2026-02-12T00:00:00+05:00</updated><author><name>David Figueruelo Hernán</name></author><id>tag:None,2026-02-12:por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga</id><summary type="html">&lt;p&gt;Dejas el pan fuera unas horas y se convierte en un arma contundente. No es traición: es física.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#resumen"&gt;Resumen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#introduccion"&gt;Introducción&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#desarrollo"&gt;Desarrollo&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#villano-1-el-aire-te-roba-el-agua"&gt;Villano 1: El aire te roba el agua&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#la-bolsa-un-heroe-infravalorado"&gt;La bolsa: un héroe infravalorado&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#villano-2-el-almidon-se-pone-serio"&gt;Villano 2: El almidón se pone serio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#la-nevera-el-falso-amigo"&gt;La nevera: el falso amigo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#conclusiones"&gt;Conclusiones&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id="resumen"&gt;Resumen&lt;a class="headerlink" href="#resumen" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Dejas una barra de pan en la encimera. Sales. Vuelves unas horas después. Intentas morder. El pan responde con un sonido seco, casi metálico. No es traición. Es física. Y la física, como ya sabrás, no tiene empatía.&lt;/p&gt;
+&lt;h2 id="introduccion"&gt;Introducción&lt;a class="headerlink" href="#introduccion" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Domingo, sobre media mañana. Estás en tu casa en Hum, donde las casas de piedra se apoyan unas en otras y el pan se sigue haciendo como hace siglos. Sales un momento convencido de que, en un lugar tan antiguo y tranquilo, nada puede cambiar demasiado rápido… y cuando vuelves unas horas después descubres que la entropía no respeta ni pueblos medievales ni tradiciones rurales. Tu barra de pan ahora podría servir como herramienta agrícola o como bate de béisbol.  &lt;/p&gt;
+&lt;p&gt;Hay pocas decepciones tan universales como el pan duro. Lo compras crujiente, perfecto, con esa miga elástica que promete felicidad. Lo dejas fuera “un momento”. Y cuando regresas, parece que ha pasado por un entrenamiento militar.  &lt;/p&gt;
+&lt;p&gt;La vida no es cruel. La termodinámica sí.  &lt;/p&gt;
+&lt;p&gt;Lo que ocurre no es un único proceso dramático. Son dos mecanismos trabajando en equipo, como villanos perfectamente coordinados: el secado y la reorganización interna del almidón. Uno te roba el agua. El otro reorganiza el interior como si estuviera redecorando tu desgracia.&lt;/p&gt;
+&lt;h2 id="desarrollo"&gt;Desarrollo&lt;a class="headerlink" href="#desarrollo" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="villano-1-el-aire-te-roba-el-agua"&gt;Villano 1: El aire te roba el agua&lt;a class="headerlink" href="#villano-1-el-aire-te-roba-el-agua" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;El pan contiene más agua de la que parece. Quizá hasta que no lo hiciste por primera vez en casa durante la pandemia no te diste cuenta. Es cierto que durante el horneado parte se evapora desde la corteza, pero la miga sigue siendo un pequeño reservorio húmedo. El problema es que el aire casi siempre está más seco que el interior del pan.  &lt;/p&gt;
+&lt;p&gt;Y cuando existe una diferencia de humedad, la física hace lo que siempre hace: igualar.&lt;/p&gt;
+&lt;p&gt;El proceso de igualar en física tiene un nombre: difusión. La difusión responde a la ley de Fick, que en versión compacta se escribe como&lt;/p&gt;
+&lt;div class="math"&gt;$$
+J = -D \nabla c
+$$&lt;/div&gt;
+&lt;p&gt;Aquí ( J ) es el flujo de agua que abandona el pan, ( D ) mide qué tan fácil se difunde y ( \nabla c ) representa la diferencia de concentración entre el interior húmedo y el aire seco.  &lt;/p&gt;
+&lt;p&gt;Traducción: si fuera hay menos agua que dentro, el agua se va. No porque quiera. Porque puede.  &lt;/p&gt;
+&lt;p&gt;Dejar el pan al aire es básicamente invitar al ambiente a beberse su humedad.&lt;/p&gt;
+&lt;h3 id="la-bolsa-un-heroe-infravalorado"&gt;La bolsa: un héroe infravalorado&lt;a class="headerlink" href="#la-bolsa-un-heroe-infravalorado" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Tu bisabuela, tu abuela, tu madre… siempre metían las barras de pan en bolsas colgadas en algún lugar de la cocina. Tú no lo haces, ¿a que no? Probemos a hacerlo. Metes el pan en una bolsa cerrada. ¿Qué cambia? La física sigue siendo la misma. Pero el volumen de aire ahora es pequeño y se humedece rápidamente.  &lt;/p&gt;
+&lt;p&gt;Eso hace que el gradiente baje:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\nabla c \approx 0 \Rightarrow J \approx 0
+$$&lt;/div&gt;
+&lt;p&gt;No es magia. Es control de daños. La bolsa no conserva el pan por cariño. Lo hace porque elimina el desequilibrio que estaba drenando su agua.  &lt;/p&gt;
+&lt;p&gt;La bolsa es menos romántica de lo que pensabas. Pero es eficaz.&lt;/p&gt;
+&lt;h3 id="villano-2-el-almidon-se-pone-serio"&gt;Villano 2: El almidón se pone serio&lt;a class="headerlink" href="#villano-2-el-almidon-se-pone-serio" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Ahora viene la parte más interesante. Aunque impidas que el pan se seque demasiado, puede endurecerse igual.  &lt;/p&gt;
+&lt;p&gt;Cuando horneas pan, el almidón se gelatiniza. Sus cadenas se desordenan, absorben agua y crean esa textura flexible que tanto nos gusta cuando es un buen pan, con su miga esponjosa…  &lt;/p&gt;
+&lt;p&gt;Pero el orden siempre regresa, siempre.&lt;/p&gt;
+&lt;p&gt;Con el tiempo, esas cadenas comienzan a reorganizarse. Se alinean. Se compactan. Expulsan parte del agua atrapada. Y la miga pierde elasticidad.  &lt;/p&gt;
+&lt;p&gt;Ese proceso, llamado retrogradación, suele seguir una ley tipo Arrhenius. Matemáticamente es algo así:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+k = A e^{-E_a/(RT)}
+$$&lt;/div&gt;
+&lt;p&gt;No hace falta hacer números. Solo entender lo importante: la temperatura, esa ( T ) de la fórmula, importa. Importa mucho.&lt;/p&gt;
+&lt;h2 id="la-nevera-el-falso-amigo"&gt;La nevera: el falso amigo&lt;a class="headerlink" href="#la-nevera-el-falso-amigo" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Aquí llega el giro cruel.  &lt;/p&gt;
+&lt;p&gt;Uno pensaría que la nevera ayuda. Hace frío. Se supone que el frío conserva las cosas. Pues no.  &lt;/p&gt;
+&lt;p&gt;En el rango aproximado de ( 0^\circ C ) a ( 10^\circ C ), la retrogradación del almidón ocurre con bastante eficiencia. Es como si el almidón dijera: “ahora sí, ahora sí que me organizo”.  &lt;/p&gt;
+&lt;p&gt;Resultado: el pan se pone duro más rápido en la nevera que fuera, aunque no pierda tanta agua. Y además está frío, más frío que el corazón de tu ex. Un &lt;em&gt;lose-lose&lt;/em&gt; de manual.  &lt;/p&gt;
+&lt;p&gt;La física no tiene empatía. Sentido del humor, puede. Pero empatía, ninguna.&lt;/p&gt;
+&lt;h2 id="conclusiones"&gt;Conclusiones&lt;a class="headerlink" href="#conclusiones" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Resumen práctico, sin drama innecesario:&lt;/p&gt;
+&lt;p&gt;Encimera al aire: pierde agua y se reorganiza por dentro.&lt;br /&gt;
+Bolsa cerrada: reduces el secado y compras tiempo.&lt;br /&gt;
+Nevera: aceleras el endurecimiento interno.  &lt;/p&gt;
+&lt;p&gt;Si quieres pan feliz, guárdalo en bolsa a temperatura ambiente y cómetelo pronto. Si lo dejas al aire, la difusión actuará. Si lo metes en la nevera, el almidón hará lo suyo.  &lt;/p&gt;
+&lt;p&gt;No es mala suerte.&lt;br /&gt;
+Es física haciendo exactamente lo que prometió hacer.&lt;br /&gt;
+Y sí, a veces la vida es así de eficiente.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Física cotidiana"/><category term="difusión, termodinámica, almidón, vida cruel"/></entry><entry><title>¿Cuál es la distancia promedio entre dos personas en Facebook?</title><link href="distancia-facebook" rel="alternate"/><published>2025-12-06T00:00:00+05:00</published><updated>2025-12-06T00:00:00+05:00</updated><author><name>Duvier Suarez Fontanella</name></author><id>tag:None,2025-12-06:distancia-facebook</id><summary type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook"&gt;1. La medida real: ¿a cuántos saltos estamos en Facebook?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;/a&gt;&lt;ul&gt;
@@ -44,31 +291,31 @@
 &lt;hr /&gt;
 &lt;h2 id="2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;a class="headerlink" href="#2-por-que-tan-pocos-fundamentos-matematicos" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="21-el-grafo-social-como-red-compleja"&gt;2.1 El grafo social como red compleja&lt;a class="headerlink" href="#21-el-grafo-social-como-red-compleja" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Podemos representar Facebook como un grafo no dirigido $G = (V, E)$, donde:
-- $V$ es el conjunto de usuarios&lt;br /&gt;
-- $E$ es el conjunto de relaciones de amistad  &lt;/p&gt;
-&lt;p&gt;La &lt;strong&gt;distancia&lt;/strong&gt; entre dos vértices $u$ y $v$, denotada $d(u,v)$, es la longitud mínima del camino que los conecta.&lt;/p&gt;
+&lt;p&gt;Podemos representar Facebook como un grafo no dirigido &lt;span class="math"&gt;\(G = (V, E)\)&lt;/span&gt;, donde:
+- &lt;span class="math"&gt;\(V\)&lt;/span&gt; es el conjunto de usuarios&lt;br /&gt;
+- &lt;span class="math"&gt;\(E\)&lt;/span&gt; es el conjunto de relaciones de amistad  &lt;/p&gt;
+&lt;p&gt;La &lt;strong&gt;distancia&lt;/strong&gt; entre dos vértices &lt;span class="math"&gt;\(u\)&lt;/span&gt; y &lt;span class="math"&gt;\(v\)&lt;/span&gt;, denotada &lt;span class="math"&gt;\(d(u,v)\)&lt;/span&gt;, es la longitud mínima del camino que los conecta.&lt;/p&gt;
 &lt;p&gt;El objetivo es calcular el &lt;strong&gt;average path length&lt;/strong&gt; (APL):&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;En redes a gran escala esta suma explícita es inviable. Facebook utiliza técnicas como &lt;strong&gt;BFS aproximado&lt;/strong&gt;, &lt;strong&gt;muestreo aleatorio de vértices&lt;/strong&gt; y algoritmos distribuidos tipo &lt;strong&gt;HyperANF&lt;/strong&gt; para estimar la distribución de distancias.&lt;/p&gt;
 &lt;h3 id="22-la-magia-de-los-mundos-pequenos"&gt;2.2 La magia de los mundos pequeños&lt;a class="headerlink" href="#22-la-magia-de-los-mundos-pequenos" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;El comportamiento observado en Facebook coincide con el modelo de &lt;strong&gt;redes de mundo pequeño&lt;/strong&gt; (Watts &amp;amp; Strogatz, 1998), caracterizado por:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Alta agrupación (clustering coefficient $C$)&lt;/strong&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Caminos cortos con crecimiento logarítmico: $L \sim \log N$&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alta agrupación (clustering coefficient &lt;span class="math"&gt;\(C\)&lt;/span&gt;)&lt;/strong&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Caminos cortos con crecimiento logarítmico: &lt;span class="math"&gt;\(L \sim \log N\)&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Si $N \approx 10^9$, entonces:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;p&gt;Si &lt;span class="math"&gt;\(N \approx 10^9\)&lt;/span&gt;, entonces:&lt;/p&gt;
+&lt;div class="math"&gt;$$
 \log(N) \approx 21
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;Esto sugiere que incluso una red inmensa puede tener caminos sorprendentemente cortos si se cumplen dos condiciones:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Existe fuerte conectividad local (comunidades).  &lt;/li&gt;
 &lt;li&gt;Hay enlaces aleatorios que actúan como “atalayos” en el grafo.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen drásticamente $L$.&lt;/p&gt;
+&lt;p&gt;Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen drásticamente &lt;span class="math"&gt;\(L\)&lt;/span&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="3-los-seis-grados-de-separacion-historia-mito-y-validacion"&gt;3. Los seis grados de separación: historia, mito y validación&lt;a class="headerlink" href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;La idea nació en 1929 con Frigyes Karinthy, se popularizó en 1967 con el experimento de Stanley Milgram y terminó convertida en un concepto cultural. Pero matemáticamente, el fenómeno posee base sólida.&lt;/p&gt;
@@ -102,7 +349,7 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Mejora de algoritmos de recomendación (friends-of-friends).  &lt;/li&gt;
 &lt;li&gt;Optimización de buscadores sociales y privacidad basada en distancias.  &lt;/li&gt;
-&lt;li&gt;Diseño de sistemas distribuidos que explotan el comportamiento logarítmico de $L$.&lt;/li&gt;
+&lt;li&gt;Diseño de sistemas distribuidos que explotan el comportamiento logarítmico de &lt;span class="math"&gt;\(L\)&lt;/span&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 &lt;h2 id="5-conclusion"&gt;5. Conclusión&lt;a class="headerlink" href="#5-conclusion" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
@@ -112,7 +359,69 @@ $$&lt;/p&gt;
 &lt;li&gt;La teoría de &lt;strong&gt;mundos pequeños&lt;/strong&gt; predice y explica este fenómeno.  &lt;/li&gt;
 &lt;li&gt;Los &lt;strong&gt;seis grados de separación&lt;/strong&gt; no solo se mantienen: se comprimen.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;La combinación de teoría matemática, datos masivos y modelización computacional revela que vivimos en un mundo sorprendentemente bien conectado.&lt;/p&gt;</content><category term="Ciencia de Datos"/><category term="redes sociales"/><category term="teoría de grafos"/><category term="small world"/><category term="seis grados de separación"/></entry><entry><title>"¿Qué tan rápido sale el corcho de una botella de champán?"</title><link href="que-tan-rapido-sale-el-corcho-de-una-botella-de-champan" rel="alternate"/><published>2025-12-03T00:00:00+05:00</published><updated>2025-12-03T00:00:00+05:00</updated><author><name>"Duvier Suarez Fontanella"</name></author><id>tag:None,2025-12-03:que-tan-rapido-sale-el-corcho-de-una-botella-de-champan</id><summary type="html">&lt;p&gt;"Un recorrido por la física explosiva detrás del clásico \"pop\" del champán: desde la presión atrapada en la botella hasta la sorprendente posibilidad de velocidades supersónicas."&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+&lt;p&gt;La combinación de teoría matemática, datos masivos y modelización computacional revela que vivimos en un mundo sorprendentemente bien conectado.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Ciencia de Datos"/><category term="redes sociales, teoría de grafos, small world, seis grados de separación"/></entry><entry><title>¿Qué tan rápido sale el corcho de una botella de champán?</title><link href="que-tan-rapido-sale-el-corcho-de-una-botella-de-champan" rel="alternate"/><published>2025-12-03T00:00:00+05:00</published><updated>2025-12-03T00:00:00+05:00</updated><author><name>Duvier Suarez Fontanella</name></author><id>tag:None,2025-12-03:que-tan-rapido-sale-el-corcho-de-una-botella-de-champan</id><summary type="html">&lt;p&gt;Un recorrido por la física explosiva detrás del clásico "pop" del champán: desde la presión atrapada en la botella hasta la sorprendente posibilidad de velocidades supersónicas.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#resumen"&gt;Resumen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#1-una-botella-aparentemente-tranquila-pero-llena-de-presion"&gt;1. Una botella aparentemente tranquila (pero llena de presión)&lt;/a&gt;&lt;/li&gt;
@@ -142,19 +451,19 @@ En este artículo exploraremos cuánta fuerza impulsa al corcho, cómo evolucion
 No lo es.&lt;/p&gt;
 &lt;p&gt;Su interior contiene CO₂ disuelto a presiones que oscilan entre &lt;strong&gt;5 y 7 atm&lt;/strong&gt;. Es decir, un ambiente ideal para un pequeño festival termodinámico.&lt;/p&gt;
 &lt;p&gt;Podemos estimar la fuerza que empuja al corcho mediante:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 F = P\,A
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;donde&lt;br /&gt;
-- $P \approx 6\times10^5\,\text{Pa}$&lt;br /&gt;
-- $A = \pi r^2$ con $r \approx 9\times10^{-3}\,\text{m}$&lt;/p&gt;
+- &lt;span class="math"&gt;\(P \approx 6\times10^5\,\text{Pa}\)&lt;/span&gt;&lt;br /&gt;
+- &lt;span class="math"&gt;\(A = \pi r^2\)&lt;/span&gt; con &lt;span class="math"&gt;\(r \approx 9\times10^{-3}\,\text{m}\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Entonces:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 A \approx 2.54\times10^{-4}\,\text{m}^2
-$$&lt;/p&gt;
-&lt;p&gt;$$
+$$&lt;/div&gt;
+&lt;div class="math"&gt;$$
 F \approx (6\times10^5)(2.54\times10^{-4}) \approx 150\,\text{N}
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;Esto equivale al peso de un niño pequeño apoyado sobre un área del tamaño de una moneda.  &lt;/p&gt;
 &lt;p&gt;Y sí: todo eso está intentando expulsar el corcho hacia tu lámpara del salón.&lt;/p&gt;
 &lt;hr /&gt;
@@ -162,25 +471,25 @@ $$&lt;/p&gt;
 &lt;p&gt;Cuando se retira el bozal, el corcho queda sostenido únicamente por fricción.&lt;br /&gt;
 El gas, mientras tanto, grita como un aficionado de fútbol encerrado en una cabina de teléfono.&lt;/p&gt;
 &lt;p&gt;La expansión del gas es tan rápida que puede aproximarse como &lt;strong&gt;adiabática&lt;/strong&gt;:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 P\,V^\gamma = \text{constante}
-$$&lt;/p&gt;
-&lt;p&gt;con $\gamma \approx 1.3$ para el CO₂.&lt;/p&gt;
+$$&lt;/div&gt;
+&lt;p&gt;con &lt;span class="math"&gt;\(\gamma \approx 1.3\)&lt;/span&gt; para el CO₂.&lt;/p&gt;
 &lt;p&gt;Durante los primeros milímetros, la presión apenas cae, lo que permite estimar el trabajo inicial como:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 W \approx F_0\,\Delta x
-$$&lt;/p&gt;
-&lt;p&gt;Tomemos $\Delta x \approx 0.02\,\text{m}$:&lt;/p&gt;
-&lt;p&gt;$$
+$$&lt;/div&gt;
+&lt;p&gt;Tomemos &lt;span class="math"&gt;\(\Delta x \approx 0.02\,\text{m}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;div class="math"&gt;$$
 W \approx 150\times0.02 = 3\,\text{J}
-$$&lt;/p&gt;
-&lt;p&gt;La energía disponible se convierte en velocidad para un corcho típico de masa $m \approx 0.007\,\text{kg}$:&lt;/p&gt;
-&lt;p&gt;$$
+$$&lt;/div&gt;
+&lt;p&gt;La energía disponible se convierte en velocidad para un corcho típico de masa &lt;span class="math"&gt;\(m \approx 0.007\,\text{kg}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;div class="math"&gt;$$
 v = \sqrt{\frac{2W}{m}}
-$$&lt;/p&gt;
-&lt;p&gt;$$
+$$&lt;/div&gt;
+&lt;div class="math"&gt;$$
 v \approx \sqrt{ \frac{6}{0.007} } \approx 29\,\text{m/s}
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;Equivalente a &lt;strong&gt;105 km/h&lt;/strong&gt;.&lt;br /&gt;
 Si el corcho fuera un atleta olímpico, sería plusmarquista mundial… durante un solo segundo.&lt;/p&gt;
 &lt;hr /&gt;
@@ -188,38 +497,38 @@ Si el corcho fuera un atleta olímpico, sería plusmarquista mundial… durante 
 &lt;p&gt;El corcho: normalmente no.&lt;br /&gt;
 El gas detrás del corcho: absolutamente sí.&lt;/p&gt;
 &lt;p&gt;Cuando la botella está muy presurizada, el gas sale por el cuello con tal velocidad que alcanza el &lt;strong&gt;flujo ahogado&lt;/strong&gt;:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 v_{\text{gas}} \approx c_s
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;La velocidad del sonido en CO₂ es aproximadamente:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 c_s \approx 260\,\text{m/s}
-$$&lt;/p&gt;
-&lt;p&gt;Y estudios recientes han medido jets de champán alrededor de $v \sim 300\,\text{m/s}$.&lt;/p&gt;
+$$&lt;/div&gt;
+&lt;p&gt;Y estudios recientes han medido jets de champán alrededor de &lt;span class="math"&gt;\(v \sim 300\,\text{m/s}\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Es decir:&lt;br /&gt;
 Aunque el corcho no sea supersónico, la &lt;strong&gt;explosión gaseosa que lo acompaña sí puede serlo&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="4-un-modelo-mas-riguroso-aceleracion-no-constante"&gt;4. Un modelo más riguroso: aceleración no constante&lt;a class="headerlink" href="#4-un-modelo-mas-riguroso-aceleracion-no-constante" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;A medida que el corcho avanza una distancia $x$, el volumen disponible aumenta y la presión disminuye según:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;p&gt;A medida que el corcho avanza una distancia &lt;span class="math"&gt;\(x\)&lt;/span&gt;, el volumen disponible aumenta y la presión disminuye según:&lt;/p&gt;
+&lt;div class="math"&gt;$$
 P(x) = P_0 \left( \frac{V_0}{V_0 + A x} \right)^{\gamma}
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;La fuerza es:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 F(x) = P(x)\,A
-$$&lt;/p&gt;
-&lt;p&gt;Y la velocidad de salida tras recorrer el cuello de longitud $L$ se calcula como:&lt;/p&gt;
-&lt;p&gt;$$
+$$&lt;/div&gt;
+&lt;p&gt;Y la velocidad de salida tras recorrer el cuello de longitud &lt;span class="math"&gt;\(L\)&lt;/span&gt; se calcula como:&lt;/p&gt;
+&lt;div class="math"&gt;$$
 v = \sqrt{\frac{2}{m} \int_0^{L} P(x)\,A\,dx }
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;Para valores típicos:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 20\,\text{m/s} \le v \le 40\,\text{m/s}
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;En condiciones extremas:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 v_{\text{ext}} \approx 100\text{–}120\,\text{m/s}
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;No es un misil intercontinental, pero tampoco algo que quieras recibir en la ceja.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="5-por-que-no-todos-los-corchos-salen-igual"&gt;5. ¿Por qué no todos los corchos salen igual?&lt;a class="headerlink" href="#5-por-que-no-todos-los-corchos-salen-igual" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
@@ -252,12 +561,74 @@ Acabas de asistir al lanzamiento de un &lt;em&gt;microcohete carbónico&lt;/em&g
 &lt;ul&gt;
 &lt;li&gt;Presión interna: 5–7 atm  &lt;/li&gt;
 &lt;li&gt;Masa del corcho: 6–8 g  &lt;/li&gt;
-&lt;li&gt;Aceleración inicial: hasta $10^4\,\text{m/s}^2$  &lt;/li&gt;
+&lt;li&gt;Aceleración inicial: hasta &lt;span class="math"&gt;\(10^4\,\text{m/s}^2\)&lt;/span&gt;  &lt;/li&gt;
 &lt;li&gt;Velocidad típica del corcho: 20–40 m/s  &lt;/li&gt;
 &lt;li&gt;Velocidad extrema: 120 m/s  &lt;/li&gt;
 &lt;li&gt;Velocidad del gas: 260–300 m/s  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr /&gt;</content><category term='"Dinámica de Fluidos"'/><category term='["física"'/><category term='"termodinámica"'/><category term='"champán"'/><category term='"supersónico"]'/></entry><entry><title>¿Por qué las palomitas revientan en el microondas?</title><link href="por-que-las-palomitas-revientan-en-el-microondas" rel="alternate"/><published>2025-11-03T00:00:00+05:00</published><updated>2025-11-03T00:00:00+05:00</updated><author><name>Duvier Suarez Fontanella</name></author><id>tag:None,2025-11-03:por-que-las-palomitas-revientan-en-el-microondas</id><summary type="html">&lt;p&gt;Un análisis físico del proceso de expansión explosiva de los granos de maíz en el microondas, desde la transferencia de calor hasta la dinámica adiabática del vapor de agua.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+&lt;hr /&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Dinámica de Fluidos"/><category term="física"/><category term="termodinámica"/><category term="champán"/><category term="supersónico"/></entry><entry><title>¿Por qué las palomitas revientan en el microondas?</title><link href="por-que-las-palomitas-revientan-en-el-microondas" rel="alternate"/><published>2025-11-03T00:00:00+05:00</published><updated>2025-11-03T00:00:00+05:00</updated><author><name>Duvier Suarez Fontanella</name></author><id>tag:None,2025-11-03:por-que-las-palomitas-revientan-en-el-microondas</id><summary type="html">&lt;p&gt;Un análisis físico del proceso de expansión explosiva de los granos de maíz en el microondas, desde la transferencia de calor hasta la dinámica adiabática del vapor de agua.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#resumen"&gt;Resumen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#estructura-del-grano"&gt;Estructura del grano&lt;/a&gt;&lt;/li&gt;
@@ -275,89 +646,151 @@ Acabas de asistir al lanzamiento de un &lt;em&gt;microcohete carbónico&lt;/em&g
 &lt;hr /&gt;
 &lt;p&gt;&lt;img alt="Ejemplo de imagen" src="../images/palomitas.png" /&gt;&lt;/p&gt;
 &lt;h2 id="estructura-del-grano"&gt;Estructura del grano&lt;a class="headerlink" href="#estructura-del-grano" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Empesemos por el protoganista de este fenomeno el grano de maiz (&lt;em&gt;Zea mays everta&lt;/em&gt;), cada uno de estos puede ser dividido en tres partes principales: (1) El endospermo, que contiene almidón y un poco de agua ($w \approx 13\text{–}15\,\%$ de su masa). (2) El pericarpio, una cáscara muy dura e impermeable. (3) El germen, no no ese tipo de germen, es simplemente la parte viva de la semilla. El secreto está en esa pequeña cantidad de agua atrapada dentro. Cuando se calienta, genera vapor y presión hasta que la cáscara no puede resistir más y explota. Buenos si querias la version corta dejalo aqui, pero si sigues curioso dejame continuar.&lt;/p&gt;
+&lt;p&gt;Empesemos por el protoganista de este fenomeno el grano de maiz (&lt;em&gt;Zea mays everta&lt;/em&gt;), cada uno de estos puede ser dividido en tres partes principales: (1) El endospermo, que contiene almidón y un poco de agua (&lt;span class="math"&gt;\(w \approx 13\text{–}15\,\%\)&lt;/span&gt; de su masa). (2) El pericarpio, una cáscara muy dura e impermeable. (3) El germen, no no ese tipo de germen, es simplemente la parte viva de la semilla. El secreto está en esa pequeña cantidad de agua atrapada dentro. Cuando se calienta, genera vapor y presión hasta que la cáscara no puede resistir más y explota. Buenos si querias la version corta dejalo aqui, pero si sigues curioso dejame continuar.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="interaccion-con-el-microondas"&gt;Interacción con el microondas&lt;a class="headerlink" href="#interaccion-con-el-microondas" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;El horno microondas opera típicamente a una frecuencia de 2.45 GHz, correspondiente a una longitud de onda de 12.2 cm.&lt;br /&gt;
 Esta radiación electromagnética interactúa con los dipolos eléctricos del agua mediante el proceso de &lt;em&gt;calentamiento dieléctrico&lt;/em&gt;.&lt;br /&gt;
 Las moléculas de agua rotan en fase con el campo alterno, generando disipación térmica a escala molecular.&lt;/p&gt;
 &lt;p&gt;El flujo de calor neto puede describirse de forma simplificada mediante la ecuación de difusión del calor:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 \rho c_p \frac{\partial T}{\partial t} = k \nabla^2 T + Q_{\text{abs}}
-$$&lt;/p&gt;
-&lt;p&gt;donde $\rho$ es la densidad, $c_p$ el calor específico, $k$ la conductividad térmica y $Q_{\text{abs}}$ la potencia volumétrica absorbida del campo electromagnético.&lt;/p&gt;
+$$&lt;/div&gt;
+&lt;p&gt;donde &lt;span class="math"&gt;\(\rho\)&lt;/span&gt; es la densidad, &lt;span class="math"&gt;\(c_p\)&lt;/span&gt; el calor específico, &lt;span class="math"&gt;\(k\)&lt;/span&gt; la conductividad térmica y &lt;span class="math"&gt;\(Q_{\text{abs}}\)&lt;/span&gt; la potencia volumétrica absorbida del campo electromagnético.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="presurizacion-interna"&gt;Presurización interna&lt;a class="headerlink" href="#presurizacion-interna" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Al subir la temperatura, el agua dentro del grano se convierte en vapor y aumenta la presión interna como estudiante de doctorado a final de su etapa (comentario inecesario quizas pero al fin y al cabo este blog cumple tambien la funcion  entretenerme).
 En Cualquier caso, esa presión depende de la temperatura según la ecuación de Clausius–Clapeyron (si lo se complicado de pronunciar sobre todo el señor Clapeyron):&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 \frac{dP_v}{dT} = \frac{L P_v}{R T^2}
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;cuya integración da lugar a:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 \ln \left( \frac{P_v}{P_0} \right) = - \frac{L}{R} \left( \frac{1}{T} - \frac{1}{T_0} \right)
-$$&lt;/p&gt;
-&lt;p&gt;donde $L = 2.26\times10^6~\text{J/kg}$ es el calor latente de vaporización del agua y $R = 8.31~\text{J/mol·K}$ la constante de los gases ideales. Sustituyendo $T_0 = 373~\text{K}$, $P_0 = 1~\text{atm}$ y $T = 453~\text{K}$ (≈ 180 °C), se obtiene:&lt;/p&gt;
-&lt;p&gt;$$
+$$&lt;/div&gt;
+&lt;p&gt;donde &lt;span class="math"&gt;\(L = 2.26\times10^6~\text{J/kg}\)&lt;/span&gt; es el calor latente de vaporización del agua y &lt;span class="math"&gt;\(R = 8.31~\text{J/mol·K}\)&lt;/span&gt; la constante de los gases ideales. Sustituyendo &lt;span class="math"&gt;\(T_0 = 373~\text{K}\)&lt;/span&gt;, &lt;span class="math"&gt;\(P_0 = 1~\text{atm}\)&lt;/span&gt; y &lt;span class="math"&gt;\(T = 453~\text{K}\)&lt;/span&gt; (≈ 180 °C), se obtiene:&lt;/p&gt;
+&lt;div class="math"&gt;$$
 P_v(453~\text{K}) \approx 9~\text{atm}
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;valor que coincide con la presión crítica de ruptura observada experimentalmente para el pericarpio. &lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="explosion-y-expansion-adiabatica"&gt;Explosión y expansión adiabática&lt;a class="headerlink" href="#explosion-y-expansion-adiabatica" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Una vez que la presión interna excede la resistencia del pericarpio $( P_{\text{rupt}} \sim 9\text{–}10~\text{atm})$, se produce una fractura súbita.&lt;br /&gt;
+&lt;p&gt;Una vez que la presión interna excede la resistencia del pericarpio &lt;span class="math"&gt;\(( P_{\text{rupt}} \sim 9\text{–}10~\text{atm})\)&lt;/span&gt;, se produce una fractura súbita.&lt;br /&gt;
 El vapor se expande rápidamente, realizando trabajo sobre el almidón circundante y provocando una expansión casi adiabática del gas.&lt;/p&gt;
 &lt;p&gt;Si suponemos una expansión adiabática reversible para el vapor de agua:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 P V^{\gamma} = \text{constante}
-$$&lt;/p&gt;
-&lt;p&gt;donde $\gamma = c_p/c_v \approx 1.33$ para el vapor, el trabajo realizado por el gas durante la expansión es:&lt;/p&gt;
-&lt;p&gt;$$
+$$&lt;/div&gt;
+&lt;p&gt;donde &lt;span class="math"&gt;\(\gamma = c_p/c_v \approx 1.33\)&lt;/span&gt; para el vapor, el trabajo realizado por el gas durante la expansión es:&lt;/p&gt;
+&lt;div class="math"&gt;$$
 W = \frac{P_i V_i - P_f V_f}{\gamma - 1}
-$$&lt;/p&gt;
-&lt;p&gt;Tomando $P_i = 9~\text{atm}$, $P_f = 1~\text{atm}$ y considerando que el volumen final del gas es unas $V_f/V_i \approx 10$ veces mayor, se obtiene un trabajo del orden de:&lt;/p&gt;
-&lt;p&gt;$$
+$$&lt;/div&gt;
+&lt;p&gt;Tomando &lt;span class="math"&gt;\(P_i = 9~\text{atm}\)&lt;/span&gt;, &lt;span class="math"&gt;\(P_f = 1~\text{atm}\)&lt;/span&gt; y considerando que el volumen final del gas es unas &lt;span class="math"&gt;\(V_f/V_i \approx 10\)&lt;/span&gt; veces mayor, se obtiene un trabajo del orden de:&lt;/p&gt;
+&lt;div class="math"&gt;$$
 W \sim 10^{-3}~\text{J}
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;A pesar de parecer pequeño, este trabajo se distribuye en escalas microscópicas, generando velocidades de expansión del orden de varios metros por segundo, suficientes para inflar el almidón y solidificarlo instantáneamente por enfriamiento.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;img alt="Ejemplo de imagen" src="../images/palomitas_1.png" /&gt;&lt;/p&gt;
 &lt;h2 id="energia-total-liberada"&gt;Energía total liberada&lt;a class="headerlink" href="#energia-total-liberada" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;El contenido energético total asociado al cambio de fase del agua en un solo grano es:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 E = m L
-$$&lt;/p&gt;
-&lt;p&gt;donde $m$ es la masa de agua. Si $m \approx 10^{-5}~\text{kg}$ , entonces:&lt;/p&gt;
-&lt;p&gt;$$
+$$&lt;/div&gt;
+&lt;p&gt;donde &lt;span class="math"&gt;\(m\)&lt;/span&gt; es la masa de agua. Si &lt;span class="math"&gt;\(m \approx 10^{-5}~\text{kg}\)&lt;/span&gt; , entonces:&lt;/p&gt;
+&lt;div class="math"&gt;$$
 E = 2.26 \times 10^{6} \times 10^{-5} = 22.6~\text{J}
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;Solo una pequeña fracción de esta energía se convierte en trabajo mecánico y sonido; el resto se disipa en forma de calor y energía interna del vapor.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="factores-que-impiden-el-estallido"&gt;Factores que impiden el estallido&lt;a class="headerlink" href="#factores-que-impiden-el-estallido" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Los granos que no revientan (&lt;em&gt;“old maids”&lt;/em&gt;) presentan:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Bajo contenido de humedad $w &amp;lt; 10\,\%$, insuficiente para generar la presión crítica.  &lt;/li&gt;
-&lt;li&gt;Fisuras microscópicas en el pericarpio, que permiten la fuga de vapor antes de alcanzar $P_{\text{rupt}}$.  &lt;/li&gt;
+&lt;li&gt;Bajo contenido de humedad &lt;span class="math"&gt;\(w &amp;lt; 10\,\%\)&lt;/span&gt;, insuficiente para generar la presión crítica.  &lt;/li&gt;
+&lt;li&gt;Fisuras microscópicas en el pericarpio, que permiten la fuga de vapor antes de alcanzar &lt;span class="math"&gt;\(P_{\text{rupt}}\)&lt;/span&gt;.  &lt;/li&gt;
 &lt;li&gt;Distribución térmica no uniforme, que evita una presurización homogénea.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 &lt;h2 id="eficiencia-termodinamica-aproximada"&gt;Eficiencia termodinámica aproximada&lt;a class="headerlink" href="#eficiencia-termodinamica-aproximada" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Si un horno microondas de potencia $P = 800~\text{W}$ opera durante $t = 120~\text{s}$:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;p&gt;Si un horno microondas de potencia &lt;span class="math"&gt;\(P = 800~\text{W}\)&lt;/span&gt; opera durante &lt;span class="math"&gt;\(t = 120~\text{s}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;div class="math"&gt;$$
 E_{\text{in}} = P t = 9.6 \times 10^{4}~\text{J}
-$$&lt;/p&gt;
-&lt;p&gt;Una bolsa de 100 g contiene aproximadamente $N = 3000$ granos.&lt;br /&gt;
+$$&lt;/div&gt;
+&lt;p&gt;Una bolsa de 100 g contiene aproximadamente &lt;span class="math"&gt;\(N = 3000\)&lt;/span&gt; granos.&lt;br /&gt;
 Si cada uno libera ≈ 20 J en el proceso de vaporización:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 E_{\text{total}} = N \times 20~\text{J} = 6.0 \times 10^{4}~\text{J}
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;Por tanto, la eficiencia energética del proceso es:&lt;/p&gt;
-&lt;p&gt;$$
+&lt;div class="math"&gt;$$
 \eta = \frac{E_{\text{total}}}{E_{\text{in}}} \approx 0.6
-$$&lt;/p&gt;
+$$&lt;/div&gt;
 &lt;p&gt;es decir, un rendimiento del 60 %, notablemente alto para un proceso de cocción doméstico basado en calentamiento dieléctrico.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="conclusiones"&gt;Conclusiones&lt;a class="headerlink" href="#conclusiones" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;El estallido de las palomitas es un ejemplo fascinante de cómo principios de la física macroscópica —transferencia de calor, termodinámica de fases, elasticidad de materiales y dinámica de gases— se manifiestan en un fenómeno cotidiano.&lt;br /&gt;
 Cada grano actúa como una &lt;em&gt;microcápsula de presión&lt;/em&gt; donde el agua, confinada, pasa de líquido a vapor hasta romper la envoltura.&lt;br /&gt;
 El resultado visible —la expansión blanca del almidón— es consecuencia directa de un proceso adiabático impulsado por energía térmica electromagnética.&lt;/p&gt;
-&lt;hr /&gt;</content><category term="Termodinámica"/><category term="física"/><category term="termodinámica"/><category term="microondas"/><category term="alimentos"/></entry></feed>
+&lt;hr /&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Termodinámica"/><category term="física, termodinámica, microondas, alimentos"/></entry></feed>

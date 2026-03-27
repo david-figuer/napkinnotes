@@ -27,17 +27,8 @@ MARKDOWN = {
     
 }
 
-PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
-    "extract_toc",
-    "liquid_tags.img",
-    "liquid_tags.include_code",
-    "neighbors",
-    "related_posts",
     "render_math",
-    "series",
-    "share_post",
-    "tipue_search",
     "yaml_metadata",
 ]
 SITEMAP = {
@@ -48,7 +39,7 @@ SITEMAP = {
 
 # Appearance
 THEME = "../"
-TYPOGRIFY = True
+TYPOGRIFY = False
 DEFAULT_PAGINATION = False
 
 # Defaults

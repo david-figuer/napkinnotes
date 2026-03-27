@@ -55,6 +55,7 @@ DEFAULT_PAGINATION = 10
 # Defaults
 DEFAULT_CATEGORY = "Miscellaneous"
 USE_FOLDER_AS_CATEGORY = True
+WITH_FUTURE_DATES = True
 ARTICLE_URL = "{slug}"
 PAGE_URL = "{slug}"
 PAGE_SAVE_AS = "{slug}.html"

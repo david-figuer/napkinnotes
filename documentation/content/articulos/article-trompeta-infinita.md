@@ -1,13 +1,13 @@
 ---
-title: "El pintor y la trompeta infinita"
-author: "David Figueruelo"
+title: El pintor y la trompeta infinita
+author: David Figueruelo
 date: 2026-02-12
-layout: "articles"
-status: "published"
-category: "Matemáticas"
-tags: "infinito, cálculo, paradojas"
-summary: "Un objeto infinito que desafía la intuición...no puede pintarse por fuera con pintura finita, pero sí puede llenarse completamente."
-image: "images/imagen.png"
+layout: articles
+status: published
+category: Matemáticas
+tags: infinito, cálculo, paradojas
+summary: Un objeto infinito que desafía la intuición...no puede pintarse por fuera con pintura finita, pero sí puede llenarse completamente.
+image: images/imagen.png
 ---
 
 [TOC]

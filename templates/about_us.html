@@ -15,24 +15,32 @@
 
     <section class="nn-squad-grid">
         {% for author_name, author_data in AUTHORS.items() %}
-        <article class="nn-player-card">
-            <div class="nn-player-card__media">
-                {% if author_data.avatar %}
-                <img class="nn-player-card__image" src="{{ SITEURL }}/{{ author_data.avatar }}" alt="{{ author_name }}">
-                {% endif %}
-                <div class="nn-player-card__overlay"></div>
-                <div class="nn-player-card__number">{{ loop.index }}</div>
-            </div>
-
-            <div class="nn-player-card__base">
-                <div class="nn-player-card__role">
-                    {{ author_data.role if author_data.role else "Equipo" }}
+        <article class="nn-player-card nn-player-card--expand">
+            <div class="nn-player-card__preview">
+                <div class="nn-player-card__media">
+                    {% if author_data.avatar %}
+                    <img class="nn-player-card__image" src="{{ SITEURL }}/{{ author_data.avatar }}" alt="{{ author_name }}">
+                    {% endif %}
+                    <div class="nn-player-card__overlay"></div>
+                    <div class="nn-player-card__number">{{ loop.index }}</div>
                 </div>
-                <h2 class="nn-player-card__name">{{ author_name }}</h2>
+
+                <div class="nn-player-card__base">
+                    <div class="nn-player-card__role">
+                        {{ author_data.role if author_data.role else "Equipo" }}
+                    </div>
+                    <h2 class="nn-player-card__name">{{ author_name }}</h2>
+                </div>
             </div>
 
-            <div class="nn-player-card__hover">
-                <div class="nn-player-card__hover-inner">
+            <div class="nn-player-card__expanded">
+                <div class="nn-player-card__expanded-media">
+                    {% if author_data.avatar %}
+                    <img class="nn-player-card__expanded-image" src="{{ SITEURL }}/{{ author_data.avatar }}" alt="{{ author_name }}">
+                    {% endif %}
+                </div>
+
+                <div class="nn-player-card__expanded-content">
                     <div class="nn-player-card__role nn-player-card__role--hover">
                         {{ author_data.role if author_data.role else "Equipo" }}
                     </div>

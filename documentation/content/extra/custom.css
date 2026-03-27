@@ -936,7 +936,7 @@ input[type="submit"]:hover {
   border-radius: 28px;
   padding: 44px 38px;
   box-shadow: var(--shadow);
-  color: #fff8f2;
+  color: var(--satinsheengold);
 }
 
 .nn-squad-hero__inner::after {
@@ -950,7 +950,7 @@ input[type="submit"]:hover {
 }
 
 .nn-squad-hero__title {
-  color: #fff8f2;
+  color: var(--satinsheengold);
   margin: 0 0 10px;
   font-size: clamp(2.8rem, 6vw, 4.5rem);
 }
@@ -959,9 +959,10 @@ input[type="submit"]:hover {
   position: relative;
   z-index: 1;
   margin: 0;
-  max-width: 62ch;
-  color: rgba(255, 248, 242, 0.9);
+  max-width: none;
+  color: rgba(196, 154, 102, 0.95);
   font-size: 1.08rem;
+  white-space: nowrap;
 }
 
 .nn-squad-grid {
@@ -1016,17 +1017,7 @@ input[type="submit"]:hover {
   pointer-events: none;
 }
 
-.nn-player-card__number {
-  position: absolute;
-  right: 16px;
-  bottom: 14px;
-  z-index: 2;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 3rem;
-  line-height: 1;
-  color: rgba(255, 248, 242, 0.92);
-  text-shadow: 0 4px 18px rgba(0,0,0,0.25);
-}
+
 
 .nn-player-card__content {
   padding: 22px 20px 20px;
@@ -1124,7 +1115,7 @@ input[type="submit"]:hover {
   border-radius: 28px;
   padding: 44px 38px;
   box-shadow: var(--shadow);
-  color: #fff8f2;
+  color: var(--satinsheengold);
 }
 
 .nn-squad-hero__inner::after {
@@ -1138,7 +1129,7 @@ input[type="submit"]:hover {
 }
 
 .nn-squad-hero__title {
-  color: #fff8f2;
+  color: var(--satinsheengold);
   margin: 0 0 10px;
   font-size: clamp(2.8rem, 6vw, 4.5rem);
 }
@@ -1147,9 +1138,10 @@ input[type="submit"]:hover {
   position: relative;
   z-index: 1;
   margin: 0;
-  max-width: 62ch;
-  color: rgba(255, 248, 242, 0.9);
+  max-width: none;
+  color: rgba(196, 154, 102, 0.95);
   font-size: 1.08rem;
+  white-space: nowrap;
 }
 
 .nn-squad-grid {
@@ -1576,5 +1568,10 @@ input[type="submit"]:hover {
 
   .nn-player-card__expanded-content {
     padding: 22px 20px;
+  }
+}
+@media (max-width: 900px) {
+  .nn-squad-hero__subtitle {
+    white-space: normal;
   }
 }

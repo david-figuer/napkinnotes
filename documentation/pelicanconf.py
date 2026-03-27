@@ -181,22 +181,22 @@ LANDING_PAGE_TITLE = "Napkin Notes"
 AUTHORS = {
     "Duvier Suarez Fontanella": {
         "url": "https://produccioncientifica.usal.es/investigadores/819473/detalle",
-        "blurb": "is the creator and lead developer of Napkin Notes.",
+        "blurb": "Físico teórico y curioso incorregible...",
         "avatar": "images/duvier.jpeg",
     },
     "Gretel Quintero Angulo": {
         "url": "https://www.linkedin.com/in/gretel-quintero-angulo/?originalSubdomain=de",
-        "blurb": "Editor",
+        "blurb": "Editora.",
         "avatar": "images/gretel.png",
     },
     "David Figuer": {
         "url": "https://produccioncientifica.usal.es/investigadores/148090/detalle",
-        "blurb": "Editor",
+        "blurb": "Editor.",
         "avatar": "images/david.jpg",
     },
     "Gabriel": {
         "url": "https://www.linkedin.com/in/gasape21/",
-        "blurb": "Editor.",
+        "blurb": "Co-fundador · Diseño.",
         "avatar": "images/gabriel.jpeg",
     },
 }

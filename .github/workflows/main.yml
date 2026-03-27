@@ -1,5 +1,5 @@
 name: Build Pelican site
-
+ 
 on:
   push:
     branches:

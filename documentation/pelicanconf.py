@@ -86,8 +86,8 @@ STATIC_PATHS = ["theme/images", "images", "extra", "extra/_redirects", "code"]
 
 EXTRA_PATH_METADATA = {
     "extra/custom-about.css": {"path": "theme/custom-about.css"},
-    "extra/custom.css": {"path": "theme/css/custom.css"},   
-    "extra/_redirects": {"path": "_redirects"}
+    "extra/custom.css": {"path": "theme/css/custom.css"},
+    "extra/_redirects": {"path": "_redirects"},
 }
 
 if os.environ.get("CONTEXT") == "production":

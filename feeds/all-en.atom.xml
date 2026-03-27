@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Napkin Notes</title><link href="/" rel="alternate"/><link href="feeds/all-en.atom.xml" rel="self"/><id>/</id><updated>2026-02-12T00:00:00+05:00</updated><entry><title>¿Por qué el pan se pone duro (y por qué la bolsa es su única amiga)?</title><link href="por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga" rel="alternate"/><published>2026-02-12T00:00:00+05:00</published><updated>2026-02-12T00:00:00+05:00</updated><author><name>David Figueruelo Hernán</name></author><id>tag:None,2026-02-12:por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga</id><summary type="html">&lt;p&gt;Dejas el pan fuera unas horas y se convierte en un arma contundente. No es traición, es&amp;nbsp;física.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Napkin Notes</title><link href="/" rel="alternate"/><link href="feeds/all-en.atom.xml" rel="self"/><id>/</id><updated>2026-02-12T00:00:00+05:00</updated><entry><title>El pintor y la trompeta infinita</title><link href="el-pintor-y-la-trompeta-infinita" rel="alternate"/><published>2026-02-12T00:00:00+05:00</published><updated>2026-02-12T00:00:00+05:00</updated><author><name>David Figueruelo</name></author><id>tag:None,2026-02-12:el-pintor-y-la-trompeta-infinita</id><summary type="html">&lt;p&gt;Un objeto infinito que desafía la intuición&amp;#8230;no puede pintarse por fuera con pintura finita, pero sí puede llenarse&amp;nbsp;completamente.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#resumen"&gt;Resumen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#introduccion"&gt;Introducción&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#desarrollo"&gt;Desarrollo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#conclusiones"&gt;Conclusiones&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id="resumen"&gt;Resumen&lt;a class="headerlink" href="#resumen" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Estás en tu taller cuando un hombre trajeado, con gafas de sol y un maletín impecable, entra sin previo aviso. Trae un encargo extraño: una escultura de vidrio transparente con forma de trompeta que se estrecha sin terminar nunca. Solo tiene una condición: debe verse completamente roja. Lo que parece un trabajo más termina convirtiéndose en una lección profunda sobre el&amp;nbsp;infinito.&lt;/p&gt;
+&lt;h2 id="introduccion"&gt;Introducción&lt;a class="headerlink" href="#introduccion" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Imagina que eres un humilde pintor en tu pequeño taller de Tivoli, donde las fachadas ocres retienen el calor del sol y la calle empedrada desciende lentamente hacia el murmullo constante del río Aniene. Tus días transcurren entre cal, pigmentos y madera antigua. Restauras frescos que el tiempo ha ido apagando, devuelves color a puertas vencidas por los inviernos, retocas santos desvaídos que observan en silencio desde capillas en penumbra. La vida es sencilla, casi previsible, hasta que una mañana la campanilla de la puerta rompe el aire con un timbre más seco de lo&amp;nbsp;habitual.  &lt;/p&gt;
+&lt;p&gt;En el umbral aparece un hombre trajeado, gafas oscuras pese a la sombra del taller, un maletín impecable en la mano. No sonríe. No se presenta. Solo examina el espacio como si evaluara algo invisible. Después, con un gesto medido, deposita sobre tu mesa el objeto de su&amp;nbsp;visita.  &lt;/p&gt;
+&lt;p&gt;Lo observas sin comprender del todo. Comienza ancho, casi familiar, pero pronto se afina mientras se extiende hacia la derecha, cada vez más delgado, cada vez más largo. La forma parece huir de sí misma, escapar en una dirección que no promete final alguno. Sigues su perfil con la vista esperando que termine en algún punto razonable, pero no hay borde, no hay límite. Solo una prolongación que parece negarse a&amp;nbsp;concluir.  &lt;/p&gt;
+&lt;p&gt;Antes de marcharse, el hombre pronuncia el nombre con una solemnidad que no admite preguntas: el cuerno de&amp;nbsp;Gabriel.  &lt;/p&gt;
+&lt;p&gt;Desde el punto de vista matemático, la forma no es caprichosa. Se obtiene al girar la curva ( y = \frac{1}{x} ) para ( x \geq 1 ) alrededor del eje horizontal. El resultado es un sólido de revolución que se extiende indefinidamente mientras su radio disminuye sin cesar. Es infinito en longitud, pero cada vez más&amp;nbsp;fino.  &lt;/p&gt;
+&lt;p&gt;El encargo parece simple: la escultura debe verse completamente roja. Piensas en lo obvio. Bastará con calcular cuánta pintura necesitas para cubrirla por&amp;nbsp;fuera.  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;¿Cuánta pintura necesitas para pintar una trompeta&amp;nbsp;infinita?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Tu intuición responde con rapidez: infinita. Si el objeto no termina nunca, tampoco lo hará la superficie que debes cubrir. Pero las matemáticas no siempre obedecen al sentido&amp;nbsp;común.&lt;/p&gt;
+&lt;h2 id="desarrollo"&gt;Desarrollo&lt;a class="headerlink" href="#desarrollo" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;¿Qué significa realmente pintar algo? Cuando pintas, cubres la superficie exterior con una capa de grosor positivo, por pequeña que sea. La cantidad de pintura necesaria es proporcional al área. A mayor superficie, mayor consumo. Hasta ahora, todo coincide con tu&amp;nbsp;experiencia.  &lt;/p&gt;
+&lt;p&gt;Pero esta trompeta no es una pared ni una estatua convencional. Es otra&amp;nbsp;cosa.  &lt;/p&gt;
+&lt;p&gt;En el caso del cuerno de Gabriel, el área viene dada por la fórmula de las superficies de&amp;nbsp;revolución:&lt;/p&gt;
+&lt;p&gt;$$
+A = 2\pi \int_1^{\infty} \frac{1}{x} \sqrt{1 + \left(\frac{1}{x^2}\right)^2} \, dx&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;La expresión puede parecer abstracta, pero su significado es claro: estamos sumando infinitos fragmentos diminutos de superficie. Llamas a tu matemático de confianza. Tras unos minutos de silencio, te explica el resultado: esa integral diverge. Es la manera elegante que tienen los matemáticos de afirmar que el área es&amp;nbsp;infinita.  &lt;/p&gt;
+&lt;p&gt;Aunque el radio se haga cada vez más pequeño, la longitud infinita compensa esa reducción. La superficie nunca deja de acumularse. Siempre hay un nuevo tramo que&amp;nbsp;añadir.  &lt;/p&gt;
+&lt;p&gt;En términos prácticos, eso significa que no existe una cantidad finita de pintura que permita cubrir completamente el exterior. Siempre quedará un segmento por pintar, por pequeño que&amp;nbsp;sea.  &lt;/p&gt;
+&lt;p&gt;Miras el objeto en tu taller. Está ahí, sólido, tangible, casi frágil. Pero si intentas pintarlo por fuera, jamás terminarás. Cada litro adicional solo retrasa lo&amp;nbsp;inevitable.  &lt;/p&gt;
+&lt;p&gt;Durante un momento, el encargo parece imposible. Sin embargo, el hombre trajeado no especificó el método, solo el resultado. Quiere la trompeta roja. La escultura es completamente transparente. Desde fuera, nadie distinguiría si el color está en la superficie o en el&amp;nbsp;interior.  &lt;/p&gt;
+&lt;p&gt;Entonces surge una&amp;nbsp;idea.  &lt;/p&gt;
+&lt;p&gt;En lugar de cubrir el exterior, decides llenar la trompeta de pintura roja y sellarla. A primera vista parece aún peor: si cubrir el área requiere pintura infinita, llenar el interior debería ser todavía más costoso. Pero ahora el problema ya no es el área, sino el&amp;nbsp;volumen.&lt;/p&gt;
+&lt;p&gt;El volumen del cuerno de Gabriel se calcula también con&amp;nbsp;integrales:&lt;/p&gt;
+&lt;p&gt;$$
+V = \pi \int_1^{\infty} \left(\frac{1}{x}\right)^2 dx&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;es&amp;nbsp;decir,&lt;/p&gt;
+&lt;p&gt;$$
+V = \pi \int_1^{\infty} \frac{1}{x^2} dx&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;A diferencia de la anterior, esta integral sí&amp;nbsp;converge:&lt;/p&gt;
+&lt;p&gt;$$
+\int_1^{\infty} \frac{1}{x^2} dx = 1&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;Por&amp;nbsp;tanto,&lt;/p&gt;
+&lt;p&gt;$$
+V = \pi&amp;nbsp;$$&lt;/p&gt;
+&lt;p&gt;La trompeta se extiende hasta el infinito, pero el volumen total contenido en su interior es finito. Exactamente ( \pi ) unidades cúbicas. Puedes llenarla completamente con una cantidad limitada de&amp;nbsp;pintura.  &lt;/p&gt;
+&lt;p&gt;Volumen finito. Área infinita. A esto se le puede llamar &lt;em&gt;una paradoja&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="conclusiones"&gt;Conclusiones&lt;a class="headerlink" href="#conclusiones" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Has resuelto el encargo. Llenas la trompeta y la sellas. Desde fuera, la pieza se ve roja, uniforme, impecable. El hombre trajeado regresa, asiente en silencio y desaparece sin añadir una&amp;nbsp;palabra.  &lt;/p&gt;
+&lt;p&gt;Pero lo que te llevas no es solo el pago. Es la&amp;nbsp;lección.  &lt;/p&gt;
+&lt;p&gt;Un mismo objeto puede tener área superficial infinita y volumen finito porque ambas magnitudes miden propiedades distintas. El infinito no actúa igual sobre todas las&amp;nbsp;dimensiones.  &lt;/p&gt;
+&lt;p&gt;Tu intuición te decía que si algo es infinito, todo en él debía serlo. El cuerno de Gabriel demuestra que no. Superficie y volumen pueden separarse de manera radical cuando entra en juego el&amp;nbsp;infinito.  &lt;/p&gt;
+&lt;p&gt;El infinito no contradice la lógica. Solo contradice nuestras&amp;nbsp;expectativas.  &lt;/p&gt;
+&lt;p&gt;Y ahora, cada vez que sostienes un pincel, sabes que incluso aquello que parece perfectamente manejable puede ocultar una estructura que desborda el sentido común. Un día más en&amp;nbsp;Tivoli.&lt;/p&gt;</content><category term="Matemáticas"/><category term="infinito"/><category term="cálculo"/><category term="paradojas"/></entry><entry><title>¿Por qué el pan se pone duro (y por qué la bolsa es su única amiga)?</title><link href="por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga" rel="alternate"/><published>2026-02-12T00:00:00+05:00</published><updated>2026-02-12T00:00:00+05:00</updated><author><name>David Figueruelo Hernán</name></author><id>tag:None,2026-02-12:por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga</id><summary type="html">&lt;p&gt;Dejas el pan fuera unas horas y se convierte en un arma contundente. No es traición, es&amp;nbsp;física.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#resumen"&gt;Resumen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#introduccion"&gt;Introducción&lt;/a&gt;&lt;/li&gt;

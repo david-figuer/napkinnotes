@@ -1273,3 +1273,11 @@ input[type="submit"]:hover {
     height: 100px;
   }
 }
+/* Justificar texto en artículos y portada */
+.nn-article-content p,
+.nn-article-content li,
+.nn-richtext p,
+.nn-richtext li,
+.nn-section-card p {
+  text-align: justify;
+}

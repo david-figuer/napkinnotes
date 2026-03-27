@@ -6,8 +6,8 @@ import os
 AUTHOR = ""
 SITENAME = "Napkin Notes"
 SITESUBTITLE = ""
-SITEURL = "https://david-figuer.github.io/napkinnotes_prueba"
-RELATIVE_URLS = False
+SITEURL = ""
+RELATIVE_URLS = True
 
 PATH = "content"
 
@@ -27,10 +27,20 @@ MARKDOWN = {
     
 }
 
+PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
+    "extract_toc",
+    "liquid_tags.img",
+    "liquid_tags.include_code",
+    "neighbors",
+    "related_posts",
     "render_math",
+    "series",
+    "share_post",
+    "tipue_search",
     "yaml_metadata",
 ]
+
 SITEMAP = {
     "format": "xml",
     "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
@@ -39,7 +49,7 @@ SITEMAP = {
 
 # Appearance
 THEME = "../"
-TYPOGRIFY = False
+TYPOGRIFY = True
 DEFAULT_PAGINATION = False
 
 # Defaults

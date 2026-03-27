@@ -28,7 +28,7 @@ Bienvenid@s — somos el equipo detrás de Napkin Notes. Creemos en las ideas pe
     <img alt="David" src="../images/david.jpg" />
     <div class="team-info">
       <div class="team-name">David Figuer</div>
-      <div class="team-role">Investigador en cosmología que busca comprender el universo y el rol de la materia y energía oscuras en él. Interesado las ecuaciones y las preguntas fundamentales: qué significa entender en física y qué es "verdad" al observar solo una fracción mínima del cosmos. Trabaja interpretando las pistas que el universo nos deja en forma de datos, intentando averiguar qué historias encajan con ellas y cuáles no.
+      <div class="team-role">Investigador en cosmología que busca comprender el universo y el rol de la materia y energía oscuras en él. Interesado las ecuaciones y las preguntas fundamentales: qué significa entender en física y qué es "verdad" al observar solo una fracción mínima del cosmos. Trabaja interpretando las pistas que el universo nos deja en forma de datos, intentando averiguar qué historias encajan con ellas y cuáles no. <br>
 Financiación: Personal investigador doctor de la UPV/EHU (2024). </div>
     </div>
   </div>

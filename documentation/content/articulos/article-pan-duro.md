@@ -5,7 +5,7 @@ date: 2026-02-12
 layout: articles
 status: published
 category: Física cotidiana
-tags: difusión, termodinámica, almidón, vida cruel
+tags: difusión, termodinámica, almidón
 summary: Dejas el pan fuera unas horas y se convierte en un arma contundente. No es traición: es física.
 image: images/pan.png
 ---

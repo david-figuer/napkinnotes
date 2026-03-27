@@ -26,15 +26,7 @@
 
             <div class="nn-player-card__base">
                 <div class="nn-player-card__role">
-                    {% if "fundador" in author_data.blurb|lower or "creator" in author_data.blurb|lower %}
-                        Creador
-                    {% elif "co-fundador" in author_data.blurb|lower or "cofundador" in author_data.blurb|lower %}
-                        Cofundador
-                    {% elif "editor" in author_data.blurb|lower %}
-                        Editor
-                    {% else %}
-                        Equipo
-                    {% endif %}
+                    {{ author_data.role if author_data.role else "Equipo" }}
                 </div>
                 <h2 class="nn-player-card__name">{{ author_name }}</h2>
             </div>
@@ -42,15 +34,7 @@
             <div class="nn-player-card__hover">
                 <div class="nn-player-card__hover-inner">
                     <div class="nn-player-card__role nn-player-card__role--hover">
-                        {% if "fundador" in author_data.blurb|lower or "creator" in author_data.blurb|lower %}
-                            Creador
-                        {% elif "co-fundador" in author_data.blurb|lower or "cofundador" in author_data.blurb|lower %}
-                            Cofundador
-                        {% elif "editor" in author_data.blurb|lower %}
-                            Editor
-                        {% else %}
-                            Equipo
-                        {% endif %}
+                        {{ author_data.role if author_data.role else "Equipo" }}
                     </div>
 
                     <h2 class="nn-player-card__name nn-player-card__name--hover">{{ author_name }}</h2>

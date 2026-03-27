@@ -1,17 +1,19 @@
 {% macro article_author(article) %}
 {% if article and article.author %}
-{% set author_data = AUTHORS.get(article.author) if AUTHORS else None %}
+{% set author_name = article.author.name if article.author.name is defined else article.author %}
+{% set author_key = author_name | string %}
+{% set author_data = AUTHORS.get(author_key) if AUTHORS else None %}
 
 <div class="nn-author-box">
     {% if author_data and author_data.avatar %}
     <div class="nn-author-box__avatar">
-        <img src="{{ SITEURL }}/{{ author_data.avatar }}" alt="{{ article.author }}">
+        <img src="{{ SITEURL }}/{{ author_data.avatar }}" alt="{{ author_key }}">
     </div>
     {% endif %}
 
     <div class="nn-author-box__content">
         <div class="nn-author-box__label">Autor</div>
-        <h3 class="nn-author-box__name">{{ article.author }}</h3>
+        <h3 class="nn-author-box__name">{{ author_key }}</h3>
 
         {% if author_data and author_data.blurb %}
         <p class="nn-author-box__bio">{{ author_data.blurb }}</p>

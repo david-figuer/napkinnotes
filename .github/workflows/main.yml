@@ -1,5 +1,5 @@
 name: Build Pelican site
- 
+
 on:
   push:
     branches:
@@ -18,14 +18,14 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Pelican
+      - name: Install dependencies
         run: |
-          pip install pelican markdown pelican-render-math pelican-yaml-metadata
+          pip install pelican markdown smartypants typogrify
 
-         
       - name: Build site
         run: |
-          pelican documentation/content -o output -s documentation/pelicanconf.py
+          cd documentation
+          pelican content -o ../output -s pelicanconf.py
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3

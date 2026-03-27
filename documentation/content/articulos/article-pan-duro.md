@@ -1,13 +1,13 @@
 ---
-title: "¿Por qué el pan se pone duro (y por qué la bolsa es su única amiga)?"
-author: "David Figueruelo Hernán"
+title: ¿Por qué el pan se pone duro (y por qué la bolsa es su única amiga)?
+author: David Figueruelo Hernán
 date: 2026-02-12
-layout: "articles"
-status: "published"
-category: "Física cotidiana"
-tags: "difusión, termodinámica, almidón, vida cruel"
-summary: "Dejas el pan fuera unas horas y se convierte en un arma contundente. No es traición: es física."
-image: "images/pan.png"
+layout: articles
+status: published
+category: Física cotidiana
+tags: difusión, termodinámica, almidón, vida cruel
+summary: Dejas el pan fuera unas horas y se convierte en un arma contundente. No es traición: es física.
+image: images/pan.png
 ---
  
 [TOC]
@@ -16,6 +16,7 @@ image: "images/pan.png"
 
 Dejas una barra de pan en la encimera. Sales. Vuelves unas horas después. Intentas morder. El pan responde con un sonido seco, casi metálico. No es traición. Es física. Y la física, como ya sabrás, no tiene empatía.
 
+---
 ## Introducción
 
 Domingo, sobre media mañana. Estás en tu casa en Hum, donde las casas de piedra se apoyan unas en otras y el pan se sigue haciendo como hace siglos. Sales un momento convencido de que, en un lugar tan antiguo y tranquilo, nada puede cambiar demasiado rápido… y cuando vuelves unas horas después descubres que la entropía no respeta ni pueblos medievales ni tradiciones rurales. Tu barra de pan ahora podría servir como herramienta agrícola o como bate de béisbol.  
@@ -26,6 +27,7 @@ La vida no es cruel. La termodinámica sí.
 
 Lo que ocurre no es un único proceso dramático. Son dos mecanismos trabajando en equipo, como villanos perfectamente coordinados: el secado y la reorganización interna del almidón. Uno te roba el agua. El otro reorganiza el interior como si estuviera redecorando tu desgracia.
 
+---
 ## Desarrollo
 
 ### Villano 1: El aire te roba el agua
@@ -46,6 +48,8 @@ Traducción: si fuera hay menos agua que dentro, el agua se va. No porque quiera
 
 Dejar el pan al aire es básicamente invitar al ambiente a beberse su humedad.
 
+---
+
 ### La bolsa: un héroe infravalorado
 
 Tu bisabuela, tu abuela, tu madre… siempre metían las barras de pan en bolsas colgadas en algún lugar de la cocina. Tú no lo haces, ¿a que no? Probemos a hacerlo. Metes el pan en una bolsa cerrada. ¿Qué cambia? La física sigue siendo la misma. Pero el volumen de aire ahora es pequeño y se humedece rápidamente.  
@@ -59,6 +63,8 @@ $$
 No es magia. Es control de daños. La bolsa no conserva el pan por cariño. Lo hace porque elimina el desequilibrio que estaba drenando su agua.  
 
 La bolsa es menos romántica de lo que pensabas. Pero es eficaz.
+
+---
 
 ### Villano 2: El almidón se pone serio
 
@@ -78,6 +84,8 @@ $$
 
 No hace falta hacer números. Solo entender lo importante: la temperatura, esa \( T \) de la fórmula, importa. Importa mucho.
 
+---
+
 ## La nevera: el falso amigo
 
 Aquí llega el giro cruel.  
@@ -89,6 +97,8 @@ En el rango aproximado de \( 0^\circ C \) a \( 10^\circ C \), la retrogradación
 Resultado: el pan se pone duro más rápido en la nevera que fuera, aunque no pierda tanta agua. Y además está frío, más frío que el corazón de tu ex. Un *lose-lose* de manual.  
 
 La física no tiene empatía. Sentido del humor, puede. Pero empatía, ninguna.
+
+---
 
 ## Conclusiones
 

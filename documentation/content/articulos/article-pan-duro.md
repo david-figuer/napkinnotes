@@ -17,6 +17,7 @@ image: images/pan.png
 Dejas una barra de pan en la encimera. Sales. Vuelves unas horas después. Intentas morder. El pan responde con un sonido seco, casi metálico. No es traición. Es física. Y la física, como ya sabrás, no tiene empatía.
 
 ---
+
 ## Introducción
 
 Domingo, sobre media mañana. Estás en tu casa en Hum, donde las casas de piedra se apoyan unas en otras y el pan se sigue haciendo como hace siglos. Sales un momento convencido de que, en un lugar tan antiguo y tranquilo, nada puede cambiar demasiado rápido… y cuando vuelves unas horas después descubres que la entropía no respeta ni pueblos medievales ni tradiciones rurales. Tu barra de pan ahora podría servir como herramienta agrícola o como bate de béisbol.  
@@ -28,6 +29,7 @@ La vida no es cruel. La termodinámica sí.
 Lo que ocurre no es un único proceso dramático. Son dos mecanismos trabajando en equipo, como villanos perfectamente coordinados: el secado y la reorganización interna del almidón. Uno te roba el agua. El otro reorganiza el interior como si estuviera redecorando tu desgracia.
 
 ---
+
 ## Desarrollo
 
 ### Villano 1: El aire te roba el agua

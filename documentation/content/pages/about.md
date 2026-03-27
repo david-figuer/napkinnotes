@@ -1,9 +1,8 @@
 ---
 Title: "Nosotros"
-slug: about
+Slug: about
 Date: 2025-11-07
-save_as: about.html
-template: about_us
+Template: about_us
 Authors:
   - name: "Duvier Suarez Fontanella"
     image: "images/duvier.jpeg"
@@ -29,11 +28,9 @@ Authors:
 
 ## ¿Qué son las *napkin notes*?
 
-Las *napkin notes* (notas en servilleta) son ese boceto rápido, frase o diagrama hecho en cualquier superficie —lo importante es que captura una idea en el momento.
+Las *napkin notes* son bocetos rápidos, frases o diagramas hechos en cualquier superficie para capturar una idea en el momento.
 
-Para nosotros:
-
-- Son la forma más rápida de validar hipótesis de manera divertida.
-- Nos ayudan a documentar conversaciones.
-- Funcionan como archivo colectivo: cada nota puede convertirse después en una entrada, un ticket o una propuesta.
-- Como la Fundación, queremos guardar al menos una pequeña parte del conocimiento de nuestra especie.
+- Son una forma ágil de validar hipótesis.
+- Ayudan a documentar conversaciones.
+- Funcionan como archivo colectivo.
+- Algunas terminan convirtiéndose en artículos completos.

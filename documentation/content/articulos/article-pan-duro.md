@@ -9,7 +9,7 @@ tags: "difusión, termodinámica, almidón, vida cruel"
 summary: "Dejas el pan fuera unas horas y se convierte en un arma contundente. No es traición: es física."
 image: "images/pan.png"
 ---
-
+ 
 [TOC]
 
 ## Resumen

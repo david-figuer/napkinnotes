@@ -168,7 +168,7 @@ AUTHORS = {
     "Duvier Suarez Fontanella": {
         "url": "https://produccioncientifica.usal.es/investigadores/819473/detalle",
         "blurb": "is the creator and lead developer of Napkin Notes.",
-        "avatar": "/images/duvier.jpeg",
+        "avatar": "images/duvier.jpeg",
     },
     "Gretel Quintero Angulo": {
         "url": "https://www.linkedin.com/in/gretel-quintero-angulo/?originalSubdomain=de",

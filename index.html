@@ -15,16 +15,180 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
+
 <meta property="og:title" content="Napkin Notes"/>
 <meta name="twitter:title" content="Napkin Notes">
 <meta property="og:url" content="." />
 <meta property="og:site_name" content="Napkin Notes" />
 <meta property="og:article:author" content="" />
-<meta property="og:image" content="theme/images/nn_logo.png" />
-<meta name="twitter:image" content="theme/images/nn_logo.png" >
+<meta property="og:image" content="/theme/images/nn_logo.png" />
+<meta name="twitter:image" content="/theme/images/nn_logo.png" >
 <meta property="og:description" content="Documentation of Elegant, a theme for Pelican, originally created by Talha Mansoor" />
 <meta name="twitter:description" content="Documentation of Elegant, a theme for Pelican, originally created by Talha Mansoor">
-<meta name="keywords" content=" champán,  física,  física, termodinámica, microondas, alimentos,  redes sociales, teoría de grafos, small world, seis grados de separación,  supersónico,  termodinámica,  Ciencia de Datos,  Dinámica de Fluidos,  Termodinámica, " />
+<meta name="keywords" content=" alimentos,  "champán",  ["física",  microondas,  redes sociales,  seis grados de separación,  small world,  "supersónico"],  teoría de grafos,  "termodinámica",  Ciencia de Datos,  "Dinámica de Fluidos",  Termodinámica, " />
+
+
+<style>
+:root{
+  --max-width: 1200px;
+  --accent: #8b0000;
+  --bg-muted: #fafafa;
+  --text-muted: #6b6b6b;
+  --hero-min-height: 64vh;
+  --hero-dark-overlay: rgba(0,0,0,0.45);
+  --radius: 8px;
+  --gap: 1.5rem;
+}
+
+/* Hero con imagen a full width */
+.landing-hero-split {
+  position: relative;
+  width: 100%;
+  min-height: var(--hero-min-height);
+  overflow: hidden;
+  color: #fff;
+  display: block;
+  background: #111;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  min-height: var(--hero-min-height);
+}
+
+.hero-image::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.28);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* TEXTO CENTRADO SOBRE LA IMAGEN */
+.hero-text {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* centrado horizontal */
+
+  text-align: center;        /* centrado del contenido */
+  width: 100%;               /* ocupa todo el ancho */
+  min-height: var(--hero-min-height);
+
+  padding: clamp(2rem, 4vw, 4rem);
+  box-sizing: border-box;
+
+  background: linear-gradient(
+      180deg,
+      rgba(17,17,17,0.35),
+      rgba(17,17,17,0.20)
+  );
+}
+
+.hero-text .hero-inner {
+  max-width: 650px;
+}
+
+/* Tipografía */
+.hero-text h1 {
+  margin: 0 0 0.4rem 0;
+  font-size: clamp(2.1rem, 4.6vw, 3.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+}
+
+.hero-text .subtitle {
+  margin: 0 0 1rem 0;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255,255,255,0.92);
+}
+
+.hero-text .meta-line {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Botón */
+.btn-hero {
+  display: inline-block;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.9);
+  padding: .55rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.btn-hero:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+/* Contenido inferior (sin cambios) */
+.landing-container {
+  max-width: var(--max-width);
+  margin: 2.25rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--gap);
+  align-items: start;
+}
+
+.panel {
+  background: white;
+  border-radius: var(--radius);
+  padding: 1.1rem;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.03);
+  color: #111;
+}
+
+.recent-list { list-style: none; padding: 0; margin: 0; }
+.recent-list li { padding: .6rem 0; border-bottom: 1px solid rgba(0,0,0,0.04); }
+.recent-list li:last-child { border-bottom: none; }
+.recent-list a { text-decoration: none; color: inherit; font-weight: 600; display:inline-block; }
+.recent-list .meta { display:block; font-size: .9rem; color: var(--text-muted); margin-top: .15rem; }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .landing-hero-split { min-height: 100vh; }
+  .hero-image { position: relative; min-height: 100vh; }
+
+  .hero-text {
+    width: 100%;
+    text-align: center;
+    min-height: 40vh;
+    padding: 1.5rem;
+    background: linear-gradient(
+        180deg,
+        rgba(17,17,17,0.65),
+        rgba(17,17,17,0.65)
+    );
+  }
+
+  .landing-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-hero { transition: none; }
+  .hero-text h1 { transition: none; }
+}
+</style>
+
         <title>Napkin Notes
 </title>
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Napkin Notes - Full Atom Feed" />
@@ -66,137 +230,137 @@
                     <div class="span10">
 
 
-<div class="row-fluid">
-    <header class="page-header span12">
-    <h1><a href=".">Napkin Notes</a></h1>
-    </header>
 
-    <div class="row-fluid">
-        <div class="span8">
-            <header>
-                <h1 id="about-me">Notas para pensar&nbsp;rápido</h1>
-            </header>
-            <div class="article-content">
-                <p><img src="images/Logo.jpg"
+<div class="landing-hero-split" role="banner" aria-label="Hero">
+    <div class="hero-image"
+ style="background-image: url('./images/Imagen_3.png');" >
+    </div>
+
+    <div class="hero-text">
+        <div class="hero-inner">
+              <h1>Napkin Notes</h1>
+
+              <div class="subtitle">Matemáticas rápidas y ciencia cotidiana</div>
+
+            <a class="btn-hero" href="#about-me">Conoce más</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="landing-container">
+  <div class="landing-grid">
+
+    <main>
+      <section class="panel" id="about-me">
+        <h2 style="margin-top:0;">Acerca del Proyecto</h2>
+        <div class="article-content">
+          <p><img src="../images/Logo.jpg"
      alt="Ejemplo de imagen"
      style="float:right; margin-left:10px; width:250px; height:150px;"></p>
-<p>¿Todo esto empieza, casi siempre, de la misma manera: una pregunta razonable, una respuesta demasiado larga y alguien diciendo “espera… esto debería poder estimarse”. A veces la superficie de cálculo es una pizarra. Otras, una libreta. Y en los casos verdaderamente importantes, una&nbsp;servilleta.</p>
-<p>Así nace <strong>Napkin Notes</strong>: como un lugar para pensar rápido, con cierta irreverencia matemática y sin pedir permiso a la exactitud&nbsp;prematura.</p>
-<hr />
-<p>Einstein sospechaba de los números que no podían estimarse a mano.<br />
-Fermi desconfiaba de cualquier resultado que no sobreviviera a una cuenta&nbsp;rápida.</p>
-<p>No era austeridad matemática; era una forma de honestidad&nbsp;intelectual.</p>
-<hr />
-<p>No aspiramos a la exactitud quirúrgica; apuntamos a algo mucho mejor: creatividad despreocupada, intuición sin pedir permiso y un toque de humor que no requiere exámenes de ingreso. Cada artículo funciona como un experimento mental minimalista: estimar cuántos pasos damos al año, calcular la energía escondida detrás de un café matutino o desenterrar curiosidades cósmicas que nos hacen dudar de todo… menos de seguir&nbsp;leyendo.</p>
-<hr />
+<p>Napkin Notes es un pequeño blog–revista nacido de un grupo de amigos
+curiosos, fans profesionales de las preguntas improbables y expertos en
+cálculos relámpago ejecutados en la superficie altamente tecnológica de…
+una servilleta. Nuestro propósito es simple: pasarla bien mientras
+descubrimos cómo las matemáticas, la física y el espíritu <strong>Fermi</strong>
+pueden iluminar esos misterios cotidianos que nunca nos atrevimos a
+googlear.</p>
+<p>No aspiramos a la exactitud quirúrgica; apuntamos a algo mucho mejor:
+creatividad despreocupada, intuición sin pedir permiso y un toque de
+humor que no requiere exámenes de ingreso. Cada artículo funciona como
+un experimento mental minimalista: estimar cuántos pasos damos al año,
+calcular la energía escondida detrás de un café matutino o desenterrar
+curiosidades cósmicas que nos hacen dudar de todo… menos de seguir
+leyendo.</p>
 <h2 id="que-hace-especial-a-napkin-notes">¿Qué Hace Especial a Napkin Notes?<a class="headerlink" href="#que-hace-especial-a-napkin-notes" title="Permanent link"> </a></h2>
 <p>Lo que hace especial este proyecto es su espíritu relajadamente
 científico. Aquí jugamos con los números, lanzamos preguntas del tipo
 “¿y si…?” y celebramos tanto el proceso como el resultado. Napkin Notes
 quiere ser ese rincón donde la curiosidad casual se transforma en ciencia
-accesible, divertida y sin solemnidades&nbsp;innecesarias.</p>
+accesible, divertida y sin solemnidades innecesarias.</p>
 <p>Además, apostamos por un espacio limpio y sin ruido visual: nada de
 distracciones, solo preguntas ingeniosas, ideas claras y conclusiones
-que cualquiera pueda comprender sin abrir un libro de&nbsp;texto.</p>
+que cualquiera pueda comprender sin abrir un libro de texto.</p>
 <h2 id="quieres-contribuir">¿Quieres Contribuir?<a class="headerlink" href="#quieres-contribuir" title="Permanent link"> </a></h2>
 <p>Si la curiosidad es tu combustible o tienes una pregunta tipo Fermi que
 lleva días golpeando la puerta de tu cerebro, este es tu sitio. Napkin
 Notes crece gracias a esas ideas que nacen en conversaciones entre amigos
-y terminan, inevitablemente, en una&nbsp;servilleta.</p>
+y terminan, inevitablemente, en una servilleta.</p>
 <ul>
-<li><a href="{filename}/Contributing/invitation.md">Invitation to&nbsp;Participate</a></li>
-<li><a href="{filename}/Contributing/contributing-to-the-project.md">How Do I&nbsp;Contribute?</a></li>
+<li><a href="{filename}/Contributing/invitation.md">Invitation to Participate</a></li>
+<li><a href="{filename}/Contributing/contributing-to-the-project.md">How Do I Contribute?</a></li>
 </ul>
-            </div>
         </div>
+      </section>
 
-        <div class="span4">
-            <header>
-            <h1 id="my-projects">Enlaces</h1>
-            </header>
-            <ul class="list-projects">
-                <li>
-                <a href="/napkinnotes" title="Inicio">Inicio</a> <span class="proj-desc">Página principal del sitio</span>
-                </li>
-            </ul>
-            <ul class="list-projects">
-                <li>
-                <a href="/about" title="Sobre Napkin Notes">Sobre Napkin Notes</a> <span class="proj-desc">Qué es el proyecto y por qué existe</span>
-                </li>
-            </ul>
-            <ul class="list-projects">
-                <li>
-                <a href="/archives" title="Artículos">Artículos</a> <span class="proj-desc">Listado completo de entradas</span>
-                </li>
-            </ul>
-            <ul class="list-projects">
-                <li>
-                <a href="/categories" title="Categorías">Categorías</a> <span class="proj-desc">Explorar por temas</span>
-                </li>
-            </ul>
-            <ul class="list-projects">
-                <li>
-                <a href="/tags" title="Tags">Tags</a> <span class="proj-desc">Explorar por etiquetas</span>
-                </li>
-            </ul>
-            <ul class="list-projects">
-                <li>
-                <a href="/Contributing/invitation.html" title="Colabora">Colabora</a> <span class="proj-desc">Participa o envía propuestas</span>
-                </li>
-            </ul>
-        </div>
-    </div>
+      <section class="panel" style="margin-top: var(--gap);">
+        <header style="display:flex; align-items:center; justify-content:space-between;">
+          <h3 style="margin:0;">Artículos recientes</h3>
+          <a href="./archives" style="font-size:.95rem; color:var(--text-muted); text-decoration:none;">Ver todos</a>
+        </header>
 
-    <div class="row-fluid">
-        <div class="span12">
-            <header>
-            <h1 id="recent-posts">Recent Posts <a id="allposts" href="./archives">all posts</a></h1>
-            </header>
-        <div class="recent-posts">
-            <div itemscope class="recent-posts-article">
-                <a href="./distancia-facebook">
-                    ¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?
-                </a>
-                <div class="recent-posts-posted">
-                    posted in
-                    <a href="./categories#ciencia-de-datos-ref">Ciencia de Datos</a>
-                    <time itemprop="dateCreated" datetime="2025-12-06T00:00:00+05:00">dic 06, 2025</time>
-                </div>
-            </div>
-            <div itemscope class="recent-posts-article">
-                <a href="./corriendo-bajo-la-lluvia">
-                    Corriendo bajo la&nbsp;lluvia
-                </a>
-                <div class="recent-posts-posted">
-                    posted in
-                    <a href="./categories#dinamica-de-fluidos-ref">Dinámica de Fluidos</a>
-                    <time itemprop="dateCreated" datetime="2025-12-03T00:00:00+05:00">dic 03, 2025</time>
-                </div>
-            </div>
-            <div itemscope class="recent-posts-article">
-                <a href="./que-tan-rapido-sale-el-corcho-de-una-botella-de-champan">
-                    ¿Qué tan rápido sale el corcho de una botella de&nbsp;champán?
-                </a>
-                <div class="recent-posts-posted">
-                    posted in
-                    <a href="./categories#dinamica-de-fluidos-ref">Dinámica de Fluidos</a>
-                    <time itemprop="dateCreated" datetime="2025-12-03T00:00:00+05:00">dic 03, 2025</time>
-                </div>
-            </div>
-            <div itemscope class="recent-posts-article">
-                <a href="./por-que-las-palomitas-revientan-en-el-microondas">
-                    ¿Por qué las palomitas revientan en el&nbsp;microondas?
-                </a>
-                <div class="recent-posts-posted">
-                    posted in
-                    <a href="./categories#termodinamica-ref">Termodinámica</a>
-                    <time itemprop="dateCreated" datetime="2025-11-03T00:00:00+05:00">nov 03, 2025</time>
-                </div>
-            </div>
+        <div style="margin-top:1rem;">
+            <article style="margin-bottom:1rem;">
+              <a href="./distancia-facebook"><strong>"¿Cuál es la distancia promedio entre dos personas en Facebook?"</strong></a>
+              <div style="font-size:.9rem; color:var(--text-muted); margin-top:.25rem;">
+               Publicado en <a href="./categories#ciencia-de-datos-ref">Ciencia de Datos</a> • <time datetime="2025-12-06T00:00:00+05:00">Dec 06, 2025</time>
+              </div>
+            </article>
+            <article style="margin-bottom:1rem;">
+              <a href="./que-tan-rapido-sale-el-corcho-de-una-botella-de-champan"><strong>"¿Qué tan rápido sale el corcho de una botella de champán?"</strong></a>
+              <div style="font-size:.9rem; color:var(--text-muted); margin-top:.25rem;">
+               Publicado en <a href="./categories#dinamica-de-fluidos-ref">"Dinámica de Fluidos"</a> • <time datetime="2025-12-03T00:00:00+05:00">Dec 03, 2025</time>
+              </div>
+            </article>
+            <article style="margin-bottom:1rem;">
+              <a href="./por-que-las-palomitas-revientan-en-el-microondas"><strong>¿Por qué las palomitas revientan en el microondas?</strong></a>
+              <div style="font-size:.9rem; color:var(--text-muted); margin-top:.25rem;">
+               Publicado en <a href="./categories#termodinamica-ref">Termodinámica</a> • <time datetime="2025-11-03T00:00:00+05:00">Nov 03, 2025</time>
+              </div>
+            </article>
         </div>
-        </div>
-    </div>
+      </section>
+    </main>
+
+    <aside>
+      <div class="panel" style="margin-bottom: var(--gap);">
+        <h4 style="margin:0 0 .6rem 0;">Últimos</h4>
+        <ul class="recent-list">
+            <li>
+              <a href="./distancia-facebook">"¿Cuál es la distancia promedio entre dos personas en Facebook?"</a>
+              <span class="meta">Dec 06, 2025</span>
+            </li>
+            <li>
+              <a href="./que-tan-rapido-sale-el-corcho-de-una-botella-de-champan">"¿Qué tan rápido sale el corcho de una botella de champán?"</a>
+              <span class="meta">Dec 03, 2025</span>
+            </li>
+            <li>
+              <a href="./por-que-las-palomitas-revientan-en-el-microondas">¿Por qué las palomitas revientan en el microondas?</a>
+              <span class="meta">Nov 03, 2025</span>
+            </li>
+        </ul>
+      </div>
+
+      <div class="panel" style="margin-bottom: var(--gap);">
+        <h4 style="margin:0 0 .6rem 0;">Participa</h4>
+        <p style="margin:0;">
+          ¿Tienes una pregunta tipo Fermi o quieres colaborar?
+          <a href="./Contributing/invitation.html">Únete</a>.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h4 style="margin:0 0 .6rem 0;">Explorar</h4>
+        <p style="margin:0;">
+          <a href="./tags.html">Tags</a> • 
+          <a href="./categories.html">Categorías</a>
+        </p>
+      </div>
+    </aside>
+
+  </div>
 </div>
+
                     </div>
                     <div class="span1"></div>
                 </div>

@@ -1,5 +1,0 @@
-.article .content { max-width: 72ch; margin: 0 auto; line-height: 1.7; }
-.article .content p { font-family: "PT Serif", Georgia, serif; font-size: 1.05rem; }
-.math { font-size: 1.02rem; }                 /* tamaño cómodo de fórmulas */
-h1, h2, h3 { font-weight: 600; letter-spacing: .2px; }
-.meta, .byline { font-style: italic; opacity: .85; }

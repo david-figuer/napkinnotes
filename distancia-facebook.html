@@ -12,33 +12,25 @@
 
         <meta name="author" content="Duvier Suarez Fontanella" />
 
-        <meta name="description" content="La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza la distancia promedio entre dos usuarios de Facebook, revisa el concepto de seis grados de separación y explica, desde la teoría de …
+        <meta name="description" content="1. La medida real: ¿a cuántos saltos estamos en Facebook? 2. ¿Por qué tan pocos? Fundamentos matemáticos 2.1 El grafo social como red compleja 2.2 La magia de los mundos pequeños 3. Los seis grados de separación: historia, mito y validación 3.1 Milgram y sus cadenas de …
 " />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
 <meta name="keywords" content="redes sociales, teoría de grafos, small world, seis grados de separación, Ciencia de Datos, " />
 
-
-<meta property="og:title" content="¿Cuál es la distancia promedio entre dos personas en Facebook?"/>
+<meta property="og:title" content="&#34;¿Cuál es la distancia promedio entre dos personas en Facebook?&#34; "/>
 <meta property="og:url" content="./distancia-facebook" />
-<meta property="og:description" content="La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza la distancia promedio entre dos usuarios de Facebook, revisa el concepto de seis grados de separación y explica, desde la teoría de …" />
+<meta property="og:description" content="1. La medida real: ¿a cuántos saltos estamos en Facebook? 2. ¿Por qué tan pocos? Fundamentos matemáticos 2.1 El grafo social como red compleja 2.2 La magia de los mundos pequeños 3. Los seis grados de separación: historia, mito y validación 3.1 Milgram y sus cadenas de …" />
 <meta property="og:site_name" content="Napkin Notes" />
-
 <meta property="og:article:author" content="Duvier Suarez Fontanella" />
-
 <meta property="og:article:published_time" content="2025-12-06T00:00:00+05:00" />
+<meta name="twitter:title" content="&#34;¿Cuál es la distancia promedio entre dos personas en Facebook?&#34; ">
+<meta name="twitter:description" content="1. La medida real: ¿a cuántos saltos estamos en Facebook? 2. ¿Por qué tan pocos? Fundamentos matemáticos 2.1 El grafo social como red compleja 2.2 La magia de los mundos pequeños 3. Los seis grados de separación: historia, mito y validación 3.1 Milgram y sus cadenas de …">
+<meta property="og:image" content="/theme/images/nn_logo.png" />
+<meta name="twitter:image" content="/theme/images/nn_logo.png" >
 
-<meta name="twitter:title" content="¿Cuál es la distancia promedio entre dos personas en Facebook?">
-<meta name="twitter:description" content="La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza la distancia promedio entre dos usuarios de Facebook, revisa el concepto de seis grados de separación y explica, desde la teoría de …">
-
-
-<meta property="og:image" content="./images/face_dist.png" />
-<meta name="twitter:image" content="./images/face_dist.png" >
-
-
-
-        <title>¿Cuál es la distancia promedio entre dos personas en Facebook?  · Napkin Notes
+        <title>&#34;¿Cuál es la distancia promedio entre dos personas en Facebook?&#34;  · Napkin Notes
 </title>
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Napkin Notes - Full Atom Feed" />
 
@@ -82,189 +74,120 @@
     <header class="page-header span10 offset2">
         <h1>
             <a href="./distancia-facebook">
-                ¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?
+                "¿Cuál es la distancia promedio entre dos personas en Facebook?"
             </a>
         </h1>
     </header>
 </div>
 
 <div class="row-fluid">
-    <div class="span2 table-of-content">
-        <nav>
-        <h4>Contents</h4>
-        <div class="toc">
+        <div class="span8 offset2 article-content">
+            
+            <div class="toc">
 <ul>
-<li><a href="#_1"></a></li>
-<li><a href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook">1. La medida real: ¿a cuántos saltos estamos en Facebook?</a></li>
+<li><a href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook">1. La medida real: ¿a cuántos saltos estamos en Facebook?</a></li>
 <li><a href="#2-por-que-tan-pocos-fundamentos-matematicos">2. ¿Por qué tan pocos? Fundamentos matemáticos</a><ul>
-<li><a href="#21-el-grafo-social-como-red-compleja">2.1 El grafo social como red compleja</a></li>
-<li><a href="#22-la-magia-de-los-mundos-pequenos">2.2 La magia de los mundos pequeños</a></li>
+<li><a href="#21-el-grafo-social-como-red-compleja">2.1 El grafo social como red compleja</a></li>
+<li><a href="#22-la-magia-de-los-mundos-pequenos">2.2 La magia de los mundos pequeños</a></li>
 </ul>
 </li>
 <li><a href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion">3. Los seis grados de separación: historia, mito y validación</a><ul>
-<li><a href="#31-milgram-y-sus-cadenas-de-cartas">3.1 Milgram y sus cadenas de cartas</a></li>
-<li><a href="#32-redes-modernas-y-validacion-computacional">3.2 Redes modernas y validación computacional</a></li>
+<li><a href="#31-milgram-y-sus-cadenas-de-cartas">3.1 Milgram y sus cadenas de cartas</a></li>
+<li><a href="#32-redes-modernas-y-validacion-computacional">3.2 Redes modernas y validación computacional</a></li>
 </ul>
 </li>
 <li><a href="#4-por-que-importa-todo-esto">4. ¿Por qué importa todo esto?</a><ul>
-<li><a href="#41-implicaciones-cientificas">4.1 Implicaciones científicas</a></li>
-<li><a href="#42-implicaciones-sociales-y-eticas">4.2 Implicaciones sociales y éticas</a></li>
-<li><a href="#43-implicaciones-para-ingenieria-de-plataformas">4.3 Implicaciones para ingeniería de plataformas</a></li>
+<li><a href="#41-implicaciones-cientificas">4.1 Implicaciones científicas</a></li>
+<li><a href="#42-implicaciones-sociales-y-eticas">4.2 Implicaciones sociales y éticas</a></li>
+<li><a href="#43-implicaciones-para-ingenieria-de-plataformas">4.3 Implicaciones para ingeniería de plataformas</a></li>
 </ul>
 </li>
-<li><a href="#5-conclusion">5. Conclusión</a></li>
+<li><a href="#5-conclusion">5. Conclusión</a></li>
 </ul>
 </div>
-        </nav>
-    </div>
-    <div class="span8 article-content">
-            
-            
-<p>La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza <strong>la distancia promedio entre dos usuarios de Facebook</strong>, revisa el concepto de <strong>seis grados de separación</strong> y explica, desde la teoría de grafos y los modelos de <strong>mundos pequeños</strong>, por qué estas cifras son tan sorprendentemente bajas en redes de escala global.</p>
-<h2 id="_1"><img alt="ig" src="images/face_dist.png"/><a class="headerlink" href="#_1" title="Permanent link"> </a></h2>
+<p>La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza <strong>la distancia promedio entre dos usuarios de Facebook</strong>, revisa el concepto de <strong>seis grados de separación</strong> y explica, desde la teoría de grafos y los modelos de <strong>mundos pequeños</strong>, por qué estas cifras son tan sorprendentemente bajas en redes de escala global.</p>
+<hr />
 <h2 id="1-la-medida-real-a-cuantos-saltos-estamos-en-facebook">1. La medida real: ¿a cuántos saltos estamos en Facebook?<a class="headerlink" href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook" title="Permanent link"> </a></h2>
 <p>Meta ha publicado en diversas ocasiones análisis sobre la longitud promedio de los caminos en su grafo social. Los resultados convergen sistemáticamente en un rango entre <strong>4 y 4.7 saltos</strong>.</p>
-<p>En su estudio más citado (Facebook Research, 2016), utilizando miles de millones de nodos y decenas de miles de millones de aristas, se obtuvo:</p>
+<p>En su estudio más citado (Facebook Research, 2016), utilizando miles de millones de nodos y decenas de miles de millones de aristas, se obtuvo:</p>
 <ul>
-<li><strong>Distancia promedio global:</strong> 4.57  </li>
-<li><strong>Distancia promedio entre usuarios activos en <span class="caps">EE</span>. <span class="caps">UU</span>.:</strong> alrededor de 4.2  </li>
-<li><strong>Máxima componente conexa:</strong> &gt; 99 % de la red</li>
+<li><strong>Distancia promedio global:</strong> 4.57  </li>
+<li><strong>Distancia promedio entre usuarios activos en EE. UU.:</strong> alrededor de 4.2  </li>
+<li><strong>Máxima componente conexa:</strong> &gt; 99 % de la red</li>
 </ul>
-<p>Es decir, <strong>cualquier persona en Facebook puede llegar a otra mediante poco más de cuatro intermediarios</strong>. Dicho de otro modo: los “seis grados” ya no son seis.</p>
-<hr/>
+<p>Es decir, <strong>cualquier persona en Facebook puede llegar a otra mediante poco más de cuatro intermediarios</strong>. Dicho de otro modo: los “seis grados” ya no son seis.</p>
+<hr />
 <h2 id="2-por-que-tan-pocos-fundamentos-matematicos">2. ¿Por qué tan pocos? Fundamentos matemáticos<a class="headerlink" href="#2-por-que-tan-pocos-fundamentos-matematicos" title="Permanent link"> </a></h2>
 <h3 id="21-el-grafo-social-como-red-compleja">2.1 El grafo social como red compleja<a class="headerlink" href="#21-el-grafo-social-como-red-compleja" title="Permanent link"> </a></h3>
-<p>Podemos representar Facebook como un grafo no dirigido <span class="math">\(G = (V, E)\)</span>, donde:
-- <span class="math">\(V\)</span> es el conjunto de usuarios<br/>
-- <span class="math">\(E\)</span> es el conjunto de relaciones de amistad  </p>
-<p>La <strong>distancia</strong> entre dos vértices <span class="math">\(u\)</span> y <span class="math">\(v\)</span>, denotada <span class="math">\(d(u,v)\)</span>, es la longitud mínima del camino que los conecta.</p>
-<p>El objetivo es calcular el <strong>average path length</strong> (<span class="caps">APL</span>):</p>
-<div class="math">$$
+<p>Podemos representar Facebook como un grafo no dirigido $G = (V, E)$, donde:
+- $V$ es el conjunto de usuarios<br />
+- $E$ es el conjunto de relaciones de amistad  </p>
+<p>La <strong>distancia</strong> entre dos vértices $u$ y $v$, denotada $d(u,v)$, es la longitud mínima del camino que los conecta.</p>
+<p>El objetivo es calcular el <strong>average path length</strong> (APL):</p>
+<p>$$
 L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)
-$$</div>
-<p>En redes a gran escala esta suma explícita es inviable. Facebook utiliza técnicas como <strong><span class="caps">BFS</span> aproximado</strong>, <strong>muestreo aleatorio de vértices</strong> y algoritmos distribuidos tipo <strong>HyperANF</strong> para estimar la distribución de distancias.</p>
+$$</p>
+<p>En redes a gran escala esta suma explícita es inviable. Facebook utiliza técnicas como <strong>BFS aproximado</strong>, <strong>muestreo aleatorio de vértices</strong> y algoritmos distribuidos tipo <strong>HyperANF</strong> para estimar la distribución de distancias.</p>
 <h3 id="22-la-magia-de-los-mundos-pequenos">2.2 La magia de los mundos pequeños<a class="headerlink" href="#22-la-magia-de-los-mundos-pequenos" title="Permanent link"> </a></h3>
-<p>El comportamiento observado en Facebook coincide con el modelo de <strong>redes de mundo pequeño</strong> (Watts <span class="amp">&amp;</span> Strogatz, 1998), caracterizado por:</p>
+<p>El comportamiento observado en Facebook coincide con el modelo de <strong>redes de mundo pequeño</strong> (Watts &amp; Strogatz, 1998), caracterizado por:</p>
 <ol>
-<li><strong>Alta agrupación (clustering coefficient <span class="math">\(C\)</span>)</strong> </li>
-<li><strong>Caminos cortos con crecimiento logarítmico: <span class="math">\(L \sim \log N\)</span></strong></li>
+<li><strong>Alta agrupación (clustering coefficient $C$)</strong>  </li>
+<li><strong>Caminos cortos con crecimiento logarítmico: $L \sim \log N$</strong></li>
 </ol>
-<p>Si <span class="math">\(N \approx 10^9\)</span>, entonces:</p>
-<div class="math">$$
+<p>Si $N \approx 10^9$, entonces:</p>
+<p>$$
 \log(N) \approx 21
-$$</div>
-<p>Esto sugiere que incluso una red inmensa puede tener caminos sorprendentemente cortos si se cumplen dos condiciones:</p>
+$$</p>
+<p>Esto sugiere que incluso una red inmensa puede tener caminos sorprendentemente cortos si se cumplen dos condiciones:</p>
 <ul>
-<li>Existe fuerte conectividad local (comunidades).  </li>
-<li>Hay enlaces aleatorios que actúan como “atalayos” en el grafo.</li>
+<li>Existe fuerte conectividad local (comunidades).  </li>
+<li>Hay enlaces aleatorios que actúan como “atalayos” en el grafo.</li>
 </ul>
-<p>Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen drásticamente <span class="math">\(L\)</span>.</p>
-<hr/>
+<p>Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen drásticamente $L$.</p>
+<hr />
 <h2 id="3-los-seis-grados-de-separacion-historia-mito-y-validacion">3. Los seis grados de separación: historia, mito y validación<a class="headerlink" href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion" title="Permanent link"> </a></h2>
-<p>La idea nació en 1929 con Frigyes Karinthy, se popularizó en 1967 con el experimento de Stanley Milgram y terminó convertida en un concepto cultural. Pero matemáticamente, el fenómeno posee base sólida.</p>
+<p>La idea nació en 1929 con Frigyes Karinthy, se popularizó en 1967 con el experimento de Stanley Milgram y terminó convertida en un concepto cultural. Pero matemáticamente, el fenómeno posee base sólida.</p>
 <h3 id="31-milgram-y-sus-cadenas-de-cartas">3.1 Milgram y sus cadenas de cartas<a class="headerlink" href="#31-milgram-y-sus-cadenas-de-cartas" title="Permanent link"> </a></h3>
-<p>Milgram encontró longitudes promedio cercanas a <strong>5.5 pasos</strong> para conectar a un ciudadano cualquiera con un objetivo elegido. Aunque el diseño experimental tenía sesgos, reveló la estructura de mundo pequeño en redes humanas.</p>
+<p>Milgram encontró longitudes promedio cercanas a <strong>5.5 pasos</strong> para conectar a un ciudadano cualquiera con un objetivo elegido. Aunque el diseño experimental tenía sesgos, reveló la estructura de mundo pequeño en redes humanas.</p>
 <h3 id="32-redes-modernas-y-validacion-computacional">3.2 Redes modernas y validación computacional<a class="headerlink" href="#32-redes-modernas-y-validacion-computacional" title="Permanent link"> </a></h3>
-<p>Con datos completos de grafos sociales actuales, hoy se puede afirmar:</p>
+<p>Con datos completos de grafos sociales actuales, hoy se puede afirmar:</p>
 <ul>
-<li>La distancia promedio <strong>no solo es menor que seis</strong>, sino que <strong>se estabiliza por debajo de cinco</strong> en redes con miles de millones de nodos.  </li>
+<li>La distancia promedio <strong>no solo es menor que seis</strong>, sino que <strong>se estabiliza por debajo de cinco</strong> en redes con miles de millones de nodos.  </li>
 <li>Este fenómeno no implica que todos se conozcan; solo que <strong>la estructura combinatoria del grafo permite trayectorias muy cortas</strong>.</li>
 </ul>
-<p>En teoría de grafos, esta propiedad se explica por:</p>
+<p>En teoría de grafos, esta propiedad se explica por:</p>
 <ul>
 <li><strong>Distribuciones de grado con colas pesadas (scale-free)</strong>.  </li>
 <li><strong>Hubs con grado extremadamente alto</strong>.  </li>
-<li><strong>Coeficiente de agrupación elevado</strong>, mayor que el de redes aleatorias tipo Erdős–Rényi.</li>
+<li><strong>Coeficiente de agrupación elevado</strong>, mayor que el de redes aleatorias tipo Erdős–Rényi.</li>
 </ul>
-<hr/>
+<hr />
 <h2 id="4-por-que-importa-todo-esto">4. ¿Por qué importa todo esto?<a class="headerlink" href="#4-por-que-importa-todo-esto" title="Permanent link"> </a></h2>
 <h3 id="41-implicaciones-cientificas">4.1 Implicaciones científicas<a class="headerlink" href="#41-implicaciones-cientificas" title="Permanent link"> </a></h3>
 <ul>
 <li>Entender distancias promedio permite modelar <strong>difusión de información</strong>, <strong>propagación de epidemias</strong>, <strong>viralidad</strong> y <strong>resiliencia estructural</strong>.  </li>
-<li>Un <span class="caps">APL</span> bajo implica expansiones rápidas y pocas etapas de transmisión.</li>
+<li>Un APL bajo implica expansiones rápidas y pocas etapas de transmisión.</li>
 </ul>
 <h3 id="42-implicaciones-sociales-y-eticas">4.2 Implicaciones sociales y éticas<a class="headerlink" href="#42-implicaciones-sociales-y-eticas" title="Permanent link"> </a></h3>
 <ul>
-<li>Las redes acortan el mundo, pero también <strong>amplifican externalidades</strong>: rumores, polarización, contagios culturales.  </li>
-<li>La estructura de mundo pequeño regula la conectividad, pero no la calidad de los vínculos.</li>
+<li>Las redes acortan el mundo, pero también <strong>amplifican externalidades</strong>: rumores, polarización, contagios culturales.  </li>
+<li>La estructura de mundo pequeño regula la conectividad, pero no la calidad de los vínculos.</li>
 </ul>
 <h3 id="43-implicaciones-para-ingenieria-de-plataformas">4.3 Implicaciones para ingeniería de plataformas<a class="headerlink" href="#43-implicaciones-para-ingenieria-de-plataformas" title="Permanent link"> </a></h3>
 <ul>
-<li>Mejora de algoritmos de recomendación (friends-of-friends).  </li>
-<li>Optimización de buscadores sociales y privacidad basada en distancias.  </li>
-<li>Diseño de sistemas distribuidos que explotan el comportamiento logarítmico de <span class="math">\(L\)</span>.</li>
+<li>Mejora de algoritmos de recomendación (friends-of-friends).  </li>
+<li>Optimización de buscadores sociales y privacidad basada en distancias.  </li>
+<li>Diseño de sistemas distribuidos que explotan el comportamiento logarítmico de $L$.</li>
 </ul>
-<hr/>
+<hr />
 <h2 id="5-conclusion">5. Conclusión<a class="headerlink" href="#5-conclusion" title="Permanent link"> </a></h2>
-<p>Las distancias sociales que intuíamos desde hace un siglo son hoy métricas verificables en redes de escala planetaria. Facebook muestra que:</p>
+<p>Las distancias sociales que intuíamos desde hace un siglo son hoy métricas verificables en redes de escala planetaria. Facebook muestra que:</p>
 <ul>
 <li>La distancia promedio entre dos personas es <strong>menor de cinco pasos</strong>.  </li>
-<li>La teoría de <strong>mundos pequeños</strong> predice y explica este fenómeno.  </li>
-<li>Los <strong>seis grados de separación</strong> no solo se mantienen: se comprimen.</li>
+<li>La teoría de <strong>mundos pequeños</strong> predice y explica este fenómeno.  </li>
+<li>Los <strong>seis grados de separación</strong> no solo se mantienen: se comprimen.</li>
 </ul>
-<p>La combinación de teoría matemática, datos masivos y modelización computacional revela que vivimos en un mundo sorprendentemente bien conectado.</p>
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
+<p>La combinación de teoría matemática, datos masivos y modelización computacional revela que vivimos en un mundo sorprendentemente bien conectado.</p>
 
 
              
@@ -275,19 +198,14 @@ $$</div>
 </div>
 
  
-                <p id="post-share-links">
-    Like this post? Share on:
-      <a href="https://twitter.com/intent/tweet?text=%C2%BFCu%C3%A1l%20es%20la%20distancia%20promedio%20entre%20dos%20personas%20en%C2%A0Facebook%3F&url=/distancia-facebook&hashtags=redes-sociales-teoria-de-grafos-small-world-seis-grados-de-separacion" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
- ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=/distancia-facebook" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
- ❄       <a href="mailto:?subject=%C2%BFCu%C3%A1l%20es%20la%20distancia%20promedio%20entre%20dos%20personas%20en%C2%A0Facebook%3F&amp;body=/distancia-facebook" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
-
+            
                 <hr />
     <div class="author-blurb">
         <a href="https://produccioncientifica.usal.es/investigadores/819473/detalle" target="_blank" rel="nofollow noopener noreferrer">
-            <img src=images/duvier.jpeg alt="Duvier Suarez Fontanella Avatar" title="Duvier Suarez Fontanella">
+            <img src=/images/duvier.jpeg alt="Duvier Suarez Fontanella Avatar" title="Duvier Suarez Fontanella">
             <span class="author-name">Duvier Suarez Fontanella</span>
         </a>
-        Editor Napkin Notes.
+        is the creator and lead developer of Napkin Notes.
     </div>
 
             
@@ -299,22 +217,24 @@ $$</div>
 
 
             <hr/>
-            <aside>
-            <nav>
-            <ul class="articles-timeline">
-                <li class="previous-article">« <a href="./corriendo-bajo-la-lluvia" title="Previous: Corriendo bajo la lluvia">Corriendo bajo la lluvia</a></li>
-            </ul>
-            </nav>
-            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2025-12-06T00:00:00+05:00">dic 06, 2025</time>
+            <time itemprop="dateCreated" datetime="2025-12-06T00:00:00+05:00">Dec 06, 2025</time>
             <h4>Category</h4>
             <a class="category-link" href="./categories#ciencia-de-datos-ref">Ciencia de Datos</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="./tags#redes-sociales-teoria-de-grafos-small-world-seis-grados-de-separacion-ref">redes sociales, teoría de grafos, small world, seis grados de separación
+                <li><a href="./tags#redes-sociales-ref">redes sociales
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="./tags#seis-grados-de-separacion-ref">seis grados de separación
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="./tags#small-world-ref">small world
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="./tags#teoria-de-grafos-ref">teoría de grafos
                     <span class="superscript">1</span>
 </a></li>
             </ul>
@@ -323,7 +243,7 @@ $$</div>
     <a href="https://github.com/Pelican-Elegant/" title="Elegant Github Repository" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
     </a>
-    <a href="feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+    <a href="/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
     </a>
     <a href="https://github.com/Pelican-Elegant/elegant/milestones" title="Elegant Project Roadmap" target="_blank" rel="nofollow noopener noreferrer">

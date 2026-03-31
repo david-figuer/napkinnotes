@@ -75,7 +75,7 @@
                                 <a href="{% if SITEURL %}{{ SITEURL }}{% else %}/{% endif %}">Home</a>
                             </li>
 
-                            {% from '_includes/_defaults.html' import TAGS_URL, CATEGORIES_URL, ARCHIVES_URL, SEARCH_URL with context %}
+                            {% from '_includes/_defaults.html' import TAGS_URL, CATEGORIES_URL, ARCHIVES_URL, SEARCH_URL, NOSOTROS_URL with context %}
 
                             <li {% if page_name == 'archives' %}class="active"{% endif %}>
                                 <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Artículos</a>

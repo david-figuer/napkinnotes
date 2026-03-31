@@ -45,7 +45,7 @@
     {% set hero_image = FEATURED_IMAGE %}
 {% endif %}
 
-<section class="nn-hero nn-reveal">
+<section class="nn-hero">
     <div class="nn-hero__bg{% if not hero_image %} nn-hero__bg--plain{% endif %}" {% if hero_image %}style="background-image: url('{{ hero_image }}');"{% endif %}></div>
     <div class="nn-hero__overlay"></div>
     <div class="nn-hero__glow"></div>
@@ -78,7 +78,7 @@
     <main class="nn-home-main">
 
         {% if landing_page.page %}
-        <section class="nn-section-card nn-reveal" id="about-project">
+        <section class="nn-section-card" id="about-project">
             <div class="nn-section-card__header">
                 <span class="nn-kicker">Proyecto</span>
                 <h2>{{ landing_page.page.title }}</h2>
@@ -90,7 +90,7 @@
         {% endif %}
 
         {% if articles %}
-        <section class="nn-section-card nn-section-card--articles nn-reveal">
+        <section class="nn-section-card nn-section-card--articles">
             <div class="nn-section-card__header nn-section-card__header--row">
                 <div>
                     <span class="nn-kicker">Publicaciones</span>
@@ -138,7 +138,7 @@
 
     <aside class="nn-home-sidebar">
 
-        <section class="nn-sidebar-card nn-reveal">
+        <section class="nn-sidebar-card">
             <span class="nn-kicker">Actualidad</span>
             <h3>Últimos</h3>
             <ul class="nn-mini-list">

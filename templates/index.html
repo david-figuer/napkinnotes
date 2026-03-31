@@ -48,6 +48,7 @@
 <section class="nn-hero">
     <div class="nn-hero__bg{% if not hero_image %} nn-hero__bg--plain{% endif %}" {% if hero_image %}style="background-image: url('{{ hero_image }}');"{% endif %}></div>
     <div class="nn-hero__overlay"></div>
+    <div class="nn-hero__glow"></div>
 
     <div class="nn-hero__content">
         <div class="nn-hero__eyebrow">Ciencia clara · ideas que caben en una servilleta</div>
@@ -63,6 +64,12 @@
                 {{ SITE_DESCRIPTION }}
             {% endif %}
         </p>
+
+        <div class="nn-hero__badges">
+            <span>Preguntas Fermi</span>
+            <span>Física cotidiana</span>
+            <span>Curiosidad sin solemnidad</span>
+        </div>
 
         <div class="nn-hero__actions">
             <a class="nn-button nn-button--primary" href="#about-project">Conoce más</a>

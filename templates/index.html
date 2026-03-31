@@ -176,4 +176,30 @@
         </section>
     </aside>
 </section>
+<div id="participa-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-card">
+        <button id="close-participa-modal" class="modal-close" aria-label="Cerrar">
+            ×
+        </button>
+
+        <h3>Proponer una participación</h3>
+        <p>Cuéntanos tu idea para Napkin Notes</p>
+
+        <form id="participa-form">
+            <label for="nombre">Tu nombre</label>
+            <input id="nombre" type="text" required>
+
+            <label for="persona">Persona de la que quieres hablar</label>
+            <input id="persona" type="text" required>
+
+            <label for="resumen">Breve resumen</label>
+            <textarea id="resumen" rows="5" required></textarea>
+
+            <button type="submit">Enviar propuesta</button>
+        </form>
+    </div>
+</div>
+
 {% endblock content %}

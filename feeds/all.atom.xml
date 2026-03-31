@@ -420,180 +420,7 @@ $$&lt;/div&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="Matemáticas"/><category term="infinito, cálculo, paradojas"/></entry><entry><title>¿Cuál es la distancia promedio entre dos personas en Facebook?</title><link href="distancia-facebook" rel="alternate"/><published>2025-12-06T00:00:00+05:00</published><updated>2025-12-06T00:00:00+05:00</updated><author><name>Duvier Suarez Fontanella</name></author><id>tag:None,2025-12-06:distancia-facebook</id><summary type="html">&lt;div class="toc"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook"&gt;1. La medida real: ¿a cuántos saltos estamos en&amp;nbsp;Facebook?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#21-el-grafo-social-como-red-compleja"&gt;2.1 El grafo social como red&amp;nbsp;compleja&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#22-la-magia-de-los-mundos-pequenos"&gt;2.2 La magia de los mundos&amp;nbsp;pequeños&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion"&gt;3. Los seis grados de separación: historia, mito y validación&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#31-milgram-y-sus-cadenas-de-cartas"&gt;3.1 Milgram y sus cadenas de …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="toc"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook"&gt;1. La medida real: ¿a cuántos saltos estamos en&amp;nbsp;Facebook?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#21-el-grafo-social-como-red-compleja"&gt;2.1 El grafo social como red&amp;nbsp;compleja&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#22-la-magia-de-los-mundos-pequenos"&gt;2.2 La magia de los mundos&amp;nbsp;pequeños&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion"&gt;3. Los seis grados de separación: historia, mito y validación&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#31-milgram-y-sus-cadenas-de-cartas"&gt;3.1 Milgram y sus cadenas de&amp;nbsp;cartas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#32-redes-modernas-y-validacion-computacional"&gt;3.2 Redes modernas y validación&amp;nbsp;computacional&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#4-por-que-importa-todo-esto"&gt;4. ¿Por qué importa todo esto?&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#41-implicaciones-cientificas"&gt;4.1 Implicaciones&amp;nbsp;científicas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#42-implicaciones-sociales-y-eticas"&gt;4.2 Implicaciones sociales y&amp;nbsp;éticas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#43-implicaciones-para-ingenieria-de-plataformas"&gt;4.3 Implicaciones para ingeniería de&amp;nbsp;plataformas&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#5-conclusion"&gt;5.&amp;nbsp;Conclusión&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza &lt;strong&gt;la distancia promedio entre dos usuarios de Facebook&lt;/strong&gt;, revisa el concepto de &lt;strong&gt;seis grados de separación&lt;/strong&gt; y explica, desde la teoría de grafos y los modelos de &lt;strong&gt;mundos pequeños&lt;/strong&gt;, por qué estas cifras son tan sorprendentemente bajas en redes de escala&amp;nbsp;global.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="1-la-medida-real-a-cuantos-saltos-estamos-en-facebook"&gt;1. La medida real: ¿a cuántos saltos estamos en Facebook?&lt;a class="headerlink" href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Meta ha publicado en diversas ocasiones análisis sobre la longitud promedio de los caminos en su grafo social. Los resultados convergen sistemáticamente en un rango entre &lt;strong&gt;4 y 4.7 saltos&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;En su estudio más citado (Facebook Research, 2016), utilizando miles de millones de nodos y decenas de miles de millones de aristas, se&amp;nbsp;obtuvo:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Distancia promedio global:&lt;/strong&gt;&amp;nbsp;4.57  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Distancia promedio entre usuarios activos en &lt;span class="caps"&gt;EE&lt;/span&gt;. &lt;span class="caps"&gt;UU&lt;/span&gt;.:&lt;/strong&gt; alrededor de&amp;nbsp;4.2  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Máxima componente conexa:&lt;/strong&gt; &amp;gt; 99 % de la&amp;nbsp;red&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Es decir, &lt;strong&gt;cualquier persona en Facebook puede llegar a otra mediante poco más de cuatro intermediarios&lt;/strong&gt;. Dicho de otro modo: los “seis grados” ya no son&amp;nbsp;seis.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;a class="headerlink" href="#2-por-que-tan-pocos-fundamentos-matematicos" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="21-el-grafo-social-como-red-compleja"&gt;2.1 El grafo social como red compleja&lt;a class="headerlink" href="#21-el-grafo-social-como-red-compleja" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Podemos representar Facebook como un grafo no&amp;nbsp;dirigido &lt;span class="math"&gt;\(G = (V, E)\)&lt;/span&gt;, donde:&amp;nbsp;- &lt;span class="math"&gt;\(V\)&lt;/span&gt; es el conjunto de usuarios&lt;br /&gt;&amp;nbsp;- &lt;span class="math"&gt;\(E\)&lt;/span&gt; es el conjunto de relaciones de&amp;nbsp;amistad  &lt;/p&gt;
-&lt;p&gt;La &lt;strong&gt;distancia&lt;/strong&gt; entre dos&amp;nbsp;vértices &lt;span class="math"&gt;\(u\)&lt;/span&gt; y &lt;span class="math"&gt;\(v\)&lt;/span&gt;,&amp;nbsp;denotada &lt;span class="math"&gt;\(d(u,v)\)&lt;/span&gt;, es la longitud mínima del camino que los&amp;nbsp;conecta.&lt;/p&gt;
-&lt;p&gt;El objetivo es calcular el &lt;strong&gt;average path length&lt;/strong&gt; (&lt;span class="caps"&gt;APL&lt;/span&gt;):&lt;/p&gt;
-&lt;div class="math"&gt;$$
-L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)
-$$&lt;/div&gt;
-&lt;p&gt;En redes a gran escala esta suma explícita es inviable. Facebook utiliza técnicas como &lt;strong&gt;&lt;span class="caps"&gt;BFS&lt;/span&gt; aproximado&lt;/strong&gt;, &lt;strong&gt;muestreo aleatorio de vértices&lt;/strong&gt; y algoritmos distribuidos tipo &lt;strong&gt;HyperANF&lt;/strong&gt; para estimar la distribución de&amp;nbsp;distancias.&lt;/p&gt;
-&lt;h3 id="22-la-magia-de-los-mundos-pequenos"&gt;2.2 La magia de los mundos pequeños&lt;a class="headerlink" href="#22-la-magia-de-los-mundos-pequenos" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;El comportamiento observado en Facebook coincide con el modelo de &lt;strong&gt;redes de mundo pequeño&lt;/strong&gt; (Watts &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Strogatz, 1998), caracterizado&amp;nbsp;por:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Alta agrupación (clustering&amp;nbsp;coefficient &lt;span class="math"&gt;\(C\)&lt;/span&gt;)&lt;/strong&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Caminos cortos con crecimiento&amp;nbsp;logarítmico: &lt;span class="math"&gt;\(L \sim \log N\)&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Si &lt;span class="math"&gt;\(N \approx 10^9\)&lt;/span&gt;,&amp;nbsp;entonces:&lt;/p&gt;
-&lt;div class="math"&gt;$$
-\log(N) \approx 21
-$$&lt;/div&gt;
-&lt;p&gt;Esto sugiere que incluso una red inmensa puede tener caminos sorprendentemente cortos si se cumplen dos&amp;nbsp;condiciones:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Existe fuerte conectividad local&amp;nbsp;(comunidades).  &lt;/li&gt;
-&lt;li&gt;Hay enlaces aleatorios que actúan como “atalayos” en el&amp;nbsp;grafo.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen&amp;nbsp;drásticamente &lt;span class="math"&gt;\(L\)&lt;/span&gt;.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="3-los-seis-grados-de-separacion-historia-mito-y-validacion"&gt;3. Los seis grados de separación: historia, mito y validación&lt;a class="headerlink" href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;La idea nació en 1929 con Frigyes Karinthy, se popularizó en 1967 con el experimento de Stanley Milgram y terminó convertida en un concepto cultural. Pero matemáticamente, el fenómeno posee base&amp;nbsp;sólida.&lt;/p&gt;
-&lt;h3 id="31-milgram-y-sus-cadenas-de-cartas"&gt;3.1 Milgram y sus cadenas de cartas&lt;a class="headerlink" href="#31-milgram-y-sus-cadenas-de-cartas" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Milgram encontró longitudes promedio cercanas a &lt;strong&gt;5.5 pasos&lt;/strong&gt; para conectar a un ciudadano cualquiera con un objetivo elegido. Aunque el diseño experimental tenía sesgos, reveló la estructura de mundo pequeño en redes&amp;nbsp;humanas.&lt;/p&gt;
-&lt;h3 id="32-redes-modernas-y-validacion-computacional"&gt;3.2 Redes modernas y validación computacional&lt;a class="headerlink" href="#32-redes-modernas-y-validacion-computacional" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Con datos completos de grafos sociales actuales, hoy se puede&amp;nbsp;afirmar:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;La distancia promedio &lt;strong&gt;no solo es menor que seis&lt;/strong&gt;, sino que &lt;strong&gt;se estabiliza por debajo de cinco&lt;/strong&gt; en redes con miles de millones de&amp;nbsp;nodos.  &lt;/li&gt;
-&lt;li&gt;Este fenómeno no implica que todos se conozcan; solo que &lt;strong&gt;la estructura combinatoria del grafo permite trayectorias muy cortas&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;En teoría de grafos, esta propiedad se explica&amp;nbsp;por:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Distribuciones de grado con colas pesadas (scale-free)&lt;/strong&gt;.  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Hubs con grado extremadamente alto&lt;/strong&gt;.  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Coeficiente de agrupación elevado&lt;/strong&gt;, mayor que el de redes aleatorias tipo&amp;nbsp;Erdős–Rényi.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="4-por-que-importa-todo-esto"&gt;4. ¿Por qué importa todo esto?&lt;a class="headerlink" href="#4-por-que-importa-todo-esto" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="41-implicaciones-cientificas"&gt;4.1 Implicaciones científicas&lt;a class="headerlink" href="#41-implicaciones-cientificas" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Entender distancias promedio permite modelar &lt;strong&gt;difusión de información&lt;/strong&gt;, &lt;strong&gt;propagación de epidemias&lt;/strong&gt;, &lt;strong&gt;viralidad&lt;/strong&gt; y &lt;strong&gt;resiliencia estructural&lt;/strong&gt;.  &lt;/li&gt;
-&lt;li&gt;Un &lt;span class="caps"&gt;APL&lt;/span&gt; bajo implica expansiones rápidas y pocas etapas de&amp;nbsp;transmisión.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="42-implicaciones-sociales-y-eticas"&gt;4.2 Implicaciones sociales y éticas&lt;a class="headerlink" href="#42-implicaciones-sociales-y-eticas" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Las redes acortan el mundo, pero también &lt;strong&gt;amplifican externalidades&lt;/strong&gt;: rumores, polarización, contagios&amp;nbsp;culturales.  &lt;/li&gt;
-&lt;li&gt;La estructura de mundo pequeño regula la conectividad, pero no la calidad de los&amp;nbsp;vínculos.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="43-implicaciones-para-ingenieria-de-plataformas"&gt;4.3 Implicaciones para ingeniería de plataformas&lt;a class="headerlink" href="#43-implicaciones-para-ingenieria-de-plataformas" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Mejora de algoritmos de recomendación&amp;nbsp;(friends-of-friends).  &lt;/li&gt;
-&lt;li&gt;Optimización de buscadores sociales y privacidad basada en&amp;nbsp;distancias.  &lt;/li&gt;
-&lt;li&gt;Diseño de sistemas distribuidos que explotan el comportamiento logarítmico&amp;nbsp;de &lt;span class="math"&gt;\(L\)&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="5-conclusion"&gt;5. Conclusión&lt;a class="headerlink" href="#5-conclusion" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Las distancias sociales que intuíamos desde hace un siglo son hoy métricas verificables en redes de escala planetaria. Facebook muestra&amp;nbsp;que:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;La distancia promedio entre dos personas es &lt;strong&gt;menor de cinco pasos&lt;/strong&gt;.  &lt;/li&gt;
-&lt;li&gt;La teoría de &lt;strong&gt;mundos pequeños&lt;/strong&gt; predice y explica este&amp;nbsp;fenómeno.  &lt;/li&gt;
-&lt;li&gt;Los &lt;strong&gt;seis grados de separación&lt;/strong&gt; no solo se mantienen: se&amp;nbsp;comprimen.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;La combinación de teoría matemática, datos masivos y modelización computacional revela que vivimos en un mundo sorprendentemente bien&amp;nbsp;conectado.&lt;/p&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</content><category term="Ciencia de Datos"/><category term="redes sociales, teoría de grafos, small world, seis grados de separación"/></entry><entry><title>¿Qué tan rápido sale el corcho de una botella de champán?</title><link href="que-tan-rapido-sale-el-corcho-de-una-botella-de-champan" rel="alternate"/><published>2025-12-03T00:00:00+05:00</published><updated>2025-12-03T00:00:00+05:00</updated><author><name>Duvier Suarez Fontanella</name></author><id>tag:None,2025-12-03:que-tan-rapido-sale-el-corcho-de-una-botella-de-champan</id><summary type="html">&lt;p&gt;Un recorrido por la física explosiva detrás del clásico &amp;#8220;pop&amp;#8221; del champán: desde la presión atrapada en la botella hasta la sorprendente posibilidad de velocidades&amp;nbsp;supersónicas.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+&lt;/script&gt;</content><category term="Matemáticas"/><category term="infinito, cálculo, paradojas"/></entry><entry><title>¿Qué tan rápido sale el corcho de una botella de champán?</title><link href="que-tan-rapido-sale-el-corcho-de-una-botella-de-champan" rel="alternate"/><published>2026-01-04T00:00:00+05:00</published><updated>2026-01-04T00:00:00+05:00</updated><author><name>Duvier Suarez Fontanella</name></author><id>tag:None,2026-01-04:que-tan-rapido-sale-el-corcho-de-una-botella-de-champan</id><summary type="html">&lt;p&gt;Un recorrido por la física explosiva detrás del clásico &amp;#8220;pop&amp;#8221; del champán: desde la presión atrapada en la botella hasta la sorprendente posibilidad de velocidades&amp;nbsp;supersónicas.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#resumen"&gt;Resumen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#1-una-botella-aparentemente-tranquila-pero-llena-de-presion"&gt;1. Una botella aparentemente tranquila (pero llena de&amp;nbsp;presión)&lt;/a&gt;&lt;/li&gt;
@@ -798,4 +625,177 @@ Acabas de asistir al lanzamiento de un &lt;em&gt;microcohete carbónico&lt;/em&g
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="Dinámica de Fluidos"/><category term="física"/><category term="termodinámica"/><category term="champán"/><category term="supersónico"/></entry></feed>
+&lt;/script&gt;</content><category term="Dinámica de Fluidos"/><category term="física"/><category term="termodinámica"/><category term="champán"/><category term="supersónico"/></entry><entry><title>¿Cuál es la distancia promedio entre dos personas en Facebook?</title><link href="distancia-facebook" rel="alternate"/><published>2025-12-06T00:00:00+05:00</published><updated>2025-12-06T00:00:00+05:00</updated><author><name>Duvier Suarez Fontanella</name></author><id>tag:None,2025-12-06:distancia-facebook</id><summary type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook"&gt;1. La medida real: ¿a cuántos saltos estamos en&amp;nbsp;Facebook?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#21-el-grafo-social-como-red-compleja"&gt;2.1 El grafo social como red&amp;nbsp;compleja&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#22-la-magia-de-los-mundos-pequenos"&gt;2.2 La magia de los mundos&amp;nbsp;pequeños&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion"&gt;3. Los seis grados de separación: historia, mito y validación&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#31-milgram-y-sus-cadenas-de-cartas"&gt;3.1 Milgram y sus cadenas de …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook"&gt;1. La medida real: ¿a cuántos saltos estamos en&amp;nbsp;Facebook?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#21-el-grafo-social-como-red-compleja"&gt;2.1 El grafo social como red&amp;nbsp;compleja&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#22-la-magia-de-los-mundos-pequenos"&gt;2.2 La magia de los mundos&amp;nbsp;pequeños&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion"&gt;3. Los seis grados de separación: historia, mito y validación&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#31-milgram-y-sus-cadenas-de-cartas"&gt;3.1 Milgram y sus cadenas de&amp;nbsp;cartas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#32-redes-modernas-y-validacion-computacional"&gt;3.2 Redes modernas y validación&amp;nbsp;computacional&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#4-por-que-importa-todo-esto"&gt;4. ¿Por qué importa todo esto?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#41-implicaciones-cientificas"&gt;4.1 Implicaciones&amp;nbsp;científicas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#42-implicaciones-sociales-y-eticas"&gt;4.2 Implicaciones sociales y&amp;nbsp;éticas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#43-implicaciones-para-ingenieria-de-plataformas"&gt;4.3 Implicaciones para ingeniería de&amp;nbsp;plataformas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#5-conclusion"&gt;5.&amp;nbsp;Conclusión&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza &lt;strong&gt;la distancia promedio entre dos usuarios de Facebook&lt;/strong&gt;, revisa el concepto de &lt;strong&gt;seis grados de separación&lt;/strong&gt; y explica, desde la teoría de grafos y los modelos de &lt;strong&gt;mundos pequeños&lt;/strong&gt;, por qué estas cifras son tan sorprendentemente bajas en redes de escala&amp;nbsp;global.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="1-la-medida-real-a-cuantos-saltos-estamos-en-facebook"&gt;1. La medida real: ¿a cuántos saltos estamos en Facebook?&lt;a class="headerlink" href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Meta ha publicado en diversas ocasiones análisis sobre la longitud promedio de los caminos en su grafo social. Los resultados convergen sistemáticamente en un rango entre &lt;strong&gt;4 y 4.7 saltos&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;En su estudio más citado (Facebook Research, 2016), utilizando miles de millones de nodos y decenas de miles de millones de aristas, se&amp;nbsp;obtuvo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Distancia promedio global:&lt;/strong&gt;&amp;nbsp;4.57  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Distancia promedio entre usuarios activos en &lt;span class="caps"&gt;EE&lt;/span&gt;. &lt;span class="caps"&gt;UU&lt;/span&gt;.:&lt;/strong&gt; alrededor de&amp;nbsp;4.2  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Máxima componente conexa:&lt;/strong&gt; &amp;gt; 99 % de la&amp;nbsp;red&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Es decir, &lt;strong&gt;cualquier persona en Facebook puede llegar a otra mediante poco más de cuatro intermediarios&lt;/strong&gt;. Dicho de otro modo: los “seis grados” ya no son&amp;nbsp;seis.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;a class="headerlink" href="#2-por-que-tan-pocos-fundamentos-matematicos" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="21-el-grafo-social-como-red-compleja"&gt;2.1 El grafo social como red compleja&lt;a class="headerlink" href="#21-el-grafo-social-como-red-compleja" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Podemos representar Facebook como un grafo no&amp;nbsp;dirigido &lt;span class="math"&gt;\(G = (V, E)\)&lt;/span&gt;, donde:&amp;nbsp;- &lt;span class="math"&gt;\(V\)&lt;/span&gt; es el conjunto de usuarios&lt;br /&gt;&amp;nbsp;- &lt;span class="math"&gt;\(E\)&lt;/span&gt; es el conjunto de relaciones de&amp;nbsp;amistad  &lt;/p&gt;
+&lt;p&gt;La &lt;strong&gt;distancia&lt;/strong&gt; entre dos&amp;nbsp;vértices &lt;span class="math"&gt;\(u\)&lt;/span&gt; y &lt;span class="math"&gt;\(v\)&lt;/span&gt;,&amp;nbsp;denotada &lt;span class="math"&gt;\(d(u,v)\)&lt;/span&gt;, es la longitud mínima del camino que los&amp;nbsp;conecta.&lt;/p&gt;
+&lt;p&gt;El objetivo es calcular el &lt;strong&gt;average path length&lt;/strong&gt; (&lt;span class="caps"&gt;APL&lt;/span&gt;):&lt;/p&gt;
+&lt;div class="math"&gt;$$
+L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)
+$$&lt;/div&gt;
+&lt;p&gt;En redes a gran escala esta suma explícita es inviable. Facebook utiliza técnicas como &lt;strong&gt;&lt;span class="caps"&gt;BFS&lt;/span&gt; aproximado&lt;/strong&gt;, &lt;strong&gt;muestreo aleatorio de vértices&lt;/strong&gt; y algoritmos distribuidos tipo &lt;strong&gt;HyperANF&lt;/strong&gt; para estimar la distribución de&amp;nbsp;distancias.&lt;/p&gt;
+&lt;h3 id="22-la-magia-de-los-mundos-pequenos"&gt;2.2 La magia de los mundos pequeños&lt;a class="headerlink" href="#22-la-magia-de-los-mundos-pequenos" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;El comportamiento observado en Facebook coincide con el modelo de &lt;strong&gt;redes de mundo pequeño&lt;/strong&gt; (Watts &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Strogatz, 1998), caracterizado&amp;nbsp;por:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Alta agrupación (clustering&amp;nbsp;coefficient &lt;span class="math"&gt;\(C\)&lt;/span&gt;)&lt;/strong&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Caminos cortos con crecimiento&amp;nbsp;logarítmico: &lt;span class="math"&gt;\(L \sim \log N\)&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Si &lt;span class="math"&gt;\(N \approx 10^9\)&lt;/span&gt;,&amp;nbsp;entonces:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\log(N) \approx 21
+$$&lt;/div&gt;
+&lt;p&gt;Esto sugiere que incluso una red inmensa puede tener caminos sorprendentemente cortos si se cumplen dos&amp;nbsp;condiciones:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Existe fuerte conectividad local&amp;nbsp;(comunidades).  &lt;/li&gt;
+&lt;li&gt;Hay enlaces aleatorios que actúan como “atalayos” en el&amp;nbsp;grafo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen&amp;nbsp;drásticamente &lt;span class="math"&gt;\(L\)&lt;/span&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="3-los-seis-grados-de-separacion-historia-mito-y-validacion"&gt;3. Los seis grados de separación: historia, mito y validación&lt;a class="headerlink" href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;La idea nació en 1929 con Frigyes Karinthy, se popularizó en 1967 con el experimento de Stanley Milgram y terminó convertida en un concepto cultural. Pero matemáticamente, el fenómeno posee base&amp;nbsp;sólida.&lt;/p&gt;
+&lt;h3 id="31-milgram-y-sus-cadenas-de-cartas"&gt;3.1 Milgram y sus cadenas de cartas&lt;a class="headerlink" href="#31-milgram-y-sus-cadenas-de-cartas" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Milgram encontró longitudes promedio cercanas a &lt;strong&gt;5.5 pasos&lt;/strong&gt; para conectar a un ciudadano cualquiera con un objetivo elegido. Aunque el diseño experimental tenía sesgos, reveló la estructura de mundo pequeño en redes&amp;nbsp;humanas.&lt;/p&gt;
+&lt;h3 id="32-redes-modernas-y-validacion-computacional"&gt;3.2 Redes modernas y validación computacional&lt;a class="headerlink" href="#32-redes-modernas-y-validacion-computacional" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Con datos completos de grafos sociales actuales, hoy se puede&amp;nbsp;afirmar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La distancia promedio &lt;strong&gt;no solo es menor que seis&lt;/strong&gt;, sino que &lt;strong&gt;se estabiliza por debajo de cinco&lt;/strong&gt; en redes con miles de millones de&amp;nbsp;nodos.  &lt;/li&gt;
+&lt;li&gt;Este fenómeno no implica que todos se conozcan; solo que &lt;strong&gt;la estructura combinatoria del grafo permite trayectorias muy cortas&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En teoría de grafos, esta propiedad se explica&amp;nbsp;por:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Distribuciones de grado con colas pesadas (scale-free)&lt;/strong&gt;.  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hubs con grado extremadamente alto&lt;/strong&gt;.  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coeficiente de agrupación elevado&lt;/strong&gt;, mayor que el de redes aleatorias tipo&amp;nbsp;Erdős–Rényi.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="4-por-que-importa-todo-esto"&gt;4. ¿Por qué importa todo esto?&lt;a class="headerlink" href="#4-por-que-importa-todo-esto" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="41-implicaciones-cientificas"&gt;4.1 Implicaciones científicas&lt;a class="headerlink" href="#41-implicaciones-cientificas" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Entender distancias promedio permite modelar &lt;strong&gt;difusión de información&lt;/strong&gt;, &lt;strong&gt;propagación de epidemias&lt;/strong&gt;, &lt;strong&gt;viralidad&lt;/strong&gt; y &lt;strong&gt;resiliencia estructural&lt;/strong&gt;.  &lt;/li&gt;
+&lt;li&gt;Un &lt;span class="caps"&gt;APL&lt;/span&gt; bajo implica expansiones rápidas y pocas etapas de&amp;nbsp;transmisión.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="42-implicaciones-sociales-y-eticas"&gt;4.2 Implicaciones sociales y éticas&lt;a class="headerlink" href="#42-implicaciones-sociales-y-eticas" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Las redes acortan el mundo, pero también &lt;strong&gt;amplifican externalidades&lt;/strong&gt;: rumores, polarización, contagios&amp;nbsp;culturales.  &lt;/li&gt;
+&lt;li&gt;La estructura de mundo pequeño regula la conectividad, pero no la calidad de los&amp;nbsp;vínculos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="43-implicaciones-para-ingenieria-de-plataformas"&gt;4.3 Implicaciones para ingeniería de plataformas&lt;a class="headerlink" href="#43-implicaciones-para-ingenieria-de-plataformas" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Mejora de algoritmos de recomendación&amp;nbsp;(friends-of-friends).  &lt;/li&gt;
+&lt;li&gt;Optimización de buscadores sociales y privacidad basada en&amp;nbsp;distancias.  &lt;/li&gt;
+&lt;li&gt;Diseño de sistemas distribuidos que explotan el comportamiento logarítmico&amp;nbsp;de &lt;span class="math"&gt;\(L\)&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="5-conclusion"&gt;5. Conclusión&lt;a class="headerlink" href="#5-conclusion" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Las distancias sociales que intuíamos desde hace un siglo son hoy métricas verificables en redes de escala planetaria. Facebook muestra&amp;nbsp;que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La distancia promedio entre dos personas es &lt;strong&gt;menor de cinco pasos&lt;/strong&gt;.  &lt;/li&gt;
+&lt;li&gt;La teoría de &lt;strong&gt;mundos pequeños&lt;/strong&gt; predice y explica este&amp;nbsp;fenómeno.  &lt;/li&gt;
+&lt;li&gt;Los &lt;strong&gt;seis grados de separación&lt;/strong&gt; no solo se mantienen: se&amp;nbsp;comprimen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La combinación de teoría matemática, datos masivos y modelización computacional revela que vivimos en un mundo sorprendentemente bien&amp;nbsp;conectado.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Ciencia de Datos"/><category term="redes sociales, teoría de grafos, small world, seis grados de separación"/></entry></feed>

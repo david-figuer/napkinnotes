@@ -665,14 +665,15 @@ input[type="submit"]:hover {
 }
 
 .nn-article-card__title {
-  margin: 0 0 10px;
-  font-size: 2rem;
-  line-height: 1.15;
+  margin: 0 0 12px;
+  font-size: clamp(1.8rem, 2.2vw, 2.35rem);
+  line-height: 1.04;
+  letter-spacing: 0.01em;
 }
 
 .nn-article-card__title a {
   color: var(--ink);
-  transition: color 0.2s ease, letter-spacing 0.2s ease;
+  transition: color 0.2s ease, letter-spacing 0.2s ease, opacity 0.2s ease;
 }
 
 .nn-article-card__title a:hover {
@@ -682,13 +683,18 @@ input[type="submit"]:hover {
 
 .nn-article-card__subtitle {
   color: var(--muted);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-size: 1.03rem;
+  line-height: 1.65;
 }
 
 .nn-article-card__summary {
   color: var(--ink);
 }
-
+.nn-article-card__summary {
+  color: var(--ink);
+  line-height: 1.72;
+}
 .nn-mini-list {
   list-style: none;
   padding: 0;

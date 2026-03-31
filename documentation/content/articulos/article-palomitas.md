@@ -9,7 +9,8 @@ tags:
   - física
   - termodinámica
   - microondas
-  - alimentossummary: Un análisis físico del proceso de expansión explosiva de los granos de maíz en el microondas, desde la transferencia de calor hasta la dinámica adiabática del vapor de agua.
+  - alimentos
+summary: Un análisis físico del proceso de expansión explosiva de los granos de maíz en el microondas, desde la transferencia de calor hasta la dinámica adiabática del vapor de agua.
 image: images/palomitas.png
 ---
 

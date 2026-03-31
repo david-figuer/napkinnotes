@@ -1,20 +1,20 @@
 ---
-Title: "¿Cuál es la distancia promedio entre dos personas en Facebook?"
+title: ¿Cuál es la distancia promedio entre dos personas en Facebook?
 author: Duvier Suarez Fontanella
-Date: 2026-03-15
-Category: Ciencia de Datos
-Tags: 
+date: 2026-03-15
+layout: articles
+status: published
+category: Ciencia de Datos
+tags:
   - redes sociales
   - teoría de grafos
   - small world
   - seis grados de separación
-Template: articles
-status: published
-image: images/face_dist.png
+summary: completar
+image: images/palomitas.png
 ---
 
 [TOC]
-
 
 La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza **la distancia promedio entre dos usuarios de Facebook**, revisa el concepto de **seis grados de separación** y explica, desde la teoría de grafos y los modelos de **mundos pequeños**, por qué estas cifras son tan sorprendentemente bajas en redes de escala global.
 

@@ -102,7 +102,7 @@
             <div class="nn-article-list">
                 {% for article in articles %}
                     {% if loop.index0 < RECENT_ARTICLES_COUNT %}
-                    <article class="nn-article-card">
+                    <article class="nn-article-card nn-article-card--{{ article.category.slug }}">
                         {% if article.image %}
                         <a class="nn-article-card__image-link" href="{{ SITEURL }}/{{ article.url }}">
                             <img class="nn-article-card__image" src="{{ SITEURL }}/{{ article.image }}" alt="{{ article.title }}">

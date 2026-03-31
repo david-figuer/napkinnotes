@@ -59,14 +59,7 @@
 
         {% include '_includes/analytics.html' %}
     </head>
-    <script>
-    let bgShift = 0;
-
-    window.addEventListener("scroll", () => {
-      bgShift = Math.min(window.scrollY * 0.08, 60);
-      document.documentElement.style.setProperty('--bg-shift', bgShift + 'px');
-    });
-    </script>
+   
     <body>
         <div class="site-shell">
             <header class="site-header">
@@ -116,19 +109,27 @@
         {% include '_includes/footer.html' %}
 
         {% block script %}
-        {% if AMAZON_BESTAZON %}
-            {% include '_includes/bestazon.html' %}
-        {% endif %}
-        <script src="//code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="{{ SITEURL }}/theme/js/elegant.prod.9e9d5ce754.js"></script>
-        <script>
-            function validateForm(query)
-            {
-                return (query.length > 0);
-            }
-        </script>
-        {% endblock script %}
+{% if AMAZON_BESTAZON %}
+    {% include '_includes/bestazon.html' %}
+{% endif %}
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="{{ SITEURL }}/theme/js/elegant.prod.9e9d5ce754.js"></script>
+<script>
+    function validateForm(query)
+    {
+        return (query.length > 0);
+    }
+</script>
+<script>
+    let bgShift = 0;
+
+    window.addEventListener("scroll", () => {
+      bgShift = Math.min(window.scrollY * 0.08, 60);
+      document.documentElement.style.setProperty('--bg-shift', bgShift + 'px');
+    });
+</script>
+{% endblock script %}
 
         {% include '_includes/stat_counter.html' %}
     </body>

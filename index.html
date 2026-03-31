@@ -111,7 +111,7 @@ Napkin Notes        </h1>
 <section class="nn-home-grid">
     <main class="nn-home-main">
 
-        <section class="nn-section-card" id="about-project">
+        <section class="nn-section-card nn-reveal" id="about-project">
             <div class="nn-section-card__header">
                 <span class="nn-kicker">Proyecto</span>
                 <h2>Acerca del&nbsp;Proyecto</h2>
@@ -396,6 +396,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 );
         });
     }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".nn-reveal");
+
+  elements.forEach((el) => {
+    el.classList.add("nn-reveal--visible");
+  });
 });
 </script>
 

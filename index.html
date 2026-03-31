@@ -346,11 +346,27 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+    const participaModal = document.getElementById("participa-modal");
+    const openParticipaBtn = document.getElementById("open-participa-modal");
+    const closeParticipaBtn = document.getElementById("close-participa-modal");
+    const participaBackdrop = participaModal ? participaModal.querySelector(".modal-backdrop") : null;
+    const participaForm = document.getElementById("participa-form");
+
     const preguntaModal = document.getElementById("pregunta-modal");
     const openPreguntaBtn = document.getElementById("open-pregunta-modal");
     const closePreguntaBtn = document.getElementById("close-pregunta-modal");
     const preguntaBackdrop = preguntaModal ? preguntaModal.querySelector(".modal-backdrop") : null;
     const preguntaForm = document.getElementById("pregunta-form");
+
+    function openParticipaModal() {
+        if (!participaModal) return;
+        participaModal.classList.remove("hidden");
+    }
+
+    function closeParticipaModal() {
+        if (!participaModal) return;
+        participaModal.classList.add("hidden");
+    }
 
     function openPreguntaModal() {
         if (!preguntaModal) return;
@@ -360,6 +376,18 @@ document.addEventListener("DOMContentLoaded", function () {
     function closePreguntaModal() {
         if (!preguntaModal) return;
         preguntaModal.classList.add("hidden");
+    }
+
+    if (openParticipaBtn) {
+        openParticipaBtn.addEventListener("click", openParticipaModal);
+    }
+
+    if (closeParticipaBtn) {
+        closeParticipaBtn.addEventListener("click", closeParticipaModal);
+    }
+
+    if (participaBackdrop) {
+        participaBackdrop.addEventListener("click", closeParticipaModal);
     }
 
     if (openPreguntaBtn) {
@@ -376,9 +404,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener("keydown", function (e) {
         if (e.key === "Escape") {
+            closeParticipaModal();
             closePreguntaModal();
         }
     });
+
+    if (participaForm) {
+        participaForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+            const persona = document.getElementById("persona").value;
+            const resumen = document.getElementById("resumen").value;
+
+            window.location.href =
+                "mailto:TU_CORREO@ejemplo.com" +
+                "?subject=" + encodeURIComponent("Nueva propuesta Napkin Notes") +
+                "&body=" + encodeURIComponent(
+                    "Nombre: " + nombre + "\n" +
+                    "Tema o persona: " + persona + "\n\n" +
+                    "Resumen:\n" + resumen
+                );
+        });
+    }
 
     if (preguntaForm) {
         preguntaForm.addEventListener("submit", function (e) {

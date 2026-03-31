@@ -201,5 +201,63 @@
         </form>
     </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("participa-modal");
+    const openBtn = document.getElementById("open-participa-modal");
+    const closeBtn = document.getElementById("close-participa-modal");
+    const backdrop = modal ? modal.querySelector(".modal-backdrop") : null;
+    const form = document.getElementById("participa-form");
 
+    function openModal() {
+        if (!modal) return;
+        modal.classList.remove("hidden");
+        modal.setAttribute("aria-hidden", "false");
+    }
+
+    function closeModal() {
+        if (!modal) return;
+        modal.classList.add("hidden");
+        modal.setAttribute("aria-hidden", "true");
+    }
+
+    if (openBtn) {
+        openBtn.addEventListener("click", openModal);
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener("click", closeModal);
+    }
+
+    if (backdrop) {
+        backdrop.addEventListener("click", closeModal);
+    }
+
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+            closeModal();
+        }
+    });
+
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById("nombre").value.trim();
+            const persona = document.getElementById("persona").value.trim();
+            const resumen = document.getElementById("resumen").value.trim();
+
+            const destinatario = "TU_CORREO@ejemplo.com";
+            const asunto = encodeURIComponent("Propuesta Napkin Notes");
+            const cuerpo = encodeURIComponent(
+                "Nombre: " + nombre + "\n" +
+                "Persona de la que quiere hablar: " + persona + "\n\n" +
+                "Resumen:\n" + resumen
+            );
+
+            window.location.href = "mailto:" + destinatario + "?subject=" + asunto + "&body=" + cuerpo;
+        });
+    }
+});
+</script>
 {% endblock content %}

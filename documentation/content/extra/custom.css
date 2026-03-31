@@ -56,11 +56,12 @@ body {
 }
 
 .site-brand__logo {
-  width: 42px;
-  height: 42px;
-  object-fit: cover;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
   border-radius: 10px;
   display: block;
+  background: transparent;
 }
 
 .site-brand__name {
@@ -1326,7 +1327,17 @@ input[type="submit"]:hover {
   .site-header__inner {
     padding: 16px 18px;
   }
+.site-header__inner {
+  gap: 12px;
+}
 
+.site-nav__list {
+  justify-content: center;
+}
+
+.site-search input {
+  min-width: 140px;
+}
   .site-nav__list {
     gap: 14px;
   }
@@ -1336,7 +1347,7 @@ input[type="submit"]:hover {
   }
 
   .site-brand__name {
-    font-size: 1.7rem;
+    font-size: 1.25rem;
   }
 
   h1 {

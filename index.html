@@ -382,11 +382,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const persona = document.getElementById("persona").value.trim();
             const resumen = document.getElementById("resumen").value.trim();
 
-            const destinatario = "TU_CORREO@ejemplo.com";
+            const destinatario = "TU_CORREO@ejemplo.com";    
             const asunto = encodeURIComponent("Propuesta Napkin Notes");
             const cuerpo = encodeURIComponent(
                 "Nombre: " + nombre + "\n" +
-                "Persona de la que quiere hablar: " + persona + "\n\n" +
+                "¿Sobre qué quieres escribir?: " + persona + "\n\n" +
                 "Resumen:\n" + resumen
             );
 

@@ -1,7 +1,7 @@
 ---
 Title: "¿Cuál es la distancia promedio entre dos personas en Facebook?"
 author: Duvier Suarez Fontanella
-Date: 2026-04-01
+Date: 2026-03-15
 Category: Ciencia de Datos
 Tags: redes sociales, teoría de grafos, small world, seis grados de separación
 Slug: distancia-facebook

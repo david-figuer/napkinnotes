@@ -1386,3 +1386,104 @@ input[type="submit"]:hover {
     border-radius: 20px;
   }
 }
+/* ANIMACIONES MODALES */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  animation: nn-modal-fade-in 0.28s ease;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(4px);
+  animation: nn-backdrop-fade-in 0.28s ease;
+}
+
+.modal-card {
+  position: relative;
+  z-index: 1;
+  width: min(92%, 640px);
+  margin: 8vh auto;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 24px 80px rgba(20, 10, 10, 0.22);
+  animation: nn-modal-card-in 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: center top;
+}
+
+#participa-modal .modal-card::before,
+#pregunta-modal .modal-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 24px;
+  right: 24px;
+  height: 4px;
+  border-radius: 999px;
+}
+
+#participa-modal .modal-card::before {
+  background: var(--satinsheengold);
+}
+
+#pregunta-modal .modal-card::before {
+  background: var(--richcarmine);
+}
+
+@keyframes nn-modal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes nn-backdrop-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes nn-modal-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+button.nn-inline-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+button.nn-inline-link:hover {
+  color: var(--satinsheengold);
+}
+
+button.nn-inline-link:focus-visible,
+.nn-button:focus-visible,
+.modal-close:focus-visible,
+#participa-form input:focus-visible,
+#participa-form textarea:focus-visible,
+#pregunta-form input:focus-visible,
+#pregunta-form textarea:focus-visible {
+  outline: 3px solid rgba(196, 154, 102, 0.28);
+  outline-offset: 2px;
+}

@@ -1318,12 +1318,25 @@ input[type="submit"]:hover {
     white-space: normal;
   }
 }
-
+  
 @media (max-width: 640px) {
   .site-main {
     padding-top: 28px;
   }
+  .site-header__inner {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+  .site-nav__list {
+  gap: 10px;
+}
 
+.site-nav__list li a {
+  font-size: 0.85rem;
+  padding-bottom: 4px;
+  .site-brand__name {
+    display: none;
+  }
   .site-header__inner {
     padding: 16px 18px;
   }

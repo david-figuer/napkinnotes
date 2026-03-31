@@ -1819,3 +1819,44 @@ body::after {
 .nn-hero::after {
   display: none !important;
 }
+.nn-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 22% 28%,
+      rgba(196, 154, 102, 0.18),
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 78% 72%,
+      rgba(255, 255, 255, 0.06),
+      transparent 40%
+    );
+  z-index: 1;
+  pointer-events: none;
+}
+.nn-hero {
+  background-blend-mode: overlay;
+}
+
+.nn-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.015),
+      rgba(255,255,255,0.015) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+  opacity: 0.25;
+  z-index: 1;
+  pointer-events: none;
+}
+.nn-hero__overlay {
+  z-index: 1;
+}

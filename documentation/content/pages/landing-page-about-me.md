@@ -47,5 +47,6 @@ Notes crece gracias a esas ideas que nacen en conversaciones entre amigos
 y terminan, inevitablemente, en una servilleta.
 
 
-- [Invitation to Participate]({filename}/Contributing/invitation.md)
-- [How Do I Contribute?]({filename}/Contributing/contributing-to-the-project.md)
+<button id="open-participa-modal" class="cta-button">
+  ¿Quieres participar?
+</button>

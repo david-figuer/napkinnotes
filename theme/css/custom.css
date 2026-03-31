@@ -507,11 +507,30 @@ input[type="submit"]:hover {
 
 .nn-section-card,
 .nn-sidebar-card {
+  position: relative;
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 24px;
   box-shadow: var(--shadow);
   padding: 30px;
+  isolation: isolate;
+}
+
+.nn-section-card::before,
+.nn-sidebar-card::before {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  border-radius: 30px;
+  background: radial-gradient(
+    circle,
+    rgba(196, 154, 102, 0.10) 0%,
+    rgba(196, 154, 102, 0.04) 35%,
+    rgba(196, 154, 102, 0) 75%
+  );
+  z-index: -1;
+  opacity: 0.8;
+  pointer-events: none;
 }
 
 .nn-sidebar-card {
@@ -561,6 +580,7 @@ input[type="submit"]:hover {
 }
 
 .nn-article-card {
+  position: relative;
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
   gap: 22px;
@@ -570,8 +590,24 @@ input[type="submit"]:hover {
   border-radius: 20px;
   background: linear-gradient(180deg, #fffdfa 0%, #fff8f1 100%);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  isolation: isolate;
 }
 
+.nn-article-card::before {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  border-radius: 26px;
+  background: radial-gradient(
+    circle,
+    rgba(149, 11, 14, 0.08) 0%,
+    rgba(149, 11, 14, 0.03) 38%,
+    rgba(149, 11, 14, 0) 75%
+  );
+  z-index: -1;
+  opacity: 0.65;
+  pointer-events: none;
+}
 .nn-article-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 22px 48px rgba(20, 10, 10, 0.14);
@@ -1602,4 +1638,28 @@ body::before {
 
   opacity: 0.25;
   z-index: 0;
+}
+/* FONDO DINÁMICO MÁS INTENSO */
+
+body {
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% calc(12% + var(--bg-shift)), rgba(196, 154, 102, 0.18), transparent 30%),
+    radial-gradient(circle at 85% calc(80% - var(--bg-shift)), rgba(149, 11, 14, 0.16), transparent 34%);
+  opacity: 1;
+  z-index: 0;
+}
+
+.site-shell,
+.site-header,
+.site-main {
+  position: relative;
+  z-index: 1;
 }

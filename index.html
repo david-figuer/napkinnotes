@@ -85,15 +85,17 @@
 
 <section class="nn-hero">
     <div class="nn-hero__bg" style="background-image: url('./images/Imagen_3.png');"></div>
-
     <div class="nn-hero__overlay"></div>
 
     <div class="nn-hero__content">
         <div class="nn-hero__eyebrow">Ciencia clara · ideas que caben en una servilleta</div>
 
-        <h1 class="nn-hero__title">Napkin Notes</h1>
+        <h1 class="nn-hero__title">
+Napkin Notes        </h1>
 
-        <p class="nn-hero__subtitle">Matemáticas rápidas y ciencia cotidiana</p>
+        <p class="nn-hero__subtitle">
+                Matemáticas rápidas y ciencia cotidiana
+        </p>
 
         <div class="nn-hero__actions">
             <a class="nn-button nn-button--primary" href="#about-project">Conoce más</a>
@@ -104,6 +106,7 @@
 
 <section class="nn-home-grid">
     <main class="nn-home-main">
+
         <section class="nn-section-card" id="about-project">
             <div class="nn-section-card__header">
                 <span class="nn-kicker">Proyecto</span>
@@ -162,10 +165,8 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
 
                         <div class="nn-article-card__body">
                             <div class="nn-article-card__meta">
-                                <span class="nn-article-card__category">
-                                    <a href="./categories#matematicas-ref">Matemáticas</a>
-                                </span>
-                                <span class="nn-article-card__dot">•</span>
+                                <a href="./categories#matematicas-ref">Matemáticas</a>
+                                •
                                 <time datetime="2026-02-12T00:00:00+05:00">Feb 12, 2026</time>
                             </div>
 
@@ -183,10 +184,8 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
 
                         <div class="nn-article-card__body">
                             <div class="nn-article-card__meta">
-                                <span class="nn-article-card__category">
-                                    <a href="./categories#fisica-cotidiana-ref">Física cotidiana</a>
-                                </span>
-                                <span class="nn-article-card__dot">•</span>
+                                <a href="./categories#fisica-cotidiana-ref">Física cotidiana</a>
+                                •
                                 <time datetime="2026-02-12T00:00:00+05:00">Feb 12, 2026</time>
                             </div>
 
@@ -204,10 +203,8 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
 
                         <div class="nn-article-card__body">
                             <div class="nn-article-card__meta">
-                                <span class="nn-article-card__category">
-                                    <a href="./categories#ciencia-de-datos-ref">Ciencia de Datos</a>
-                                </span>
-                                <span class="nn-article-card__dot">•</span>
+                                <a href="./categories#ciencia-de-datos-ref">Ciencia de Datos</a>
+                                •
                                 <time datetime="2025-12-06T00:00:00+05:00">Dec 06, 2025</time>
                             </div>
 
@@ -225,10 +222,8 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
 
                         <div class="nn-article-card__body">
                             <div class="nn-article-card__meta">
-                                <span class="nn-article-card__category">
-                                    <a href="./categories#dinamica-de-fluidos-ref">Dinámica de Fluidos</a>
-                                </span>
-                                <span class="nn-article-card__dot">•</span>
+                                <a href="./categories#dinamica-de-fluidos-ref">Dinámica de Fluidos</a>
+                                •
                                 <time datetime="2025-12-03T00:00:00+05:00">Dec 03, 2025</time>
                             </div>
 
@@ -246,10 +241,8 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
 
                         <div class="nn-article-card__body">
                             <div class="nn-article-card__meta">
-                                <span class="nn-article-card__category">
-                                    <a href="./categories#termodinamica-ref">Termodinámica</a>
-                                </span>
-                                <span class="nn-article-card__dot">•</span>
+                                <a href="./categories#termodinamica-ref">Termodinámica</a>
+                                •
                                 <time datetime="2025-11-03T00:00:00+05:00">Nov 03, 2025</time>
                             </div>
 
@@ -265,6 +258,7 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
     </main>
 
     <aside class="nn-home-sidebar">
+
         <section class="nn-sidebar-card">
             <span class="nn-kicker">Actualidad</span>
             <h3>Últimos</h3>
@@ -292,15 +286,14 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
             </ul>
         </section>
 
-<section class="nn-sidebar-card">
-    <span class="nn-kicker">Participa</span>
-    <p>¿Tienes una pregunta tipo Fermi o quieres que hagamos un artículo sobre algún tema curioso?</p>
-    <button id="open-pregunta-modal" class="nn-button nn-button--primary" type="button">
-        Pregúntanos
-    </button>
-</section>
+        <section class="nn-sidebar-card">
+            <span class="nn-kicker">Participa</span>
+            <p>¿Tienes una pregunta tipo Fermi o quieres que hagamos un artículo sobre algún tema curioso?</p>
+            <button id="open-pregunta-modal" class="nn-button" type="button">
+                Pregúntanos
+            </button>
+        </section>
 
-        
         <section class="nn-sidebar-card">
             <span class="nn-kicker">Explorar</span>
             <h3>Navega por temas</h3>
@@ -308,111 +301,61 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
                 <a href="./tags">Tags</a>
                 <a href="./categories">Categorías</a>
                 <a href="./archives">Archivo</a>
-                <a href="./about">Nosotros</a>
+                <a href="./">Nosotros</a>
             </div>
         </section>
+
     </aside>
 </section>
-<div id="participa-modal" class="modal hidden" aria-hidden="true">
+
+<!-- MODAL PARTICIPAR -->
+<div id="participa-modal" class="modal hidden">
     <div class="modal-backdrop"></div>
-
     <div class="modal-card">
-        <button id="close-participa-modal" class="modal-close" aria-label="Cerrar">
-            ×
-        </button>
-
+        <button id="close-participa-modal" class="modal-close" type="button">×</button>
         <h3>Proponer una participación</h3>
-        <p>Cuéntanos tu idea para Napkin Notes</p>
 
         <form id="participa-form">
-            <label for="nombre">Tu nombre</label>
-            <input id="nombre" type="text" required>
-
-            <label for="persona">Persona de la que quieres hablar</label>
-            <input id="persona" type="text" required>
-
-            <label for="resumen">Breve resumen</label>
-            <textarea id="resumen" rows="5" required></textarea>
-
+            <input id="nombre" placeholder="Tu nombre" required>
+            <input id="persona" placeholder="Tema" required>
+            <textarea id="resumen" placeholder="Resumen" required></textarea>
             <button type="submit">Enviar propuesta</button>
         </form>
     </div>
 </div>
-<!-- NUEVO MODAL -->
-<div id="pregunta-modal" class="modal hidden" aria-hidden="true">
+
+<!-- MODAL PREGUNTAS -->
+<div id="pregunta-modal" class="modal hidden">
     <div class="modal-backdrop"></div>
-
     <div class="modal-card">
-        <button id="close-pregunta-modal" class="modal-close" aria-label="Cerrar">
-            ×
-        </button>
-
+        <button id="close-pregunta-modal" class="modal-close" type="button">×</button>
         <h3>Haznos una pregunta</h3>
-        <p>Propón una pregunta tipo Fermi o un tema para un artículo.</p>
 
         <form id="pregunta-form">
-            <label for="nombre-pregunta">Tu nombre</label>
-            <input id="nombre-pregunta" type="text" required>
-
-            <label for="tema-pregunta">Tu pregunta o tema</label>
-            <input id="tema-pregunta" type="text" required>
-
-            <label for="detalle-pregunta">Cuéntanos un poco más</label>
-            <textarea id="detalle-pregunta" rows="5" required></textarea>
-
-            <button type="submit">Enviar pregunta</button>
+            <input id="nombre-pregunta" placeholder="Tu nombre" required>
+            <input id="tema-pregunta" placeholder="Pregunta o tema" required>
+            <textarea id="detalle-pregunta" placeholder="Detalle" required></textarea>
+            <button type="submit">Enviar</button>
         </form>
     </div>
 </div>
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("participa-modal");
-    const openBtn = document.getElementById("open-participa-modal");
-    const closeBtn = document.getElementById("close-participa-modal");
-    const backdrop = modal ? modal.querySelector(".modal-backdrop") : null;
-    const form = document.getElementById("participa-form");
-
     const preguntaModal = document.getElementById("pregunta-modal");
     const openPreguntaBtn = document.getElementById("open-pregunta-modal");
     const closePreguntaBtn = document.getElementById("close-pregunta-modal");
     const preguntaBackdrop = preguntaModal ? preguntaModal.querySelector(".modal-backdrop") : null;
     const preguntaForm = document.getElementById("pregunta-form");
 
-    function openModal() {
-        if (!modal) return;
-        modal.classList.remove("hidden");
-        modal.setAttribute("aria-hidden", "false");
-    }
-
-    function closeModal() {
-        if (!modal) return;
-        modal.classList.add("hidden");
-        modal.setAttribute("aria-hidden", "true");
-    }
-
-     function openPreguntaModal() {
+    function openPreguntaModal() {
         if (!preguntaModal) return;
         preguntaModal.classList.remove("hidden");
-        preguntaModal.setAttribute("aria-hidden", "false");
     }
 
-     function closePreguntaModal() {
+    function closePreguntaModal() {
         if (!preguntaModal) return;
         preguntaModal.classList.add("hidden");
-        preguntaModal.setAttribute("aria-hidden", "true");
-    }
-
-    
-    if (openBtn) {
-        openBtn.addEventListener("click", openModal);
-    }
-
-    if (closeBtn) {
-        closeBtn.addEventListener("click", closeModal);
-    }
-
-    if (backdrop) {
-        backdrop.addEventListener("click", closeModal);
     }
 
     if (openPreguntaBtn) {
@@ -429,50 +372,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener("keydown", function (e) {
         if (e.key === "Escape") {
-        closeModal();
-        closePreguntaModal();
+            closePreguntaModal();
         }
     });
-    if (form) {
-        form.addEventListener("submit", function (e) {
+
+    if (preguntaForm) {
+        preguntaForm.addEventListener("submit", function (e) {
             e.preventDefault();
 
-            const nombre = document.getElementById("nombre").value.trim();
-            const persona = document.getElementById("persona").value.trim();
-            const resumen = document.getElementById("resumen").value.trim();
+            const nombre = document.getElementById("nombre-pregunta").value;
+            const tema = document.getElementById("tema-pregunta").value;
+            const detalle = document.getElementById("detalle-pregunta").value;
 
-            const destinatario = "TU_CORREO@ejemplo.com";    
-            const asunto = encodeURIComponent("Propuesta Napkin Notes");
-            const cuerpo = encodeURIComponent(
-                "Nombre: " + nombre + "\n" +
-                "¿Sobre qué quieres escribir?: " + persona + "\n\n" +
-                "Resumen:\n" + resumen
-            );
-
-            window.location.href = "mailto:" + destinatario + "?subject=" + asunto + "&body=" + cuerpo;
+            window.location.href =
+                "mailto:TU_CORREO@ejemplo.com" +
+                "?subject=" + encodeURIComponent("Nueva pregunta Napkin Notes") +
+                "&body=" + encodeURIComponent(
+                    "Nombre: " + nombre + "\nTema: " + tema + "\n\n" + detalle
+                );
         });
     }
 });
-if (preguntaForm) {
-    preguntaForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const nombre = document.getElementById("nombre-pregunta").value.trim();
-        const tema = document.getElementById("tema-pregunta").value.trim();
-        const detalle = document.getElementById("detalle-pregunta").value.trim();
-
-        const destinatario = "TU_CORREO@ejemplo.com";
-        const asunto = encodeURIComponent("Nueva pregunta / propuesta Napkin Notes");
-        const cuerpo = encodeURIComponent(
-            "Nombre: " + nombre + "\n" +
-            "Pregunta o tema: " + tema + "\n\n" +
-            "Detalle:\n" + detalle
-        );
-
-        window.location.href = "mailto:" + destinatario + "?subject=" + asunto + "&body=" + cuerpo;
-    });
-}
 </script>
+
                 </div>
             </main>
         </div>

@@ -45,7 +45,7 @@
     {% set hero_image = FEATURED_IMAGE %}
 {% endif %}
 
-<section class="nn-hero">
+<section class="nn-hero nn-reveal">
     <div class="nn-hero__bg{% if not hero_image %} nn-hero__bg--plain{% endif %}" {% if hero_image %}style="background-image: url('{{ hero_image }}');"{% endif %}></div>
     <div class="nn-hero__overlay"></div>
     <div class="nn-hero__glow"></div>
@@ -78,7 +78,7 @@
     <main class="nn-home-main">
 
         {% if landing_page.page %}
-        <section class="nn-section-card" id="about-project">
+        <section class="nn-section-card nn-reveal" id="about-project">
             <div class="nn-section-card__header">
                 <span class="nn-kicker">Proyecto</span>
                 <h2>{{ landing_page.page.title }}</h2>
@@ -90,7 +90,7 @@
         {% endif %}
 
         {% if articles %}
-        <section class="nn-section-card nn-section-card--articles">
+        <section class="nn-section-card nn-section-card--articles nn-reveal">
             <div class="nn-section-card__header nn-section-card__header--row">
                 <div>
                     <span class="nn-kicker">Publicaciones</span>
@@ -138,7 +138,7 @@
 
     <aside class="nn-home-sidebar">
 
-        <section class="nn-sidebar-card">
+        <section class="nn-sidebar-card nn-reveal">
             <span class="nn-kicker">Actualidad</span>
             <h3>Últimos</h3>
             <ul class="nn-mini-list">
@@ -153,7 +153,7 @@
             </ul>
         </section>
 
-        <section class="nn-sidebar-card">
+        <section class="nn-sidebar-card nn-reveal">
             <span class="nn-kicker">Participa</span>
             <p>¿Tienes una pregunta tipo Fermi o quieres que hagamos un artículo sobre algún tema curioso?</p>
             <button id="open-pregunta-modal" class="nn-button" type="button">
@@ -161,7 +161,7 @@
             </button>
         </section>
 
-        <section class="nn-sidebar-card">
+        <section class="nn-sidebar-card nn-reveal">
             <span class="nn-kicker">Explorar</span>
             <h3>Navega por temas</h3>
             <div class="nn-link-cloud">

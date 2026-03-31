@@ -46,28 +46,23 @@
 {% endif %}
 
 <section class="nn-hero">
-    {% if hero_image %}
-    <div class="nn-hero__bg" style="background-image: url('{{ hero_image }}');"></div>
-    {% else %}
-    <div class="nn-hero__bg nn-hero__bg--plain"></div>
-    {% endif %}
-
+    <div class="nn-hero__bg{% if not hero_image %} nn-hero__bg--plain{% endif %}" {% if hero_image %}style="background-image: url('{{ hero_image }}');"{% endif %}></div>
     <div class="nn-hero__overlay"></div>
 
     <div class="nn-hero__content">
         <div class="nn-hero__eyebrow">Ciencia clara · ideas que caben en una servilleta</div>
 
-        {% if LANDING_PAGE_TITLE %}
-        <h1 class="nn-hero__title">{{ LANDING_PAGE_TITLE }}</h1>
-        {% else %}
-        <h1 class="nn-hero__title">{{ SITENAME }}</h1>
-        {% endif %}
+        <h1 class="nn-hero__title">
+            {% if LANDING_PAGE_TITLE %}{{ LANDING_PAGE_TITLE }}{% else %}{{ SITENAME }}{% endif %}
+        </h1>
 
-        {% if landing_page.page and landing_page.page.subtitle %}
-        <p class="nn-hero__subtitle">{{ landing_page.page.subtitle }}</p>
-        {% elif SITE_DESCRIPTION %}
-        <p class="nn-hero__subtitle">{{ SITE_DESCRIPTION }}</p>
-        {% endif %}
+        <p class="nn-hero__subtitle">
+            {% if landing_page.page and landing_page.page.subtitle %}
+                {{ landing_page.page.subtitle }}
+            {% elif SITE_DESCRIPTION %}
+                {{ SITE_DESCRIPTION }}
+            {% endif %}
+        </p>
 
         <div class="nn-hero__actions">
             <a class="nn-button nn-button--primary" href="#about-project">Conoce más</a>
@@ -78,6 +73,7 @@
 
 <section class="nn-home-grid">
     <main class="nn-home-main">
+
         {% if landing_page.page %}
         <section class="nn-section-card" id="about-project">
             <div class="nn-section-card__header">
@@ -101,40 +97,34 @@
             </div>
 
             <div class="nn-article-list">
-                {% for article in articles %}
-                    {% if loop.index0 < RECENT_ARTICLES_COUNT %}
-                    <article class="nn-article-card">
-                        {% if article.image %}
-                        <a class="nn-article-card__image-link" href="{{ SITEURL }}/{{ article.url }}">
-                            <img class="nn-article-card__image" src="{{ SITEURL }}/{{ article.image }}" alt="{{ article.title }}">
-                        </a>
+                {% for article in articles if loop.index0 < RECENT_ARTICLES_COUNT %}
+                <article class="nn-article-card">
+                    {% if article.image %}
+                    <a class="nn-article-card__image-link" href="{{ SITEURL }}/{{ article.url }}">
+                        <img class="nn-article-card__image" src="{{ SITEURL }}/{{ article.image }}" alt="{{ article.title }}">
+                    </a>
+                    {% endif %}
+
+                    <div class="nn-article-card__body">
+                        <div class="nn-article-card__meta">
+                            <a href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                            •
+                            <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                        </div>
+
+                        <h3 class="nn-article-card__title">
+                            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                        </h3>
+
+                        {% if article.subtitle %}
+                        <p class="nn-article-card__subtitle">{{ article.subtitle }}</p>
                         {% endif %}
 
-                        <div class="nn-article-card__body">
-                            <div class="nn-article-card__meta">
-                                <span class="nn-article-card__category">
-                                    <a href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ article.category.slug }}-ref">{{ article.category }}</a>
-                                </span>
-                                <span class="nn-article-card__dot">•</span>
-                                <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-                            </div>
-
-                            <h3 class="nn-article-card__title">
-                                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-                            </h3>
-
-                            {% if article.subtitle %}
-                            <p class="nn-article-card__subtitle">{{ article.subtitle }}</p>
-                            {% endif %}
-
-                            {% if RECENT_ARTICLE_SUMMARY and article.summary %}
-                            <div class="nn-article-card__summary">
-                                {{ article.summary }}
-                            </div>
-                            {% endif %}
-                        </div>
-                    </article>
-                    {% endif %}
+                        {% if RECENT_ARTICLE_SUMMARY and article.summary %}
+                        <div class="nn-article-card__summary">{{ article.summary }}</div>
+                        {% endif %}
+                    </div>
+                </article>
                 {% endfor %}
             </div>
         </section>
@@ -142,30 +132,28 @@
     </main>
 
     <aside class="nn-home-sidebar">
+
         <section class="nn-sidebar-card">
             <span class="nn-kicker">Actualidad</span>
             <h3>Últimos</h3>
             <ul class="nn-mini-list">
-                {% for article in articles %}
-                    {% if loop.index0 < 5 %}
-                    <li>
-                        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-                        <span>{{ article.locale_date }}</span>
-                    </li>
-                    {% endif %}
+                {% for article in articles if loop.index0 < 5 %}
+                <li>
+                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                    <span>{{ article.locale_date }}</span>
+                </li>
                 {% endfor %}
             </ul>
         </section>
 
-<section class="nn-sidebar-card">
-    <span class="nn-kicker">Participa</span>
-    <p>¿Tienes una pregunta tipo Fermi o quieres que hagamos un artículo sobre algún tema curioso?</p>
-    <button id="open-pregunta-modal" class="nn-button nn-button--primary" type="button">
-        Pregúntanos
-    </button>
-</section>
+        <section class="nn-sidebar-card">
+            <span class="nn-kicker">Participa</span>
+            <p>¿Tienes una pregunta tipo Fermi o quieres que hagamos un artículo sobre algún tema curioso?</p>
+            <button id="open-pregunta-modal" class="nn-button nn-button--primary" type="button">
+                Pregúntanos
+            </button>
+        </section>
 
-        
         <section class="nn-sidebar-card">
             <span class="nn-kicker">Explorar</span>
             <h3>Navega por temas</h3>
@@ -176,166 +164,82 @@
                 <a href="{{ SITEURL }}/{{ NOSOTROS_URL }}">Nosotros</a>
             </div>
         </section>
+
     </aside>
 </section>
-<div id="participa-modal" class="modal hidden" aria-hidden="true">
+
+<!-- MODAL PARTICIPAR -->
+<div id="participa-modal" class="modal hidden">
     <div class="modal-backdrop"></div>
-
     <div class="modal-card">
-        <button id="close-participa-modal" class="modal-close" aria-label="Cerrar">
-            ×
-        </button>
-
+        <button id="close-participa-modal" class="modal-close">×</button>
         <h3>Proponer una participación</h3>
-        <p>Cuéntanos tu idea para Napkin Notes</p>
 
         <form id="participa-form">
-            <label for="nombre">Tu nombre</label>
-            <input id="nombre" type="text" required>
-
-            <label for="persona">Persona de la que quieres hablar</label>
-            <input id="persona" type="text" required>
-
-            <label for="resumen">Breve resumen</label>
-            <textarea id="resumen" rows="5" required></textarea>
-
+            <input id="nombre" placeholder="Tu nombre" required>
+            <input id="persona" placeholder="Tema" required>
+            <textarea id="resumen" placeholder="Resumen" required></textarea>
             <button type="submit">Enviar propuesta</button>
         </form>
     </div>
 </div>
-<!-- NUEVO MODAL -->
-<div id="pregunta-modal" class="modal hidden" aria-hidden="true">
+
+<!-- MODAL PREGUNTAS -->
+<div id="pregunta-modal" class="modal hidden">
     <div class="modal-backdrop"></div>
-
     <div class="modal-card">
-        <button id="close-pregunta-modal" class="modal-close" aria-label="Cerrar">
-            ×
-        </button>
-
+        <button id="close-pregunta-modal" class="modal-close">×</button>
         <h3>Haznos una pregunta</h3>
-        <p>Propón una pregunta tipo Fermi o un tema para un artículo.</p>
 
         <form id="pregunta-form">
-            <label for="nombre-pregunta">Tu nombre</label>
-            <input id="nombre-pregunta" type="text" required>
-
-            <label for="tema-pregunta">Tu pregunta o tema</label>
-            <input id="tema-pregunta" type="text" required>
-
-            <label for="detalle-pregunta">Cuéntanos un poco más</label>
-            <textarea id="detalle-pregunta" rows="5" required></textarea>
-
-            <button type="submit">Enviar pregunta</button>
+            <input id="nombre-pregunta" placeholder="Tu nombre" required>
+            <input id="tema-pregunta" placeholder="Pregunta o tema" required>
+            <textarea id="detalle-pregunta" placeholder="Detalle" required></textarea>
+            <button type="submit">Enviar</button>
         </form>
     </div>
 </div>
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("participa-modal");
-    const openBtn = document.getElementById("open-participa-modal");
-    const closeBtn = document.getElementById("close-participa-modal");
-    const backdrop = modal ? modal.querySelector(".modal-backdrop") : null;
-    const form = document.getElementById("participa-form");
 
     const preguntaModal = document.getElementById("pregunta-modal");
     const openPreguntaBtn = document.getElementById("open-pregunta-modal");
     const closePreguntaBtn = document.getElementById("close-pregunta-modal");
-    const preguntaBackdrop = preguntaModal ? preguntaModal.querySelector(".modal-backdrop") : null;
+    const preguntaBackdrop = preguntaModal.querySelector(".modal-backdrop");
     const preguntaForm = document.getElementById("pregunta-form");
 
-    function openModal() {
-        if (!modal) return;
-        modal.classList.remove("hidden");
-        modal.setAttribute("aria-hidden", "false");
-    }
-
-    function closeModal() {
-        if (!modal) return;
-        modal.classList.add("hidden");
-        modal.setAttribute("aria-hidden", "true");
-    }
-
-     function openPreguntaModal() {
-        if (!preguntaModal) return;
+    function openPreguntaModal() {
         preguntaModal.classList.remove("hidden");
-        preguntaModal.setAttribute("aria-hidden", "false");
     }
 
-     function closePreguntaModal() {
-        if (!preguntaModal) return;
+    function closePreguntaModal() {
         preguntaModal.classList.add("hidden");
-        preguntaModal.setAttribute("aria-hidden", "true");
     }
 
-    
-    if (openBtn) {
-        openBtn.addEventListener("click", openModal);
-    }
-
-    if (closeBtn) {
-        closeBtn.addEventListener("click", closeModal);
-    }
-
-    if (backdrop) {
-        backdrop.addEventListener("click", closeModal);
-    }
-
-    if (openPreguntaBtn) {
-        openPreguntaBtn.addEventListener("click", openPreguntaModal);
-    }
-
-    if (closePreguntaBtn) {
-        closePreguntaBtn.addEventListener("click", closePreguntaModal);
-    }
-
-    if (preguntaBackdrop) {
-        preguntaBackdrop.addEventListener("click", closePreguntaModal);
-    }
+    openPreguntaBtn.addEventListener("click", openPreguntaModal);
+    closePreguntaBtn.addEventListener("click", closePreguntaModal);
+    preguntaBackdrop.addEventListener("click", closePreguntaModal);
 
     document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") {
-        closeModal();
-        closePreguntaModal();
-        }
+        if (e.key === "Escape") closePreguntaModal();
     });
-    if (form) {
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
 
-            const nombre = document.getElementById("nombre").value.trim();
-            const persona = document.getElementById("persona").value.trim();
-            const resumen = document.getElementById("resumen").value.trim();
-
-            const destinatario = "TU_CORREO@ejemplo.com";    
-            const asunto = encodeURIComponent("Propuesta Napkin Notes");
-            const cuerpo = encodeURIComponent(
-                "Nombre: " + nombre + "\n" +
-                "¿Sobre qué quieres escribir?: " + persona + "\n\n" +
-                "Resumen:\n" + resumen
-            );
-
-            window.location.href = "mailto:" + destinatario + "?subject=" + asunto + "&body=" + cuerpo;
-        });
-    }
-});
-if (preguntaForm) {
     preguntaForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const nombre = document.getElementById("nombre-pregunta").value.trim();
-        const tema = document.getElementById("tema-pregunta").value.trim();
-        const detalle = document.getElementById("detalle-pregunta").value.trim();
+        const nombre = document.getElementById("nombre-pregunta").value;
+        const tema = document.getElementById("tema-pregunta").value;
+        const detalle = document.getElementById("detalle-pregunta").value;
 
-        const destinatario = "TU_CORREO@ejemplo.com";
-        const asunto = encodeURIComponent("Nueva pregunta / propuesta Napkin Notes");
-        const cuerpo = encodeURIComponent(
-            "Nombre: " + nombre + "\n" +
-            "Pregunta o tema: " + tema + "\n\n" +
-            "Detalle:\n" + detalle
-        );
-
-        window.location.href = "mailto:" + destinatario + "?subject=" + asunto + "&body=" + cuerpo;
+        window.location.href =
+            "mailto:TU_CORREO@ejemplo.com" +
+            "?subject=" + encodeURIComponent("Nueva pregunta Napkin Notes") +
+            "&body=" + encodeURIComponent(
+                "Nombre: " + nombre + "\nTema: " + tema + "\n\n" + detalle
+            );
     });
-}
+});
 </script>
+
 {% endblock content %}

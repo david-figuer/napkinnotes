@@ -1650,17 +1650,22 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-
-  background-image:
+  background:
     repeating-linear-gradient(
-      45deg,
-      rgba(0, 0, 0, 0.015),
-      rgba(0, 0, 0, 0.015) 1px,
+      0deg,
+      rgba(90, 70, 50, 0.012),
+      rgba(90, 70, 50, 0.012) 1px,
       transparent 1px,
-      transparent 6px
+      transparent 7px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(90, 70, 50, 0.008),
+      rgba(90, 70, 50, 0.008) 1px,
+      transparent 1px,
+      transparent 9px
     );
-
-  opacity: 0.25;
+  opacity: 0.18;
   z-index: 0;
 }
 /* FONDO DINÁMICO MÁS INTENSO */
@@ -1675,8 +1680,9 @@ body::after {
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 15% calc(12% + var(--bg-shift)), rgba(196, 154, 102, 0.18), transparent 30%),
-    radial-gradient(circle at 85% calc(80% - var(--bg-shift)), rgba(149, 11, 14, 0.16), transparent 34%);
+    radial-gradient(circle at 14% calc(10% + var(--bg-shift)), rgba(196, 154, 102, 0.12), transparent 28%),
+    radial-gradient(circle at 84% calc(82% - var(--bg-shift)), rgba(149, 11, 14, 0.09), transparent 34%),
+    radial-gradient(circle at 52% 30%, rgba(255, 255, 255, 0.35), transparent 32%);
   opacity: 1;
   z-index: 0;
 }
@@ -1740,4 +1746,29 @@ body::after {
 
 .nn-article-card:hover .nn-article-card__image {
   transform: scale(1.05);
+}
+/* ACENTOS POR CATEGORÍA */
+
+.nn-article-card {
+  border-top: 4px solid rgba(196, 154, 102, 0.35);
+}
+
+.nn-article-card--matematicas {
+  border-top-color: #c49a66;
+}
+
+.nn-article-card--fisica {
+  border-top-color: #950b0e;
+}
+
+.nn-article-card--termodinamica {
+  border-top-color: #b56e43;
+}
+
+.nn-article-card--ciencia-de-datos {
+  border-top-color: #5f7486;
+}
+
+.nn-article-card--dinamica-de-fluidos {
+  border-top-color: #4d7a6d;
 }

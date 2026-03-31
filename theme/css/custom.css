@@ -1281,3 +1281,108 @@ input[type="submit"]:hover {
 .nn-section-card p {
   text-align: justify;
 }
+/* MODAL PARTICIPAR */
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.modal-card {
+  position: relative;
+  z-index: 1;
+  width: min(92%, 640px);
+  margin: 8vh auto;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 24px 80px rgba(20, 10, 10, 0.22);
+}
+
+.modal-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.modal-card p {
+  margin-bottom: 1.25rem;
+  color: var(--muted);
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  border: 0;
+  background: transparent;
+  color: var(--richcarmine);
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem 0.45rem;
+}
+
+.modal-close:hover {
+  color: var(--satinsheengold);
+  transform: none;
+}
+
+#participa-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+#participa-form label {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+#participa-form input,
+#participa-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  font: inherit;
+  color: var(--ink);
+  box-sizing: border-box;
+}
+
+#participa-form input:focus,
+#participa-form textarea:focus {
+  outline: none;
+  border-color: var(--satinsheengold);
+  box-shadow: 0 0 0 3px rgba(196, 154, 102, 0.15);
+}
+
+#participa-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+#participa-form button[type="submit"] {
+  margin-top: 0.5rem;
+  justify-self: start;
+}
+
+@media (max-width: 640px) {
+  .modal-card {
+    width: min(94%, 94vw);
+    margin: 5vh auto;
+    padding: 1.4rem;
+    border-radius: 20px;
+  }
+}

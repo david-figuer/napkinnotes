@@ -49,7 +49,18 @@ body {
 }
 
 .site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   text-decoration: none !important;
+}
+
+.site-brand__logo {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
 }
 
 .site-brand__name {
@@ -1476,4 +1487,9 @@ button.nn-inline-link:focus-visible,
 #pregunta-form textarea:focus-visible {
   outline: 3px solid rgba(196, 154, 102, 0.28);
   outline-offset: 2px;
+}
+@media (max-width: 640px) {
+  .site-brand__logo {
+    display: none;
+  }
 }

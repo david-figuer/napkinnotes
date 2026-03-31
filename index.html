@@ -294,10 +294,13 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
 
 <section class="nn-sidebar-card">
     <span class="nn-kicker">Participa</span>
-    <h3>Únete al proyecto</h3>
-    <p>¿Tienes una pregunta tipo Fermi o quieres colaborar?</p>
-    <a class="nn-inline-link" href="./Contributing/invitation.html">Ver invitación</a>
+    <p>¿Tienes una pregunta tipo Fermi o quieres que hagamos un artículo sobre algún tema curioso?</p>
+    <button id="open-pregunta-modal" class="nn-inline-link" type="button">
+      Pregúntanos
+    </button>
 </section>
+
+        
         <section class="nn-sidebar-card">
             <span class="nn-kicker">Explorar</span>
             <h3>Navega por temas</h3>
@@ -335,6 +338,32 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
         </form>
     </div>
 </div>
+<!-- NUEVO MODAL -->
+<div id="pregunta-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-card">
+        <button id="close-pregunta-modal" class="modal-close" aria-label="Cerrar">
+            ×
+        </button>
+
+        <h3>Haznos una pregunta</h3>
+        <p>Propón una pregunta tipo Fermi o un tema para un artículo.</p>
+
+        <form id="pregunta-form">
+            <label for="nombre-pregunta">Tu nombre</label>
+            <input id="nombre-pregunta" type="text" required>
+
+            <label for="tema-pregunta">Tu pregunta o tema</label>
+            <input id="tema-pregunta" type="text" required>
+
+            <label for="detalle-pregunta">Cuéntanos un poco más</label>
+            <textarea id="detalle-pregunta" rows="5" required></textarea>
+
+            <button type="submit">Enviar pregunta</button>
+        </form>
+    </div>
+</div>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("participa-modal");
@@ -342,6 +371,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeBtn = document.getElementById("close-participa-modal");
     const backdrop = modal ? modal.querySelector(".modal-backdrop") : null;
     const form = document.getElementById("participa-form");
+
+    const preguntaModal = document.getElementById("pregunta-modal");
+    const openPreguntaBtn = document.getElementById("open-pregunta-modal");
+    const closePreguntaBtn = document.getElementById("close-pregunta-modal");
+    const preguntaBackdrop = preguntaModal ? preguntaModal.querySelector(".modal-backdrop") : null;
+    const preguntaForm = document.getElementById("pregunta-form");
 
     function openModal() {
         if (!modal) return;
@@ -355,6 +390,19 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.setAttribute("aria-hidden", "true");
     }
 
+     function openPreguntaModal() {
+        if (!preguntaModal) return;
+        preguntaModal.classList.remove("hidden");
+        preguntaModal.setAttribute("aria-hidden", "false");
+    }
+
+     function closePreguntaModal() {
+        if (!preguntaModal) return;
+        preguntaModal.classList.add("hidden");
+        preguntaModal.setAttribute("aria-hidden", "true");
+    }
+
+    
     if (openBtn) {
         openBtn.addEventListener("click", openModal);
     }
@@ -367,12 +415,24 @@ document.addEventListener("DOMContentLoaded", function () {
         backdrop.addEventListener("click", closeModal);
     }
 
+    if (openPreguntaBtn) {
+        openPreguntaBtn.addEventListener("click", openPreguntaModal);
+    }
+
+    if (closePreguntaBtn) {
+        closePreguntaBtn.addEventListener("click", closePreguntaModal);
+    }
+
+    if (preguntaBackdrop) {
+        preguntaBackdrop.addEventListener("click", closePreguntaModal);
+    }
+
     document.addEventListener("keydown", function (e) {
         if (e.key === "Escape") {
-            closeModal();
+        closeModal();
+        closePreguntaModal();
         }
     });
-
     if (form) {
         form.addEventListener("submit", function (e) {
             e.preventDefault();
@@ -393,6 +453,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+if (preguntaForm) {
+    preguntaForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const nombre = document.getElementById("nombre-pregunta").value.trim();
+        const tema = document.getElementById("tema-pregunta").value.trim();
+        const detalle = document.getElementById("detalle-pregunta").value.trim();
+
+        const destinatario = "TU_CORREO@ejemplo.com";
+        const asunto = encodeURIComponent("Nueva pregunta / propuesta Napkin Notes");
+        const cuerpo = encodeURIComponent(
+            "Nombre: " + nombre + "\n" +
+            "Pregunta o tema: " + tema + "\n\n" +
+            "Detalle:\n" + detalle
+        );
+
+        window.location.href = "mailto:" + destinatario + "?subject=" + asunto + "&body=" + cuerpo;
+    });
+}
 </script>
                 </div>
             </main>

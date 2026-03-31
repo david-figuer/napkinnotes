@@ -31,7 +31,7 @@
 
 {% block content %}
 {% from '_includes/_defaults.html' import LANDING_PAGE_TITLE, FEATURED_IMAGE, SITE_DESCRIPTION with context %}
-{% from '_includes/_defaults.html' import RECENT_ARTICLES_COUNT, ARCHIVES_URL, CATEGORIES_URL, TAGS_URL, RECENT_ARTICLE_SUMMARY with context %}
+{% from '_includes/_defaults.html' import RECENT_ARTICLES_COUNT, ARCHIVES_URL, CATEGORIES_URL, TAGS_URL, RECENT_ARTICLE_SUMMARY, NOSOTROS_URL with context %}
 
 {% set landing_page = namespace(page=false) %}
 {% for p in hidden_pages if p.slug == "landing-page-about-hidden" %}
@@ -97,34 +97,36 @@
             </div>
 
             <div class="nn-article-list">
-                {% for article in articles if loop.index0 < RECENT_ARTICLES_COUNT %}
-                <article class="nn-article-card">
-                    {% if article.image %}
-                    <a class="nn-article-card__image-link" href="{{ SITEURL }}/{{ article.url }}">
-                        <img class="nn-article-card__image" src="{{ SITEURL }}/{{ article.image }}" alt="{{ article.title }}">
-                    </a>
-                    {% endif %}
+                {% for article in articles %}
+                    {% if loop.index0 < RECENT_ARTICLES_COUNT %}
+                    <article class="nn-article-card">
+                        {% if article.image %}
+                        <a class="nn-article-card__image-link" href="{{ SITEURL }}/{{ article.url }}">
+                            <img class="nn-article-card__image" src="{{ SITEURL }}/{{ article.image }}" alt="{{ article.title }}">
+                        </a>
+                        {% endif %}
 
-                    <div class="nn-article-card__body">
-                        <div class="nn-article-card__meta">
-                            <a href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ article.category.slug }}-ref">{{ article.category }}</a>
-                            •
-                            <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                        <div class="nn-article-card__body">
+                            <div class="nn-article-card__meta">
+                                <a href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                                •
+                                <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                            </div>
+
+                            <h3 class="nn-article-card__title">
+                                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                            </h3>
+
+                            {% if article.subtitle %}
+                            <p class="nn-article-card__subtitle">{{ article.subtitle }}</p>
+                            {% endif %}
+
+                            {% if RECENT_ARTICLE_SUMMARY and article.summary %}
+                            <div class="nn-article-card__summary">{{ article.summary }}</div>
+                            {% endif %}
                         </div>
-
-                        <h3 class="nn-article-card__title">
-                            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-                        </h3>
-
-                        {% if article.subtitle %}
-                        <p class="nn-article-card__subtitle">{{ article.subtitle }}</p>
-                        {% endif %}
-
-                        {% if RECENT_ARTICLE_SUMMARY and article.summary %}
-                        <div class="nn-article-card__summary">{{ article.summary }}</div>
-                        {% endif %}
-                    </div>
-                </article>
+                    </article>
+                    {% endif %}
                 {% endfor %}
             </div>
         </section>
@@ -137,11 +139,13 @@
             <span class="nn-kicker">Actualidad</span>
             <h3>Últimos</h3>
             <ul class="nn-mini-list">
-                {% for article in articles if loop.index0 < 5 %}
-                <li>
-                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-                    <span>{{ article.locale_date }}</span>
-                </li>
+                {% for article in articles %}
+                    {% if loop.index0 < 5 %}
+                    <li>
+                        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                        <span>{{ article.locale_date }}</span>
+                    </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </section>
@@ -149,8 +153,8 @@
         <section class="nn-sidebar-card">
             <span class="nn-kicker">Participa</span>
             <p>¿Tienes una pregunta tipo Fermi o quieres que hagamos un artículo sobre algún tema curioso?</p>
-            <button id="open-pregunta-modal" class="nn-button" type="button">                
-                  Pregúntanos
+            <button id="open-pregunta-modal" class="nn-button" type="button">
+                Pregúntanos
             </button>
         </section>
 
@@ -172,7 +176,7 @@
 <div id="participa-modal" class="modal hidden">
     <div class="modal-backdrop"></div>
     <div class="modal-card">
-        <button id="close-participa-modal" class="modal-close">×</button>
+        <button id="close-participa-modal" class="modal-close" type="button">×</button>
         <h3>Proponer una participación</h3>
 
         <form id="participa-form">
@@ -188,7 +192,7 @@
 <div id="pregunta-modal" class="modal hidden">
     <div class="modal-backdrop"></div>
     <div class="modal-card">
-        <button id="close-pregunta-modal" class="modal-close">×</button>
+        <button id="close-pregunta-modal" class="modal-close" type="button">×</button>
         <h3>Haznos una pregunta</h3>
 
         <form id="pregunta-form">
@@ -202,43 +206,56 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
     const preguntaModal = document.getElementById("pregunta-modal");
     const openPreguntaBtn = document.getElementById("open-pregunta-modal");
     const closePreguntaBtn = document.getElementById("close-pregunta-modal");
-    const preguntaBackdrop = preguntaModal.querySelector(".modal-backdrop");
+    const preguntaBackdrop = preguntaModal ? preguntaModal.querySelector(".modal-backdrop") : null;
     const preguntaForm = document.getElementById("pregunta-form");
 
     function openPreguntaModal() {
+        if (!preguntaModal) return;
         preguntaModal.classList.remove("hidden");
     }
 
     function closePreguntaModal() {
+        if (!preguntaModal) return;
         preguntaModal.classList.add("hidden");
     }
 
-    openPreguntaBtn.addEventListener("click", openPreguntaModal);
-    closePreguntaBtn.addEventListener("click", closePreguntaModal);
-    preguntaBackdrop.addEventListener("click", closePreguntaModal);
+    if (openPreguntaBtn) {
+        openPreguntaBtn.addEventListener("click", openPreguntaModal);
+    }
+
+    if (closePreguntaBtn) {
+        closePreguntaBtn.addEventListener("click", closePreguntaModal);
+    }
+
+    if (preguntaBackdrop) {
+        preguntaBackdrop.addEventListener("click", closePreguntaModal);
+    }
 
     document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") closePreguntaModal();
+        if (e.key === "Escape") {
+            closePreguntaModal();
+        }
     });
 
-    preguntaForm.addEventListener("submit", function (e) {
-        e.preventDefault();
+    if (preguntaForm) {
+        preguntaForm.addEventListener("submit", function (e) {
+            e.preventDefault();
 
-        const nombre = document.getElementById("nombre-pregunta").value;
-        const tema = document.getElementById("tema-pregunta").value;
-        const detalle = document.getElementById("detalle-pregunta").value;
+            const nombre = document.getElementById("nombre-pregunta").value;
+            const tema = document.getElementById("tema-pregunta").value;
+            const detalle = document.getElementById("detalle-pregunta").value;
 
-        window.location.href =
-            "mailto:TU_CORREO@ejemplo.com" +
-            "?subject=" + encodeURIComponent("Nueva pregunta Napkin Notes") +
-            "&body=" + encodeURIComponent(
-                "Nombre: " + nombre + "\nTema: " + tema + "\n\n" + detalle
-            );
-    });
+            window.location.href =
+                "mailto:TU_CORREO@ejemplo.com" +
+                "?subject=" + encodeURIComponent("Nueva pregunta Napkin Notes") +
+                "&body=" + encodeURIComponent(
+                    "Nombre: " + nombre + "\nTema: " + tema + "\n\n" + detalle
+                );
+        });
+    }
 });
 </script>
 

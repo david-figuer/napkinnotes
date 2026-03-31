@@ -334,6 +334,8 @@ input[type="submit"]:hover {
   background-size: cover;
   background-position: center;
   transform: scale(1.04);
+  animation: nn-hero-bg-float 18s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
 .nn-hero__bg--plain {
@@ -1251,7 +1253,14 @@ input[type="submit"]:hover {
     transform: translateY(0) scale(1);
   }
 }
-
+@keyframes nn-hero-bg-float {
+  from {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.09) translate3d(-8px, -6px, 0);
+  }
+}
 .nn-button:focus-visible,
 .modal-close:focus-visible,
 #participa-form input:focus-visible,
@@ -1360,7 +1369,9 @@ input[type="submit"]:hover {
   .site-main {
     padding-top: 28px;
   }
-
+ .nn-hero__bg {
+    animation-duration: 24s;
+  }
   .site-header__inner {
     padding: 10px 14px;
     gap: 10px;

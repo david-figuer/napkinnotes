@@ -1692,3 +1692,28 @@ body::after {
 .site-nav__list li a:hover::after {
   width: 100%;
 }
+/* ARTÍCULOS MÁS INTERACTIVOS */
+
+.nn-article-card {
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  cursor: pointer;
+}
+
+.nn-article-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 60px rgba(20, 10, 10, 0.18);
+  border-color: rgba(196, 154, 102, 0.5);
+}
+
+/* imagen con zoom */
+
+.nn-article-card__image {
+  transition: transform 0.4s ease;
+}
+
+.nn-article-card:hover .nn-article-card__image {
+  transform: scale(1.05);
+}

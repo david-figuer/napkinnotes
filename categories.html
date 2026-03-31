@@ -41,7 +41,14 @@
 
 
     </head>
+    <script>
+    let bgShift = 0;
 
+    window.addEventListener("scroll", () => {
+      bgShift = Math.min(window.scrollY * 0.08, 60);
+      document.documentElement.style.setProperty('--bg-shift', bgShift + 'px');
+    });
+    </script>
     <body>
         <div class="site-shell">
             <header class="site-header">

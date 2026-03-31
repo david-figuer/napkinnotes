@@ -1318,49 +1318,41 @@ input[type="submit"]:hover {
     white-space: normal;
   }
 }
-  
+
 @media (max-width: 640px) {
   .site-main {
     padding-top: 28px;
   }
+
   .site-header__inner {
     padding: 10px 14px;
     gap: 10px;
-  }
-  .site-nav__list {
-  gap: 10px;
-}
-
-.site-nav__list li a {
-  font-size: 0.85rem;
-  padding-bottom: 4px;
-  .site-brand__name {
-    display: none;
-  }
-  .site-header__inner {
-    padding: 16px 18px;
-  }
-.site-header__inner {
-  gap: 12px;
-}
-
-.site-nav__list {
-  justify-content: center;
-}
-
-.site-search input {
-  min-width: 140px;
-}
-  .site-nav__list {
-    gap: 14px;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .site-brand__logo {
+  .site-brand {
     display: none;
   }
 
-  .site-brand__name {
-    font-size: 1.25rem;
+  .site-nav__list {
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .site-nav__list li a {
+    font-size: 0.85rem;
+    padding-bottom: 4px;
+  }
+
+  .site-search {
+    display: flex;
+    justify-content: center;
+  }
+
+  .site-search input {
+    min-width: 140px;
   }
 
   h1 {

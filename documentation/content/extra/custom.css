@@ -1408,7 +1408,15 @@ input[type="submit"]:hover {
   .nn-hero__content {
     padding: 42px 22px;
   }
+   .nn-hero__badges {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
 
+  .nn-hero__badges span {
+    font-size: 0.82rem;
+    padding: 7px 12px;
+  }
   .nn-section-card,
   .nn-sidebar-card,
   .nn-article-hero__inner,

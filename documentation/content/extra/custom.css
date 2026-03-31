@@ -1487,7 +1487,10 @@ input[type="submit"]:hover {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
+  .nn-hero::before,
+  .nn-hero::after {
+    display: none;
+  }
   .site-brand {
     display: none;
   }
@@ -1771,4 +1774,43 @@ body::after {
 
 .nn-article-card--dinamica-de-fluidos {
   border-top-color: #4d7a6d;
+}
+/* SERVILLETA ESQUEMÁTICA */
+
+.nn-hero::before {
+  content: "";
+  position: absolute;
+  right: 44px;
+  bottom: 34px;
+  width: 150px;
+  height: 110px;
+  border: 1.5px solid rgba(255, 245, 232, 0.34);
+  border-radius: 10px;
+  transform: rotate(-8deg);
+  background:
+    linear-gradient(135deg, transparent 0 84%, rgba(255, 245, 232, 0.18) 84% 100%),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 17px,
+      rgba(255, 245, 232, 0.10) 17px 18px
+    );
+  box-shadow: 0 16px 44px rgba(10, 6, 6, 0.16);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.72;
+}
+
+.nn-hero::after {
+  content: "E \\approx mc^2\A N ?\A pV = nRT";
+  white-space: pre;
+  position: absolute;
+  right: 70px;
+  bottom: 55px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.05rem;
+  line-height: 1.1;
+  color: rgba(255, 245, 232, 0.28);
+  transform: rotate(-8deg);
+  z-index: 1;
+  pointer-events: none;
 }

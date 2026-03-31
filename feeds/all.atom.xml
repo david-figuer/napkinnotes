@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Napkin Notes</title><link href="/" rel="alternate"/><link href="feeds/all.atom.xml" rel="self"/><id>/</id><updated>2026-03-15T00:00:00+05:00</updated><entry><title>¿Cuál es la distancia promedio entre dos personas en Facebook?</title><link href="distancia-facebook" rel="alternate"/><published>2026-03-15T00:00:00+05:00</published><updated>2026-03-15T00:00:00+05:00</updated><author><name>Duvier Suarez Fontanella</name></author><id>tag:None,2026-03-15:distancia-facebook</id><summary type="html">&lt;div class="toc"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook"&gt;1. La medida real: ¿a cuántos saltos estamos en&amp;nbsp;Facebook?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#21-el-grafo-social-como-red-compleja"&gt;2.1 El grafo social como red&amp;nbsp;compleja&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#22-la-magia-de-los-mundos-pequenos"&gt;2.2 La magia de los mundos&amp;nbsp;pequeños&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion"&gt;3. Los seis grados de separación: historia, mito y validación&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#31-milgram-y-sus-cadenas-de-cartas"&gt;3.1 Milgram y sus cadenas de …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="toc"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Napkin Notes</title><link href="/" rel="alternate"/><link href="feeds/all.atom.xml" rel="self"/><id>/</id><updated>2026-03-15T00:00:00+05:00</updated><entry><title>¿Cuál es la distancia promedio entre dos personas en Facebook?</title><link href="cual-es-la-distancia-promedio-entre-dos-personas-en-facebook" rel="alternate"/><published>2026-03-15T00:00:00+05:00</published><updated>2026-03-15T00:00:00+05:00</updated><author><name>Duvier Suarez Fontanella</name></author><id>tag:None,2026-03-15:cual-es-la-distancia-promedio-entre-dos-personas-en-facebook</id><summary type="html">&lt;p&gt;completar&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook"&gt;1. La medida real: ¿a cuántos saltos estamos en&amp;nbsp;Facebook?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;/a&gt;&lt;ul&gt;
@@ -172,7 +163,7 @@ $$&lt;/div&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="Ciencia de Datos"/><category term="redes sociales, teoría de grafos, small world, seis grados de separación"/></entry><entry><title>¿Por qué el pan se pone duro (y por qué la bolsa es su única amiga)?</title><link href="por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga" rel="alternate"/><published>2026-03-15T00:00:00+05:00</published><updated>2026-03-15T00:00:00+05:00</updated><author><name>David Figueruelo</name></author><id>tag:None,2026-03-15:por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga</id><summary type="html">&lt;p&gt;Dejas el pan fuera unas horas y se convierte en un arma contundente. No es traición, es&amp;nbsp;física.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+&lt;/script&gt;</content><category term="Ciencia de Datos"/><category term="redes sociales"/><category term="teoría de grafos"/><category term="small world"/><category term="seis grados de separación"/></entry><entry><title>¿Por qué el pan se pone duro (y por qué la bolsa es su única amiga)?</title><link href="por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga" rel="alternate"/><published>2026-03-15T00:00:00+05:00</published><updated>2026-03-15T00:00:00+05:00</updated><author><name>David Figueruelo</name></author><id>tag:None,2026-03-15:por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga</id><summary type="html">&lt;p&gt;Dejas el pan fuera unas horas y se convierte en un arma contundente. No es traición, es&amp;nbsp;física.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#resumen"&gt;Resumen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#introduccion"&gt;Introducción&lt;/a&gt;&lt;/li&gt;

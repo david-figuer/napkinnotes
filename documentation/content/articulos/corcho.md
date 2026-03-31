@@ -1,7 +1,7 @@
 ---
 title: "¿Qué tan rápido sale el corcho de una botella de champán?"
 author: "Duvier Suarez Fontanella"
-date: 2025-12-03
+date: 2026-01-04
 layout: articles
 status: published
 category: "Dinámica de Fluidos"

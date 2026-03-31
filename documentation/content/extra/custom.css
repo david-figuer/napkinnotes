@@ -1815,3 +1815,7 @@ body::after {
   z-index: 4;
   pointer-events: none;
 }
+.nn-hero::before,
+.nn-hero::after {
+  display: none !important;
+}

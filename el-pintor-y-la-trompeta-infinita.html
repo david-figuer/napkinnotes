@@ -45,14 +45,7 @@
 
 
     </head>
-    <script>
-    let bgShift = 0;
-
-    window.addEventListener("scroll", () => {
-      bgShift = Math.min(window.scrollY * 0.08, 60);
-      document.documentElement.style.setProperty('--bg-shift', bgShift + 'px');
-    });
-    </script>
+   
     <body>
         <div class="site-shell">
             <header class="site-header">
@@ -400,15 +393,23 @@ $$</div>
         </a>
     </div>
 </footer>
-            <script src="//code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="./theme/js/elegant.prod.9e9d5ce754.js"></script>
-        <script>
-            function validateForm(query)
-            {
-                return (query.length > 0);
-            }
-        </script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="./theme/js/elegant.prod.9e9d5ce754.js"></script>
+<script>
+    function validateForm(query)
+    {
+        return (query.length > 0);
+    }
+</script>
+<script>
+    let bgShift = 0;
+
+    window.addEventListener("scroll", () => {
+      bgShift = Math.min(window.scrollY * 0.08, 60);
+      document.documentElement.style.setProperty('--bg-shift', bgShift + 'px');
+    });
+</script>
 
     <script>
     (function () {

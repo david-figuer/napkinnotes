@@ -508,14 +508,14 @@ input[type="submit"]:hover {
 .nn-section-card,
 .nn-sidebar-card {
   position: relative;
-  background: var(--paper);
-  border: 1px solid var(--line);
+  background: rgba(255, 253, 249, 0.92);
+  border: 1px solid rgba(231, 216, 200, 0.9);
   border-radius: 24px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 18px 44px rgba(20, 10, 10, 0.07);
   padding: 30px;
   isolation: isolate;
+  backdrop-filter: blur(6px);
 }
-
 .nn-section-card::before,
 .nn-sidebar-card::before {
   content: "";
@@ -530,6 +530,24 @@ input[type="submit"]:hover {
   );
   z-index: -1;
   opacity: 0.8;
+  pointer-events: none;
+}
+
+.nn-section-card::after,
+.nn-sidebar-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  right: 30px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(196, 154, 102, 0.95),
+    transparent
+  );
+  opacity: 0.7;
   pointer-events: none;
 }
 

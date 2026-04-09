@@ -203,7 +203,7 @@ AUTHORS = {
     "Gabriel": {
         "url": "https://www.linkedin.com/in/gasape21/",
         "role": "Editor",
-        "blurb": "Diseño y dirección visual del proyecto.",
+        "blurb": " ",
         "avatar": "images/gabriel.jpeg",
     },
 }

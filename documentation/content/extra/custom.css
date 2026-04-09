@@ -1757,9 +1757,10 @@ footer a,
 
 .nn-article-hero__image {
   width: 100%;
+  height: auto;
   max-height: none;
-  min-height: 220px;
-  object-fit: cover;
+  min-height: 0;
+  object-fit: contain;
   border-radius: 18px;
 }
   .site-nav__list {
@@ -1880,9 +1881,7 @@ footer a,
   .site-main {
     padding-top: 28px;
   }
-.nn-article-hero__image {
-  min-height: 240px;
-}
+
   .site-header__inner {
     grid-template-columns: 1fr;
     gap: 10px;

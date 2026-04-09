@@ -194,7 +194,7 @@ AUTHORS = {
         "blurb": "Gretel es científica de formación, escritora por placer y feminista por necesidad. Observa el mundo con la precisión de quien ha sido educada en el método científico y la sensibilidad de quien encuentra en la escritura una forma de interpretar lo cotidiano. Su trabajo combina pensamiento crítico y voz propia, explorando las estructuras —visibles e invisibles— que moldean nuestras vidas.",
         "avatar": "images/gretel.png",
     },
-    "David Figueruelo": {
+    "David Figueruelo Hernán": {
         "url": "https://produccioncientifica.usal.es/investigadores/148090/detalle",
         "role": "Editor, Desarrollador Web",
         "blurb": "Investigador en cosmología que busca comprender el universo y el rol de la materia y energía oscuras en él. Interesado las ecuaciones y las preguntas fundamentales: qué significa entender en física y qué es *verdad* al observar solo una fracción mínima del cosmos. Trabaja interpretando las pistas que el universo nos deja en forma de datos, intentando averiguar qué historias encajan con ellas y cuáles no. Financiación: Personal investigador doctor de la UPV/EHU (2024).",

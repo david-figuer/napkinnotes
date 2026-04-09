@@ -795,7 +795,98 @@ input[type="submit"]:hover {
 .nn-article-layout--no-toc {
   grid-template-columns: minmax(0, 1fr) 280px;
 }
+/* ÍNDICE LATERAL DEL ARTÍCULO */
 
+.nn-article-layout {
+  grid-template-columns: 260px minmax(0, 1fr) 280px;
+}
+
+.nn-article-toc {
+  min-width: 0;
+}
+
+.nn-toc-card {
+  top: 108px;
+  max-height: calc(100vh - 128px);
+  overflow: hidden;
+  padding: 0;
+}
+
+.nn-toc-nav {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.nn-toc-nav__eyebrow {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--satinsheengold);
+  font-weight: 700;
+  padding: 20px 22px 0;
+}
+
+.nn-toc-nav h3 {
+  margin: 6px 0 0;
+  padding: 0 22px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.nn-toc-nav__body {
+  padding: 16px 14px 18px 18px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.nn-toc-nav__body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nn-toc-nav__body ul ul {
+  margin-top: 6px;
+  margin-left: 14px;
+  padding-left: 12px;
+  border-left: 1px solid rgba(196, 154, 102, 0.22);
+}
+
+.nn-toc-nav__body li + li {
+  margin-top: 6px;
+}
+
+.nn-toc-nav__body a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 12px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.35;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nn-toc-nav__body a:hover {
+  background: #fbf3ea;
+  color: var(--richcarmine);
+  transform: translateX(2px);
+}
+
+.nn-toc-nav__body a.is-active {
+  background: rgba(196, 154, 102, 0.14);
+  color: var(--richcarmine);
+  font-weight: 700;
+  box-shadow: inset 3px 0 0 var(--satinsheengold);
+}
+
+.nn-article-content h2,
+.nn-article-content h3,
+.nn-article-content h4 {
+  scroll-margin-top: 120px;
+}
 .nn-article-toc,
 .nn-article-sidebar {
   min-width: 0;
@@ -1384,6 +1475,31 @@ input[type="submit"]:hover {
 
   .nn-sticky-card {
     position: static;
+  }
+
+  .nn-article-toc {
+    order: -1;
+  }
+
+  .nn-toc-card {
+    max-height: none;
+    overflow: visible;
+    padding: 22px;
+  }
+
+  .nn-toc-nav__eyebrow,
+  .nn-toc-nav h3,
+  .nn-toc-nav__body {
+    padding: 0;
+    border: 0;
+  }
+
+  .nn-toc-nav h3 {
+    margin: 0 0 12px;
+  }
+
+  .nn-toc-nav__body {
+    overflow: visible;
   }
 }
 

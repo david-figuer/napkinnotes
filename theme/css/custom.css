@@ -1960,3 +1960,62 @@ footer a,
     font-size: 1.8rem;
   }
 }
+{% block script %}
+    {{ super() }}
+    {% from '_includes/comments.html' import comments_script with context %}
+    {{ comments_script() }}
+    {% include '_includes/photos_footer.html' %}
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toc = document.querySelector(".nn-article-content > .toc");
+        if (!toc) return;
+
+        const tocLinks = Array.from(toc.querySelectorAll("a[href^='#']"));
+        if (!tocLinks.length) return;
+
+        const headings = tocLinks
+            .map(link => {
+                const id = decodeURIComponent(link.getAttribute("href").slice(1));
+                const target = document.getElementById(id);
+                return target ? { link, target } : null;
+            })
+            .filter(Boolean);
+
+        if (!headings.length) return;
+
+        function setActive(id) {
+            tocLinks.forEach(link => link.classList.remove("is-active"));
+            const activeLink = toc.querySelector(`a[href="#${CSS.escape(id)}"]`);
+            if (activeLink) activeLink.classList.add("is-active");
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const visible = entries
+                    .filter(entry => entry.isIntersecting)
+                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+                if (visible.length) {
+                    setActive(visible[0].target.id);
+                }
+            },
+            {
+                rootMargin: "-18% 0px -62% 0px",
+                threshold: [0.15, 0.35, 0.6]
+            }
+        );
+
+        headings.forEach(({ target }) => observer.observe(target));
+
+        tocLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                tocLinks.forEach(item => item.classList.remove("is-active"));
+                link.classList.add("is-active");
+            });
+        });
+
+        setActive(headings[0].target.id);
+    });
+    </script>
+{% endblock script %}

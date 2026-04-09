@@ -1441,7 +1441,22 @@ input[type="submit"]:hover {
     position: static;
   }
 
-  
+  .nn-article-toc {
+    order: -1;
+  }
+
+  .nn-article-toc .nn-sticky-card {
+    position: static;
+    padding: 18px 22px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+  }
+
+  .nn-article-toc .nn-sticky-card h3 {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 980px) {

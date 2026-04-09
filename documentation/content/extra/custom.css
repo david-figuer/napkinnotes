@@ -1057,7 +1057,7 @@ footer a,
   color: var(--richcarmine);
 }
 
-.nn-article-content {
+
   padding: 34px;
   border: 1px solid var(--line);
   border-radius: 24px;
@@ -1101,22 +1101,33 @@ footer a,
 
 .nn-article-content {
   position: relative;
-  padding: 34px 34px 34px 290px;
+  padding: 34px 34px 34px 320px;
 }
 
 .nn-article-content > .toc {
-  position: absolute;
-  top: 34px;
-  left: 34px;
-  width: 220px;
-  margin: 0;
+  position: sticky;
+  top: 110px;
+  left: 0;
+  float: left;
+  width: 230px;
+  margin: 0 34px 24px -286px;
   padding: 18px 18px 16px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: var(--paper);
   box-shadow: var(--shadow);
+  align-self: start;
+}
+.nn-article-content > .toc {
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
 }
 
+.nn-article-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .nn-article-content > .toc::before {
   content: "Contenido";
   display: block;
@@ -1745,20 +1756,23 @@ footer a,
     grid-template-columns: minmax(0, 1fr);
   }
 
-    .nn-article-content {
-    padding: 22px;
-  }
+   .nn-article-content {
+  padding: 22px;
+}
 
-  .nn-article-content > .toc {
-    position: static;
-    width: auto;
-    margin: 0 0 24px;
-    padding: 18px 22px;
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    background: var(--paper);
-    box-shadow: var(--shadow);
-  }
+.nn-article-content > .toc {
+  float: none;
+  position: static;
+  width: auto;
+  max-height: none;
+  margin: 0 0 24px;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  overflow: visible;
+}
 
   .nn-sticky-card {
     position: static;

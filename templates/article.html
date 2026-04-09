@@ -76,14 +76,17 @@
 <div class="nn-article-layout {% if not article.toc %}nn-article-layout--no-toc{% endif %}">
     {% if article.toc %}
     <aside class="nn-article-toc">
-        <div class="nn-sticky-card">
-            <nav>
+        <div class="nn-sticky-card nn-toc-card">
+            <nav class="nn-toc-nav" aria-label="Índice del artículo">
+                <div class="nn-toc-nav__eyebrow">En este artículo</div>
                 <h3>Contenido</h3>
-                {{ article.toc }}
+                <div class="nn-toc-nav__body">
+                    {{ article.toc }}
+                </div>
             </nav>
         </div>
     </aside>
-    {% endif %}
+{% endif %}
 
     <div class="nn-article-main">
         <div class="nn-article-content">
@@ -186,4 +189,67 @@
     {% from '_includes/comments.html' import comments_script with context %}
     {{ comments_script() }}
     {% include '_includes/photos_footer.html' %}
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toc = document.querySelector(".nn-toc-nav__body");
+        const articleContent = document.querySelector(".nn-article-content");
+
+        if (!toc || !articleContent) return;
+
+        const tocLinks = Array.from(toc.querySelectorAll("a[href^='#']"));
+        if (!tocLinks.length) return;
+
+        const headings = tocLinks
+            .map(link => {
+                const id = decodeURIComponent(link.getAttribute("href").slice(1));
+                const target = document.getElementById(id);
+                return target ? { link, target } : null;
+            })
+            .filter(Boolean);
+
+        if (!headings.length) return;
+
+        const clearActive = () => {
+            tocLinks.forEach(link => link.classList.remove("is-active"));
+        };
+
+        const setActive = (id) => {
+            clearActive();
+            const activeLink = toc.querySelector(`a[href="#${CSS.escape(id)}"]`);
+            if (activeLink) {
+                activeLink.classList.add("is-active");
+            }
+        };
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const visible = entries
+                    .filter(entry => entry.isIntersecting)
+                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+                if (visible.length) {
+                    setActive(visible[0].target.id);
+                }
+            },
+            {
+                rootMargin: "-20% 0px -65% 0px",
+                threshold: [0.15, 0.35, 0.6]
+            }
+        );
+
+        headings.forEach(({ target }) => observer.observe(target));
+
+        tocLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                tocLinks.forEach(item => item.classList.remove("is-active"));
+                link.classList.add("is-active");
+            });
+        });
+
+        if (headings[0]) {
+            setActive(headings[0].target.id);
+        }
+    });
+    </script>
 {% endblock script %}

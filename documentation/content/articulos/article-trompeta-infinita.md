@@ -1,6 +1,6 @@
 ---
 title: El pintor y la trompeta infinita
-author: David Figueruelo
+author: David Figueruelo Hernán
 date: 2026-02-12
 layout: articles
 status: published

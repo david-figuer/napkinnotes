@@ -2146,3 +2146,17 @@ footer a,
     margin: 0 auto 18px;
   }
 }
+/* JUSTIFICADO GLOBAL EN BLOQUES CLAVE */
+
+#about-project .nn-richtext p,
+#about-project .nn-richtext li,
+.nn-sidebar-card p,
+.nn-sidebar-card li,
+.nn-player-card__description,
+.nn-author-box__bio,
+.nn-article-content p,
+.nn-article-content li,
+.nn-richtext p,
+.nn-richtext li {
+  text-align: justify;
+}

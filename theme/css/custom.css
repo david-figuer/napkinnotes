@@ -1171,8 +1171,8 @@ footer a,
 
 .nn-article-content > .toc a {
   display: block;
-  padding: 7px 10px;
-  border-radius: 10px;
+  padding: 9px 14px;
+  border-radius: 12px;
   color: var(--muted);
   font-size: 0.94rem;
   line-height: 1.35;
@@ -1184,6 +1184,7 @@ footer a,
   color: var(--richcarmine);
 }
 .nn-article-content > .toc a.is-active {
+  padding: 10px 14px;
   background: rgba(196, 154, 102, 0.14);
   color: var(--richcarmine);
   font-weight: 700;

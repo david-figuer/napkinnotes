@@ -1273,15 +1273,7 @@ footer a,
   color: var(--richcarmine);
 }
 
-.nn-article-sidebar .list-of-tags {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
-.nn-article-sidebar .list-of-tags li {
-  margin-bottom: 8px;
-}
 
 /* =========================
    ABOUT / SQUAD
@@ -2165,15 +2157,153 @@ footer a,
 .nn-explore-hero .nn-squad-hero__subtitle {
   text-align: justify;
 }
-/* SIDEBAR DEL ARTÍCULO: SOCIAL / STAY IN TOUCH */
+
+
+
+
+/* =========================
+   ARTICLE META CARD
+========================= */
+
+.nn-article-meta-card {
+  display: grid;
+  gap: 18px;
+}
+
+.nn-article-meta-card__section {
+  padding: 18px 18px 16px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fffaf4;
+}
+
+.nn-article-meta-card__section--social,
+.nn-article-meta-card__section--share {
+  background: var(--paper);
+}
+
+.nn-article-meta-card__eyebrow {
+  margin-bottom: 12px;
+  color: var(--satinsheengold);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.nn-article-meta-row + .nn-article-meta-row {
+  margin-top: 16px;
+}
+
+.nn-article-meta-row--stack {
+  display: block;
+}
+
+.nn-article-meta-row__label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.nn-article-meta-row__value {
+  display: block;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.nn-article-meta-badges,
+.nn-article-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nn-article-meta-badge,
+.nn-article-meta-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fbf3ea;
+  color: var(--richcarmine);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.nn-article-meta-badge:hover,
+.nn-article-meta-tag:hover {
+  border-color: rgba(196, 154, 102, 0.55);
+  background: #f8ecdf;
+  color: var(--richcarmine);
+}
+
+.nn-article-meta-badge--category {
+  background: rgba(196, 154, 102, 0.16);
+  border-color: rgba(196, 154, 102, 0.35);
+}
+
+.nn-article-meta-tag__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: rgba(149, 11, 14, 0.08);
+  color: var(--richcarmine);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.nn-article-meta-card__share-text {
+  margin: 0 0 12px;
+  color: var(--muted);
+  text-align: left;
+}
+
+.nn-share-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.nn-share-actions__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fbf5ee;
+  color: var(--richcarmine);
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.nn-share-actions__button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(196, 154, 102, 0.45);
+  background: #f8ecdf;
+  color: var(--richcarmine);
+}
 
 #article-sidebar #sidebar-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 12px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 #article-sidebar #sidebar-social-link a {
@@ -2191,16 +2321,20 @@ footer a,
 
 #article-sidebar #sidebar-social-link a svg,
 #article-sidebar #sidebar-social-link a img {
-  width: 22px;
-  height: 22px;
-  max-width: 22px;
-  max-height: 22px;
   display: block;
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
 }
 
 @media (max-width: 640px) {
-  #article-sidebar #sidebar-social-link {
-    gap: 12px;
+  .nn-article-meta-card__section {
+    padding: 16px;
+  }
+
+  .nn-share-actions {
+    grid-template-columns: 1fr;
   }
 
   #article-sidebar #sidebar-social-link a {
@@ -2210,9 +2344,9 @@ footer a,
 
   #article-sidebar #sidebar-social-link a svg,
   #article-sidebar #sidebar-social-link a img {
-    width: 20px;
-    height: 20px;
-    max-width: 20px;
-    max-height: 20px;
+    width: 18px;
+    height: 18px;
+    max-width: 18px;
+    max-height: 18px;
   }
 }

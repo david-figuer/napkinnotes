@@ -632,7 +632,11 @@ footer a,
 .nn-home-sidebar {
   min-width: 0;
 }
-
+.nn-home-sidebar {
+  position: sticky;
+  top: 110px;
+  align-self: start;
+}
 .nn-section-card,
 .nn-sidebar-card {
   position: relative;
@@ -1747,7 +1751,10 @@ footer a,
 .nn-article-hero__figure {
   margin-top: 18px;
 }
-
+  .nn-home-sidebar {
+    position: static;
+    top: auto;
+  }
 .nn-article-hero__image {
   display: block;
   width: 100%;

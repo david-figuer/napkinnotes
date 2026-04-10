@@ -455,7 +455,7 @@ footer a,
   background-size: cover;
   transform: scale(1.04);
   will-change: transform;
-  animation: nn-hero-bg-float 12s ease-in-out infinite alternate;
+  animation: nn-hero-bg-float 6s ease-in-out infinite alternate;
   transition: transform 6s ease;
 }
 

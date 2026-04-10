@@ -162,7 +162,7 @@
         <p class="nn-sidebar-featured__text">{{ articles[0].summary|striptags|truncate(140) }}</p>
         {% endif %}
 
-        <a class="nn-button nn-button--ghost nn-sidebar-featured__button" href="{{ SITEURL }}/{{ articles[0].url }}">
+        <a class="nn-button nn-button--ghost nn-sidebar-featured__button nn-home-sidebar__button" href="{{ SITEURL }}/{{ articles[0].url }}">
             Leer ahora
         </a>
     </div>
@@ -172,7 +172,7 @@
 <section class="nn-sidebar-card nn-reveal">
     <span class="nn-kicker">Descubre</span>
     <p>¿Te apetece una pregunta inesperada? Abre un artículo al azar y déjate sorprender.</p>
-    <a id="random-article-link" class="nn-button nn-button--ghost" href="{{ SITEURL }}/{{ articles[0].url }}">
+    <a id="random-article-link" class="nn-button nn-button--ghost nn-home-sidebar__button" href="{{ SITEURL }}/{{ articles[0].url }}">
         Sorpréndeme
     </a>
 </section>
@@ -180,7 +180,7 @@
         <section class="nn-sidebar-card nn-reveal">
             <span class="nn-kicker">Participa</span>
             <p>¿Tienes una pregunta tipo Fermi o quieres que hagamos un artículo sobre algún tema curioso?</p>
-            <button id="open-pregunta-modal" class="nn-button" type="button">
+            <button id="open-pregunta-modal" class="nn-button nn-home-sidebar__button" type="button">
                 Pregúntanos
             </button>
         </section>

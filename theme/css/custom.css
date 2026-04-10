@@ -2160,3 +2160,7 @@ footer a,
 .nn-richtext li {
   text-align: justify;
 }
+.nn-squad-hero__subtitle,
+.nn-explore-hero .nn-squad-hero__subtitle {
+  text-align: justify;
+}

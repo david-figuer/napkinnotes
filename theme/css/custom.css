@@ -2350,3 +2350,12 @@ footer a,
     max-height: 18px;
   }
 }
+.nn-share-actions__button {
+  gap: 8px;
+}
+
+.nn-share-actions__icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}

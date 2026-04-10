@@ -11,7 +11,7 @@ tags:
   - small world
   - seis grados de separación
 summary: completar
-image: images/palomitas.png
+image: images/face_dist.png
 ---
 
 [TOC]

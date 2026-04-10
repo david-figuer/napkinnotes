@@ -2119,3 +2119,30 @@ footer a,
     border-radius: 18px;
   }
 }
+/* ABOUT PROJECT LOGO */
+
+.nn-about-project__content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nn-about-project__logo {
+  float: left;
+  display: block;
+  width: 150px;
+  max-width: 32%;
+  height: auto;
+  margin: 4px 22px 14px 0;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+@media (max-width: 640px) {
+  .nn-about-project__logo {
+    float: none;
+    width: 120px;
+    max-width: 100%;
+    margin: 0 auto 18px;
+  }
+}

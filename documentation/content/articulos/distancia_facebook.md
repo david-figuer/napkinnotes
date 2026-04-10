@@ -10,7 +10,7 @@ tags:
   - teoría de grafos
   - small world
   - seis grados de separación
-summary: completar
+summary: El mundo (online) es más pequeño de lo que pensamos, estamos muy cerca unos de otros.
 image: images/face_dist.png
 ---
 

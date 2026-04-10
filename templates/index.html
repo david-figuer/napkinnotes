@@ -83,8 +83,9 @@
                 <span class="nn-kicker">Proyecto</span>
                 <h2>{{ landing_page.page.title }}</h2>
             </div>
-            <div class="nn-richtext">
-                {{ landing_page.page.content }}
+            <div class="nn-richtext nn-about-project__content">
+                  <img class="nn-about-project__logo" src="{{ SITEURL }}/images/Logo.jpg" alt="Logo de Napkin Notes">
+                  {{ landing_page.page.content }}
             </div>
         </section>
         {% endif %}

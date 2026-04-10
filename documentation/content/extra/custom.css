@@ -2128,7 +2128,7 @@ footer a,
 }
 
 .nn-about-project__logo {
-  float: left;
+  float: right;
   display: block;
   width: 150px;
   max-width: 32%;

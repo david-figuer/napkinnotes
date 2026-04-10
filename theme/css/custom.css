@@ -2400,13 +2400,31 @@ footer a,
 }
 
 .nn-sidebar-featured__button {
-  align-self: flex-start;
   margin-top: 4px;
 }
 
-.nn-home-sidebar .nn-button {
-  width: 100%;
+.nn-home-sidebar .nn-button,
+.nn-home-sidebar .nn-sidebar-featured__button,
+.nn-home-sidebar #random-article-link {
+  width: auto;
   justify-content: center;
+  align-self: flex-start;
+  padding: 11px 18px;
+  background: var(--richcarmine);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.nn-home-sidebar .nn-button:hover,
+.nn-home-sidebar .nn-sidebar-featured__button:hover,
+.nn-home-sidebar #random-article-link:hover {
+  background: var(--richcarmine);
+  color: #fff;
+  opacity: 0.92;
+  transform: translateY(-1px);
 }
 
 @media (max-width: 980px) {

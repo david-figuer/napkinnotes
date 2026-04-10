@@ -133,36 +133,90 @@
 
     <aside id="article-sidebar" class="nn-article-sidebar">
         <div class="nn-sticky-card">
-            {% include '_includes/post_stats.html' %}
-            {% if article.date %}
-            <h4>Published</h4>
-            {% set day = article.date.strftime('%d')|int %}
-            <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-            {% endif %}
-            {% include '_includes/last_updated.html' %}
-            {% include '_includes/series.html' %}
-            {% if article.category|trim|count > 0 %}
-            <h4>Category</h4>
-            {% from '_includes/_defaults.html' import CATEGORIES_URL with context %}
-            <a class="category-link" href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ category.slug }}-ref">{{ article.category }}</a>
-            {% endif %}
-            {% if article.tags and article.tags[0]|trim|count > 0 %}
-            {% from '_includes/_defaults.html' import TAGS_URL with context %}
-            <h4>Tags</h4>
-            <ul class="list-of-tags tags-in-article">
+           {% from '_includes/_defaults.html' import CATEGORIES_URL, TAGS_URL with context %}
+
+<div class="nn-article-meta-card">
+    <div class="nn-article-meta-card__section">
+        <div class="nn-article-meta-card__eyebrow">Ficha del artículo</div>
+
+        {% if article.date %}
+        <div class="nn-article-meta-row">
+            <span class="nn-article-meta-row__label">Publicado</span>
+            <time class="nn-article-meta-row__value" itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
+                {{ article.locale_date }}
+            </time>
+        </div>
+        {% endif %}
+
+        {% if article.category|trim|count > 0 %}
+        <div class="nn-article-meta-row nn-article-meta-row--stack">
+            <span class="nn-article-meta-row__label">Categoría</span>
+            <div class="nn-article-meta-badges">
+                <a class="nn-article-meta-badge nn-article-meta-badge--category"
+                   href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ category.slug }}-ref">
+                    {{ article.category }}
+                </a>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if article.tags and article.tags[0]|trim|count > 0 %}
+        <div class="nn-article-meta-row nn-article-meta-row--stack">
+            <span class="nn-article-meta-row__label">Tags</span>
+            <div class="nn-article-meta-tags">
                 {% for tag in article.tags|sort %}
-                <li><a href="{{ SITEURL }}/{{ TAGS_URL }}#{{ tag.slug }}-ref">{{ tag }}
+                <a class="nn-article-meta-tag"
+                   href="{{ SITEURL }}/{{ TAGS_URL }}#{{ tag.slug }}-ref">
+                    {{ tag }}
                     {% for aTag, tagged_articles in tags if aTag == tag %}
-                    <span class="superscript">{{ tagged_articles|count }}</span>
-                    {% endfor %}</a></li>
+                    <span class="nn-article-meta-tag__count">{{ tagged_articles|count }}</span>
+                    {% endfor %}
+                </a>
                 {% endfor %}
-            </ul>
-            {% endif %}
-            {% include '_includes/social_links.html' %}
-            {% from '_includes/mailchimp.html' import mailchimp with context %}
-            {{ mailchimp(article) }}
-            {% from '_includes/freelists.html' import freelists with context %}
-            {{ freelists(article) }}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="nn-article-meta-card__section nn-article-meta-card__section--social">
+        <div class="nn-article-meta-card__eyebrow">Stay in touch</div>
+        {% include '_includes/social_links.html' %}
+    </div>
+
+    <div class="nn-article-meta-card__section nn-article-meta-card__section--share">
+        <div class="nn-article-meta-card__eyebrow">¿Te ha gustado este post?</div>
+        <p class="nn-article-meta-card__share-text">Compártelo</p>
+
+        <div class="nn-share-actions">
+            <a class="nn-share-actions__button"
+               href="https://twitter.com/intent/tweet?url={{ (SITEURL ~ '/' ~ article.url)|urlencode }}&text={{ article.title|striptags|urlencode }}"
+               target="_blank"
+               rel="noopener noreferrer">
+                X
+            </a>
+
+            <a class="nn-share-actions__button"
+               href="https://www.facebook.com/sharer/sharer.php?u={{ (SITEURL ~ '/' ~ article.url)|urlencode }}"
+               target="_blank"
+               rel="noopener noreferrer">
+                Facebook
+            </a>
+
+            <a class="nn-share-actions__button"
+               href="https://api.whatsapp.com/send?text={{ (article.title ~ ' ' ~ SITEURL ~ '/' ~ article.url)|urlencode }}"
+               target="_blank"
+               rel="noopener noreferrer">
+                WhatsApp
+            </a>
+
+            <button class="nn-share-actions__button nn-share-actions__button--copy"
+                    type="button"
+                    data-copy-url="{{ SITEURL }}/{{ article.url }}">
+                Copiar enlace
+            </button>
+        </div>
+    </div>
+</div>
         </div>
     </aside>
 </div>
@@ -226,6 +280,31 @@
         });
 
         setActive(headings[0].target.id);
+    });
+    </script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const copyButton = document.querySelector(".nn-share-actions__button--copy");
+        if (!copyButton) return;
+
+        copyButton.addEventListener("click", async function () {
+            const url = copyButton.getAttribute("data-copy-url");
+            const originalText = copyButton.textContent;
+
+            try {
+                await navigator.clipboard.writeText(url);
+                copyButton.textContent = "Copiado";
+                setTimeout(() => {
+                    copyButton.textContent = originalText;
+                }, 1600);
+            } catch (error) {
+                copyButton.textContent = "No se pudo copiar";
+                setTimeout(() => {
+                    copyButton.textContent = originalText;
+                }, 1600);
+            }
+        });
     });
     </script>
 {% endblock script %}

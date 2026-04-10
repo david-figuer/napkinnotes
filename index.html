@@ -260,33 +260,36 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
 
     <aside class="nn-home-sidebar">
 
-        <section class="nn-sidebar-card">
-            <span class="nn-kicker">Actualidad</span>
-            <h3>Últimos</h3>
-            <ul class="nn-mini-list">
-                    <li>
-                        <a href="https://david-figuer.github.io/napkinnotes/cual-es-la-distancia-promedio-entre-dos-personas-en-facebook">¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?</a>
-                        <span>Mar 15, 2026</span>
-                    </li>
-                    <li>
-                        <a href="https://david-figuer.github.io/napkinnotes/por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga">¿Por qué el pan se pone duro (y por qué la bolsa es su única&nbsp;amiga)?</a>
-                        <span>Mar 15, 2026</span>
-                    </li>
-                    <li>
-                        <a href="https://david-figuer.github.io/napkinnotes/por-que-las-palomitas-revientan-en-el-microondas">¿Por qué las palomitas revientan en el&nbsp;microondas?</a>
-                        <span>Mar 01, 2026</span>
-                    </li>
-                    <li>
-                        <a href="https://david-figuer.github.io/napkinnotes/el-pintor-y-la-trompeta-infinita">El pintor y la trompeta&nbsp;infinita</a>
-                        <span>Feb 12, 2026</span>
-                    </li>
-                    <li>
-                        <a href="https://david-figuer.github.io/napkinnotes/que-tan-rapido-sale-el-corcho-de-una-botella-de-champan">¿Qué tan rápido sale el corcho de una botella de&nbsp;champán?</a>
-                        <span>Jan 04, 2026</span>
-                    </li>
-            </ul>
-        </section>
+<section class="nn-sidebar-card nn-sidebar-card--featured">
+    <span class="nn-kicker">Último</span>
+    <h3>Artículo reciente</h3>
 
+    <div class="nn-sidebar-featured">
+        <a class="nn-sidebar-featured__title" href="https://david-figuer.github.io/napkinnotes/cual-es-la-distancia-promedio-entre-dos-personas-en-facebook">
+            ¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?
+        </a>
+
+        <div class="nn-sidebar-featured__meta">
+            <span>Mar 15, 2026</span>
+            <span>•</span>
+            <span>Ciencia de Datos</span>
+        </div>
+
+        <p class="nn-sidebar-featured__text">El mundo (online) es más pequeño de lo que pensamos, estamos muy cerca unos de otros.</p>
+
+        <a class="nn-button nn-button--ghost nn-sidebar-featured__button" href="https://david-figuer.github.io/napkinnotes/cual-es-la-distancia-promedio-entre-dos-personas-en-facebook">
+            Leer ahora
+        </a>
+    </div>
+</section>
+<section class="nn-sidebar-card nn-reveal">
+    <span class="nn-kicker">Descubre</span>
+    <h3>Artículo aleatorio</h3>
+    <p>¿Te apetece una pregunta inesperada? Abre un artículo al azar y déjate sorprender.</p>
+    <a id="random-article-link" class="nn-button nn-button--ghost" href="https://david-figuer.github.io/napkinnotes/cual-es-la-distancia-promedio-entre-dos-personas-en-facebook">
+        Sorpréndeme
+    </a>
+</section>
         <section class="nn-sidebar-card nn-reveal">
             <span class="nn-kicker">Participa</span>
             <p>¿Tienes una pregunta tipo Fermi o quieres que hagamos un artículo sobre algún tema curioso?</p>
@@ -295,16 +298,7 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
             </button>
         </section>
 
-        <section class="nn-sidebar-card nn-reveal">
-            <span class="nn-kicker">Explorar</span>
-            <h3>Navega por temas</h3>
-            <div class="nn-link-cloud">
-                <a href="https://david-figuer.github.io/napkinnotes/tags">Temas</a>
-                <a href="https://david-figuer.github.io/napkinnotes/categories">Categorías</a>
-                <a href="https://david-figuer.github.io/napkinnotes/archives">Archivo</a>
-                <a href="https://david-figuer.github.io/napkinnotes/about">Nosotros</a>
-            </div>
-        </section>
+        
 
     </aside>
 </section>
@@ -453,7 +447,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const randomLink = document.getElementById("random-article-link");
+    if (!randomLink) return;
 
+    const articleUrls = [
+        "https://david-figuer.github.io/napkinnotes/cual-es-la-distancia-promedio-entre-dos-personas-en-facebook",        "https://david-figuer.github.io/napkinnotes/por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga",        "https://david-figuer.github.io/napkinnotes/por-que-las-palomitas-revientan-en-el-microondas",        "https://david-figuer.github.io/napkinnotes/el-pintor-y-la-trompeta-infinita",        "https://david-figuer.github.io/napkinnotes/que-tan-rapido-sale-el-corcho-de-una-botella-de-champan"    ];
+
+    if (!articleUrls.length) return;
+
+    const randomUrl = articleUrls[Math.floor(Math.random() * articleUrls.length)];
+    randomLink.setAttribute("href", randomUrl);
+});
+</script>
                 </div>
             </main>
         </div>

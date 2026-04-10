@@ -184,7 +184,10 @@
                 Pregúntanos
             </button>
         </section>
-
+        <section class="nn-sidebar-card nn-sidebar-card--flash nn-reveal">
+            <span class="nn-kicker">Dato relámpago</span>
+            <p id="nn-random-fact" class="nn-random-fact"></p>
+        </section>
         
 
     </aside>
@@ -349,6 +352,59 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const randomUrl = articleUrls[Math.floor(Math.random() * articleUrls.length)];
     randomLink.setAttribute("href", randomUrl);
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const factEl = document.getElementById("nn-random-fact");
+    if (!factEl) return;
+
+    const facts = [
+        "Una servilleta bien usada ha lanzado más ideas de las que uno admitiría en público.",
+        "Las estimaciones de Fermi no buscan exactitud perfecta, sino orden de magnitud con sentido.",
+        "Una buena pregunta científica suele empezar con un “¿y si...?”.",
+        "No hace falta un superordenador para tener una intuición cuantitativa útil.",
+        "Los números redondeados, bien usados, piensan más rápido que nosotros.",
+        "La física cotidiana está escondida en cosas tan simples como hervir agua o subir escaleras.",
+        "Muchos problemas enormes se entienden mejor cuando primero se trocean.",
+        "Una estimación mala pero honesta suele valer más que una precisión fingida.",
+        "Las redes sociales humanas tienden a comportarse como mundos pequeños.",
+        "La curiosidad y una aproximación razonable resuelven más de lo que parece.",
+        "Gran parte de la ciencia empieza comparando escalas.",
+        "Preguntar “cuánto” cambia por completo la forma de pensar un problema.",
+        "El orden de magnitud correcto ya es media victoria.",
+        "Las servilletas son pizarras de emergencia con vocación científica.",
+        "Una cuenta aproximada puede desmontar una intuición equivocada en segundos.",
+        "No todo necesita una calculadora...a veces basta una buena descomposición mental.",
+        "La energía está en todas partes, incluso en un café aparentemente inocente.",
+        "Las preguntas improbables suelen revelar ideas bastante profundas.",
+        "La intuición mejora mucho cuando se alimenta de números simples.",
+        "Una cifra redonda no siempre es vaga...a menudo es exactamente lo que hace falta.",
+        "La ciencia cotidiana empieza donde alguien se niega a dejar una pregunta sin perseguir.",
+        "Las mejores explicaciones suelen caber en menos espacio del que creemos.",
+        "El universo rara vez da respuestas cortas, pero sí deja buenas pistas.",
+        "Pensar en escalas convierte lo abstracto en tangible.",
+        "Una aproximación sensata puede iluminar un problema más que una fórmula mal entendida.",
+        "Casi todo parece imposible hasta que se estima.",
+        "Una pregunta bien planteada ya contiene media teoría.",
+        "La matemática también sirve para domesticar intuiciones salvajes.",
+        "No hay problema pequeño si despierta suficiente curiosidad.",
+        "La física del día a día está menos escondida de lo que parece.",
+        "Las cifras absurdamente grandes o pequeñas se entienden mejor por comparación.",
+        "Las ideas claras suelen llegar antes que los decimales.",
+        "La curiosidad cuantitativa es una forma elegante de mirar el mundo.",
+        "Muchos misterios cotidianos solo estaban esperando una servilleta.",
+        "Entre no saber y saber del todo existe un territorio fértil: estimar.",
+        "Las buenas preguntas sobreviven incluso a las cuentas rápidas.",
+        "Un cálculo aproximado también puede ser hermoso.",
+        "La escala correcta convierte el asombro en comprensión.",
+        "Una hipótesis modesta puede abrir una puerta enorme.",
+        "La ciencia también puede empezar jugando."
+    ];
+
+    const randomFact = facts[Math.floor(Math.random() * facts.length)];
+    factEl.textContent = randomFact;
 });
 </script>
 {% endblock content %}

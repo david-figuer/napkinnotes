@@ -2446,3 +2446,16 @@ footer a,
   opacity: 0.92;
   transform: translateY(-1px);
 }
+/* DATO RELÁMPAGO */
+
+.nn-sidebar-card--flash {
+  background: linear-gradient(180deg, #fffdfa 0%, #fdf4ea 100%);
+}
+
+.nn-random-fact {
+  margin: 0;
+  color: var(--ink);
+  text-align: justify;
+  line-height: 1.75;
+  font-size: 1.02rem;
+}

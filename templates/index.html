@@ -139,21 +139,46 @@
 
     <aside class="nn-home-sidebar">
 
-        <section class="nn-sidebar-card">
-            <span class="nn-kicker">Actualidad</span>
-            <h3>Últimos</h3>
-            <ul class="nn-mini-list">
-                {% for article in articles %}
-                    {% if loop.index0 < 5 %}
-                    <li>
-                        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-                        <span>{{ article.locale_date }}</span>
-                    </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        </section>
+        {% if articles %}
+<section class="nn-sidebar-card nn-sidebar-card--featured">
+    <span class="nn-kicker">Último</span>
+    <h3>Artículo reciente</h3>
 
+    <div class="nn-sidebar-featured">
+        <a class="nn-sidebar-featured__title" href="{{ SITEURL }}/{{ articles[0].url }}">
+            {{ articles[0].title }}
+        </a>
+
+        <div class="nn-sidebar-featured__meta">
+            <span>{{ articles[0].locale_date }}</span>
+            {% if articles[0].category %}
+            <span>•</span>
+            <span>{{ articles[0].category }}</span>
+            {% endif %}
+        </div>
+
+        {% if articles[0].subtitle %}
+        <p class="nn-sidebar-featured__text">{{ articles[0].subtitle }}</p>
+        {% elif articles[0].summary %}
+        <p class="nn-sidebar-featured__text">{{ articles[0].summary|striptags|truncate(140) }}</p>
+        {% endif %}
+
+        <a class="nn-button nn-button--ghost nn-sidebar-featured__button" href="{{ SITEURL }}/{{ articles[0].url }}">
+            Leer ahora
+        </a>
+    </div>
+</section>
+{% endif %}
+{% if articles %}
+<section class="nn-sidebar-card nn-reveal">
+    <span class="nn-kicker">Descubre</span>
+    <h3>Artículo aleatorio</h3>
+    <p>¿Te apetece una pregunta inesperada? Abre un artículo al azar y déjate sorprender.</p>
+    <a id="random-article-link" class="nn-button nn-button--ghost" href="{{ SITEURL }}/{{ articles[0].url }}">
+        Sorpréndeme
+    </a>
+</section>
+{% endif %}
         <section class="nn-sidebar-card nn-reveal">
             <span class="nn-kicker">Participa</span>
             <p>¿Tienes una pregunta tipo Fermi o quieres que hagamos un artículo sobre algún tema curioso?</p>
@@ -162,16 +187,7 @@
             </button>
         </section>
 
-        <section class="nn-sidebar-card nn-reveal">
-            <span class="nn-kicker">Explorar</span>
-            <h3>Navega por temas</h3>
-            <div class="nn-link-cloud">
-                <a href="{{ SITEURL }}/{{ TAGS_URL }}">Temas</a>
-                <a href="{{ SITEURL }}/{{ CATEGORIES_URL }}">Categorías</a>
-                <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archivo</a>
-                <a href="{{ SITEURL }}/about">Nosotros</a>
-            </div>
-        </section>
+        
 
     </aside>
 </section>
@@ -320,5 +336,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const randomLink = document.getElementById("random-article-link");
+    if (!randomLink) return;
 
+    const articleUrls = [
+        {% for article in articles %}
+        "{{ SITEURL }}/{{ article.url }}"{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ];
+
+    if (!articleUrls.length) return;
+
+    const randomUrl = articleUrls[Math.floor(Math.random() * articleUrls.length)];
+    randomLink.setAttribute("href", randomUrl);
+});
+</script>
 {% endblock content %}

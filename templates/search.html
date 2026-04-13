@@ -1,41 +1,61 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Search · {{ super() }}
+Buscar · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-Search results for {{ SITENAME|striptags|e }} blog.
+Busca artículos, tags y categorías en {{ SITENAME|striptags|e }}.
 {% endblock head_description %}
 
 {% block meta_tags_in_head %}
 {{ super() }}
 {% from '_includes/_defaults.html' import FEATURED_IMAGE, SEARCH_URL with context %}
-<meta property="og:title" content="Search · {{ SITENAME|striptags|e }}"/>
-<meta name="twitter:title" content="Search · {{ SITENAME|striptags|e }}">
+<meta property="og:title" content="Buscar · {{ SITENAME|striptags|e }}"/>
+<meta name="twitter:title" content="Buscar · {{ SITENAME|striptags|e }}">
 <meta property="og:url" content="{{ SITEURL }}/{{ SEARCH_URL }}" />
-<meta property="og:description" content="Search results for {{ SITENAME|striptags|e }} blog" />
-<meta name="twitter:description" content="Search results for {{ SITENAME|striptags|e }} blog">
+<meta property="og:description" content="Busca artículos, tags y categorías en {{ SITENAME|striptags|e }}." />
+<meta name="twitter:description" content="Busca artículos, tags y categorías en {{ SITENAME|striptags|e }}.">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% if FEATURED_IMAGE %}
 <meta property="og:image" content="{{ FEATURED_IMAGE }}" />
-<meta name="twitter:image" content="{{ FEATURED_IMAGE }}" >
+<meta name="twitter:image" content="{{ FEATURED_IMAGE }}">
 {% endif %}
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-<div class="row-fluid">
-    <header id="lunr-search-result-heading" class="page-header span10 offset2">
-    </header>
-</div>
+{% from '_includes/_defaults.html' import SEARCH_URL with context %}
 
-<div class="row-fluid">
-    <div class="span8 offset2">
-        <div id="lunr-search-result" >
+<section class="nn-search-page">
+    <header class="nn-search-hero">
+        <div class="nn-search-hero__inner">
+            <div class="nn-kicker">Búsqueda</div>
+            <h1 class="nn-search-hero__title">Buscar</h1>
+            <p class="nn-search-hero__subtitle">
+                Encuentra artículos por título, tags, categorías y contenido.
+            </p>
         </div>
-    </div>
-</div>
+    </header>
+
+    <section class="nn-search-box">
+        <form class="nn-search-form" action="{{ SITEURL }}/{{ SEARCH_URL }}">
+            <input
+                class="nn-search-form__input"
+                type="text"
+                name="q"
+                id="nn-search-input"
+                placeholder="Escribe aquí tu búsqueda"
+                autocomplete="off">
+            <button class="nn-button nn-home-sidebar__button" type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <section class="nn-search-results">
+        <div id="nn-search-result-heading" class="nn-search-results__heading"></div>
+        <div id="nn-search-result-list" class="nn-search-results__list"></div>
+    </section>
+</section>
 {% endblock content %}
 
 {% block script %}
@@ -43,4 +63,311 @@ Search results for {{ SITENAME|striptags|e }} blog.
         <script src="{{ SITEURL }}/tipuesearch_content.js"></script>
     {% endif %}
 {{ super() }}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.getElementById("nn-search-input");
+    const heading = document.getElementById("nn-search-result-heading");
+    const resultList = document.getElementById("nn-search-result-list");
+
+    const params = new URLSearchParams(window.location.search);
+    const query = (params.get("q") || "").trim();
+
+    if (input) {
+        input.value = query;
+    }
+
+    if (!query) {
+        heading.innerHTML = "<p>Escribe una palabra para buscar en Napkin Notes.</p>";
+        return;
+    }
+
+    if (typeof tipuesearch === "undefined" || !tipuesearch.pages) {
+        heading.innerHTML = "<p>No se ha podido cargar el índice de búsqueda.</p>";
+        return;
+    }
+
+    const normalize = (str) =>
+        (str || "")
+            .toString()
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "");
+
+    const q = normalize(query);
+
+    function makeSnippet(text, rawQuery) {
+        const plain = (text || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+        if (!plain) return "";
+
+        const normalizedPlain = normalize(plain);
+        const index = normalizedPlain.indexOf(normalize(rawQuery));
+
+        if (index === -1) {
+            return plain.length > 180 ? plain.slice(0, 180) + "..." : plain;
+        }
+
+        const start = Math.max(0, index - 70);
+        const end = Math.min(plain.length, index + rawQuery.length + 90);
+        let snippet = plain.slice(start, end).trim();
+
+        if (start > 0) snippet = "..." + snippet;
+        if (end < plain.length) snippet = snippet + "...";
+
+        return snippet;
+    }
+
+    function detectMatches(page) {
+        const matches = [];
+        const title = normalize(page.title);
+        const tags = normalize(page.tags);
+        const text = normalize(page.text);
+        const url = normalize(page.url);
+
+        if (title.includes(q)) matches.push("título");
+        if (tags.includes(q)) matches.push("tag o categoría");
+        if (text.includes(q)) matches.push("contenido");
+        if (url.includes(q)) matches.push("URL");
+
+        return [...new Set(matches)];
+    }
+
+    const results = tipuesearch.pages
+        .map((page) => {
+            const matches = detectMatches(page);
+            return { page, matches };
+        })
+        .filter(item => item.matches.length > 0)
+        .sort((a, b) => {
+            const aTitle = normalize(a.page.title).includes(q) ? 1 : 0;
+            const bTitle = normalize(b.page.title).includes(q) ? 1 : 0;
+
+            const aTags = normalize(a.page.tags).includes(q) ? 1 : 0;
+            const bTags = normalize(b.page.tags).includes(q) ? 1 : 0;
+
+            return (bTitle - aTitle) || (bTags - aTags);
+        });
+
+    if (!results.length) {
+        heading.innerHTML = `<p>No hemos encontrado nada para <strong>${query}</strong>.</p>`;
+        resultList.innerHTML = `
+            <div class="nn-search-empty">
+                <div class="nn-search-empty__emoji">¯\\\\_(ツ)_/¯</div>
+                <p>Quizá en el siguiente artículo, pero de momento no tenemos nada de eso... vuelve mañana.</p>
+            </div>
+        `;
+        return;
+    }
+
+    heading.innerHTML = `<p>${results.length} resultado${results.length === 1 ? "" : "s"} para <strong>${query}</strong>.</p>`;
+
+    resultList.innerHTML = results.map(({ page, matches }) => {
+        const tags = page.tags ? page.tags.split(",").map(tag => tag.trim()).filter(Boolean) : [];
+        const snippet = makeSnippet(page.text, query);
+
+        return `
+            <article class="nn-search-card">
+                <h2 class="nn-search-card__title">
+                    <a href="${page.loc}">${page.title}</a>
+                </h2>
+
+                <div class="nn-search-card__meta">
+                    Coincidencia en: ${matches.join(", ")}
+                </div>
+
+                ${tags.length ? `
+                    <div class="nn-search-card__tags">
+                        ${tags.map(tag => `<span class="nn-search-card__tag">${tag}</span>`).join("")}
+                    </div>
+                ` : ""}
+
+                ${snippet ? `<p class="nn-search-card__snippet">${snippet}</p>` : ""}
+            </article>
+        `;
+    }).join("");
+});
+</script>
+
+<style>
+.nn-search-page {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.nn-search-hero {
+  margin-bottom: 30px;
+}
+
+.nn-search-hero__inner {
+  position: relative;
+  overflow: hidden;
+  padding: 44px 38px;
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(149, 11, 14, 0.96) 0%, rgba(97, 9, 11, 0.96) 100%);
+  box-shadow: var(--shadow);
+  color: var(--satinsheengold);
+}
+
+.nn-search-hero__inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top right, rgba(196, 154, 102, 0.22), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.06), transparent 28%);
+}
+
+.nn-search-hero__title {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 10px;
+  color: var(--satinsheengold);
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+}
+
+.nn-search-hero__subtitle {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  max-width: none;
+  color: rgba(196, 154, 102, 0.95);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.nn-search-box {
+  margin-bottom: 28px;
+}
+
+.nn-search-form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nn-search-form__input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+}
+
+.nn-search-form__input:focus {
+  outline: none;
+  border-color: var(--satinsheengold);
+  box-shadow: 0 0 0 3px rgba(196, 154, 102, 0.15);
+}
+
+.nn-search-results__heading {
+  margin-bottom: 18px;
+}
+
+.nn-search-results__heading p {
+  margin: 0;
+}
+
+.nn-search-results__list {
+  display: grid;
+  gap: 18px;
+}
+
+.nn-search-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.nn-search-card__title {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.nn-search-card__title a {
+  color: var(--ink);
+}
+
+.nn-search-card__title a:hover {
+  color: var(--richcarmine);
+}
+
+.nn-search-card__meta {
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.nn-search-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.nn-search-card__tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fbf3ea;
+  color: var(--richcarmine);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.nn-search-card__snippet {
+  margin: 0;
+  text-align: justify;
+}
+
+.nn-search-empty {
+  padding: 28px;
+  border: 1px dashed var(--line);
+  border-radius: 22px;
+  background: #fffaf4;
+  text-align: center;
+}
+
+.nn-search-empty__emoji {
+  margin-bottom: 8px;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 980px) {
+  .nn-search-hero__inner {
+    padding: 22px;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .nn-search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nn-search-card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .nn-search-card__title {
+    font-size: 1.6rem;
+  }
+
+  .nn-search-card__snippet {
+    text-align: left;
+  }
+}
+</style>
 {% endblock script %}

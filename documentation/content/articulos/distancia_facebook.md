@@ -82,7 +82,7 @@ La idea nació en 1929 con Frigyes Karinthy, se popularizó en 1967 con el exper
 
 Milgram encontró longitudes promedio cercanas a **5.5 pasos** para conectar a un ciudadano cualquiera con un objetivo elegido. Aunque el diseño experimental tenía sesgos, reveló la estructura de mundo pequeño en redes humanas.
 
-### 3.2 Redes modernas y validación computacional
+### 3.2 Redes modernas 
 
 Con datos completos de grafos sociales actuales, hoy se puede afirmar:
 
@@ -99,7 +99,7 @@ En teoría de grafos, esta propiedad se explica por:
 
 ## 4. ¿Por qué importa todo esto?
 
-### 4.1 Implicaciones científicas
+### 4.1 Implicaciones científicas útiles
 
 - Entender distancias promedio permite modelar **difusión de información**, **propagación de epidemias**, **viralidad** y **resiliencia estructural**.  
 - Un APL bajo implica expansiones rápidas y pocas etapas de transmisión.

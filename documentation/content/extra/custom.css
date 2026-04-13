@@ -2450,3 +2450,38 @@ footer a,
   line-height: 1.75;
   font-size: 1.02rem;
 }
+@media (max-width: 640px) {
+  .nn-player-card,
+  .nn-player-card:hover {
+    transform: none;
+    box-shadow: var(--shadow);
+  }
+
+  .nn-player-card__preview,
+  .nn-player-card:hover .nn-player-card__preview {
+    opacity: 1;
+    transform: none;
+  }
+
+  .nn-player-card__image,
+  .nn-player-card:hover .nn-player-card__image {
+    transform: none;
+  }
+
+  .nn-player-card__expanded,
+  .nn-player-card:hover .nn-player-card__expanded {
+    position: static;
+    display: block;
+    width: 100%;
+    min-height: auto;
+    margin-top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    border-top: 1px solid var(--line);
+    border-radius: 0 0 18px 18px;
+    box-shadow: none;
+    transform: none;
+    left: auto;
+    top: auto;
+  }
+}

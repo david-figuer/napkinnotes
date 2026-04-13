@@ -12,8 +12,10 @@ RELATIVE_URLS = False
 PATH = "content"
 
 # Regional Settings
-TIMEZONE = "Asia/Karachi"
-DATE_FORMATS = {"en": "%b %d, %Y"}
+TIMEZONE = "Europe/Madrid"
+DATE_FORMATS = {
+    "es": "%d de %B de %Y",
+}
 DEFAULT_LANG = "es"
 
 # Plugins and extensions

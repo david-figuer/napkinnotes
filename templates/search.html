@@ -160,12 +160,11 @@ document.addEventListener("DOMContentLoaded", function () {
             <img
                 class="nn-search-empty__image"
                 src="{{ SITEURL }}/images/search-empty.png"
-                alt="Un científico examina con lupa una servilleta llena de fórmulas que termina en la conclusión 'todavía no'">
+                alt="Ilustración de búsqueda sin resultados">
             <p>Quizá en el siguiente artículo, pero de momento no tenemos nada de eso... vuelve mañana.</p>
         </div>
     `;
     return;
-}
     }
 
     heading.innerHTML = `<p>${results.length} resultado${results.length === 1 ? "" : "s"} para <strong>${query}</strong>.</p>`;

@@ -2141,6 +2141,8 @@ footer a,
 }
 /* JUSTIFICADO GLOBAL EN BLOQUES CLAVE */
 
+/* JUSTIFICADO GLOBAL EN BLOQUES CLAVE */
+
 #about-project .nn-richtext p,
 #about-project .nn-richtext li,
 .nn-sidebar-card p,
@@ -2153,10 +2155,13 @@ footer a,
 .nn-richtext li {
   text-align: justify;
 }
+
 .nn-squad-hero__subtitle,
-.nn-explore-hero .nn-squad-hero__subtitle {
+.nn-explore-hero__subtitle,
+.nn-archives-hero__subtitle {
   text-align: justify;
 }
+
 @media (max-width: 640px) {
   #about-project .nn-richtext p,
   #about-project .nn-richtext li,

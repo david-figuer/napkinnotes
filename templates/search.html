@@ -59,9 +59,6 @@ Busca artículos, tags y categorías en {{ SITENAME|striptags|e }}.
 {% endblock content %}
 
 {% block script %}
-    {% if PLUGINS and 'tipue_search' in PLUGINS %}
-        <script src="{{ SITEURL }}/tipuesearch_content.js"></script>
-    {% endif %}
 {{ super() }}
 
 <script>
@@ -70,20 +67,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const heading = document.getElementById("nn-search-result-heading");
     const resultList = document.getElementById("nn-search-result-list");
 
+    const pages = [
+        {% for article in articles %}
+        {
+            title: {{ article.title|striptags|tojson }},
+            url: {{ (SITEURL ~ '/' ~ article.url)|tojson }},
+            category: {{ article.category|string|tojson if article.category else '""' }},
+            tags: {{ (article.tags|map('string')|list)|tojson if article.tags else '[]' }},
+            summary: {{ article.summary|striptags|tojson if article.summary else '""' }},
+            content: {{ article.content|striptags|tojson if article.content else '""' }}
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ];
+
     const params = new URLSearchParams(window.location.search);
     const query = (params.get("q") || "").trim();
 
-    if (input) {
-        input.value = query;
-    }
+    if (input) input.value = query;
 
     if (!query) {
         heading.innerHTML = "<p>Escribe una palabra para buscar en Napkin Notes.</p>";
-        return;
-    }
-
-    if (typeof tipuesearch === "undefined" || !tipuesearch.pages) {
-        heading.innerHTML = "<p>No se ha podido cargar el índice de búsqueda.</p>";
         return;
     }
 
@@ -97,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const q = normalize(query);
 
     function makeSnippet(text, rawQuery) {
-        const plain = (text || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+        const plain = (text || "").replace(/\s+/g, " ").trim();
         if (!plain) return "";
 
         const normalizedPlain = normalize(plain);
@@ -120,32 +123,34 @@ document.addEventListener("DOMContentLoaded", function () {
     function detectMatches(page) {
         const matches = [];
         const title = normalize(page.title);
-        const tags = normalize(page.tags);
-        const text = normalize(page.text);
-        const url = normalize(page.url);
+        const category = normalize(page.category);
+        const tags = normalize(page.tags.join(" "));
+        const summary = normalize(page.summary);
+        const content = normalize(page.content);
 
         if (title.includes(q)) matches.push("título");
-        if (tags.includes(q)) matches.push("tag o categoría");
-        if (text.includes(q)) matches.push("contenido");
-        if (url.includes(q)) matches.push("URL");
+        if (category.includes(q)) matches.push("categoría");
+        if (tags.includes(q)) matches.push("tag");
+        if (summary.includes(q)) matches.push("resumen");
+        if (content.includes(q)) matches.push("contenido");
 
         return [...new Set(matches)];
     }
 
-    const results = tipuesearch.pages
-        .map((page) => {
-            const matches = detectMatches(page);
-            return { page, matches };
-        })
+    const results = pages
+        .map((page) => ({ page, matches: detectMatches(page) }))
         .filter(item => item.matches.length > 0)
         .sort((a, b) => {
             const aTitle = normalize(a.page.title).includes(q) ? 1 : 0;
             const bTitle = normalize(b.page.title).includes(q) ? 1 : 0;
 
-            const aTags = normalize(a.page.tags).includes(q) ? 1 : 0;
-            const bTags = normalize(b.page.tags).includes(q) ? 1 : 0;
+            const aCategory = normalize(a.page.category).includes(q) ? 1 : 0;
+            const bCategory = normalize(b.page.category).includes(q) ? 1 : 0;
 
-            return (bTitle - aTitle) || (bTags - aTags);
+            const aTags = normalize(a.page.tags.join(" ")).includes(q) ? 1 : 0;
+            const bTags = normalize(b.page.tags.join(" ")).includes(q) ? 1 : 0;
+
+            return (bTitle - aTitle) || (bCategory - aCategory) || (bTags - aTags);
         });
 
     if (!results.length) {
@@ -162,22 +167,26 @@ document.addEventListener("DOMContentLoaded", function () {
     heading.innerHTML = `<p>${results.length} resultado${results.length === 1 ? "" : "s"} para <strong>${query}</strong>.</p>`;
 
     resultList.innerHTML = results.map(({ page, matches }) => {
-        const tags = page.tags ? page.tags.split(",").map(tag => tag.trim()).filter(Boolean) : [];
-        const snippet = makeSnippet(page.text, query);
+        const snippet = makeSnippet(page.summary || page.content, query);
 
         return `
             <article class="nn-search-card">
                 <h2 class="nn-search-card__title">
-                    <a href="${page.loc}">${page.title}</a>
+                    <a href="${page.url}">${page.title}</a>
                 </h2>
 
                 <div class="nn-search-card__meta">
                     Coincidencia en: ${matches.join(", ")}
                 </div>
 
-                ${tags.length ? `
+                ${page.category ? `
                     <div class="nn-search-card__tags">
-                        ${tags.map(tag => `<span class="nn-search-card__tag">${tag}</span>`).join("")}
+                        <span class="nn-search-card__tag">${page.category}</span>
+                        ${page.tags.map(tag => `<span class="nn-search-card__tag">${tag}</span>`).join("")}
+                    </div>
+                ` : page.tags.length ? `
+                    <div class="nn-search-card__tags">
+                        ${page.tags.map(tag => `<span class="nn-search-card__tag">${tag}</span>`).join("")}
                     </div>
                 ` : ""}
 

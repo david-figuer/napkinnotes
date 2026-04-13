@@ -2485,3 +2485,14 @@ footer a,
     top: auto;
   }
 }
+@media (max-width: 640px) {
+  .nn-article-hero__subtitle,
+  .nn-article-hero__summary,
+  .nn-article-content > .toc a,
+  .nn-article-content > .toc::before {
+    text-align: left;
+    hyphens: manual;
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+  }
+}

@@ -2170,10 +2170,12 @@ footer a,
   .nn-explore-hero__subtitle,
   .nn-archives-hero__subtitle,
   .nn-random-fact {
-    text-align: left;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    overflow-wrap: break-word;
   }
 }
-
 
 
 /* =========================

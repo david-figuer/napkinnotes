@@ -15,7 +15,7 @@
 
         <meta name="author" content="" />
 
-        <meta name="description" content="La página que buscas no existe o se ha perdido entre servilletas, cálculos y desvíos inesperados.
+        <meta name="description" content="La página que buscas no existe o se ha perdido entre servilletas, manuscritos y cálculos improvisados.
 " />
 
         <meta property="og:type" content="article" />
@@ -76,10 +76,17 @@
             <div class="nn-kicker">Error 404</div>
             <h1 class="nn-search-hero__title">Esta página no existe</h1>
             <p class="nn-search-hero__subtitle">
-                Parece que esta ruta se ha perdido entre servilletas, hipótesis apresuradas y cálculos mentales de dudosa estabilidad.
+                Parece que esta ruta se ha perdido entre servilletas voladoras, bibliotecas imposibles y cálculos mentales de dudosa estabilidad.
             </p>
         </div>
     </header>
+
+    <section class="nn-404-illustration">
+        <img
+            class="nn-404-illustration__image"
+            src="https://david-figuer.github.io/napkinnotes/images/404-napkinnotes.png"
+            alt="Ilustración de una servilleta con 404 flotando sobre una biblioteca antigua y un científico buscando una página perdida">
+    </section>
 
     <section class="nn-search-box">
         <div class="nn-search-results__heading">
@@ -110,6 +117,31 @@
         </div>
     </section>
 </section>
+
+<style>
+.nn-404-illustration {
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.nn-404-illustration__image {
+  display: block;
+  width: 100%;
+  max-width: 880px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 980px) {
+  .nn-404-illustration__image {
+    border-radius: 18px;
+  }
+}
+</style>
 
 <script type="text/javascript">
     var newurl = (' ' + window.location.pathname).slice(1);

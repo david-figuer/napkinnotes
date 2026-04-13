@@ -1,5 +1,4 @@
 ---
-title:  Acerca del Proyecto
 layout: page
 date: 2025-11-30 7:30:47 +0100
 status: hidden

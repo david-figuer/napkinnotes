@@ -1871,127 +1871,34 @@ footer a,
   }
 }
 
-@media (max-width: 640px) {
-  .site-main {
-    padding-top: 28px;
-  }
+.nn-author-box__avatar img {
+  width: 100px;
+  height: 100px;
+}
 
-  .site-header__inner {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 10px 14px;
-    text-align: center;
-  }
+.modal {
+  padding: 12px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
 
-  .site-brand {
-    display: none;
-  }
+.modal-card {
+  width: 100%;
+  max-width: 100%;
+  max-height: calc(100vh - 24px);
+  margin: 0 auto;
+  padding: 1.2rem;
+  border-radius: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
 
-  .site-nav__list {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+h1 {
+  font-size: 2.1rem;
+}
 
-  .site-nav__list li a {
-    padding-bottom: 4px;
-    font-size: 0.85rem;
-  }
-
-  .site-search {
-    display: flex;
-    justify-content: center;
-  }
-
-  .site-search input {
-    min-width: 140px;
-  }
-
-  .nn-hero {
-    min-height: 60vh;
-    border-radius: 20px;
-  }
-
-  .nn-hero__bg {
-    animation-duration: 6s;
-  }
-
-  .nn-hero__content {
-    padding: 42px 22px;
-  }
-
-  .nn-hero__badges {
-    gap: 8px;
-    margin-bottom: 24px;
-  }
-
-  .nn-hero__badges span {
-    padding: 7px 12px;
-    font-size: 0.82rem;
-  }
-
-  .nn-section-card,
-  .nn-sidebar-card,
-  .nn-article-hero__inner,
-  .nn-article-content,
-  .nn-sticky-card,
-  .nn-article-nav__item {
-    padding: 22px;
-    border-radius: 18px;
-  }
-
-  .nn-section-card__header--row {
-    display: block;
-  }
-
-  .nn-article-nav {
-    grid-template-columns: 1fr;
-  }
-
-  .nn-squad-hero__inner {
-    padding: 30px 22px;
-    border-radius: 20px;
-  }
-
-  .nn-player-card {
-    border-radius: 18px;
-  }
-
-  .nn-player-card__media {
-    height: 300px;
-  }
-
-  .nn-player-card__expanded-content {
-    padding: 18px;
-  }
-
-  .nn-player-card__name {
-    font-size: 1.7rem;
-  }
-
-  .nn-author-box {
-    grid-template-columns: 1fr;
-  }
-
-  .nn-author-box__avatar img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .modal-card {
-    width: min(94%, 94vw);
-    margin: 5vh auto;
-    padding: 1.4rem;
-    border-radius: 20px;
-  }
-
-  h1 {
-    font-size: 2.1rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
+h2 {
+  font-size: 1.8rem;
 }
 /* =========================
    EXPLORE PAGE

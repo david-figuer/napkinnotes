@@ -14,6 +14,7 @@ PATH = "content"
 # Regional Settings
 TIMEZONE = "Asia/Karachi"
 DATE_FORMATS = {"en": "%b %d, %Y"}
+DEFAULT_LANG = "es"
 
 # Plugins and extensions
 MARKDOWN = {

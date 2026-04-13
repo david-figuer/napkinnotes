@@ -2496,3 +2496,22 @@ footer a,
     -ms-hyphens: manual;
   }
 }
+.nn-search-empty {
+  padding: 28px;
+  border: 1px dashed var(--line);
+  border-radius: 22px;
+  background: #fffaf4;
+  text-align: center;
+}
+
+.nn-search-empty__image {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}

@@ -533,9 +533,12 @@ $$</div>
         if (!headings.length) return;
 
         function setActive(id) {
-            tocLinks.forEach(link => link.classList.remove("is-active"));
-            const activeLink = toc.querySelector(`a[href="#${CSS.escape(id)}"]`);
-            if (activeLink) activeLink.classList.add("is-active");
+           tocLinks.forEach(link => link.classList.remove("is-active"));
+
+           if (window.innerWidth <= 980) return;
+
+           const activeLink = toc.querySelector(`a[href="#${CSS.escape(id)}"]`);
+           if (activeLink) activeLink.classList.add("is-active");
         }
 
         const observer = new IntersectionObserver(

@@ -2157,7 +2157,22 @@ footer a,
 .nn-explore-hero .nn-squad-hero__subtitle {
   text-align: justify;
 }
-
+@media (max-width: 640px) {
+  #about-project .nn-richtext p,
+  #about-project .nn-richtext li,
+  .nn-sidebar-card p,
+  .nn-sidebar-card li,
+  .nn-player-card__description,
+  .nn-author-box__bio,
+  .nn-richtext p,
+  .nn-richtext li,
+  .nn-squad-hero__subtitle,
+  .nn-explore-hero__subtitle,
+  .nn-archives-hero__subtitle,
+  .nn-random-fact {
+    text-align: left;
+  }
+}
 
 
 

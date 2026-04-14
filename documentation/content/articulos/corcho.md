@@ -202,7 +202,7 @@ Salud, y buena puntería (pero nunca hacia algo valioso).
 
 - Presión interna: 5–7 atm  
 - Masa del corcho: 6–8 g  
-- Aceleración inicial: hasta $10^4\,\text{m/s}^2$  
+- Aceleración inicial: hasta 10<sup>4</sup> {m/s}<sup>2</sup>  
 - Velocidad típica del corcho: 20–40 m/s  
 - Velocidad extrema: 120 m/s  
 - Velocidad del gas: 260–300 m/s  

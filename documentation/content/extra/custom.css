@@ -2535,20 +2535,30 @@ footer a,
 }
 /* ANCLAS DE CATEGORÍAS Y TAGS */
 
-.tag-index-name,
-.category-index-name,
-.list-of-tags + h2,
-.list-of-categories + h2,
+/* ANCLAS DE TAGS Y CATEGORÍAS */
+
 [id$="-ref"] {
-  scroll-margin-top: 150px;
+  scroll-margin-top: 120px;
+}
+
+.category-index-name,
+.list-of-categories h2,
+.list-of-categories li,
+.category-ref,
+[id*="category"] {
+  scroll-margin-top: 145px;
 }
 
 @media (max-width: 640px) {
-  .tag-index-name,
-  .category-index-name,
-  .list-of-tags + h2,
-  .list-of-categories + h2,
   [id$="-ref"] {
-    scroll-margin-top: 130px;
+    scroll-margin-top: 110px;
+  }
+
+  .category-index-name,
+  .list-of-categories h2,
+  .list-of-categories li,
+  .category-ref,
+  [id*="category"] {
+    scroll-margin-top: 145px;
   }
 }

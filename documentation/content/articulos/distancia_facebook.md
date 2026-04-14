@@ -38,11 +38,11 @@ Es decir, **cualquier persona en Facebook puede llegar a otra mediante poco más
 
 ### 2.1 El grafo social como red compleja
 
-Podemos representar Facebook como un grafo no dirigido $G = (V, E)$, donde:
+Podemos representar Facebook como un grafo no dirigido G = (V, E), donde:
 - $V$ es el conjunto de usuarios  
 - $E$ es el conjunto de relaciones de amistad  
 
-La **distancia** entre dos vértices $u$ y $v$, denotada $d(u,v)$, es la longitud mínima del camino que los conecta.
+La **distancia** entre dos vértices u y v, denotada d(u,v), es la longitud mínima del camino que los conecta.
 
 El objetivo es calcular el **average path length** (APL):
 
@@ -70,7 +70,7 @@ Esto sugiere que incluso una red inmensa puede tener caminos sorprendentemente c
 - Existe fuerte conectividad local (comunidades).  
 - Hay enlaces aleatorios que actúan como “atalayos” en el grafo.
 
-Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen drásticamente $L$.
+Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen drásticamente L.
 
 ---
 
@@ -113,7 +113,7 @@ En teoría de grafos, esta propiedad se explica por:
 
 - Mejora de algoritmos de recomendación (friends-of-friends).  
 - Optimización de buscadores sociales y privacidad basada en distancias.  
-- Diseño de sistemas distribuidos que explotan el comportamiento logarítmico de $L$.
+- Diseño de sistemas distribuidos que explotan el comportamiento logarítmico de L.
 
 ---
 

@@ -1415,13 +1415,6 @@ footer a,
   pointer-events: auto;
   transform: translateX(-50%) translateY(-6px);
 }
-@media (max-width: 1180px) {
-  .nn-player-card__expanded {
-    left: 0;
-    right: 0;
-    width: auto;
-    transform: none;
-  }
 
   .nn-player-card:hover .nn-player-card__expanded {
     transform: translateY(-6px);

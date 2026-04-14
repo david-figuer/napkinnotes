@@ -97,7 +97,6 @@ $$
 A pesar de parecer pequeño, este trabajo se distribuye en escalas microscópicas, generando velocidades de expansión del orden de varios metros por segundo, suficientes para inflar el almidón y solidificarlo instantáneamente por enfriamiento.
 
 ---
-![Ejemplo de imagen](../images/palomitas_1.png)
 ## Energía total liberada
 
 El contenido energético total asociado al cambio de fase del agua en un solo grano es:
@@ -106,7 +105,7 @@ $$
 E = m L
 $$
 
-donde m es la masa de agua. Si $m \approx 10^{-5}~\text{kg}$ , entonces:
+donde m es la masa de agua. Si m ≈ 10<sup>-5</sup> kg , entonces:
 
 $$
 E = 2.26 \times 10^{6} \times 10^{-5} = 22.6~\text{J}
@@ -121,14 +120,14 @@ Solo una pequeña fracción de esta energía se convierte en trabajo mecánico y
 Los granos que no revientan (*“old maids”*) presentan:
 
 - Bajo contenido de humedad w < 10%, insuficiente para generar la presión crítica.  
-- Fisuras microscópicas en el pericarpio, que permiten la fuga de vapor antes de alcanzar $P_{\text{rupt}}$.  
+- Fisuras microscópicas en el pericarpio, que permiten la fuga de vapor antes de alcanzar P<sub>rupt</sub>.  
 - Distribución térmica no uniforme, que evita una presurización homogénea.
 
 ---
 
 ## Eficiencia termodinámica aproximada
 
-Si un horno microondas de potencia $P = 800~\text{W}$ opera durante $t = 120~\text{s}$:
+Si un horno microondas de potencia P = 800 W opera durante t = 120 s:
 
 $$
 E_{\text{in}} = P t = 9.6 \times 10^{4}~\text{J}

@@ -47,7 +47,7 @@ $$
 J = -D \nabla c
 $$
 
-Aquí \(J\) es el flujo de agua que abandona el pan, \(D\) mide qué tan fácil se difunde y $(\nabla c)$ representa la diferencia de concentración entre el interior húmedo y el aire seco.  
+Aquí \(J\) es el flujo de agua que abandona el pan, \(D\) mide qué tan fácil se difunde y (∇c) representa la diferencia de concentración entre el interior húmedo y el aire seco.  
 
 Traducción: si fuera hay menos agua que dentro, el agua se va. No porque quiera. Porque puede.  
 

@@ -452,7 +452,9 @@ No lo&amp;nbsp;es.&lt;/p&gt;
 &lt;div class="math"&gt;$$
 F = P\,A
 $$&lt;/div&gt;
-&lt;p&gt;donde&lt;br /&gt;&amp;nbsp;- &lt;span class="math"&gt;\(P \approx 6\times10^5\,\text{Pa}\)&lt;/span&gt;&lt;br /&gt;&amp;nbsp;- &lt;span class="math"&gt;\(A = \pi r^2\)&lt;/span&gt; con &lt;span class="math"&gt;\(r \approx 9\times10^{-3}\,\text{m}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;donde&lt;br /&gt;
+- P ≈ 6 × 10&lt;sup&gt;5&lt;/sup&gt; Pa&lt;br /&gt;
+- A = πr&lt;sup&gt;2&lt;/sup&gt;, con r ≈ 9 × 10&lt;sup&gt;-3&lt;/sup&gt; m&lt;/p&gt;
 &lt;p&gt;Entonces:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 A \approx 2.54\times10^{-4}\,\text{m}^2
@@ -470,7 +472,7 @@ El gas, mientras tanto, grita como un aficionado de fútbol encerrado en una cab
 &lt;div class="math"&gt;$$
 P\,V^\gamma = \text{constante}
 $$&lt;/div&gt;
-&lt;p&gt;con &lt;span class="math"&gt;\(\gamma \approx 1.3\)&lt;/span&gt; para el&amp;nbsp;CO₂.&lt;/p&gt;
+&lt;p&gt;con γ ≈ 1.3 para el&amp;nbsp;CO₂.&lt;/p&gt;
 &lt;p&gt;Durante los primeros milímetros, la presión apenas cae, lo que permite estimar el trabajo inicial&amp;nbsp;como:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 W \approx F_0\,\Delta x
@@ -479,7 +481,7 @@ $$&lt;/div&gt;
 &lt;div class="math"&gt;$$
 W \approx 150\times0.02 = 3\,\text{J}
 $$&lt;/div&gt;
-&lt;p&gt;La energía disponible se convierte en velocidad para un corcho típico de&amp;nbsp;masa &lt;span class="math"&gt;\(m \approx 0.007\,\text{kg}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;La energía disponible se convierte en velocidad para un corcho típico de masa m ≈ 0.007&amp;nbsp;kg:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 v = \sqrt{\frac{2W}{m}}
 $$&lt;/div&gt;
@@ -500,12 +502,12 @@ $$&lt;/div&gt;
 &lt;div class="math"&gt;$$
 c_s \approx 260\,\text{m/s}
 $$&lt;/div&gt;
-&lt;p&gt;Y estudios recientes han medido jets de champán alrededor&amp;nbsp;de &lt;span class="math"&gt;\(v \sim 300\,\text{m/s}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Y estudios recientes han medido jets de champán alrededor de v ≈ 300&amp;nbsp;m/s.&lt;/p&gt;
 &lt;p&gt;Es decir:&lt;br /&gt;
 Aunque el corcho no sea supersónico, la &lt;strong&gt;explosión gaseosa que lo acompaña sí puede serlo&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="4-un-modelo-mas-riguroso-aceleracion-no-constante"&gt;4. Un modelo más riguroso: aceleración no constante&lt;a class="headerlink" href="#4-un-modelo-mas-riguroso-aceleracion-no-constante" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;A medida que el corcho avanza una&amp;nbsp;distancia &lt;span class="math"&gt;\(x\)&lt;/span&gt;, el volumen disponible aumenta y la presión disminuye&amp;nbsp;según:&lt;/p&gt;
+&lt;p&gt;A medida que el corcho avanza una distancia x, el volumen disponible aumenta y la presión disminuye&amp;nbsp;según:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 P(x) = P_0 \left( \frac{V_0}{V_0 + A x} \right)^{\gamma}
 $$&lt;/div&gt;
@@ -513,7 +515,7 @@ $$&lt;/div&gt;
 &lt;div class="math"&gt;$$
 F(x) = P(x)\,A
 $$&lt;/div&gt;
-&lt;p&gt;Y la velocidad de salida tras recorrer el cuello de&amp;nbsp;longitud &lt;span class="math"&gt;\(L\)&lt;/span&gt; se calcula&amp;nbsp;como:&lt;/p&gt;
+&lt;p&gt;Y la velocidad de salida tras recorrer el cuello de longitud L se calcula&amp;nbsp;como:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 v = \sqrt{\frac{2}{m} \int_0^{L} P(x)\,A\,dx }
 $$&lt;/div&gt;

@@ -1389,7 +1389,7 @@ footer a,
   line-height: 1.02;
 }
 
-.nn-player-card__expanded {
+
   position: absolute;
   top: -10px;
   left: 50%;
@@ -1415,7 +1415,18 @@ footer a,
   pointer-events: auto;
   transform: translateX(-50%) translateY(-6px);
 }
+@media (max-width: 1180px) {
+  .nn-player-card__expanded {
+    left: 0;
+    right: 0;
+    width: auto;
+    transform: none;
+  }
 
+  .nn-player-card:hover .nn-player-card__expanded {
+    transform: translateY(-6px);
+  }
+}
 .nn-player-card:hover .nn-player-card__preview {
   opacity: 0.08;
   transform: scale(0.98);

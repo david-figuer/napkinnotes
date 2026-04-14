@@ -2546,7 +2546,7 @@ footer a,
 .list-of-categories li,
 .category-ref,
 [id*="category"] {
-  scroll-margin-top: 145px;
+  scroll-margin-top: 185px;
 }
 
 @media (max-width: 640px) {
@@ -2559,6 +2559,6 @@ footer a,
   .list-of-categories li,
   .category-ref,
   [id*="category"] {
-    scroll-margin-top: 145px;
+    scroll-margin-top: 170px;
   }
 }

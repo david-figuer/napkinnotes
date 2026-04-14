@@ -149,7 +149,7 @@ Y sí, a veces la vida es así de&amp;nbsp;eficiente.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;img alt="Ejemplo de imagen" src="../images/palomitas.png" /&gt;&lt;/p&gt;
 &lt;h2 id="estructura-del-grano"&gt;Estructura del grano&lt;a class="headerlink" href="#estructura-del-grano" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Empesemos por el protoganista de este fenomeno el grano de maiz (&lt;em&gt;Zea mays everta&lt;/em&gt;), cada uno de estos puede ser dividido en tres partes principales: (1) El endospermo, que contiene almidón y un poco de agua&amp;nbsp;(&lt;span class="math"&gt;\(w \approx 13\text{–}15\,\%\)&lt;/span&gt; de su masa). (2) El pericarpio, una cáscara muy dura e impermeable. (3) El germen, no no ese tipo de germen, es simplemente la parte viva de la semilla. El secreto está en esa pequeña cantidad de agua atrapada dentro. Cuando se calienta, genera vapor y presión hasta que la cáscara no puede resistir más y explota. Buenos si querias la version corta dejalo aqui, pero si sigues curioso dejame&amp;nbsp;continuar.&lt;/p&gt;
+&lt;p&gt;Empesemos por el protoganista de este fenomeno el grano de maiz (&lt;em&gt;Zea mays everta&lt;/em&gt;), cada uno de estos puede ser dividido en tres partes principales: (1) El endospermo, que contiene almidón y un poco de agua (w ≈ 13–15 % de su masa). (2) El pericarpio, una cáscara muy dura e impermeable. (3) El germen, no no ese tipo de germen, es simplemente la parte viva de la semilla. El secreto está en esa pequeña cantidad de agua atrapada dentro. Cuando se calienta, genera vapor y presión hasta que la cáscara no puede resistir más y explota. Buenos si querias la version corta dejalo aqui, pero si sigues curioso dejame&amp;nbsp;continuar.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="interaccion-con-el-microondas"&gt;Interacción con el microondas&lt;a class="headerlink" href="#interaccion-con-el-microondas" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;El horno microondas opera típicamente a una frecuencia de 2.45 GHz, correspondiente a una longitud de onda de 12.2 cm.&lt;br /&gt;
@@ -159,7 +159,7 @@ Las moléculas de agua rotan en fase con el campo alterno, generando disipación
 &lt;div class="math"&gt;$$
 \rho c_p \frac{\partial T}{\partial t} = k \nabla^2 T + Q_{\text{abs}}
 $$&lt;/div&gt;
-&lt;p&gt;donde &lt;span class="math"&gt;\(\rho\)&lt;/span&gt; es la&amp;nbsp;densidad, &lt;span class="math"&gt;\(c_p\)&lt;/span&gt; el calor&amp;nbsp;específico, &lt;span class="math"&gt;\(k\)&lt;/span&gt; la conductividad térmica&amp;nbsp;y &lt;span class="math"&gt;\(Q_{\text{abs}}\)&lt;/span&gt; la potencia volumétrica absorbida del campo&amp;nbsp;electromagnético.&lt;/p&gt;
+&lt;p&gt;donde ρ es la densidad, c&lt;sub&gt;p&lt;/sub&gt; el calor específico, k la conductividad térmica y Q&lt;sub&gt;abs&lt;/sub&gt; la potencia volumétrica absorbida del campo&amp;nbsp;electromagnético.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="presurizacion-interna"&gt;Presurización interna&lt;a class="headerlink" href="#presurizacion-interna" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Al subir la temperatura, el agua dentro del grano se convierte en vapor y aumenta la presión interna como estudiante de doctorado a final de su etapa (comentario inecesario quizas pero al fin y al cabo este blog cumple tambien la funcion  entretenerme).
@@ -171,24 +171,24 @@ $$&lt;/div&gt;
 &lt;div class="math"&gt;$$
 \ln \left( \frac{P_v}{P_0} \right) = - \frac{L}{R} \left( \frac{1}{T} - \frac{1}{T_0} \right)
 $$&lt;/div&gt;
-&lt;p&gt;donde &lt;span class="math"&gt;\(L = 2.26\times10^6~\text{J/kg}\)&lt;/span&gt; es el calor latente de vaporización del agua&amp;nbsp;y &lt;span class="math"&gt;\(R = 8.31~\text{J/mol·K}\)&lt;/span&gt; la constante de los gases ideales.&amp;nbsp;Sustituyendo &lt;span class="math"&gt;\(T_0 = 373~\text{K}\)&lt;/span&gt;, &lt;span class="math"&gt;\(P_0 = 1~\text{atm}\)&lt;/span&gt; y &lt;span class="math"&gt;\(T = 453~\text{K}\)&lt;/span&gt; (≈ 180 °C), se&amp;nbsp;obtiene:&lt;/p&gt;
+&lt;p&gt;donde L = 2.26×10&lt;sup&gt;6&lt;/sup&gt; J/kg es el calor latente de vaporización del agua y R = 8.31 J/mol·K la constante de los gases ideales. Sustituyendo T&lt;sub&gt;0&lt;/sub&gt; = 373 K, P&lt;sub&gt;0&lt;/sub&gt; = 1 atm y T = 453 K (≈ 180 °C), se&amp;nbsp;obtiene:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 P_v(453~\text{K}) \approx 9~\text{atm}
 $$&lt;/div&gt;
 &lt;p&gt;valor que coincide con la presión crítica de ruptura observada experimentalmente para el&amp;nbsp;pericarpio. &lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="explosion-y-expansion-adiabatica"&gt;Explosión y expansión adiabática&lt;a class="headerlink" href="#explosion-y-expansion-adiabatica" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Una vez que la presión interna excede la resistencia del&amp;nbsp;pericarpio &lt;span class="math"&gt;\(( P_{\text{rupt}} \sim 9\text{–}10~\text{atm})\)&lt;/span&gt;, se produce una fractura súbita.&lt;br /&gt;
+&lt;p&gt;Una vez que la presión interna excede la resistencia del pericarpio (P&lt;sub&gt;rupt&lt;/sub&gt; ≈ 9–10 atm), se produce una fractura súbita.&lt;br /&gt;
 El vapor se expande rápidamente, realizando trabajo sobre el almidón circundante y provocando una expansión casi adiabática del&amp;nbsp;gas.&lt;/p&gt;
 &lt;p&gt;Si suponemos una expansión adiabática reversible para el vapor de&amp;nbsp;agua:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 P V^{\gamma} = \text{constante}
 $$&lt;/div&gt;
-&lt;p&gt;donde &lt;span class="math"&gt;\(\gamma = c_p/c_v \approx 1.33\)&lt;/span&gt; para el vapor, el trabajo realizado por el gas durante la expansión&amp;nbsp;es:&lt;/p&gt;
+&lt;p&gt;donde γ = c&lt;sub&gt;p&lt;/sub&gt;/c&lt;sub&gt;v&lt;/sub&gt; ≈ 1.33 para el vapor, el trabajo realizado por el gas durante la expansión&amp;nbsp;es:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 W = \frac{P_i V_i - P_f V_f}{\gamma - 1}
 $$&lt;/div&gt;
-&lt;p&gt;Tomando &lt;span class="math"&gt;\(P_i = 9~\text{atm}\)&lt;/span&gt;, &lt;span class="math"&gt;\(P_f = 1~\text{atm}\)&lt;/span&gt; y considerando que el volumen final del gas es&amp;nbsp;unas &lt;span class="math"&gt;\(V_f/V_i \approx 10\)&lt;/span&gt; veces mayor, se obtiene un trabajo del orden&amp;nbsp;de:&lt;/p&gt;
+&lt;p&gt;Tomando P&lt;sub&gt;i&lt;/sub&gt; = 9 atm, P&lt;sub&gt;f&lt;/sub&gt; = 1 atm y considerando que el volumen final del gas es unas V&lt;sub&gt;f&lt;/sub&gt;/V&lt;sub&gt;i&lt;/sub&gt; ≈ 10 veces mayor, se obtiene un trabajo del orden&amp;nbsp;de:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 W \sim 10^{-3}~\text{J}
 $$&lt;/div&gt;
@@ -200,7 +200,7 @@ $$&lt;/div&gt;
 &lt;div class="math"&gt;$$
 E = m L
 $$&lt;/div&gt;
-&lt;p&gt;donde &lt;span class="math"&gt;\(m\)&lt;/span&gt; es la masa de agua.&amp;nbsp;Si &lt;span class="math"&gt;\(m \approx 10^{-5}~\text{kg}\)&lt;/span&gt; ,&amp;nbsp;entonces:&lt;/p&gt;
+&lt;p&gt;donde m es la masa de agua.&amp;nbsp;Si &lt;span class="math"&gt;\(m \approx 10^{-5}~\text{kg}\)&lt;/span&gt; ,&amp;nbsp;entonces:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 E = 2.26 \times 10^{6} \times 10^{-5} = 22.6~\text{J}
 $$&lt;/div&gt;
@@ -209,7 +209,7 @@ $$&lt;/div&gt;
 &lt;h2 id="factores-que-impiden-el-estallido"&gt;Factores que impiden el estallido&lt;a class="headerlink" href="#factores-que-impiden-el-estallido" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Los granos que no revientan (&lt;em&gt;“old maids”&lt;/em&gt;)&amp;nbsp;presentan:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Bajo contenido de&amp;nbsp;humedad &lt;span class="math"&gt;\(w &amp;lt; 10\,\%\)&lt;/span&gt;, insuficiente para generar la presión&amp;nbsp;crítica.  &lt;/li&gt;
+&lt;li&gt;Bajo contenido de humedad w &amp;lt; 10%, insuficiente para generar la presión&amp;nbsp;crítica.  &lt;/li&gt;
 &lt;li&gt;Fisuras microscópicas en el pericarpio, que permiten la fuga de vapor antes de&amp;nbsp;alcanzar &lt;span class="math"&gt;\(P_{\text{rupt}}\)&lt;/span&gt;.  &lt;/li&gt;
 &lt;li&gt;Distribución térmica no uniforme, que evita una presurización&amp;nbsp;homogénea.&lt;/li&gt;
 &lt;/ul&gt;
@@ -219,7 +219,7 @@ $$&lt;/div&gt;
 &lt;div class="math"&gt;$$
 E_{\text{in}} = P t = 9.6 \times 10^{4}~\text{J}
 $$&lt;/div&gt;
-&lt;p&gt;Una bolsa de 100 g contiene&amp;nbsp;aproximadamente &lt;span class="math"&gt;\(N = 3000\)&lt;/span&gt; granos.&lt;br /&gt;
+&lt;p&gt;Una bolsa de 100 g contiene aproximadamente N = 3000 granos.&lt;br /&gt;
 Si cada uno libera ≈ 20 J en el proceso de&amp;nbsp;vaporización:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 E_{\text{total}} = N \times 20~\text{J} = 6.0 \times 10^{4}~\text{J}

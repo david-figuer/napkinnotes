@@ -662,7 +662,11 @@ Acabas de asistir al lanzamiento de un &lt;em&gt;microcohete carbónico&lt;/em&g
 &lt;hr /&gt;
 &lt;h2 id="2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;a class="headerlink" href="#2-por-que-tan-pocos-fundamentos-matematicos" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="21-el-grafo-social-como-red-compleja"&gt;2.1 El grafo social como red compleja&lt;a class="headerlink" href="#21-el-grafo-social-como-red-compleja" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Podemos representar Facebook como un grafo no dirigido G = (V, E), donde:&amp;nbsp;- &lt;span class="math"&gt;\(V\)&lt;/span&gt; es el conjunto de usuarios&lt;br /&gt;&amp;nbsp;- &lt;span class="math"&gt;\(E\)&lt;/span&gt; es el conjunto de relaciones de&amp;nbsp;amistad  &lt;/p&gt;
+&lt;p&gt;Podemos representar Facebook como un grafo no dirigido G = (V, E),&amp;nbsp;donde:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;V es el conjunto de&amp;nbsp;usuarios  &lt;/li&gt;
+&lt;li&gt;E es el conjunto de relaciones de&amp;nbsp;amistad  &lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;La &lt;strong&gt;distancia&lt;/strong&gt; entre dos vértices u y v, denotada d(u,v), es la longitud mínima del camino que los&amp;nbsp;conecta.&lt;/p&gt;
 &lt;p&gt;El objetivo es calcular el &lt;strong&gt;average path length&lt;/strong&gt; (&lt;span class="caps"&gt;APL&lt;/span&gt;):&lt;/p&gt;
 &lt;div class="math"&gt;$$
@@ -672,10 +676,10 @@ $$&lt;/div&gt;
 &lt;h3 id="22-la-magia-de-los-mundos-pequenos"&gt;2.2 La magia de los mundos pequeños&lt;a class="headerlink" href="#22-la-magia-de-los-mundos-pequenos" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;El comportamiento observado en Facebook coincide con el modelo de &lt;strong&gt;redes de mundo pequeño&lt;/strong&gt; (Watts &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Strogatz, 1998), caracterizado&amp;nbsp;por:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Alta agrupación (clustering&amp;nbsp;coefficient &lt;span class="math"&gt;\(C\)&lt;/span&gt;)&lt;/strong&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Caminos cortos con crecimiento&amp;nbsp;logarítmico: &lt;span class="math"&gt;\(L \sim \log N\)&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alta agrupación (clustering coefficient&amp;nbsp;C)&lt;/strong&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Caminos cortos con crecimiento logarítmico: L ≈ log&amp;nbsp;N&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Si &lt;span class="math"&gt;\(N \approx 10^9\)&lt;/span&gt;,&amp;nbsp;entonces:&lt;/p&gt;
+&lt;p&gt;Si N ≈ 10&lt;sup&gt;9&lt;/sup&gt;,&amp;nbsp;entonces:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 \log(N) \approx 21
 $$&lt;/div&gt;

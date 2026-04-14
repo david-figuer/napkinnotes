@@ -311,7 +311,7 @@ El resultado visible —la expansión blanca del almidón— es consecuencia dir
 &lt;p&gt;En el umbral aparece un hombre trajeado, gafas oscuras pese a la sombra del taller, un maletín impecable en la mano. No sonríe. No se presenta. Solo examina el espacio como si evaluara algo invisible. Después, con un gesto medido, deposita sobre tu mesa el objeto de su&amp;nbsp;visita.  &lt;/p&gt;
 &lt;p&gt;Lo observas sin comprender del todo. Comienza ancho, casi familiar, pero pronto se afina mientras se extiende hacia la derecha, cada vez más delgado, cada vez más largo. La forma parece huir de sí misma, escapar en una dirección que no promete final alguno. Sigues su perfil con la vista esperando que termine en algún punto razonable, pero no hay borde, no hay límite. Solo una prolongación que parece negarse a&amp;nbsp;concluir.  &lt;/p&gt;
 &lt;p&gt;Antes de marcharse, el hombre pronuncia el nombre con una solemnidad que no admite preguntas: el cuerno de&amp;nbsp;Gabriel.  &lt;/p&gt;
-&lt;p&gt;Desde el punto de vista matemático, la forma no es caprichosa. Se obtiene al girar la curva ( y = \frac{1}{x} ) para ( x \geq 1 ) alrededor del eje horizontal. El resultado es un sólido de revolución que se extiende indefinidamente mientras su radio disminuye sin cesar. Es infinito en longitud, pero cada vez más&amp;nbsp;fino.  &lt;/p&gt;
+&lt;p&gt;Desde el punto de vista matemático, la forma no es caprichosa. Se obtiene al girar la curva y = 1/x para x ≥ 1 alrededor del eje horizontal. El resultado es un sólido de revolución que se extiende indefinidamente mientras su radio disminuye sin cesar. Es infinito en longitud, pero cada vez más&amp;nbsp;fino.  &lt;/p&gt;
 &lt;p&gt;El encargo parece simple: la escultura debe verse completamente roja. Piensas en lo obvio. Bastará con calcular cuánta pintura necesitas para cubrirla por&amp;nbsp;fuera.  &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;¿Cuánta pintura necesitas para pintar una trompeta&amp;nbsp;infinita?&lt;/strong&gt;&lt;/p&gt;
@@ -348,7 +348,7 @@ $$&lt;/div&gt;
 &lt;div class="math"&gt;$$
 V = \pi
 $$&lt;/div&gt;
-&lt;p&gt;La trompeta se extiende hasta el infinito, pero el volumen total contenido en su interior es finito. Exactamente ( \pi ) unidades cúbicas. Puedes llenarla completamente con una cantidad limitada de&amp;nbsp;pintura.  &lt;/p&gt;
+&lt;p&gt;La trompeta se extiende hasta el infinito, pero el volumen total contenido en su interior es finito. Exactamente π unidades cúbicas. Puedes llenarla completamente con una cantidad limitada de&amp;nbsp;pintura.  &lt;/p&gt;
 &lt;p&gt;Volumen finito. Área infinita. A esto se le puede llamar &lt;em&gt;una paradoja&lt;/em&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="conclusiones"&gt;Conclusiones&lt;a class="headerlink" href="#conclusiones" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;

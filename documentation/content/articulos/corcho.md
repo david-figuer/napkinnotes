@@ -36,8 +36,8 @@ F = P\,A
 $$
 
 donde  
-- $P \approx 6\times10^5\,\text{Pa}$  
-- $A = \pi r^2$ con $r \approx 9\times10^{-3}\,\text{m}$
+- P ≈ 6 × 10<sup>5</sup> Pa  
+- A = πr<sup>2</sup>, con r ≈ 9 × 10<sup>-3</sup> m
 
 Entonces:
 
@@ -66,7 +66,7 @@ $$
 P\,V^\gamma = \text{constante}
 $$
 
-con $\gamma \approx 1.3$ para el CO₂.
+con γ ≈ 1.3 para el CO₂.
 
 Durante los primeros milímetros, la presión apenas cae, lo que permite estimar el trabajo inicial como:
 
@@ -80,7 +80,7 @@ $$
 W \approx 150\times0.02 = 3\,\text{J}
 $$
 
-La energía disponible se convierte en velocidad para un corcho típico de masa $m \approx 0.007\,\text{kg}$:
+La energía disponible se convierte en velocidad para un corcho típico de masa m ≈ 0.007 kg:
 
 $$
 v = \sqrt{\frac{2W}{m}}
@@ -112,7 +112,7 @@ $$
 c_s \approx 260\,\text{m/s}
 $$
 
-Y estudios recientes han medido jets de champán alrededor de $v \sim 300\,\text{m/s}$.
+Y estudios recientes han medido jets de champán alrededor de v ≈ 300 m/s.
 
 Es decir:  
 Aunque el corcho no sea supersónico, la **explosión gaseosa que lo acompaña sí puede serlo**.
@@ -121,7 +121,7 @@ Aunque el corcho no sea supersónico, la **explosión gaseosa que lo acompaña s
 
 ## 4. Un modelo más riguroso: aceleración no constante
 
-A medida que el corcho avanza una distancia $x$, el volumen disponible aumenta y la presión disminuye según:
+A medida que el corcho avanza una distancia x, el volumen disponible aumenta y la presión disminuye según:
 
 $$
 P(x) = P_0 \left( \frac{V_0}{V_0 + A x} \right)^{\gamma}
@@ -133,7 +133,7 @@ $$
 F(x) = P(x)\,A
 $$
 
-Y la velocidad de salida tras recorrer el cuello de longitud $L$ se calcula como:
+Y la velocidad de salida tras recorrer el cuello de longitud L se calcula como:
 
 $$
 v = \sqrt{\frac{2}{m} \int_0^{L} P(x)\,A\,dx }

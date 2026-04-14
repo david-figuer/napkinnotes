@@ -39,11 +39,7 @@
             {% if article.date %}
             <span class="nn-article-hero__dot">•</span>
             <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-            {% endif %}
-            {% if article.author %}
-            <span class="nn-article-hero__dot">•</span>
-            <span>{{ article.author }}</span>
-            {% endif %}
+            {% endif %}           
         </div>
 
         <div class="nn-article-hero__heading">

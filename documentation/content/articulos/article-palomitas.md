@@ -26,7 +26,7 @@ Seguramente alguna vez te has dipuesto a ver esa peli que de la que tanto hablan
 
 ## Estructura del grano
 
-Empesemos por el protoganista de este fenomeno el grano de maiz (*Zea mays everta*), cada uno de estos puede ser dividido en tres partes principales: (1) El endospermo, que contiene almidón y un poco de agua ($w \approx 13\text{–}15\,\%$ de su masa). (2) El pericarpio, una cáscara muy dura e impermeable. (3) El germen, no no ese tipo de germen, es simplemente la parte viva de la semilla. El secreto está en esa pequeña cantidad de agua atrapada dentro. Cuando se calienta, genera vapor y presión hasta que la cáscara no puede resistir más y explota. Buenos si querias la version corta dejalo aqui, pero si sigues curioso dejame continuar.
+Empesemos por el protoganista de este fenomeno el grano de maiz (*Zea mays everta*), cada uno de estos puede ser dividido en tres partes principales: (1) El endospermo, que contiene almidón y un poco de agua (w ≈ 13–15 % de su masa). (2) El pericarpio, una cáscara muy dura e impermeable. (3) El germen, no no ese tipo de germen, es simplemente la parte viva de la semilla. El secreto está en esa pequeña cantidad de agua atrapada dentro. Cuando se calienta, genera vapor y presión hasta que la cáscara no puede resistir más y explota. Buenos si querias la version corta dejalo aqui, pero si sigues curioso dejame continuar.
 
 ---
 
@@ -42,7 +42,7 @@ $$
 \rho c_p \frac{\partial T}{\partial t} = k \nabla^2 T + Q_{\text{abs}}
 $$
 
-donde $\rho$ es la densidad, $c_p$ el calor específico, $k$ la conductividad térmica y $Q_{\text{abs}}$ la potencia volumétrica absorbida del campo electromagnético.
+donde ρ es la densidad, c<sub>p</sub> el calor específico, k la conductividad térmica y Q<sub>abs</sub> la potencia volumétrica absorbida del campo electromagnético.
 
 ---
 
@@ -61,7 +61,7 @@ $$
 \ln \left( \frac{P_v}{P_0} \right) = - \frac{L}{R} \left( \frac{1}{T} - \frac{1}{T_0} \right)
 $$
 
-donde $L = 2.26\times10^6~\text{J/kg}$ es el calor latente de vaporización del agua y $R = 8.31~\text{J/mol·K}$ la constante de los gases ideales. Sustituyendo $T_0 = 373~\text{K}$, $P_0 = 1~\text{atm}$ y $T = 453~\text{K}$ (≈ 180 °C), se obtiene:
+donde L = 2.26×10<sup>6</sup> J/kg es el calor latente de vaporización del agua y R = 8.31 J/mol·K la constante de los gases ideales. Sustituyendo T<sub>0</sub> = 373 K, P<sub>0</sub> = 1 atm y T = 453 K (≈ 180 °C), se obtiene:
 
 $$
 P_v(453~\text{K}) \approx 9~\text{atm}
@@ -73,7 +73,7 @@ valor que coincide con la presión crítica de ruptura observada experimentalmen
 
 ## Explosión y expansión adiabática
 
-Una vez que la presión interna excede la resistencia del pericarpio $( P_{\text{rupt}} \sim 9\text{–}10~\text{atm})$, se produce una fractura súbita.  
+Una vez que la presión interna excede la resistencia del pericarpio (P<sub>rupt</sub> ≈ 9–10 atm), se produce una fractura súbita.  
 El vapor se expande rápidamente, realizando trabajo sobre el almidón circundante y provocando una expansión casi adiabática del gas.
 
 Si suponemos una expansión adiabática reversible para el vapor de agua:
@@ -82,13 +82,13 @@ $$
 P V^{\gamma} = \text{constante}
 $$
 
-donde $\gamma = c_p/c_v \approx 1.33$ para el vapor, el trabajo realizado por el gas durante la expansión es:
+donde γ = c<sub>p</sub>/c<sub>v</sub> ≈ 1.33 para el vapor, el trabajo realizado por el gas durante la expansión es:
 
 $$
 W = \frac{P_i V_i - P_f V_f}{\gamma - 1}
 $$
 
-Tomando $P_i = 9~\text{atm}$, $P_f = 1~\text{atm}$ y considerando que el volumen final del gas es unas $V_f/V_i \approx 10$ veces mayor, se obtiene un trabajo del orden de:
+Tomando P<sub>i</sub> = 9 atm, P<sub>f</sub> = 1 atm y considerando que el volumen final del gas es unas V<sub>f</sub>/V<sub>i</sub> ≈ 10 veces mayor, se obtiene un trabajo del orden de:
 
 $$
 W \sim 10^{-3}~\text{J}
@@ -106,7 +106,7 @@ $$
 E = m L
 $$
 
-donde $m$ es la masa de agua. Si $m \approx 10^{-5}~\text{kg}$ , entonces:
+donde m es la masa de agua. Si $m \approx 10^{-5}~\text{kg}$ , entonces:
 
 $$
 E = 2.26 \times 10^{6} \times 10^{-5} = 22.6~\text{J}
@@ -120,7 +120,7 @@ Solo una pequeña fracción de esta energía se convierte en trabajo mecánico y
 
 Los granos que no revientan (*“old maids”*) presentan:
 
-- Bajo contenido de humedad $w < 10\,\%$, insuficiente para generar la presión crítica.  
+- Bajo contenido de humedad w < 10%, insuficiente para generar la presión crítica.  
 - Fisuras microscópicas en el pericarpio, que permiten la fuga de vapor antes de alcanzar $P_{\text{rupt}}$.  
 - Distribución térmica no uniforme, que evita una presurización homogénea.
 
@@ -134,7 +134,7 @@ $$
 E_{\text{in}} = P t = 9.6 \times 10^{4}~\text{J}
 $$
 
-Una bolsa de 100 g contiene aproximadamente $N = 3000$ granos.  
+Una bolsa de 100 g contiene aproximadamente N = 3000 granos.  
 Si cada uno libera ≈ 20 J en el proceso de vaporización:
 
 $$

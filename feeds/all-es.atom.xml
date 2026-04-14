@@ -662,8 +662,8 @@ Acabas de asistir al lanzamiento de un &lt;em&gt;microcohete carbónico&lt;/em&g
 &lt;hr /&gt;
 &lt;h2 id="2-por-que-tan-pocos-fundamentos-matematicos"&gt;2. ¿Por qué tan pocos? Fundamentos matemáticos&lt;a class="headerlink" href="#2-por-que-tan-pocos-fundamentos-matematicos" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="21-el-grafo-social-como-red-compleja"&gt;2.1 El grafo social como red compleja&lt;a class="headerlink" href="#21-el-grafo-social-como-red-compleja" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Podemos representar Facebook como un grafo no&amp;nbsp;dirigido &lt;span class="math"&gt;\(G = (V, E)\)&lt;/span&gt;, donde:&amp;nbsp;- &lt;span class="math"&gt;\(V\)&lt;/span&gt; es el conjunto de usuarios&lt;br /&gt;&amp;nbsp;- &lt;span class="math"&gt;\(E\)&lt;/span&gt; es el conjunto de relaciones de&amp;nbsp;amistad  &lt;/p&gt;
-&lt;p&gt;La &lt;strong&gt;distancia&lt;/strong&gt; entre dos&amp;nbsp;vértices &lt;span class="math"&gt;\(u\)&lt;/span&gt; y &lt;span class="math"&gt;\(v\)&lt;/span&gt;,&amp;nbsp;denotada &lt;span class="math"&gt;\(d(u,v)\)&lt;/span&gt;, es la longitud mínima del camino que los&amp;nbsp;conecta.&lt;/p&gt;
+&lt;p&gt;Podemos representar Facebook como un grafo no dirigido G = (V, E), donde:&amp;nbsp;- &lt;span class="math"&gt;\(V\)&lt;/span&gt; es el conjunto de usuarios&lt;br /&gt;&amp;nbsp;- &lt;span class="math"&gt;\(E\)&lt;/span&gt; es el conjunto de relaciones de&amp;nbsp;amistad  &lt;/p&gt;
+&lt;p&gt;La &lt;strong&gt;distancia&lt;/strong&gt; entre dos vértices u y v, denotada d(u,v), es la longitud mínima del camino que los&amp;nbsp;conecta.&lt;/p&gt;
 &lt;p&gt;El objetivo es calcular el &lt;strong&gt;average path length&lt;/strong&gt; (&lt;span class="caps"&gt;APL&lt;/span&gt;):&lt;/p&gt;
 &lt;div class="math"&gt;$$
 L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)
@@ -684,7 +684,7 @@ $$&lt;/div&gt;
 &lt;li&gt;Existe fuerte conectividad local&amp;nbsp;(comunidades).  &lt;/li&gt;
 &lt;li&gt;Hay enlaces aleatorios que actúan como “atalayos” en el&amp;nbsp;grafo.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen&amp;nbsp;drásticamente &lt;span class="math"&gt;\(L\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen drásticamente&amp;nbsp;L.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="3-los-seis-grados-de-separacion-historia-mito-y-validacion"&gt;3. Los seis grados de separación: historia, mito y validación&lt;a class="headerlink" href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;La idea nació en 1929 con Frigyes Karinthy, se popularizó en 1967 con el experimento de Stanley Milgram y terminó convertida en un concepto cultural. Pero matemáticamente, el fenómeno posee base&amp;nbsp;sólida.&lt;/p&gt;
@@ -718,7 +718,7 @@ $$&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;Mejora de algoritmos de recomendación&amp;nbsp;(friends-of-friends).  &lt;/li&gt;
 &lt;li&gt;Optimización de buscadores sociales y privacidad basada en&amp;nbsp;distancias.  &lt;/li&gt;
-&lt;li&gt;Diseño de sistemas distribuidos que explotan el comportamiento logarítmico&amp;nbsp;de &lt;span class="math"&gt;\(L\)&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Diseño de sistemas distribuidos que explotan el comportamiento logarítmico de&amp;nbsp;L.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 &lt;h2 id="5-conclusion"&gt;5. Conclusión&lt;a class="headerlink" href="#5-conclusion" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;

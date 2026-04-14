@@ -2533,42 +2533,20 @@ footer a,
   background: var(--paper);
   box-shadow: var(--shadow);
 }
-/* ANCLAS DE CATEGORÍAS Y TAGS */
+/* OFFSET REAL PARA ANCLAS DE TAGS Y CATEGORÍAS */
 
-/* ANCLAS DE TAGS Y CATEGORÍAS */
-
-[id$="-ref"] {
-  scroll-margin-top: 120px;
+[id$="-ref"]:target::before {
+  content: "";
+  display: block;
+  height: 170px;
+  margin-top: -170px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 @media (max-width: 640px) {
-  [id$="-ref"] {
-    scroll-margin-top: 110px;
-  }
-}
-
-/* SOLO CATEGORÍAS: margen exagerado para probar */
-
-.category-index-name,
-.list-of-categories h2,
-.list-of-categories li,
-.category-ref,
-[id*="category"],
-[id*="Category"],
-[id^="category"],
-[id^="Category"] {
-  scroll-margin-top: 260px !important;
-}
-
-@media (max-width: 640px) {
-  .category-index-name,
-  .list-of-categories h2,
-  .list-of-categories li,
-  .category-ref,
-  [id*="category"],
-  [id*="Category"],
-  [id^="category"],
-  [id^="Category"] {
-    scroll-margin-top: 240px !important;
+  [id$="-ref"]:target::before {
+    height: 150px;
+    margin-top: -150px;
   }
 }

@@ -2537,11 +2537,17 @@ footer a,
 
 /* ANCLAS DE TAGS Y CATEGORÍAS */
 
-/* ANCLAS DE TAGS Y CATEGORÍAS */
-
 [id$="-ref"] {
   scroll-margin-top: 120px;
 }
+
+@media (max-width: 640px) {
+  [id$="-ref"] {
+    scroll-margin-top: 110px;
+  }
+}
+
+/* SOLO CATEGORÍAS: margen exagerado para probar */
 
 .category-index-name,
 .list-of-categories h2,
@@ -2551,14 +2557,10 @@ footer a,
 [id*="Category"],
 [id^="category"],
 [id^="Category"] {
-  scroll-margin-top: 185px;
+  scroll-margin-top: 260px !important;
 }
 
 @media (max-width: 640px) {
-  [id$="-ref"] {
-    scroll-margin-top: 110px;
-  }
-
   .category-index-name,
   .list-of-categories h2,
   .list-of-categories li,
@@ -2567,6 +2569,6 @@ footer a,
   [id*="Category"],
   [id^="category"],
   [id^="Category"] {
-    scroll-margin-top: 170px;
+    scroll-margin-top: 240px !important;
   }
 }

@@ -2515,3 +2515,22 @@ footer a,
   background: var(--paper);
   box-shadow: var(--shadow);
 }
+/* ANCLAS DE CATEGORÍAS Y TAGS */
+
+.tag-index-name,
+.category-index-name,
+.list-of-tags + h2,
+.list-of-categories + h2,
+[id$="-ref"] {
+  scroll-margin-top: 110px;
+}
+
+@media (max-width: 640px) {
+  .tag-index-name,
+  .category-index-name,
+  .list-of-tags + h2,
+  .list-of-categories + h2,
+  [id$="-ref"] {
+    scroll-margin-top: 95px;
+  }
+}

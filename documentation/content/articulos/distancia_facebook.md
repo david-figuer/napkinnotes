@@ -39,8 +39,9 @@ Es decir, **cualquier persona en Facebook puede llegar a otra mediante poco más
 ### 2.1 El grafo social como red compleja
 
 Podemos representar Facebook como un grafo no dirigido G = (V, E), donde:
-- $V$ es el conjunto de usuarios  
-- $E$ es el conjunto de relaciones de amistad  
+
+- V es el conjunto de usuarios  
+- E es el conjunto de relaciones de amistad  
 
 La **distancia** entre dos vértices u y v, denotada d(u,v), es la longitud mínima del camino que los conecta.
 
@@ -56,10 +57,10 @@ En redes a gran escala esta suma explícita es inviable. Facebook utiliza técni
 
 El comportamiento observado en Facebook coincide con el modelo de **redes de mundo pequeño** (Watts & Strogatz, 1998), caracterizado por:
 
-1. **Alta agrupación (clustering coefficient $C$)**  
-2. **Caminos cortos con crecimiento logarítmico: $L \sim \log N$**
-
-Si $N \approx 10^9$, entonces:
+1. **Alta agrupación (clustering coefficient C)**  
+2. **Caminos cortos con crecimiento logarítmico: L ≈ log N**
+   
+Si N ≈ 10<sup>9</sup>, entonces:
 
 $$
 \log(N) \approx 21

@@ -2540,7 +2540,7 @@ footer a,
 .list-of-tags + h2,
 .list-of-categories + h2,
 [id$="-ref"] {
-  scroll-margin-top: 110px;
+  scroll-margin-top: 135px;
 }
 
 @media (max-width: 640px) {
@@ -2549,6 +2549,6 @@ footer a,
   .list-of-tags + h2,
   .list-of-categories + h2,
   [id$="-ref"] {
-    scroll-margin-top: 95px;
+    scroll-margin-top: 110px;
   }
 }

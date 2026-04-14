@@ -194,13 +194,12 @@ W \sim 10^{-3}~\text{J}
 $$&lt;/div&gt;
 &lt;p&gt;A pesar de parecer pequeño, este trabajo se distribuye en escalas microscópicas, generando velocidades de expansión del orden de varios metros por segundo, suficientes para inflar el almidón y solidificarlo instantáneamente por&amp;nbsp;enfriamiento.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;&lt;img alt="Ejemplo de imagen" src="../images/palomitas_1.png" /&gt;&lt;/p&gt;
 &lt;h2 id="energia-total-liberada"&gt;Energía total liberada&lt;a class="headerlink" href="#energia-total-liberada" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;El contenido energético total asociado al cambio de fase del agua en un solo grano&amp;nbsp;es:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 E = m L
 $$&lt;/div&gt;
-&lt;p&gt;donde m es la masa de agua.&amp;nbsp;Si &lt;span class="math"&gt;\(m \approx 10^{-5}~\text{kg}\)&lt;/span&gt; ,&amp;nbsp;entonces:&lt;/p&gt;
+&lt;p&gt;donde m es la masa de agua. Si m ≈ 10&lt;sup&gt;-5&lt;/sup&gt; kg ,&amp;nbsp;entonces:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 E = 2.26 \times 10^{6} \times 10^{-5} = 22.6~\text{J}
 $$&lt;/div&gt;
@@ -210,12 +209,12 @@ $$&lt;/div&gt;
 &lt;p&gt;Los granos que no revientan (&lt;em&gt;“old maids”&lt;/em&gt;)&amp;nbsp;presentan:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Bajo contenido de humedad w &amp;lt; 10%, insuficiente para generar la presión&amp;nbsp;crítica.  &lt;/li&gt;
-&lt;li&gt;Fisuras microscópicas en el pericarpio, que permiten la fuga de vapor antes de&amp;nbsp;alcanzar &lt;span class="math"&gt;\(P_{\text{rupt}}\)&lt;/span&gt;.  &lt;/li&gt;
+&lt;li&gt;Fisuras microscópicas en el pericarpio, que permiten la fuga de vapor antes de alcanzar P&lt;sub&gt;rupt&lt;/sub&gt;.  &lt;/li&gt;
 &lt;li&gt;Distribución térmica no uniforme, que evita una presurización&amp;nbsp;homogénea.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 &lt;h2 id="eficiencia-termodinamica-aproximada"&gt;Eficiencia termodinámica aproximada&lt;a class="headerlink" href="#eficiencia-termodinamica-aproximada" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Si un horno microondas de&amp;nbsp;potencia &lt;span class="math"&gt;\(P = 800~\text{W}\)&lt;/span&gt; opera&amp;nbsp;durante &lt;span class="math"&gt;\(t = 120~\text{s}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;Si un horno microondas de potencia P = 800 W opera durante t = 120&amp;nbsp;s:&lt;/p&gt;
 &lt;div class="math"&gt;$$
 E_{\text{in}} = P t = 9.6 \times 10^{4}~\text{J}
 $$&lt;/div&gt;

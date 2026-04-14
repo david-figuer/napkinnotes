@@ -87,7 +87,7 @@ $$
 k = A e^{-E_a/(RT)}
 $$
 
-No hace falta hacer números. Solo entender lo importante: la temperatura, esa \(T\) de la fórmula, importa. Importa mucho.
+No hace falta hacer números. Solo entender lo importante: la temperatura, esa \(T\) de la fórmula, importa... importa mucho.
 
 ---
 
@@ -97,7 +97,7 @@ Aquí llega el giro cruel.
 
 Uno pensaría que la nevera ayuda. Hace frío. Se supone que el frío conserva las cosas. Pues no.  
 
-En el rango aproximado de 0 °C a 10 °C,, la retrogradación del almidón ocurre con bastante eficiencia. Es como si el almidón dijera: “ahora sí, ahora sí que me organizo”.  
+En el rango aproximado de 0 °C a 10 °C, la retrogradación del almidón ocurre con bastante eficiencia. Es como si el almidón dijera: “ahora sí, ahora sí que me organizo”.  
 
 Resultado: el pan se pone duro más rápido en la nevera que fuera, aunque no pierda tanta agua. Y además está frío, más frío que el corazón de tu ex. Un *lose-lose* de manual.  
 

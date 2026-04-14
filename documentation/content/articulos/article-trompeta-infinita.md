@@ -31,7 +31,7 @@ Lo observas sin comprender del todo. Comienza ancho, casi familiar, pero pronto 
 
 Antes de marcharse, el hombre pronuncia el nombre con una solemnidad que no admite preguntas: el cuerno de Gabriel.  
 
-Desde el punto de vista matemático, la forma no es caprichosa. Se obtiene al girar la curva \( y = \frac{1}{x} \) para \( x \geq 1 \) alrededor del eje horizontal. El resultado es un sólido de revolución que se extiende indefinidamente mientras su radio disminuye sin cesar. Es infinito en longitud, pero cada vez más fino.  
+Desde el punto de vista matemático, la forma no es caprichosa. Se obtiene al girar la curva y = 1/x para x ≥ 1 alrededor del eje horizontal. El resultado es un sólido de revolución que se extiende indefinidamente mientras su radio disminuye sin cesar. Es infinito en longitud, pero cada vez más fino.  
 
 El encargo parece simple: la escultura debe verse completamente roja. Piensas en lo obvio. Bastará con calcular cuánta pintura necesitas para cubrirla por fuera.  
 
@@ -91,7 +91,7 @@ $$
 V = \pi
 $$
 
-La trompeta se extiende hasta el infinito, pero el volumen total contenido en su interior es finito. Exactamente \( \pi \) unidades cúbicas. Puedes llenarla completamente con una cantidad limitada de pintura.  
+La trompeta se extiende hasta el infinito, pero el volumen total contenido en su interior es finito. Exactamente π unidades cúbicas. Puedes llenarla completamente con una cantidad limitada de pintura.  
 
 Volumen finito. Área infinita. A esto se le puede llamar *una paradoja*.
 

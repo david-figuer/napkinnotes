@@ -22,7 +22,6 @@ Seguramente alguna vez te has dipuesto a ver esa peli que de la que tanto hablan
 
 ---
 
-![Ejemplo de imagen](../images/palomitas.png)
 
 ## Estructura del grano
 

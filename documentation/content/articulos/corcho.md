@@ -20,7 +20,6 @@ En este artículo exploraremos cuánta fuerza impulsa al corcho, cómo evolucion
 
 ---
 
-![Ejemplo de imagen](../images/champan_corcho.png)
 
 ## 1. Una botella aparentemente tranquila (pero llena de presión)
 

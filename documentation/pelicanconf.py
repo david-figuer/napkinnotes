@@ -128,9 +128,9 @@ TWITTER_USERNAME = ""
 FEATURED_IMAGE = SITEURL + "/theme/images/nn_logo.png"
 
 # Legal
-SITE_LICENSE = """Content licensed under <a rel="license nofollow noopener noreferrer"
+SITE_LICENSE = """Contenido publicado bajo licencia <a rel="license nofollow noopener noreferrer"
     href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
-    Creative Commons Attribution 4.0 International License</a>."""
+    Creative Commons Atribución 4.0 Internacional</a>."""
 HOSTED_ON = {"name": "Netlify", "url": "https://www.netlify.com/"}
 
 # SEO

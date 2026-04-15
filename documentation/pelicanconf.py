@@ -203,10 +203,10 @@ AUTHORS = {
         "blurb": "Investigador en cosmología que busca comprender el universo y el rol de la materia y energía oscuras en él. Interesado las ecuaciones y las preguntas fundamentales: qué significa entender en física y qué es *verdad* al observar solo una fracción mínima del cosmos. Trabaja interpretando las pistas que el universo nos deja en forma de datos, intentando averiguar qué historias encajan con ellas y cuáles no. Financiación: Personal investigador doctor de la UPV/EHU (2024).",
         "avatar": "images/david.jpg",
     },
-    "Gabriel": {
+    "Gabriel Sánchez Pérez": {
         "url": "https://www.linkedin.com/in/gasape21/",
         "role": "Editor",
-        "blurb": " ",
+        "blurb": "Gabriel es doctor en física teórica, un explorador obsesionado con la arquitectura matemática que sostiene el tejido del universo. En sus textos, se propone un desafío constante: traducir la complejidad de la física y la geometría a un lenguaje accesible, sin sacrificar ni un ápice de elegancia ni de rigor. Su enfoque busca desentrañar cómo las leyes fundamentales dan forma a nuestra realidad, convirtiendo abstracciones matemáticas en puentes hacia una comprensión profunda de la naturaleza.",
         "avatar": "images/gabriel.jpeg",
     },
 }

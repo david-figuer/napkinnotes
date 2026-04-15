@@ -1,7 +1,7 @@
 ---
 title: El pintor y la trompeta 
 author: David Figueruelo Hernán
-date: 2026-03-15
+date: 2026-04-15
 layout: articles
 status: published
 category: Matemáticas

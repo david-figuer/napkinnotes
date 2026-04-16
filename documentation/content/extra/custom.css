@@ -2572,7 +2572,7 @@ footer a,
 }
 
 .nn-comments__intro {
-  margin: 0 0 18px;
+  margin: 0 0 1.25rem;
   color: var(--muted);
 }
 
@@ -2613,109 +2613,57 @@ footer a,
   resize: vertical;
   min-height: 140px;
 }
+
 .nn-comment-form__status {
   margin: 0;
   color: var(--muted);
 }
-.nn-comments__published {
-    margin-bottom: 2rem;
-}
 
-.nn-comments__published-title {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
+.nn-comments__published {
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
 }
 
 .nn-comments__list {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .nn-comment {
-    padding: 1rem 1.2rem;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 14px;
-    background: #fff;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  background: #fff;
 }
 
 .nn-comment__header {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .nn-comment__author {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .nn-comment__date {
-    font-size: 0.92rem;
-    opacity: 0.7;
+  font-size: 0.92rem;
+  opacity: 0.7;
 }
 
 .nn-comment__body p {
-    margin: 0;
-    line-height: 1.6;
-}
-.nn-comments__published {
-    margin-bottom: 3rem;
-}
-
-.nn-comments__published-title {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.nn-comments__list {
-    display: grid;
-    gap: 1rem;
-}
-
-.nn-comment {
-    padding: 1rem 1.2rem;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 14px;
-    background: #fff;
-}
-
-.nn-comment__header {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-    flex-wrap: wrap;
-}
-
-.nn-comment__author {
-    font-weight: 600;
-}
-
-.nn-comment__date {
-    font-size: 0.92rem;
-    opacity: 0.7;
-}
-
-.nn-comment__body p {
-    margin: 0;
-    line-height: 1.6;
+  margin: 0;
+  line-height: 1.6;
 }
 
 .nn-comments__form-block {
-    margin-top: 2.5rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .nn-comments__form-title {
-    margin: 0 0 0.75rem;
-    font-size: 1.05rem;
-    font-weight: 600;
-}
-
-.nn-comments__intro {
-    margin-bottom: 1.25rem;
+  margin: 0 0 10px;
 }

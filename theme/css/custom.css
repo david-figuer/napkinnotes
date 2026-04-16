@@ -2579,24 +2579,37 @@ footer a,
 .nn-comments__box {
   margin-top: 8px;
 }
-.nn-comments {
-  margin-top: 32px;
-  padding: 24px;
+
+.nn-comment-form {
+  display: grid;
+  gap: 14px;
+}
+
+.nn-comment-form__row {
+  display: grid;
+  gap: 8px;
+}
+
+.nn-comment-form input,
+.nn-comment-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.9rem 1rem;
   border: 1px solid var(--line);
-  border-radius: 22px;
-  background: var(--paper);
-  box-shadow: var(--shadow);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
 }
 
-.nn-comments__title {
-  margin: 0 0 10px;
+.nn-comment-form input:focus,
+.nn-comment-form textarea:focus {
+  outline: none;
+  border-color: var(--satinsheengold);
+  box-shadow: 0 0 0 3px rgba(196, 154, 102, 0.15);
 }
 
-.nn-comments__intro {
-  margin: 0 0 18px;
-  color: var(--muted);
-}
-
-.nn-comments__box {
-  margin-top: 8px;
+.nn-comment-form textarea {
+  resize: vertical;
+  min-height: 140px;
 }

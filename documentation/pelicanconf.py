@@ -211,8 +211,15 @@ AUTHORS = {
     },
 }
 
+UTTERANCES_REPO = "david-figuer/napkinnotes"
+UTTERANCES_THEME = "github-light"
+UTTERANCES_LABEL = "comentarios"
+
 DISQUS_FILTER = True
-UTTERANCES_FILTER = True
+UTTERANCES_FILTER = False
 COMMENTBOX_FILTER = True
+
+COMMENTS_INTRO = "Comentarios"
+
 APPLAUSE_BUTTON = True
 DISPLAY_PAGES_ON_MENU = False

@@ -10,7 +10,6 @@
 
     {% if article_comments %}
     <div class="nn-comments__published">
-        <h3 class="nn-comments__published-title">Comentarios publicados</h3>
 
         <div class="nn-comments__list">
             {% for comment in article_comments %}
@@ -30,6 +29,9 @@
         </div>
     </div>
     {% endif %}
+
+    <div class="nn-comments__form-block">
+    <h3 class="nn-comments__form-title">Enviar un comentario</h3>
 
     <p class="nn-comments__intro">
         ¿Qué te ha parecido? Escríbenos tu comentario y lo revisaremos antes de publicarlo.
@@ -67,6 +69,7 @@
             <button class="nn-home-sidebar__button" type="submit">Enviar comentario</button>
         </form>
     </div>
+</div>
 </section>
 {% endmacro %}
 

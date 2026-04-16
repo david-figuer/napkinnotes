@@ -1,13 +1,13 @@
 {% macro comments_section(article) %}
 
-{% set use_utterances = UTTERANCES_REPO and article.utterances_filter != "on" %}
+{% set use_commentbox = COMMENTBOX_PROJECT and article.commentbox_filter != "on" %}
 
 {% set identifier = article.url %}
 {% if article.comment_id %}
     {% set identifier = article.comment_id %}
 {% endif %}
 
-{% if article.status != 'draft' and article.comments != 'False' and use_utterances %}
+{% if article.status != 'draft' and article.comments != 'False' and use_commentbox %}
 <section class="nn-comments">
     <h2 class="nn-comments__title">Comentarios</h2>
     <p class="nn-comments__intro">
@@ -15,8 +15,14 @@
     </p>
 
     <div class="nn-comments__box">
-        {% from '_includes/utterances_scripts.html' import comments_script_utterances with context %}
-        {{ comments_script_utterances(UTTERANCES_REPO, identifier, UTTERANCES_LABEL, UTTERANCES_THEME) }}
+        <div class="commentbox" id="{{ identifier|replace('/', '-') }}"></div>
+        <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+        <script>
+            commentBox('{{ COMMENTBOX_PROJECT }}', {
+                className: 'commentbox',
+                defaultBoxId: '{{ identifier|replace("/", "-") }}'
+            });
+        </script>
     </div>
 </section>
 {% endif %}

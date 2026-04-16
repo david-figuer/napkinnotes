@@ -1,6 +1,36 @@
 {% macro comments_section(article) %}
+{% include '_includes/approved_comments.html' %}
+
+{% set article_comments = approved_comments
+    | selectattr('article_key', 'equalto', article.slug)
+    | list %}
+
 <section class="nn-comments">
     <h2 class="nn-comments__title">Comentarios</h2>
+
+    {% if article_comments %}
+    <div class="nn-comments__published">
+        <h3 class="nn-comments__published-title">Comentarios publicados</h3>
+
+        <div class="nn-comments__list">
+            {% for comment in article_comments %}
+            <article class="nn-comment">
+                <header class="nn-comment__header">
+                    <strong class="nn-comment__author">{{ comment.author }}</strong>
+                    {% if comment.date %}
+                    <span class="nn-comment__date">{{ comment.date }}</span>
+                    {% endif %}
+                </header>
+
+                <div class="nn-comment__body">
+                    <p>{{ comment.text }}</p>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
     <p class="nn-comments__intro">
         ¿Qué te ha parecido? Escríbenos tu comentario y lo revisaremos antes de publicarlo.
     </p>
@@ -14,6 +44,7 @@
 
             <input type="hidden" name="_subject" value="Nuevo comentario en Napkin Notes">
             <input type="hidden" name="articulo" value="{{ article.title }}">
+            <input type="hidden" name="article_key" value="{{ article.slug }}">
             <input type="hidden" name="url_articulo" value="{{ SITEURL }}/{{ article.url }}">
 
             <div class="nn-comment-form__row">

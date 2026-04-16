@@ -2560,7 +2560,7 @@ footer a,
 }
 .nn-comments {
   margin-top: 32px;
-  padding: 2px 24px 18px;
+  padding: 2px;
   border: 1px solid var(--line);
   border-radius: 22px;
   background: var(--paper);

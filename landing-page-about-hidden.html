@@ -130,7 +130,8 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
     <div class="nn-comments__box">
         <form
             class="nn-comment-form"
-            action="https://formspree.io/f/mkokjgka"
+            id="nn-comment-form"
+            action="https://formspree.io/f/TU_FORM_ID"
             method="POST">
 
             <input type="hidden" name="_subject" value="Nuevo comentario en Napkin Notes">
@@ -151,7 +152,7 @@ y terminan, inevitablemente, en una&nbsp;servilleta.</p>
                 <label for="comment-text">Comentario</label>
                 <textarea id="comment-text" name="comentario" rows="6" required></textarea>
             </div>
-
+            <p id="nn-comment-form-status" class="nn-comment-form__status"></p>
             <button class="nn-home-sidebar__button" type="submit">Enviar comentario</button>
         </form>
     </div>

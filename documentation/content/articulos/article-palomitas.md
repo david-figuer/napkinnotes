@@ -19,7 +19,7 @@ image: images/palomitas.png
 ## Resumen
 
 Seguramente alguna vez te has dipuesto a ver esa peli que de la que tanto hablan y para amenizar la jornada te has preparado un buen cubo de palomitas de maiz o has ido al cine y por el mismo motivo te has comprado un buen cubo de estas, en cualquier caso, como se que eres alguien muy curioso, o de que otra manera estarias aqui, te has preguntado, como rayo se hacen las palomitas, porque parecen explotar y porque saben tan ricas cuando el grano de maiza asi solo no sabe nada bien, ademas porque adopta esa forma tan curiosa que tiene. Bueno curioso amigo justo para esto ha surgido este blog asi, que preparate un buen paquete de palomitas y acomodate que te explico un poco de la ciencia destras de estes curioso fenomeno.
-
+ 
 ---
 
 

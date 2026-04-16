@@ -351,9 +351,41 @@ Acabas de asistir al lanzamiento de un <em>microcohete carbónico</em> cortesía
     </div>
 </div>
 
-            
+            <section class="nn-comments">
+    <h2 class="nn-comments__title">Comentarios</h2>
+    <p class="nn-comments__intro">
+        ¿Qué te ha parecido? Escríbenos tu comentario y lo revisaremos antes de publicarlo.
+    </p>
 
+    <div class="nn-comments__box">
+        <form
+            class="nn-comment-form"
+            action="https://formspree.io/f/TU_FORM_ID"
+            method="POST">
 
+            <input type="hidden" name="_subject" value="Nuevo comentario en Napkin Notes">
+            <input type="hidden" name="articulo" value="¿Qué tan rápido sale el corcho de una botella de&nbsp;champán?">
+            <input type="hidden" name="url_articulo" value="https://david-figuer.github.io/napkinnotes/que-tan-rapido-sale-el-corcho-de-una-botella-de-champan">
+
+            <div class="nn-comment-form__row">
+                <label for="comment-name">Nombre</label>
+                <input id="comment-name" type="text" name="nombre" required>
+            </div>
+
+            <div class="nn-comment-form__row">
+                <label for="comment-email">Email (opcional)</label>
+                <input id="comment-email" type="email" name="email">
+            </div>
+
+            <div class="nn-comment-form__row">
+                <label for="comment-text">Comentario</label>
+                <textarea id="comment-text" name="comentario" rows="6" required></textarea>
+            </div>
+
+            <button class="nn-home-sidebar__button" type="submit">Enviar comentario</button>
+        </form>
+    </div>
+</section>
 
             <hr/>
         </div>

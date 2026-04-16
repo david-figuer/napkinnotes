@@ -2613,3 +2613,7 @@ footer a,
   resize: vertical;
   min-height: 140px;
 }
+.nn-comment-form__status {
+  margin: 0;
+  color: var(--muted);
+}

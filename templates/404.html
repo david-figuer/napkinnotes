@@ -1,95 +1,32 @@
-{% extends 'base.html' %}
+{% macro comments_section(article) %}
 
-{% block title %}
-Página no encontrada · {{ super() }}
-{% endblock title %}
+{% set use_commentbox = COMMENTBOX_PROJECT and article.commentbox_filter != "on" %}
 
-{% block head_description %}
-La página que buscas no existe o se ha perdido entre servilletas, manuscritos y cálculos improvisados.
-{% endblock head_description %}
+{% set identifier = article.url %}
+{% if article.comment_id %}
+    {% set identifier = article.comment_id %}
+{% endif %}
 
-{% block content %}
-{% from '_includes/_defaults.html' import SEARCH_URL with context %}
+{% if article.status != 'draft' and article.comments != 'False' and use_commentbox %}
+<section class="nn-comments">
+    <h2 class="nn-comments__title">Comentarios</h2>
+    <p class="nn-comments__intro">
+        ¿Qué te ha parecido? Déjanos tu comentario aquí abajo.
+    </p>
 
-<section class="nn-search-page">
-    <header class="nn-search-hero">
-        <div class="nn-search-hero__inner">
-            <div class="nn-kicker">Error 404</div>
-            <h1 class="nn-search-hero__title">Esta página no existe</h1>
-            <p class="nn-search-hero__subtitle">
-                Parece que esta ruta se ha perdido entre servilletas voladoras, bibliotecas imposibles y cálculos mentales de dudosa estabilidad.
-            </p>
-        </div>
-    </header>
-
-    <section class="nn-404-illustration">
-        <img
-            class="nn-404-illustration__image"
-            src="{{ SITEURL }}/images/404-napkinnotes.png"
-            alt="Ilustración de una servilleta con 404 flotando sobre una biblioteca antigua y un científico buscando una página perdida">
-    </section>
-
-    <section class="nn-search-box">
-        <div class="nn-search-results__heading">
-            <p>
-                Quizá no tenemos exactamente lo que buscabas... pero con un poco de suerte sí algo bastante cercano.
-            </p>
-        </div>
-
-        <form class="nn-search-form" action="{{ SITEURL }}/{{ SEARCH_URL }}" onsubmit="return validateForm(this.elements['q'].value)">
-            <input
-                class="nn-search-form__input"
-                type="text"
-                placeholder="Busca aquí otra cosa"
-                name="q"
-                id="tipue_search_input_404"
-                autocomplete="off">
-            <button class="nn-button nn-home-sidebar__button" type="submit">Buscar</button>
-        </form>
-    </section>
-
-    <section class="nn-search-results">
-        <div class="nn-search-empty">
-            <div class="nn-search-empty__emoji">¯\_(ツ)_/¯</div>
-            <p>
-                La mejor estrategia ahora mismo es volver al <a href="{{ SITEURL }}">inicio</a> o probar con otra búsqueda.
-                Quién sabe: quizá el artículo que querías todavía no existe... o quizá aparece mañana.
-            </p>
-        </div>
-    </section>
+    <div class="nn-comments__box">
+        <div class="commentbox" id="{{ identifier|replace('/', '-') }}"></div>
+        <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+        <script>
+            commentBox('{{ COMMENTBOX_PROJECT }}', {
+                className: 'commentbox',
+                defaultBoxId: '{{ identifier|replace("/", "-") }}'
+            });
+        </script>
+    </div>
 </section>
+{% endif %}
+{% endmacro %}
 
-<style>
-.nn-404-illustration {
-  margin: 0 0 30px;
-  text-align: center;
-}
-
-.nn-404-illustration__image {
-  display: block;
-  width: 100%;
-  max-width: 880px;
-  height: auto;
-  margin: 0 auto;
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  background: var(--paper);
-  box-shadow: var(--shadow);
-}
-
-@media (max-width: 980px) {
-  .nn-404-illustration__image {
-    border-radius: 18px;
-  }
-}
-</style>
-
-<script type="text/javascript">
-    var newurl = (' ' + window.location.pathname).slice(1);
-    newurl = newurl.replace(/\//g, ' ');
-    newurl = newurl.replace(/.html/g, ' ');
-    newurl = newurl.replace(/\-/g, ' ');
-    document.getElementById('tipue_search_input_404').value = newurl;
-</script>
-
-{% endblock content %}
+{% macro comments_script() %}
+{% endmacro %}

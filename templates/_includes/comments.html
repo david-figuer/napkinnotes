@@ -1,7 +1,7 @@
-{% macro comments_section(article) %} 
-{% include '_includes/approved_comments.html' %}
+{% import '_includes/approved_comments.html' as comments_data with context %}
 
-{% set article_comments = approved_comments
+{% macro comments_section(article) %}
+{% set article_comments = comments_data.approved_comments
     | selectattr('article_key', 'equalto', article.slug)
     | list %}
 

@@ -10,7 +10,6 @@
 
     {% if article_comments %}
     <div class="nn-comments__published">
-
         <div class="nn-comments__list">
             {% for comment in article_comments %}
             <article class="nn-comment">
@@ -31,45 +30,45 @@
     {% endif %}
 
     <div class="nn-comments__form-block">
-    <h3 class="nn-comments__form-title">Enviar un comentario</h3>
+        <h2 class="nn-comments__form-title">Enviar un comentario</h2>
 
-    <p class="nn-comments__intro">
-        ¿Qué te ha parecido? Escríbenos tu comentario y lo revisaremos antes de publicarlo.
-    </p>
+        <p class="nn-comments__intro">
+            ¿Qué te ha parecido? Escríbenos tu comentario y lo revisaremos antes de publicarlo.
+        </p>
 
-    <div class="nn-comments__box">
-        <form
-            class="nn-comment-form"
-            id="nn-comment-form"
-            action="https://formspree.io/f/mkokjgka"
-            method="POST">
+        <div class="nn-comments__box">
+            <form
+                class="nn-comment-form"
+                id="nn-comment-form"
+                action="https://formspree.io/f/mkokjgka"
+                method="POST">
 
-            <input type="hidden" name="_subject" value="Nuevo comentario en Napkin Notes">
-            <input type="hidden" name="articulo" value="{{ article.title }}">
-            <input type="hidden" name="article_key" value="{{ article.slug }}">
-            <input type="hidden" name="url_articulo" value="{{ SITEURL }}/{{ article.url }}">
+                <input type="hidden" name="_subject" value="Nuevo comentario en Napkin Notes">
+                <input type="hidden" name="articulo" value="{{ article.title }}">
+                <input type="hidden" name="article_key" value="{{ article.slug }}">
+                <input type="hidden" name="url_articulo" value="{{ SITEURL }}/{{ article.url }}">
 
-            <div class="nn-comment-form__row">
-                <label for="comment-name">Nombre</label>
-                <input id="comment-name" type="text" name="nombre" required>
-            </div>
+                <div class="nn-comment-form__row">
+                    <label for="comment-name">Nombre</label>
+                    <input id="comment-name" type="text" name="nombre" required>
+                </div>
 
-            <div class="nn-comment-form__row">
-                <label for="comment-email">Email (opcional)</label>
-                <input id="comment-email" type="email" name="email">
-            </div>
+                <div class="nn-comment-form__row">
+                    <label for="comment-email">Email (opcional)</label>
+                    <input id="comment-email" type="email" name="email">
+                </div>
 
-            <div class="nn-comment-form__row">
-                <label for="comment-text">Comentario</label>
-                <textarea id="comment-text" name="comentario" rows="6" required></textarea>
-            </div>
+                <div class="nn-comment-form__row">
+                    <label for="comment-text">Comentario</label>
+                    <textarea id="comment-text" name="comentario" rows="6" required></textarea>
+                </div>
 
-            <p id="nn-comment-form-status" class="nn-comment-form__status"></p>
+                <p id="nn-comment-form-status" class="nn-comment-form__status"></p>
 
-            <button class="nn-home-sidebar__button" type="submit">Enviar comentario</button>
-        </form>
+                <button class="nn-home-sidebar__button" type="submit">Enviar comentario</button>
+            </form>
+        </div>
     </div>
-</div>
 </section>
 {% endmacro %}
 

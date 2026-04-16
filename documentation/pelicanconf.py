@@ -8,7 +8,7 @@ SITENAME = "Napkin Notes"
 SITESUBTITLE = ""
 SITEURL = "https://david-figuer.github.io/napkinnotes"
 RELATIVE_URLS = False
-
+ 
 PATH = "content"
 
 # Regional Settings

@@ -280,45 +280,22 @@ Y sí, a veces la vida es así de&nbsp;eficiente.</p>
             
 
 
+<section class="nn-comments">
+    <h2 class="nn-comments__title">Comentarios</h2>
+    <p class="nn-comments__intro">
+        ¿Qué te ha parecido? Déjanos tu comentario aquí abajo.
+    </p>
 
-
-
-
-
-<section>
-    <h6 style="display:none;">Comments</h6>
-    <p id="comment-message">Comentarios </p>
-
-    <div class="accordion" id="accordion2">
-        <div class="accordion-group">
-            <div class="accordion-heading">
-                <a class="accordion-toggle disqus-comment-count comment-count collapsed"
-                   data-toggle="collapse"
-                   data-parent="#accordion2"
-                   href="https://david-figuer.github.io/napkinnotes/por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga#comment_thread"
-                   id="comment-accordion-toggle">
-                    Comments
-                </a>
-            </div>
-            <div id="comment_thread" class="accordion-body collapse">
-                <div class="accordion-inner">
-                    <div class="comments">
-
-                        <script src="https://utteranc.es/client.js"
+    <div class="nn-comments__box">
+        <script src="https://utteranc.es/client.js"
         data-repo="david-figuer/napkinnotes"
-        data-issue-term="https://david-figuer.github.io/napkinnotes/por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga"
+        data-issue-term="por-que-el-pan-se-pone-duro-y-por-que-la-bolsa-es-su-unica-amiga"
         data-label="comentarios"
         data-theme="github-light"
         crossorigin="anonymous"
         async>
 </script>
 
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -533,30 +510,7 @@ Y sí, a veces la vida es así de&nbsp;eficiente.</p>
     });
 </script>
 
-    <script>
-    (function () {
-        if (window.location.hash.match(/^#comment-\d+$/)) {
-            $('#comment_thread').collapse('show');
-        }
-    })();
-    window.onhashchange=function(){
-        if (window.location.hash.match(/^#comment-\d+$/))
-            window.location.reload(true);
-    }
-    $('#comment_thread').on('shown', function () {
-        var link = document.getElementById('comment-accordion-toggle');
-        var old_innerHTML = link.innerHTML;
-        $(link).fadeOut(200, function() {
-            $(this).text('Click here to hide comments').fadeIn(200);
-        });
-        $('#comment_thread').on('hidden', function () {
-            $(link).fadeOut(200, function() {
-                $(this).text(old_innerHTML).fadeIn(200);
-            });
-        })
-    })
-</script>
-
+    
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {

@@ -4,8 +4,8 @@ author: .... <!-- (mismo nombre que el que me mandaste para la tarjeta de autor 
 date: .... <!-- (formato 2026-03-15)-->
 layout: articles
 status: .... <!-- (published si ya está listo)-->
-category: .... <!-- (si ya existe una en https://david-figuer.github.io/napkinnotes/explorar esa sino una nueva, en mayuscula la primera)-->
-tags:  <!-- (si ya existe una en https://david-figuer.github.io/napkinnotes/explorar esa sino una nueva, en mayuscula la primera)-->
+category: .... <!-- (si ya existe una en https://david-figuer.github.io/napkinnotes/explorar esa sino una nueva, en mayuscula la primera letra)-->
+tags:  <!-- (si ya existe una en https://david-figuer.github.io/napkinnotes/explorar esa sino una nueva, en minuscula la primera letra)-->
   - ....
   - ....
   - ....

@@ -1,16 +1,16 @@
 ---
-title: ....  <!-- (vuestro titulo)-->
-author: .... <!-- (mismo nombre que el que me mandaste para la tarjeta de autor que está autmatizado a cogerlo de ahí)-->
+title: ....  <!-- (vuestro título)-->
+author: .... <!-- (mismo nombre que el que me mandaste para la tarjeta de autor que está automatizado a cogerlo de ahí)-->
 date: .... <!-- (formato 2026-03-15)-->
 layout: articles
 status: .... <!-- (published si ya está listo)-->
-category: .... <!-- (si ya existe una en https://david-figuer.github.io/napkinnotes/explorar esa sino una nueva, en mayuscula la primera letra)-->
-tags:  <!-- (si ya existe una en https://david-figuer.github.io/napkinnotes/explorar esa sino una nueva, en minuscula la primera letra)-->
+category: .... <!-- (si ya existe una en https://david-figuer.github.io/napkinnotes/explorar esa sino una nueva, en mayúscula la primera letra)-->
+tags:  <!-- (si ya existe una en https://david-figuer.github.io/napkinnotes/explorar esa sino una nueva, en minúscula la primera letra)-->
   - ....
   - ....
   - ....
-summary: ....  <!--  (una frase, es la que aparece en la tarjeta de arituclo)-->
-image: images/___.png <!-- (el nombre que le pongais a la imagen que me mandais)-->
+summary: ....  <!--  (una frase, es la que aparece en la tarjeta de artículo)-->
+image: images/___.png <!-- (el nombre que le pongais a la imagen que me mandáis)-->
 ---
 
 [TOC]
@@ -21,6 +21,9 @@ image: images/___.png <!-- (el nombre que le pongais a la imagen que me mandais)
 
 <!-- Fin de resumen-->
 ---
+
+
+
 
 
 
@@ -39,7 +42,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <!--preguntas con recuadro bonito -->
 
 Fórmulas:
-<!--(en  entorno, todo como latex): -->
+<!--(en  entorno $$ $$, todo es como latex): -->
 
 $$
 A = 2\pi \int_1^{\infty} \frac{1}{x} \sqrt{1 + \left(\frac{1}{x^2}\right)^2} \, dx
@@ -50,12 +53,8 @@ $$
 bla bla bla \(J\) lari lari lari
 
 
-<!-- (en linea de texto, también vale si sabeis markdomn como se hacen cosas): -->
-Subindices o superindices fuera de entorno $$ $$ son asi: c<sub>p</sub> y  10<sup>6</sup> 
-
-<!-- Negrita y cursiva-->
- **una paradoja**.  *una paradoja*.
-<!-- Negrita y cursiva-->
+<!-- (en linea de texto, también vale si sabéis markdomn como se hacen cosas): -->
+ Negrita y cursiva: **una paradoja**.  *una paradoja*.
 
 
 <!--Un itemize de latex va así:-->

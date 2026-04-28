@@ -6,7 +6,7 @@ import os
 AUTHOR = ""
 SITENAME = "Napkin Notes"
 SITESUBTITLE = ""
-SITEURL = "https://david-figuer.github.io/napkinnotes"
+SITEURL = "https://napkinnotes-repository.github.io/napkinnotes"
 RELATIVE_URLS = False
  
 PATH = "content"

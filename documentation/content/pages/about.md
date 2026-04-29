@@ -5,11 +5,8 @@ Template: about_us
 
 <div class="nn-about-intro">
   <div class="nn-about-intro-text">
-
-## ¿Qué son las Napkin Notes?
-
-Las grandes ideas rara vez nacen limpias.
-
+    <h2>¿Qué son las Napkin Notes?</h2>
+    <p class="nn-about-lead">Las grandes ideas rara vez nacen limpias.</p>
   </div>
 
   <div class="nn-about-logo">

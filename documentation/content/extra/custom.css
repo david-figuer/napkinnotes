@@ -2514,6 +2514,8 @@ footer a,
 @media (max-width: 640px) {
   .nn-article-hero__subtitle,
   .nn-article-hero__summary,
+  .nn-article-content p,
+  .nn-article-content li,
   .nn-article-content > .toc a,
   .nn-article-content > .toc::before {
     text-align: left;

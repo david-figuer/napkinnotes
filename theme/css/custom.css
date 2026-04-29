@@ -1392,7 +1392,7 @@ footer a,
 .nn-player-card__expanded {
   position: absolute;
   top: -10px;
-  left: 50%;
+  left: 0;
   z-index: 30;
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
@@ -1406,13 +1406,27 @@ footer a,
   border-radius: 28px;
   background: var(--paper);
   box-shadow: 0 28px 70px rgba(20, 10, 10, 0.22);
-  transform: translateX(-50%);
+  transform: translateY(0);
   transition: opacity 0.28s ease, transform 0.28s ease;
 }
 
 .nn-player-card:hover .nn-player-card__expanded {
   opacity: 1;
   pointer-events: auto;
+  transform: translateY(-6px);
+}
+.nn-squad-grid .nn-player-card:nth-child(3n) .nn-player-card__expanded {
+  left: auto;
+  right: 0;
+}
+
+.nn-squad-grid .nn-player-card:nth-child(3n + 2) .nn-player-card__expanded {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+}
+
+.nn-squad-grid .nn-player-card:nth-child(3n + 2):hover .nn-player-card__expanded {
   transform: translateX(-50%) translateY(-6px);
 }
 

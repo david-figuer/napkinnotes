@@ -4,7 +4,7 @@ Date: 2025-11-07
 Template: about_us
 
 <div class="nn-about-with-logo">
-  <img src="{static}/images/logo_1.png" alt="Logo de Napkin Notes" class="nn-about-logo-float">
+  <img src="{static}/images/Logo.jpg" alt="Logo de Napkin Notes" class="nn-about-logo-float">
 
   <h2>¿Qué son las Napkin Notes?</h2>
 

@@ -2671,4 +2671,17 @@ footer a,
   line-height: 1.6;
 }
 
+.nn-about-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2rem;
+}
+
+.nn-about-logo img {
+  max-width: 220px;
+  width: 60%;
+  height: auto;
+  border-radius: 18px;
+}
+
 

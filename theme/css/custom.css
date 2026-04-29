@@ -2717,3 +2717,22 @@ footer a,
     margin: 0 0 1.2rem 0;
   }
 }
+/* MÓVIL: artículos con un poco más de ancho de lectura */
+
+@media (max-width: 640px) {
+  .site-main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .nn-article-content {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .nn-article-content p,
+  .nn-article-content li {
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+}

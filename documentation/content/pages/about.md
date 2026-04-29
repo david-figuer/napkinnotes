@@ -3,20 +3,17 @@ Slug: about
 Date: 2025-11-07
 Template: about_us
 
-<div class="nn-about-intro">
-  <div class="nn-about-intro-text">
-    <h2>¿Qué son las Napkin Notes?</h2>
-    <p class="nn-about-lead">Las grandes ideas rara vez nacen limpias.</p>
-  </div>
+<div class="nn-about-with-logo">
+  <img src="{static}/images/logo_1.png" alt="Logo de Napkin Notes" class="nn-about-logo-float">
 
-  <div class="nn-about-logo">
-    <img src="{static}/images/logo_1.png" alt="Logo de Napkin Notes">
-  </div>
+  <h2>¿Qué son las Napkin Notes?</h2>
+
+  <p class="nn-about-lead">Las grandes ideas rara vez nacen limpias.</p>
+
+  <p>A veces empiezan como una frase en una servilleta, una flecha mal dibujada, una cuenta hecha deprisa o una pregunta que alguien lanza en mitad de una conversación. Eso es una <em>Napkin Note</em>: una idea en estado salvaje, todavía sin domesticar.</p>
+
+  <p>En Napkin Notes nos interesan esas ideas precisamente antes de que se vuelvan serias. Antes del paper, antes del informe, antes de la presentación con tipografía elegante. Nos interesa el momento en el que alguien dice: “espera, ¿y si…?”.</p>
 </div>
-
-A veces empiezan como una frase en una servilleta, una flecha mal dibujada, una cuenta hecha deprisa o una pregunta que alguien lanza en mitad de una conversación. Eso es una *Napkin Note*: una idea en estado salvaje, todavía sin domesticar.
-
-En Napkin Notes nos interesan esas ideas precisamente antes de que se vuelvan serias. Antes del paper, antes del informe, antes de la presentación con tipografía elegante. Nos interesa el momento en el que alguien dice: “espera, ¿y si…?”.
 
 Para nosotros, estas notas sirven para:
 

@@ -20,8 +20,7 @@ En este artículo exploraremos cuánta fuerza impulsa al corcho, cómo evolucion
 
 ---
 
-
-## 1. Una botella aparentemente tranquila (pero llena de presión)
+## Introducción
 
 Cuando ves una botella de champán en la mesa, mayestática, elegante, ajena al caos, parece un objeto pacífico.  
 No lo es.
@@ -54,7 +53,7 @@ Y sí: todo eso está intentando expulsar el corcho hacia tu lámpara del salón
 
 ---
 
-## 2. El momento crítico: el corcho cede
+## Desarrollo
 
 Cuando se retira el bozal, el corcho queda sostenido únicamente por fricción.  
 El gas, mientras tanto, grita como un aficionado de fútbol encerrado en una cabina de teléfono.
@@ -92,10 +91,6 @@ $$
 Equivalente a **105 km/h**.  
 Si el corcho fuera un atleta olímpico, sería plusmarquista mundial… durante un solo segundo.
 
----
-
-## 3. ¿Puede ser supersónico?
-
 El corcho: normalmente no.  
 El gas detrás del corcho: absolutamente sí.
 
@@ -115,10 +110,6 @@ Y estudios recientes han medido jets de champán alrededor de v ≈ 300 m/s.
 
 Es decir:  
 Aunque el corcho no sea supersónico, la **explosión gaseosa que lo acompaña sí puede serlo**.
-
----
-
-## 4. Un modelo más riguroso: aceleración no constante
 
 A medida que el corcho avanza una distancia x, el volumen disponible aumenta y la presión disminuye según:
 
@@ -152,29 +143,11 @@ $$
 
 No es un misil intercontinental, pero tampoco algo que quieras recibir en la ceja.
 
----
+No todos los corchos salen igual. La temperatura importa: más temperatura = más presión; más presión = más energía almacenada. Champán caliente = mala idea.
 
-## 5. ¿Por qué no todos los corchos salen igual?
-
-### Temperatura
-Más temperatura = más presión.  
-Más presión = más energía almacenada.  
-Champán caliente = mala idea.
-
-### Rugosidad y forma del corcho  
-Algunos sellan más herméticamente, aumentando la presión antes del despegue.
-
-### Contenido de CO₂  
-Las botellas jóvenes suelen tener más gas residual.
-
-### Fricción en el cuello  
-Cuanto más difícil sea que el corcho empiece a moverse, mayor será el “latigazo inicial”.
+También influyen la rugosidad y la forma del corcho. Algunos sellan más herméticamente, aumentando la presión antes del despegue. El contenido de CO₂ también cambia el resultado: las botellas jóvenes suelen tener más gas residual. Y la fricción en el cuello determina cuánto cuesta que el corcho empiece a moverse; cuanto mayor sea esa resistencia inicial, mayor será el “latigazo”.
 
 En otras palabras: cada botella tiene su personalidad… y su carácter explosivo.
-
----
-
-## 6. ¿Es peligroso?
 
 A 30–40 m/s, un corcho puede causar lesiones serias, desde hematomas hasta daños oculares.  
 A más de 100 m/s, estás manejando un proyectil digno de un campo de pruebas de ingeniería.
@@ -185,7 +158,7 @@ Consejo universal:
 
 ---
 
-## 7. Conclusión: un cohete de bolsillo con denominación de origen
+## Conclusiones
 
 El despegue del corcho de champán es uno de los ejemplos más entretenidos de física cotidiana.  
 Un pequeño objeto de madera comprimida, impulsado por un gas desesperado por expandirse, alcanza velocidades dignas de un vehículo deportivo.
@@ -197,11 +170,13 @@ Salud, y buena puntería (pero nunca hacia algo valioso).
 
 ---
 
-## Apéndice: valores típicos de referencia
+## Apéndice
+
+Valores típicos de referencia:
 
 - Presión interna: 5–7 atm  
 - Masa del corcho: 6–8 g  
-- Aceleración inicial: hasta  10<sup>4</sup> m/s² 
+- Aceleración inicial: hasta 10<sup>4</sup> m/s² 
 - Velocidad típica del corcho: 20–40 m/s  
 - Velocidad extrema: 120 m/s  
 - Velocidad del gas: 260–300 m/s  

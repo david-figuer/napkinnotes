@@ -117,29 +117,16 @@
             
             <div class="toc">
 <ul>
-<li><a href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook">1. La medida real: ¿a cuántos saltos estamos en&nbsp;Facebook?</a></li>
-<li><a href="#2-por-que-tan-pocos-fundamentos-matematicos">2. ¿Por qué tan pocos? Fundamentos matemáticos</a><ul>
-<li><a href="#21-el-grafo-social-como-red-compleja">2.1 El grafo social como red&nbsp;compleja</a></li>
-<li><a href="#22-la-magia-de-los-mundos-pequenos">2.2 La magia de los mundos&nbsp;pequeños</a></li>
-</ul>
-</li>
-<li><a href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion">3. Los seis grados de separación: historia, mito y validación</a><ul>
-<li><a href="#31-milgram-y-sus-cadenas-de-cartas">3.1 Milgram y sus cadenas de&nbsp;cartas</a></li>
-<li><a href="#32-redes-modernas">3.2 Redes&nbsp;modernas</a></li>
-</ul>
-</li>
-<li><a href="#4-por-que-importa-todo-esto">4. ¿Por qué importa todo esto?</a><ul>
-<li><a href="#41-implicaciones-cientificas-utiles">4.1 Implicaciones científicas&nbsp;útiles</a></li>
-<li><a href="#42-implicaciones-sociales-y-eticas">4.2 Implicaciones sociales y&nbsp;éticas</a></li>
-<li><a href="#43-implicaciones-para-ingenieria-de-plataformas">4.3 Implicaciones para ingeniería de&nbsp;plataformas</a></li>
-</ul>
-</li>
-<li><a href="#5-conclusion">5.&nbsp;Conclusión</a></li>
+<li><a href="#resumen">Resumen</a></li>
+<li><a href="#introduccion">Introducción</a></li>
+<li><a href="#desarrollo">Desarrollo</a></li>
+<li><a href="#conclusiones">Conclusiones</a></li>
 </ul>
 </div>
+<h2 id="resumen">Resumen<a class="headerlink" href="#resumen" title="Permanent link"> </a></h2>
 <p>La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza <strong>la distancia promedio entre dos usuarios de Facebook</strong>, revisa el concepto de <strong>seis grados de separación</strong> y explica, desde la teoría de grafos y los modelos de <strong>mundos pequeños</strong>, por qué estas cifras son tan sorprendentemente bajas en redes de escala&nbsp;global.</p>
 <hr />
-<h2 id="1-la-medida-real-a-cuantos-saltos-estamos-en-facebook">1. La medida real: ¿a cuántos saltos estamos en Facebook?<a class="headerlink" href="#1-la-medida-real-a-cuantos-saltos-estamos-en-facebook" title="Permanent link"> </a></h2>
+<h2 id="introduccion">Introducción<a class="headerlink" href="#introduccion" title="Permanent link"> </a></h2>
 <p>Meta ha publicado en diversas ocasiones análisis sobre la longitud promedio de los caminos en su grafo social. Los resultados convergen sistemáticamente en un rango entre <strong>4 y 4.7 saltos</strong>.</p>
 <p>En su estudio más citado (Facebook Research, 2016), utilizando miles de millones de nodos y decenas de miles de millones de aristas, se&nbsp;obtuvo:</p>
 <ul>
@@ -148,9 +135,15 @@
 <li><strong>Máxima componente conexa:</strong> &gt; 99 % de la&nbsp;red</li>
 </ul>
 <p>Es decir, <strong>cualquier persona en Facebook puede llegar a otra mediante poco más de cuatro intermediarios</strong>. Dicho de otro modo: los “seis grados” ya no son&nbsp;seis.</p>
+<p>La idea de los seis grados de separación nació en 1929 con Frigyes Karinthy, se popularizó en 1967 con el experimento de Stanley Milgram y terminó convertida en un concepto cultural. Pero matemáticamente, el fenómeno posee base&nbsp;sólida.</p>
+<p>Milgram encontró longitudes promedio cercanas a <strong>5.5 pasos</strong> para conectar a un ciudadano cualquiera con un objetivo elegido. Aunque el diseño experimental tenía sesgos, reveló la estructura de mundo pequeño en redes&nbsp;humanas.</p>
+<p>Con datos completos de grafos sociales actuales, hoy se puede&nbsp;afirmar:</p>
+<ul>
+<li>La distancia promedio <strong>no solo es menor que seis</strong>, sino que <strong>se estabiliza por debajo de cinco</strong> en redes con miles de millones de&nbsp;nodos.  </li>
+<li>Este fenómeno no implica que todos se conozcan; solo que <strong>la estructura combinatoria del grafo permite trayectorias muy cortas</strong>.</li>
+</ul>
 <hr />
-<h2 id="2-por-que-tan-pocos-fundamentos-matematicos">2. ¿Por qué tan pocos? Fundamentos matemáticos<a class="headerlink" href="#2-por-que-tan-pocos-fundamentos-matematicos" title="Permanent link"> </a></h2>
-<h3 id="21-el-grafo-social-como-red-compleja">2.1 El grafo social como red compleja<a class="headerlink" href="#21-el-grafo-social-como-red-compleja" title="Permanent link"> </a></h3>
+<h2 id="desarrollo">Desarrollo<a class="headerlink" href="#desarrollo" title="Permanent link"> </a></h2>
 <p>Podemos representar Facebook como un grafo no dirigido G = (V, E),&nbsp;donde:</p>
 <ul>
 <li>V es el conjunto de&nbsp;usuarios  </li>
@@ -162,7 +155,6 @@
 L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)
 $$</div>
 <p>En redes a gran escala esta suma explícita es inviable. Facebook utiliza técnicas como <strong><span class="caps">BFS</span> aproximado</strong>, <strong>muestreo aleatorio de vértices</strong> y algoritmos distribuidos tipo <strong>HyperANF</strong> para estimar la distribución de&nbsp;distancias.</p>
-<h3 id="22-la-magia-de-los-mundos-pequenos">2.2 La magia de los mundos pequeños<a class="headerlink" href="#22-la-magia-de-los-mundos-pequenos" title="Permanent link"> </a></h3>
 <p>El comportamiento observado en Facebook coincide con el modelo de <strong>redes de mundo pequeño</strong> (Watts <span class="amp">&amp;</span> Strogatz, 1998), caracterizado&nbsp;por:</p>
 <ol>
 <li><strong>Alta agrupación (clustering coefficient&nbsp;C)</strong>  </li>
@@ -178,43 +170,17 @@ $$</div>
 <li>Hay enlaces aleatorios que actúan como “atalayos” en el&nbsp;grafo.</li>
 </ul>
 <p>Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen drásticamente&nbsp;L.</p>
-<hr />
-<h2 id="3-los-seis-grados-de-separacion-historia-mito-y-validacion">3. Los seis grados de separación: historia, mito y validación<a class="headerlink" href="#3-los-seis-grados-de-separacion-historia-mito-y-validacion" title="Permanent link"> </a></h2>
-<p>La idea nació en 1929 con Frigyes Karinthy, se popularizó en 1967 con el experimento de Stanley Milgram y terminó convertida en un concepto cultural. Pero matemáticamente, el fenómeno posee base&nbsp;sólida.</p>
-<h3 id="31-milgram-y-sus-cadenas-de-cartas">3.1 Milgram y sus cadenas de cartas<a class="headerlink" href="#31-milgram-y-sus-cadenas-de-cartas" title="Permanent link"> </a></h3>
-<p>Milgram encontró longitudes promedio cercanas a <strong>5.5 pasos</strong> para conectar a un ciudadano cualquiera con un objetivo elegido. Aunque el diseño experimental tenía sesgos, reveló la estructura de mundo pequeño en redes&nbsp;humanas.</p>
-<h3 id="32-redes-modernas">3.2 Redes modernas<a class="headerlink" href="#32-redes-modernas" title="Permanent link"> </a></h3>
-<p>Con datos completos de grafos sociales actuales, hoy se puede&nbsp;afirmar:</p>
-<ul>
-<li>La distancia promedio <strong>no solo es menor que seis</strong>, sino que <strong>se estabiliza por debajo de cinco</strong> en redes con miles de millones de&nbsp;nodos.  </li>
-<li>Este fenómeno no implica que todos se conozcan; solo que <strong>la estructura combinatoria del grafo permite trayectorias muy cortas</strong>.</li>
-</ul>
 <p>En teoría de grafos, esta propiedad se explica&nbsp;por:</p>
 <ul>
 <li><strong>Distribuciones de grado con colas pesadas (scale-free)</strong>.  </li>
 <li><strong>Hubs con grado extremadamente alto</strong>.  </li>
 <li><strong>Coeficiente de agrupación elevado</strong>, mayor que el de redes aleatorias tipo&nbsp;Erdős–Rényi.</li>
 </ul>
+<p>Todo esto importa porque entender distancias promedio permite modelar <strong>difusión de información</strong>, <strong>propagación de epidemias</strong>, <strong>viralidad</strong> y <strong>resiliencia estructural</strong>. Un <span class="caps">APL</span> bajo implica expansiones rápidas y pocas etapas de&nbsp;transmisión.</p>
+<p>También tiene implicaciones sociales y éticas: las redes acortan el mundo, pero también <strong>amplifican externalidades</strong> como rumores, polarización y contagios culturales. La estructura de mundo pequeño regula la conectividad, pero no la calidad de los&nbsp;vínculos.</p>
+<p>Y, desde el punto de vista de ingeniería de plataformas, estas métricas ayudan a mejorar algoritmos de recomendación, especialmente los basados en friends-of-friends, optimizar buscadores sociales, diseñar mecanismos de privacidad basada en distancias y construir sistemas distribuidos que explotan el comportamiento logarítmico de&nbsp;L.</p>
 <hr />
-<h2 id="4-por-que-importa-todo-esto">4. ¿Por qué importa todo esto?<a class="headerlink" href="#4-por-que-importa-todo-esto" title="Permanent link"> </a></h2>
-<h3 id="41-implicaciones-cientificas-utiles">4.1 Implicaciones científicas útiles<a class="headerlink" href="#41-implicaciones-cientificas-utiles" title="Permanent link"> </a></h3>
-<ul>
-<li>Entender distancias promedio permite modelar <strong>difusión de información</strong>, <strong>propagación de epidemias</strong>, <strong>viralidad</strong> y <strong>resiliencia estructural</strong>.  </li>
-<li>Un <span class="caps">APL</span> bajo implica expansiones rápidas y pocas etapas de&nbsp;transmisión.</li>
-</ul>
-<h3 id="42-implicaciones-sociales-y-eticas">4.2 Implicaciones sociales y éticas<a class="headerlink" href="#42-implicaciones-sociales-y-eticas" title="Permanent link"> </a></h3>
-<ul>
-<li>Las redes acortan el mundo, pero también <strong>amplifican externalidades</strong>: rumores, polarización, contagios&nbsp;culturales.  </li>
-<li>La estructura de mundo pequeño regula la conectividad, pero no la calidad de los&nbsp;vínculos.</li>
-</ul>
-<h3 id="43-implicaciones-para-ingenieria-de-plataformas">4.3 Implicaciones para ingeniería de plataformas<a class="headerlink" href="#43-implicaciones-para-ingenieria-de-plataformas" title="Permanent link"> </a></h3>
-<ul>
-<li>Mejora de algoritmos de recomendación&nbsp;(friends-of-friends).  </li>
-<li>Optimización de buscadores sociales y privacidad basada en&nbsp;distancias.  </li>
-<li>Diseño de sistemas distribuidos que explotan el comportamiento logarítmico de&nbsp;L.</li>
-</ul>
-<hr />
-<h2 id="5-conclusion">5. Conclusión<a class="headerlink" href="#5-conclusion" title="Permanent link"> </a></h2>
+<h2 id="conclusiones">Conclusiones<a class="headerlink" href="#conclusiones" title="Permanent link"> </a></h2>
 <p>Las distancias sociales que intuíamos desde hace un siglo son hoy métricas verificables en redes de escala planetaria. Facebook muestra&nbsp;que:</p>
 <ul>
 <li>La distancia promedio entre dos personas es <strong>menor de cinco pasos</strong>.  </li>

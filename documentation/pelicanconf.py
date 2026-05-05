@@ -205,8 +205,26 @@ AUTHORS = {
     },
     "Gabriel Sánchez Pérez": {
         "url": "https://www.linkedin.com/in/gasape21/",
-        "role": "Editor",
+        "role": "Editor, Responsable de Redes Sociales",
         "blurb": "Gabriel es doctor en física teórica, un explorador obsesionado con la arquitectura matemática que sostiene el tejido del universo. En sus textos, se propone un desafío constante: traducir la complejidad de la física y la geometría a un lenguaje accesible, sin sacrificar ni un ápice de elegancia ni de rigor. Su enfoque busca desentrañar cómo las leyes fundamentales dan forma a nuestra realidad, convirtiendo abstracciones matemáticas en puentes hacia una comprensión profunda de la naturaleza.",
+        "avatar": "images/gabriel.jpeg",
+    },
+    "Paz Albares Vicente": {
+        "url": "https://portalcientifico.upm.es/es/ipublic/researcher/338845",
+        "role": "Colaboradora",
+        "blurb": "Paz Paz Paz Paz",
+        "avatar": "images/gabriel.jpeg",
+    },
+     "Maria Pérez Garrote": {
+        "url": "https://produccioncientifica.usal.es/investigadores/1222882/detalle",
+        "role": "Colaboradora",
+        "blurb": "María es estudiante de doctorado en cosmología, y le apasiona intentar desentrañar los misterios del cosmos y de la vida en general. Su trabajo consiste en estudiar los ingredientes fundamentales que conforman el universo, y de qué manera interactúan para dar lugar a las formaciones de galaxias que observamos hoy en día. Sus textos aspiran a arrojar un poco de luz sobre ese sector todavía oscuro del universo, despertando la curiosidad y el pensamiento crítico en quienes se acercan a explorarlo.",
+        "avatar": "images/maria.jpeg",
+    },
+     "Ruchika": {
+        "url": "https://produccioncientifica.usal.es/investigadores/1999168/detalle",
+        "role": "Colaboradora",
+        "blurb": "Ruchika Ruchika Ruchika",
         "avatar": "images/gabriel.jpeg",
     },
 }

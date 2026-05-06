@@ -10,19 +10,13 @@ tags:
   - teoría de grafos
   - small world
   - seis grados de separación
-summary: El mundo (online) es más pequeño de lo que pensamos, estamos muy cerca unos de otros.
+summary: La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza **la distancia promedio entre dos usuarios de Facebook**, revisa el concepto de **seis grados de separación** y explica, desde la teoría de grafos y los modelos de **mundos pequeños**, por qué estas cifras son tan sorprendentemente bajas en redes de escala global.
 image: images/face_dist.png
 ---
 
 [TOC]
 
-## Resumen
 
-La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza **la distancia promedio entre dos usuarios de Facebook**, revisa el concepto de **seis grados de separación** y explica, desde la teoría de grafos y los modelos de **mundos pequeños**, por qué estas cifras son tan sorprendentemente bajas en redes de escala global.
-
----
-
-## Introducción
 
 Meta ha publicado en diversas ocasiones análisis sobre la longitud promedio de los caminos en su grafo social. Los resultados convergen sistemáticamente en un rango entre **4 y 4.7 saltos**.
 

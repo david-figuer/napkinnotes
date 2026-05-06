@@ -213,7 +213,7 @@ AUTHORS = {
         "url": "https://portalcientifico.upm.es/es/ipublic/researcher/338845",
         "role": "Colaboradora",
         "blurb": "Paz es doctora en Física, especializada en Física Matemática, exploradora de ecuaciones no lineales y de los patrones que de ellas emergen donde menos se esperan. Modeliza fenómenos complejos e intenta descubrir y entender qué estructuras se esconden detrás, combinando la física con herramientas y el lenguaje de las matemáticas. De mente curiosa, está convencida de que tan importante es hacerse preguntas como buscar sus respuestas. Y a veces, todo comienza con una idea escrita en la cara de una servilleta.",
-        "avatar": "images/paz.jpeg",
+        "avatar": "images/paz.jpg",
     },
      "María Pérez Garrote": {
         "url": "https://produccioncientifica.usal.es/investigadores/1222882/detalle",

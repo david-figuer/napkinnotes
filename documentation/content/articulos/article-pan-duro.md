@@ -17,7 +17,6 @@ image: images/pan.png
 
 
 
-## Introducción
 
 Domingo, sobre media mañana. Estás en tu casa en Hum, donde las casas de piedra se apoyan unas en otras y el pan se sigue haciendo como hace siglos. Sales un momento convencido de que, en un lugar tan antiguo y tranquilo, nada puede cambiar demasiado rápido… y cuando vuelves unas horas después descubres que la entropía no respeta ni pueblos medievales ni tradiciones rurales. Tu barra de pan ahora podría servir como herramienta agrícola o como bate de béisbol.  
 

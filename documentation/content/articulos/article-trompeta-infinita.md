@@ -16,6 +16,7 @@ image: images/cuerno.png
 [TOC]
 
 
+## El encargo
 
 
 Imagina que eres un humilde pintor en tu pequeño taller de Tivoli, donde las fachadas ocres retienen el calor del sol y la calle empedrada desciende lentamente hacia el murmullo constante del río Aniene. Tus días transcurren entre cal, pigmentos y madera antigua. Restauras frescos que el tiempo ha ido apagando, devuelves color a puertas vencidas por los inviernos, retocas santos desvaídos que observan en silencio desde capillas en penumbra. La vida es sencilla, casi previsible, hasta que una mañana la campanilla de la puerta rompe el aire con un timbre más seco de lo habitual.  
@@ -36,7 +37,7 @@ Tu intuición responde con rapidez: infinita. Si el objeto no termina nunca, tam
 
 ---
 
-## Desarrollo
+## Matématicas y otras preguntas
 
 ¿Qué significa realmente pintar algo? Cuando pintas, cubres la superficie exterior con una capa de grosor positivo, por pequeña que sea. La cantidad de pintura necesaria es proporcional al área. A mayor superficie, mayor consumo. Hasta ahora, todo coincide con tu experiencia.  
 

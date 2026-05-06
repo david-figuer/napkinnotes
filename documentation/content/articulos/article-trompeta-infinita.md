@@ -9,7 +9,7 @@ tags:
   - infinito
   - cálculo
   - paradojas
-summary: Estás en tu taller cuando un hombre trajeado, con gafas de sol y un maletín impecable, entra sin previo aviso. Trae un encargo extraño: una escultura de vidrio transparente con forma de trompeta que se estrecha sin terminar nunca. Solo tiene una condición: debe verse completamente roja. Lo que parece un trabajo más termina convirtiéndose en una lección profunda sobre el infinito.
+summary: Estás en tu taller cuando un hombre trajeado, con gafas de sol y un maletín impecable, entra sin previo aviso. Trae un encargo extraño, una escultura de vidrio transparente con forma de trompeta que se estrecha sin terminar nunca. Solo tiene una condición, debe verse completamente roja. Lo que parece un trabajo más termina convirtiéndose en una lección profunda sobre el infinito.
 image: images/cuerno.png
 ---
 

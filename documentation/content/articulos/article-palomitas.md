@@ -10,7 +10,7 @@ tags:
   - termodinámica
   - microondas
   - alimentos
-summary: ¿Alguna vez te has preguntado por qué explotan las palomitas, de dónde sale su forma y por qué saben tan bien? Ponte cómodo: vamos a mirar la ciencia que se esconde dentro de un grano de maíz.
+summary: ¿Alguna vez te has preguntado por qué explotan las palomitas, de dónde sale su forma y por qué saben tan bien? Ponte cómodo, vamos a mirar la ciencia que se esconde dentro de un grano de maíz.
 image: images/palomitas.png
 ---
 

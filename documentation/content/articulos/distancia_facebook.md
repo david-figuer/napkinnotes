@@ -10,7 +10,7 @@ tags:
   - teoría de grafos
   - small world
   - seis grados de separación
-summary:La distancia entre dos personas en Facebook es mucho menor de lo que imaginamos. Este artículo explica cómo la teoría de grafos y los mundos pequeños convierten los seis grados de separación en apenas unos pocos saltos.
+summary: La distancia entre dos personas en Facebook es mucho menor de lo que imaginamos. Este artículo explica cómo la teoría de grafos y los mundos pequeños convierten los seis grados de separación en apenas unos pocos saltos.
 image: images/face_dist.png
 ---
 

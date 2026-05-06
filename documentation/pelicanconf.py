@@ -198,7 +198,7 @@ AUTHORS = {
         "avatar": "images/gretel.png",
     },
     "David Figueruelo Hernán": {
-        "url": "https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=Figueruelo&ui-citation-summary=true",
+        "url": "https://inspirehep.net/authors/1869776?ui-citation-summary=true",
         "role": "Editor, Desarrollador Web",
         "blurb": "Doctor en cosmología que busca comprender el universo y el rol de la materia y energía oscuras en él. Interesado las ecuaciones y las preguntas fundamentales: qué significa entender en física y qué es  <strong>verdad</strong> al observar solo una fracción mínima del cosmos. Trabaja interpretando las pistas que el universo nos deja en forma de datos, intentando averiguar qué historias encajan con ellas y cuáles no. Financiación: Personal investigador doctor de la UPV/EHU (2024).",
         "avatar": "images/david.jpg",

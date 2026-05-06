@@ -6,21 +6,15 @@ layout: articles
 status: published
 category: "Dinámica de Fluidos"
 tags: ["física", "termodinámica", "champán", "supersónico"]
-summary: "Un recorrido por la física explosiva detrás del clásico \"pop\" del champán: desde la presión atrapada en la botella hasta la sorprendente posibilidad de velocidades supersónicas."
+summary: "Cada vez que descorchamos una botella de champán, ejecutamos sin querer una demostración práctica de física de alta energía.  
+En un solo *pop* se combinan **termodinámica**, **gases comprimidos**, **ondas de choque**, y un proyectil diminuto con aspiraciones balísticas.  
+En este artículo exploraremos cuánta fuerza impulsa al corcho, cómo evoluciona la presión interna y por qué, bajo ciertas condiciones, el gas que escapa puede alcanzar velocidades **cercanas al sonido**."
 image: images/corcho.png
 ---
 
 [TOC]
 
-## Resumen
 
-Cada vez que descorchamos una botella de champán, ejecutamos sin querer una demostración práctica de física de alta energía.  
-En un solo *pop* se combinan **termodinámica**, **gases comprimidos**, **ondas de choque**, y un proyectil diminuto con aspiraciones balísticas.  
-En este artículo exploraremos cuánta fuerza impulsa al corcho, cómo evoluciona la presión interna y por qué, bajo ciertas condiciones, el gas que escapa puede alcanzar velocidades **cercanas al sonido**.
-
----
-
-## Introducción
 
 Cuando ves una botella de champán en la mesa, mayestática, elegante, ajena al caos, parece un objeto pacífico.  
 No lo es.

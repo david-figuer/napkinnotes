@@ -2803,31 +2803,43 @@ footer a,
 }
 
 
-/* DESKTOP: header más grande sin aumentar la altura de la barra */
+/* DESKTOP: header más grande sin aumentar demasiado la barra */
 
 @media (min-width: 981px) {
   .site-header__inner {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .site-brand {
+    gap: 16px;
   }
 
   .site-brand__logo {
-    width: 64px;
-    height: 64px;
+    width: 92px !important;
+    height: 92px !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: contain;
   }
 
   .site-brand__name {
-    font-size: 2.35rem;
+    font-size: 2.75rem;
+    line-height: 1;
+  }
+
+  .site-nav__list {
+    gap: 30px;
   }
 
   .site-nav__list li a {
-    font-size: 1.08rem;
-    font-weight: 600;
+    font-size: 1.18rem;
+    font-weight: 650;
   }
 
   .site-search input {
-    min-width: 220px;
-    padding: 11px 18px;
-    font-size: 1rem;
+    min-width: 250px;
+    padding: 12px 20px;
+    font-size: 1.08rem;
   }
 }

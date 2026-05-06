@@ -6,9 +6,7 @@ layout: articles
 status: published
 category: "Dinámica de Fluidos"
 tags: ["física", "termodinámica", "champán", "supersónico"]
-summary: "Cada vez que descorchamos una botella de champán, ejecutamos sin querer una demostración práctica de física de alta energía.  
-En un solo *pop* se combinan **termodinámica**, **gases comprimidos**, **ondas de choque**, y un proyectil diminuto con aspiraciones balísticas.  
-En este artículo exploraremos cuánta fuerza impulsa al corcho, cómo evoluciona la presión interna y por qué, bajo ciertas condiciones, el gas que escapa puede alcanzar velocidades **cercanas al sonido**."
+summary: "Cada descorche de champán es una pequeña demostración de física: gases comprimidos, termodinámica y un corcho convertido en proyectil. Un simple *pop* esconde la fuerza de la presión interna y un chorro de gas que puede acercarse a la velocidad del sonido."
 image: images/corcho.png
 ---
 

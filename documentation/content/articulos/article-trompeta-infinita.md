@@ -9,19 +9,14 @@ tags:
   - infinito
   - cálculo
   - paradojas
-summary: Un objeto infinito que desafía la intuición...no puede pintarse por fuera con pintura finita, pero sí puede llenarse completamente.
+summary: Estás en tu taller cuando un hombre trajeado, con gafas de sol y un maletín impecable, entra sin previo aviso. Trae un encargo extraño: una escultura de vidrio transparente con forma de trompeta que se estrecha sin terminar nunca. Solo tiene una condición: debe verse completamente roja. Lo que parece un trabajo más termina convirtiéndose en una lección profunda sobre el infinito.
 image: images/cuerno.png
 ---
 
 [TOC]
 
-## Resumen
 
-Estás en tu taller cuando un hombre trajeado, con gafas de sol y un maletín impecable, entra sin previo aviso. Trae un encargo extraño: una escultura de vidrio transparente con forma de trompeta que se estrecha sin terminar nunca. Solo tiene una condición: debe verse completamente roja. Lo que parece un trabajo más termina convirtiéndose en una lección profunda sobre el infinito.
 
----
-
-## Introducción
 
 Imagina que eres un humilde pintor en tu pequeño taller de Tivoli, donde las fachadas ocres retienen el calor del sol y la calle empedrada desciende lentamente hacia el murmullo constante del río Aniene. Tus días transcurren entre cal, pigmentos y madera antigua. Restauras frescos que el tiempo ha ido apagando, devuelves color a puertas vencidas por los inviernos, retocas santos desvaídos que observan en silencio desde capillas en penumbra. La vida es sencilla, casi previsible, hasta que una mañana la campanilla de la puerta rompe el aire con un timbre más seco de lo habitual.  
 

@@ -9,17 +9,13 @@ tags:
   - difusión
   - termodinámica
   - almidón
-summary: Dejas el pan fuera unas horas y se convierte en un arma contundente. No es traición, es física.
+summary: Dejas una barra de pan en la encimera. Sales. Vuelves unas horas después. Intentas morder. El pan responde con un sonido seco, casi metálico. No es traición. Es física. Y la física, como ya sabrás, no tiene empatía.
 image: images/pan.png
 ---
  
 [TOC]
 
-## Resumen
 
-Dejas una barra de pan en la encimera. Sales. Vuelves unas horas después. Intentas morder. El pan responde con un sonido seco, casi metálico. No es traición. Es física. Y la física, como ya sabrás, no tiene empatía.
-
----
 
 ## Introducción
 

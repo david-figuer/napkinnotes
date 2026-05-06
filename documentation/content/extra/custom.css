@@ -1390,15 +1390,16 @@ footer a,
 }
 
 .nn-player-card__expanded {
-  position: absolute;
-  top: -10px;
+  position: fixed;
+  top: 120px;
   left: 50%;
-  z-index: 30;
+  z-index: 999;
   display: grid;
   grid-template-columns: 300px minmax(0, 1fr);
   gap: 0;
   width: min(780px, calc(100vw - 72px));
   min-height: 410px;
+  max-height: calc(100vh - 160px);
   overflow: hidden;
   opacity: 0;
   pointer-events: none;
@@ -1406,29 +1407,36 @@ footer a,
   border-radius: 28px;
   background: var(--paper);
   box-shadow: 0 28px 70px rgba(20, 10, 10, 0.22);
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(8px);
   transition: opacity 0.28s ease, transform 0.28s ease;
 }
 
 .nn-player-card:hover .nn-player-card__expanded {
   opacity: 1;
   pointer-events: auto;
-  transform: translateX(-50%) translateY(-6px);
+  transform: translateX(-50%) translateY(0);
 }
 
 @media (max-width: 1180px) {
   .nn-player-card__expanded {
-    left: 0;
-    right: 0;
-    width: auto;
+    position: static;
+    display: block;
+    width: 100%;
+    max-height: none;
+    min-height: auto;
+    margin-top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    border-top: 1px solid var(--line);
+    border-radius: 0 0 24px 24px;
+    box-shadow: none;
     transform: none;
   }
 
   .nn-player-card:hover .nn-player-card__expanded {
-    transform: translateY(-6px);
+    transform: none;
   }
 }
-
 .nn-player-card__expanded-media {
   position: relative;
   min-height: 100%;

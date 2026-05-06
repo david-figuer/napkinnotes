@@ -10,7 +10,7 @@ tags:
   - teoría de grafos
   - small world
   - seis grados de separación
-summary: La hipótesis de que todos estamos conectados por unas pocas relaciones intermedias dejó de ser una anécdota sociológica para convertirse en un resultado matemático cuantificable. Este artículo analiza **la distancia promedio entre dos usuarios de Facebook**, revisa el concepto de **seis grados de separación** y explica, desde la teoría de grafos y los modelos de **mundos pequeños**, por qué estas cifras son tan sorprendentemente bajas en redes de escala global.
+summary:La distancia entre dos personas en Facebook es mucho menor de lo que imaginamos. Este artículo explica cómo la teoría de grafos y los mundos pequeños convierten los seis grados de separación en apenas unos pocos saltos.
 image: images/face_dist.png
 ---
 

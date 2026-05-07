@@ -128,8 +128,23 @@
     </div>
 
     <aside id="article-sidebar" class="nn-article-sidebar">
-        <div class="nn-sticky-card">
-           {% from '_includes/_defaults.html' import CATEGORIES_URL, TAGS_URL with context %}
+
+    {% if X_PROFILE_URL %}
+    <section class="nn-article-x-card">
+        <div class="nn-article-x-card__eyebrow">Napkin Notes en X</div>
+        <p>Ideas rápidas, nuevos artículos y preguntas que empiezan en una servilleta.</p>
+        <a href="{{ X_PROFILE_URL }}"
+           target="_blank"
+           rel="me noopener noreferrer"
+           aria-label="Seguir a Napkin Notes en X">
+            <span>𝕏</span>
+            <strong>@{{ X_USERNAME }}</strong>
+        </a>
+    </section>
+    {% endif %}
+
+    <div class="nn-sticky-card">
+       {% from '_includes/_defaults.html' import CATEGORIES_URL, TAGS_URL with context %}
 
 <div class="nn-article-meta-card">
     <div class="nn-article-meta-card__section">

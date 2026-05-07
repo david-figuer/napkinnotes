@@ -127,7 +127,7 @@ FREELISTS_FILTER = True
 # SMO
 X_USERNAME = "napkiinnotes"
 X_PROFILE_URL = "https://twitter.com/napkiinnotes"
-TWITTER_USERNAME = "@napkiinnotes"
+TWITTER_USERNAME = "napkiinnotes"
 FEATURED_IMAGE = SITEURL + "/theme/images/nn_logo.png"
 
 # Legal

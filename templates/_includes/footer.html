@@ -41,4 +41,16 @@
         {% endif %}
         {% endif %}
     </div>
+    {% if X_PROFILE_URL %}
+  <div class="nn-footer-x">
+    <a href="{{ X_PROFILE_URL }}"
+       target="_blank"
+       rel="me noopener noreferrer"
+       aria-label="Seguir a Napkin Notes en X">
+      <span class="nn-footer-x__icon">𝕏</span>
+      <span>Síguenos en X</span>
+      <strong>@{{ X_USERNAME }}</strong>
+    </a>
+  </div>
+{% endif %}
 </footer>

@@ -2986,7 +2986,20 @@ footer a,
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .site-search {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  .site-search input {
+    box-sizing: border-box;
+    width: min(210px, calc(100vw - 82px));
+    min-width: 0;
   }
 
   .site-mobile-x {

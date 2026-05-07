@@ -2882,6 +2882,23 @@ footer a,
 
 @media (max-width: 980px) {
   .site-nav__x {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0 !important;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: #fbf5ee;
+    color: var(--richcarmine) !important;
+    font-size: 1rem !important;
+    font-weight: 800 !important;
+    line-height: 1;
+    text-decoration: none !important;
+  }
+
+  .site-nav__x::after {
     display: none !important;
   }
 }

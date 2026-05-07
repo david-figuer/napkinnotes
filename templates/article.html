@@ -75,22 +75,12 @@
     {% import '_includes/translations.html' as translations with context %}
     {{ translations.translations_for(article) }}
 
-    {% if X_PROFILE_URL %}
-    <div class="nn-article-left-x-card">
-        <div class="nn-article-left-x-card__eyebrow">Napkin Notes en X</div>
-        <p>Ideas rápidas, nuevos artículos y preguntas que empiezan en una servilleta.</p>
-        <a href="{{ X_PROFILE_URL }}"
-           target="_blank"
-           rel="me noopener noreferrer"
-           aria-label="Seguir a Napkin Notes en X">
-            <span>𝕏</span>
-            <strong>@{{ X_USERNAME }}</strong>
-        </a>
-    </div>
-    {% endif %}
+    
 
+<div class="nn-article-content">
+    {% import '_includes/translations.html' as translations with context %}
+    {{ translations.translations_for(article) }}
     {{ article.content }}
-
             {% if article.photo_gallery %}
             <div class="gallery">
                 {% for title, gallery in article.photo_gallery %}

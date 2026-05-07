@@ -69,25 +69,39 @@
                              <span class="site-brand__name">{{ SITENAME }}</span>
                     </a>
 
-                    <nav class="site-nav">
-                        <ul class="site-nav__list">
-                            <li {% if page_name == 'index' %}class="active"{% endif %}>
-                                <a href="{% if SITEURL %}{{ SITEURL }}{% else %}/{% endif %}">Portada</a>
-                            </li>
+                   <nav class="site-nav">
 
-                            {% from '_includes/_defaults.html' import TAGS_URL, CATEGORIES_URL, ARCHIVES_URL, SEARCH_URL, NOSOTROS_URL with context %}
+                       
+    <ul class="site-nav__list">
+        <li {% if page_name == 'index' %}class="active"{% endif %}>
+            <a href="{% if SITEURL %}{{ SITEURL }}{% else %}/{% endif %}">Portada</a>
+        </li>
 
-                            <li {% if page_name == 'archives' %}class="active"{% endif %}>
-                                <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Artículos</a>
-                            </li>
-                            <li {% if page_name == 'explorar' %}class="active"{% endif %}>
-                                <a href="{{ SITEURL }}/explorar">Explorar</a>
-                            </li>
-                            <li {% if page_name == 'about' %}class="active"{% endif %}>
-                                <a href="{{ SITEURL }}/about">Nosotros</a>
-                            </li>
-                        </ul>
-                    </nav>
+        {% from '_includes/_defaults.html' import TAGS_URL, CATEGORIES_URL, ARCHIVES_URL, SEARCH_URL, NOSOTROS_URL with context %}
+
+        <li {% if page_name == 'archives' %}class="active"{% endif %}>
+            <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Artículos</a>
+        </li>
+        <li {% if page_name == 'explorar' %}class="active"{% endif %}>
+            <a href="{{ SITEURL }}/explorar">Explorar</a>
+        </li>
+        <li {% if page_name == 'about' %}class="active"{% endif %}>
+            <a href="{{ SITEURL }}/about">Nosotros</a>
+        </li>
+
+        {% if X_PROFILE_URL %}
+            <li>
+                <a class="site-nav__x"
+                   href="{{ X_PROFILE_URL }}"
+                   target="_blank"
+                   rel="me noopener noreferrer"
+                   aria-label="Seguir a Napkin Notes en X">
+                    𝕏
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>
 
                     <form class="site-search" action="{{ SITEURL }}/{{ SEARCH_URL }}" onsubmit="return validateForm(this.elements['q'].value);">
                         <input type="text" placeholder="Buscar" name="q" id="tipue_search_input">

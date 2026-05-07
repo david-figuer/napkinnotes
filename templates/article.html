@@ -72,15 +72,9 @@
 <div class="nn-article-layout {% if not article.toc %}nn-article-layout--no-toc{% endif %}">
     <div class="nn-article-main">
         <div class="nn-article-content">
-    {% import '_includes/translations.html' as translations with context %}
-    {{ translations.translations_for(article) }}
-
-    
-
-<div class="nn-article-content">
-    {% import '_includes/translations.html' as translations with context %}
-    {{ translations.translations_for(article) }}
-    {{ article.content }}
+            {% import '_includes/translations.html' as translations with context %}
+            {{ translations.translations_for(article) }}
+            {{ article.content }}
             {% if article.photo_gallery %}
             <div class="gallery">
                 {% for title, gallery in article.photo_gallery %}
@@ -132,12 +126,9 @@
         </div>
     </div>
 
-    <aside id="article-sidebar" class="nn-article-sidebar">
-               <div class="nn-sticky-card">
-    
-
-    <div class="nn-sticky-card">
-       {% from '_includes/_defaults.html' import CATEGORIES_URL, TAGS_URL with context %}
+   <aside id="article-sidebar" class="nn-article-sidebar">
+        <div class="nn-sticky-card">
+           {% from '_includes/_defaults.html' import CATEGORIES_URL, TAGS_URL with context %}
 
 <div class="nn-article-meta-card">
     <div class="nn-article-meta-card__section">

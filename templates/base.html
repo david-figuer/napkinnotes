@@ -103,9 +103,21 @@
     </ul>
 </nav>
 
-                    <form class="site-search" action="{{ SITEURL }}/{{ SEARCH_URL }}" onsubmit="return validateForm(this.elements['q'].value);">
-                        <input type="text" placeholder="Buscar" name="q" id="tipue_search_input">
-                    </form>
+                    <div class="site-search-row">
+    <form class="site-search" action="{{ SITEURL }}/{{ SEARCH_URL }}" onsubmit="return validateForm(this.elements['q'].value);">
+        <input type="text" placeholder="Buscar" name="q" id="tipue_search_input">
+    </form>
+
+    {% if X_PROFILE_URL %}
+    <a class="site-mobile-x"
+       href="{{ X_PROFILE_URL }}"
+       target="_blank"
+       rel="me noopener noreferrer"
+       aria-label="Seguir a Napkin Notes en X">
+        𝕏
+    </a>
+    {% endif %}
+</div>
                 </div>
             </header>
 

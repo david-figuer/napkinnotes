@@ -8,7 +8,8 @@ SITENAME = "Napkin Notes"
 SITESUBTITLE = ""
 SITEURL = "https://napkinnotes.es"
 RELATIVE_URLS = False
- 
+
+
 PATH = "content"
 
 # Regional Settings
@@ -124,7 +125,9 @@ FREELISTS_NAME = "oracle-l"
 FREELISTS_FILTER = True
 
 # SMO
-TWITTER_USERNAME = ""
+X_USERNAME = "napkiinnotes"
+X_PROFILE_URL = "https://twitter.com/napkiinnotes"
+TWITTER_USERNAME = "@napkiinnotes"
 FEATURED_IMAGE = SITEURL + "/theme/images/nn_logo.png"
 
 # Legal

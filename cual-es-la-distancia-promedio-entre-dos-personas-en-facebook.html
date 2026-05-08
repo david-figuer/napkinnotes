@@ -14,9 +14,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
-        <meta name="author" content="Duvier Suarez Fontanella" />
+        <meta name="author" content="Duvier Suárez Fontanella" />
 
-        <meta name="description" content="La distancia entre dos personas en Facebook es mucho menor de lo que imaginamos. La teoría de grafos y los mundos pequeños muestran cómo los seis grados de separación se comprimen en apenas unos pocos saltos.
+        <meta name="description" content="En Facebook, los famosos seis grados de separación se reducen a poco más de cuatro saltos. La teoría de grafos explica por qué una red de miles de millones de personas puede comportarse como un mundo sorprendentemente pequeño.
 " />
 
         <meta name="twitter:creator" content="@napkiinnotes">
@@ -27,12 +27,12 @@
 
 <meta property="og:title" content="¿Cuál es la distancia promedio entre dos personas en Facebook? "/>
 <meta property="og:url" content="https://napkinnotes.es/cual-es-la-distancia-promedio-entre-dos-personas-en-facebook" />
-<meta property="og:description" content="La distancia entre dos personas en Facebook es mucho menor de lo que imaginamos. La teoría de grafos y los mundos pequeños muestran cómo los seis grados de separación se comprimen en apenas unos pocos saltos." />
+<meta property="og:description" content="En Facebook, los famosos seis grados de separación se reducen a poco más de cuatro saltos. La teoría de grafos explica por qué una red de miles de millones de personas puede comportarse como un mundo sorprendentemente pequeño." />
 <meta property="og:site_name" content="Napkin Notes" />
-<meta property="og:article:author" content="Duvier Suarez Fontanella" />
+<meta property="og:article:author" content="Duvier Suárez Fontanella" />
 <meta property="og:article:published_time" content="2026-04-15T00:00:00+02:00" />
 <meta name="twitter:title" content="¿Cuál es la distancia promedio entre dos personas en Facebook? ">
-<meta name="twitter:description" content="La distancia entre dos personas en Facebook es mucho menor de lo que imaginamos. La teoría de grafos y los mundos pequeños muestran cómo los seis grados de separación se comprimen en apenas unos pocos saltos.">
+<meta name="twitter:description" content="En Facebook, los famosos seis grados de separación se reducen a poco más de cuatro saltos. La teoría de grafos explica por qué una red de miles de millones de personas puede comportarse como un mundo sorprendentemente pequeño.">
 <meta property="og:image" content="https://napkinnotes.es/theme/images/nn_logo.png" />
 <meta name="twitter:image" content="https://napkinnotes.es/theme/images/nn_logo.png" >
 
@@ -126,7 +126,7 @@
 
         </div>
 
-        <p class="nn-article-hero__summary"><p>La distancia entre dos personas en Facebook es mucho menor de lo que imaginamos. La teoría de grafos y los mundos pequeños muestran cómo los seis grados de separación se comprimen en apenas unos pocos&nbsp;saltos.</p></p>
+        <p class="nn-article-hero__summary"><p>En Facebook, los famosos seis grados de separación se reducen a poco más de cuatro saltos. La teoría de grafos explica por qué una red de miles de millones de personas puede comportarse como un mundo sorprendentemente&nbsp;pequeño.</p></p>
 
         <figure class="nn-article-hero__figure">
             <img class="nn-article-hero__image" src="https://napkinnotes.es/images/face_dist.png" alt="¿Cuál es la distancia promedio entre dos personas en&nbsp;Facebook?">
@@ -140,71 +140,135 @@
             
             <div class="toc">
 <ul>
-<li><a href="#desarrollo">Desarrollo</a></li>
-<li><a href="#conclusiones">Conclusiones</a></li>
+<li><a href="#de-los-seis-grados-al-mundo-comprimido">De los seis grados al mundo&nbsp;comprimido</a></li>
+<li><a href="#facebook-como-laboratorio-de-teoria-de-grafos">Facebook como laboratorio de teoría de&nbsp;grafos</a></li>
+<li><a href="#como-medir-distancias-en-un-monstruo-de-miles-de-millones-de-nodos">Cómo medir distancias en un monstruo de miles de millones de&nbsp;nodos</a></li>
+<li><a href="#la-fisica-de-los-mundos-pequenos">La física de los mundos&nbsp;pequeños</a></li>
+<li><a href="#hubs-comunidades-y-atajos-improbables">Hubs, comunidades y atajos&nbsp;improbables</a></li>
+<li><a href="#que-significa-realmente-estar-a-457-saltos">Qué significa realmente estar a 4.57&nbsp;saltos</a></li>
+<li><a href="#lo-fascinante-y-lo-inquietante-de-una-red-tan-corta">Lo fascinante y lo inquietante de una red tan&nbsp;corta</a></li>
 </ul>
 </div>
-<p>Meta ha publicado en diversas ocasiones análisis sobre la longitud promedio de los caminos en su grafo social. Los resultados convergen sistemáticamente en un rango entre <strong>4 y 4.7 saltos</strong>.</p>
-<p>En su estudio más citado (Facebook Research, 2016), utilizando miles de millones de nodos y decenas de miles de millones de aristas, se&nbsp;obtuvo:</p>
+<h2 id="de-los-seis-grados-al-mundo-comprimido">De los seis grados al mundo comprimido<a class="headerlink" href="#de-los-seis-grados-al-mundo-comprimido" title="Permanent link"> </a></h2>
+<p>¿Cuántas personas te separan de alguien elegido completamente al azar en&nbsp;Facebook?</p>
+<p>No de un amigo de un amigo. No de alguien de tu ciudad. No de una persona que estudió en tu universidad o trabaja en tu área. De alguien verdaderamente lejano en el grafo social: otro país, otro idioma, otro círculo, otra&nbsp;vida.</p>
+<p>La respuesta parece que debería ser grande. Facebook tiene miles de millones de usuarios, así que uno esperaría que conectar dos puntos arbitrarios de esa red exigiera una cadena larga de intermediarios. Pero las redes sociales reales no se comportan como mapas geográficos. Se comportan más bien como espacios llenos de&nbsp;atajos.</p>
+<p>Meta ha publicado en diversas ocasiones análisis sobre la longitud promedio de los caminos en su grafo social. La conclusión, repetida con distintos tamaños de muestra y metodologías, es bastante sorprendente: la distancia típica entre dos usuarios de Facebook está entre <strong>4 y 4.7 saltos</strong>.</p>
+<p>En uno de sus estudios más citados, Facebook Research reportó en 2016 que, usando miles de millones de nodos y decenas de miles de millones de aristas, se obtenían aproximadamente los siguientes&nbsp;valores:</p>
 <ul>
 <li><strong>Distancia promedio global:</strong>&nbsp;4.57  </li>
 <li><strong>Distancia promedio entre usuarios activos en <span class="caps">EE</span>. <span class="caps">UU</span>.:</strong> alrededor de&nbsp;4.2  </li>
-<li><strong>Máxima componente conexa:</strong> &gt; 99 % de la&nbsp;red</li>
+<li><strong>Máxima componente conexa:</strong> más del 99 % de la&nbsp;red  </li>
 </ul>
-<p>Es decir, <strong>cualquier persona en Facebook puede llegar a otra mediante poco más de cuatro intermediarios</strong>. Dicho de otro modo: los “seis grados” ya no son&nbsp;seis.</p>
-<p>La idea de los seis grados de separación nació en 1929 con Frigyes Karinthy, se popularizó en 1967 con el experimento de Stanley Milgram y terminó convertida en un concepto cultural. Pero matemáticamente, el fenómeno posee base&nbsp;sólida.</p>
-<p>Milgram encontró longitudes promedio cercanas a <strong>5.5 pasos</strong> para conectar a un ciudadano cualquiera con un objetivo elegido. Aunque el diseño experimental tenía sesgos, reveló la estructura de mundo pequeño en redes&nbsp;humanas.</p>
-<p>Con datos completos de grafos sociales actuales, hoy se puede&nbsp;afirmar:</p>
+<p>Dicho sin jerga: <strong>una persona cualquiera en Facebook puede llegar a otra mediante poco más de cuatro intermediarios</strong>. O, para decirlo con algo de dramatismo sociológico: los famosos “seis grados de separación” han sufrido una compactificación dimensional bastante&nbsp;seria.</p>
+<p>La idea de los seis grados de separación suele asociarse a Frigyes Karinthy, quien la formuló literariamente en 1929. Más tarde, en 1967, Stanley Milgram la popularizó mediante su célebre experimento de cartas enviadas entre desconocidos. Desde entonces, la imagen de que estamos separados por apenas unas pocas conexiones se convirtió en parte de la cultura&nbsp;popular.</p>
+<p>Milgram encontró longitudes promedio cercanas a <strong>5.5 pasos</strong> para conectar a una persona inicial con un objetivo elegido. El experimento tenía sesgos importantes —muestras pequeñas, abandono de participantes, selección no completamente aleatoria—, pero capturó una intuición profunda: las redes humanas no se comportan como una colección dispersa de individuos, sino como estructuras con&nbsp;atajos.</p>
+<p>Con los grafos sociales actuales, esta intuición puede formularse de forma mucho más&nbsp;precisa:</p>
 <ul>
-<li>La distancia promedio <strong>no solo es menor que seis</strong>, sino que <strong>se estabiliza por debajo de cinco</strong> en redes con miles de millones de&nbsp;nodos.  </li>
-<li>Este fenómeno no implica que todos se conozcan; solo que <strong>la estructura combinatoria del grafo permite trayectorias muy cortas</strong>.</li>
+<li>La distancia promedio <strong>no solo es menor que seis</strong>, sino que parece <strong>estabilizarse por debajo de cinco</strong> en redes con miles de millones de&nbsp;nodos.  </li>
+<li>Esto no significa que todos se conozcan, ni mucho menos que todos se quieran invitar a cenar. Significa que <strong>la estructura combinatoria del grafo permite trayectorias extremadamente cortas</strong> entre pares de&nbsp;usuarios.</li>
 </ul>
 <hr />
-<h2 id="desarrollo">Desarrollo<a class="headerlink" href="#desarrollo" title="Permanent link"> </a></h2>
-<p>Podemos representar Facebook como un grafo no dirigido G = (V, E),&nbsp;donde:</p>
-<ul>
-<li>V es el conjunto de&nbsp;usuarios  </li>
-<li>E es el conjunto de relaciones de&nbsp;amistad  </li>
-</ul>
-<p>La <strong>distancia</strong> entre dos vértices u y v, denotada d(u,v), es la longitud mínima del camino que los&nbsp;conecta.</p>
-<p>El objetivo es calcular el <strong>average path length</strong> (<span class="caps">APL</span>):</p>
+<h2 id="facebook-como-laboratorio-de-teoria-de-grafos">Facebook como laboratorio de teoría de grafos<a class="headerlink" href="#facebook-como-laboratorio-de-teoria-de-grafos" title="Permanent link"> </a></h2>
+<p>Podemos representar Facebook, en una primera aproximación, como un grafo no&nbsp;dirigido</p>
 <div class="math">$$
-L = \frac{1}{|V|(|V|-1)} \sum_{u \neq v} d(u,v)
+G = (V,E),
 $$</div>
-<p>En redes a gran escala esta suma explícita es inviable. Facebook utiliza técnicas como <strong><span class="caps">BFS</span> aproximado</strong>, <strong>muestreo aleatorio de vértices</strong> y algoritmos distribuidos tipo <strong>HyperANF</strong> para estimar la distribución de&nbsp;distancias.</p>
-<p>El comportamiento observado en Facebook coincide con el modelo de <strong>redes de mundo pequeño</strong> (Watts <span class="amp">&amp;</span> Strogatz, 1998), caracterizado&nbsp;por:</p>
+<p>donde:</p>
+<ul>
+<li><span class="math">\(V\)</span> es el conjunto de&nbsp;usuarios.  </li>
+<li><span class="math">\(E\)</span> es el conjunto de relaciones de&nbsp;amistad.  </li>
+</ul>
+<p>La <strong>distancia</strong> entre dos&nbsp;vértices <span class="math">\(u\)</span> y <span class="math">\(v\)</span>,&nbsp;denotada <span class="math">\(d(u,v)\)</span>, es la longitud mínima del camino que los conecta. Si dos usuarios están conectados directamente,&nbsp;entonces <span class="math">\(d(u,v)=1\)</span>. Si necesitan un amigo intermedio,&nbsp;entonces <span class="math">\(d(u,v)=2\)</span>, y así&nbsp;sucesivamente.</p>
+<p>El objeto que queremos estimar es la <strong>distancia promedio</strong>, o <em>average path length</em>:</p>
+<div class="math">$$
+L =
+\frac{1}{|V|(|V|-1)}
+\sum_{u \neq v} d(u,v).
+$$</div>
+<p>Esta cantidad resume, de forma muy compacta, una propiedad global de la red: cuántos pasos hacen falta, en promedio, para ir de un nodo cualquiera a otro. Es una especie de observable macroscópico del grafo, como si la red tuviera una “longitud característica”&nbsp;emergente.</p>
+<p>La analogía no es perfecta, pero es tentadora: igual que en física estadística no queremos conocer la trayectoria microscópica de cada molécula para hablar de temperatura, en teoría de redes muchas veces no necesitamos inspeccionar cada amistad individual para extraer propiedades globales. Basta con saber cómo se organiza la estructura&nbsp;colectiva.</p>
+<hr />
+<h2 id="como-medir-distancias-en-un-monstruo-de-miles-de-millones-de-nodos">Cómo medir distancias en un monstruo de miles de millones de nodos<a class="headerlink" href="#como-medir-distancias-en-un-monstruo-de-miles-de-millones-de-nodos" title="Permanent link"> </a></h2>
+<p>En una red pequeña, la distancia promedio puede calcularse recorriendo todos los pares de nodos. En Facebook, sin embargo, eso sería computacionalmente inviable: estamos hablando de miles de millones de vértices y decenas de miles de millones de&nbsp;aristas.</p>
+<p>El sumatorio anterior es elegante, sí. Pero evaluarlo literalmente sería una forma bastante cara de calentar centros de&nbsp;datos.</p>
+<p>Por eso se utilizan técnicas aproximadas y distribuidas,&nbsp;como:</p>
+<ul>
+<li>búsquedas tipo <strong><span class="caps">BFS</span></strong> desde subconjuntos de&nbsp;vértices,  </li>
+<li><strong>muestreo aleatorio</strong> de&nbsp;nodos,  </li>
+<li>estimadores probabilísticos de&nbsp;vecindades,  </li>
+<li>algoritmos distribuidos inspirados en métodos como <strong>HyperANF</strong>.  </li>
+</ul>
+<p>La idea general es estimar la distribución de distancias sin tener que calcular todos los caminos mínimos entre todos los pares&nbsp;posibles.</p>
+<p>En vez de preguntar “¿cuál es la distancia exacta entre cada par de usuarios?”, se pregunta algo más razonable computacionalmente: “si tomo muestras representativas de la red, ¿cómo se distribuyen las distancias?”. A partir de ahí se reconstruye una estimación robusta&nbsp;de <span class="math">\(L\)</span>.</p>
+<p>Este cambio de perspectiva es crucial. En grafos de esta escala, la pregunta matemática sigue siendo limpia, pero la respuesta requiere estadística, algoritmos distribuidos y bastante respeto por la memoria <span class="caps">RAM</span>.</p>
+<hr />
+<h2 id="la-fisica-de-los-mundos-pequenos">La física de los mundos pequeños<a class="headerlink" href="#la-fisica-de-los-mundos-pequenos" title="Permanent link"> </a></h2>
+<p>El comportamiento observado en Facebook encaja con la física y matemática de las <strong>redes de mundo pequeño</strong>, introducidas formalmente por Watts y Strogatz en 1998. Estas redes combinan dos propiedades que, juntas, son muy&nbsp;potentes:</p>
 <ol>
-<li><strong>Alta agrupación (clustering coefficient&nbsp;C)</strong>  </li>
-<li><strong>Caminos cortos con crecimiento logarítmico: L ≈ log&nbsp;N</strong></li>
+<li><strong>Alto agrupamiento local</strong>, medido mediante un coeficiente de clustering&nbsp;elevado.  </li>
+<li><strong>Caminos globales cortos</strong>, con una distancia promedio que crece lentamente con el tamaño de la&nbsp;red.  </li>
 </ol>
-<p>Si N ≈ 10<sup>9</sup>,&nbsp;entonces:</p>
+<p>Una forma esquemática de expresar esta segunda propiedad&nbsp;es</p>
 <div class="math">$$
-\log(N) \approx 21
+L \sim \log N,
 $$</div>
-<p>Esto sugiere que incluso una red inmensa puede tener caminos sorprendentemente cortos si se cumplen dos&nbsp;condiciones:</p>
+<p>donde <span class="math">\(N\)</span> es el número de nodos de la red. Esta relación no debe interpretarse como una predicción exacta sin constantes, base logarítmica ni estructura de grado. Más bien indica el punto esencial: <strong>la distancia promedio crece muy despacio cuando el número de nodos aumenta</strong>.</p>
+<p>Por ejemplo,&nbsp;aunque <span class="math">\(N \sim 10^9\)</span>, el crecimiento logarítmico hace que el tamaño efectivo del mundo social sea muchísimo menor que el tamaño bruto de la red. No vivimos en un grafo donde haya que atravesar millones de nodos para llegar de una persona a otra. Vivimos, combinatoriamente hablando, en una red llena de&nbsp;túneles.</p>
+<p>Para que esto ocurra se necesitan dos&nbsp;ingredientes:</p>
 <ul>
-<li>Existe fuerte conectividad local&nbsp;(comunidades).  </li>
-<li>Hay enlaces aleatorios que actúan como “atalayos” en el&nbsp;grafo.</li>
+<li><strong>Conectividad local fuerte:</strong> comunidades de amigos, familias, colegas, universidades, barrios o grupos&nbsp;profesionales.  </li>
+<li><strong>Enlaces de largo alcance:</strong> contactos que conectan regiones sociales o geográficas muy&nbsp;distintas.  </li>
 </ul>
-<p>Facebook cumple ambos requisitos: abundan las comunidades de amigos, pero también los contactos distantes geográfica o socialmente. Esos enlaces reducen drásticamente&nbsp;L.</p>
-<p>En teoría de grafos, esta propiedad se explica&nbsp;por:</p>
-<ul>
-<li><strong>Distribuciones de grado con colas pesadas (scale-free)</strong>.  </li>
-<li><strong>Hubs con grado extremadamente alto</strong>.  </li>
-<li><strong>Coeficiente de agrupación elevado</strong>, mayor que el de redes aleatorias tipo&nbsp;Erdős–Rényi.</li>
-</ul>
-<p>Todo esto importa porque entender distancias promedio permite modelar <strong>difusión de información</strong>, <strong>propagación de epidemias</strong>, <strong>viralidad</strong> y <strong>resiliencia estructural</strong>. Un <span class="caps">APL</span> bajo implica expansiones rápidas y pocas etapas de&nbsp;transmisión.</p>
-<p>También tiene implicaciones sociales y éticas: las redes acortan el mundo, pero también <strong>amplifican externalidades</strong> como rumores, polarización y contagios culturales. La estructura de mundo pequeño regula la conectividad, pero no la calidad de los&nbsp;vínculos.</p>
-<p>Y, desde el punto de vista de ingeniería de plataformas, estas métricas ayudan a mejorar algoritmos de recomendación, especialmente los basados en friends-of-friends, optimizar buscadores sociales, diseñar mecanismos de privacidad basada en distancias y construir sistemas distribuidos que explotan el comportamiento logarítmico de&nbsp;L.</p>
+<p>La coexistencia de ambos ingredientes produce una geometría peculiar. Localmente, la red parece muy agrupada: tus amigos suelen conocerse entre sí. Globalmente, sin embargo, unos pocos enlaces entre comunidades lejanas reducen drásticamente las&nbsp;distancias.</p>
+<p>Esa es la gracia de los mundos pequeños: no eliminan la estructura local, sino que la perforan con&nbsp;atajos.</p>
 <hr />
-<h2 id="conclusiones">Conclusiones<a class="headerlink" href="#conclusiones" title="Permanent link"> </a></h2>
-<p>Las distancias sociales que intuíamos desde hace un siglo son hoy métricas verificables en redes de escala planetaria. Facebook muestra&nbsp;que:</p>
+<h2 id="hubs-comunidades-y-atajos-improbables">Hubs, comunidades y atajos improbables<a class="headerlink" href="#hubs-comunidades-y-atajos-improbables" title="Permanent link"> </a></h2>
+<p>Facebook cumple de forma bastante natural los requisitos de una red de mundo pequeño. Por un lado, abundan las comunidades altamente conectadas: grupos familiares, amistades de colegio, círculos universitarios, colegas de trabajo, comunidades locales o redes&nbsp;profesionales.</p>
+<p>Por otro lado, existen enlaces menos locales: antiguos compañeros de universidad, colaboraciones internacionales, migraciones, contactos de congresos, amigos de amigos o esa persona que aceptaste en 2012 y ya no sabes exactamente por&nbsp;qué.</p>
+<p>Estos enlaces de largo alcance actúan como <strong>atajos</strong> en el grafo. Aunque sean relativamente pocos, reducen de forma drástica la distancia&nbsp;promedio <span class="math">\(L\)</span>.</p>
+<p>Desde el punto de vista de teoría de redes, esta propiedad está relacionada con varios rasgos&nbsp;estructurales:</p>
 <ul>
-<li>La distancia promedio entre dos personas es <strong>menor de cinco pasos</strong>.  </li>
-<li>La teoría de <strong>mundos pequeños</strong> predice y explica este&nbsp;fenómeno.  </li>
-<li>Los <strong>seis grados de separación</strong> no solo se mantienen: se&nbsp;comprimen.</li>
+<li><strong>Distribuciones de grado con colas pesadas</strong>, donde algunos nodos tienen muchísimas&nbsp;conexiones.  </li>
+<li><strong>Hubs</strong>, es decir, usuarios o páginas con grado muy&nbsp;alto.  </li>
+<li><strong>Clustering elevado</strong>, mayor que el esperado en una red aleatoria simple tipo&nbsp;Erdős–Rényi.  </li>
+<li><strong>Comunidades interconectadas</strong>, que combinan estructura modular con enlaces entre&nbsp;módulos.  </li>
 </ul>
-<p>La combinación de teoría matemática, datos masivos y modelización computacional revela que vivimos en un mundo sorprendentemente bien&nbsp;conectado.</p>
+<p>Aquí aparece una diferencia importante con una red completamente aleatoria. En un grafo Erdős–Rényi, las conexiones se distribuyen de manera homogénea y sin estructura social explícita. En una red humana real, en cambio, las conexiones están fuertemente correlacionadas: tus amigos tienden a conocerse entre sí, tus círculos se solapan, y algunos nodos funcionan como puentes entre&nbsp;comunidades.</p>
+<p>La consecuencia es que Facebook no es simplemente “un grafo grande”. Es un grafo grande, altamente agrupado, heterogéneo y con atajos. En otras palabras: una pesadilla para quien quiera mantener una separación social limpia, pero un objeto precioso para un teórico de&nbsp;redes.</p>
+<hr />
+<h2 id="que-significa-realmente-estar-a-457-saltos">Qué significa realmente estar a 4.57 saltos<a class="headerlink" href="#que-significa-realmente-estar-a-457-saltos" title="Permanent link"> </a></h2>
+<p>El número <strong>4.57</strong> no debe leerse como si cada par de usuarios estuviera exactamente separado por 4.57 personas, cosa que además sería difícil de implementar anatómicamente. Es un promedio sobre una distribución de&nbsp;distancias.</p>
+<p>Algunos pares estarán conectados por uno o dos saltos. Otros necesitarán más. Lo relevante es que la distribución está fuertemente concentrada en valores bajos, incluso cuando la red tiene un tamaño&nbsp;enorme.</p>
+<p>Esto nos dice que Facebook es una red muy compacta. Su diámetro efectivo es pequeño: no porque todos estén conectados con todos, sino porque existen suficientes puentes entre comunidades como para que los caminos mínimos sean&nbsp;cortos.</p>
+<p>Dicho de otro modo: la red no es densa en el sentido trivial de tener todas las conexiones posibles. Es eficiente en el sentido estructural de conectar regiones muy distintas mediante pocos&nbsp;pasos.</p>
+<p>Esta distinción es importante. Una red puede ser localmente agrupada, socialmente modular y, aun así, globalmente compacta. Esa combinación es precisamente la firma de un mundo&nbsp;pequeño.</p>
+<hr />
+<h2 id="lo-fascinante-y-lo-inquietante-de-una-red-tan-corta">Lo fascinante y lo inquietante de una red tan corta<a class="headerlink" href="#lo-fascinante-y-lo-inquietante-de-una-red-tan-corta" title="Permanent link"> </a></h2>
+<p>La distancia promedio no es solo una curiosidad simpática. Es una cantidad estructural que controla procesos dinámicos sobre la&nbsp;red.</p>
+<p>Un valor bajo&nbsp;de <span class="math">\(L\)</span> implica que muchos fenómenos pueden propagarse&nbsp;rápidamente:</p>
+<ul>
+<li><strong>Difusión de&nbsp;información.</strong>  </li>
+<li><strong>Viralidad de&nbsp;contenidos.</strong>  </li>
+<li><strong>Propagación de&nbsp;rumores.</strong>  </li>
+<li><strong>Contagio social o&nbsp;cultural.</strong>  </li>
+<li><strong>Campañas de&nbsp;desinformación.</strong>  </li>
+<li><strong>Dinámicas epidémicas en redes de&nbsp;contacto.</strong>  </li>
+</ul>
+<p>Si una red tiene caminos muy cortos, una señal no necesita muchos pasos para alcanzar regiones muy alejadas del grafo. Esto es útil cuando se quiere compartir conocimiento, coordinar comunidades o encontrar colaboradores. También es preocupante cuando lo que se propaga es ruido, polarización o información falsa con esteroides&nbsp;algorítmicos.</p>
+<p>Desde el punto de vista de ingeniería de plataformas, estas métricas también son fundamentales. La estructura de mundo pequeño permite diseñar o&nbsp;mejorar:</p>
+<ul>
+<li>algoritmos de recomendación basados en amigos de&nbsp;amigos,  </li>
+<li>buscadores&nbsp;sociales,  </li>
+<li>sistemas de sugerencia de&nbsp;contactos,  </li>
+<li>mecanismos de privacidad dependientes de la distancia&nbsp;social,  </li>
+<li>estrategias de detección de&nbsp;comunidades,  </li>
+<li>arquitecturas distribuidas que aprovechan la localidad del&nbsp;grafo.  </li>
+</ul>
+<p>En este sentido, el número 4.57 no es solo una anécdota. Es una medida macroscópica de una estructura microscópica inmensa. Resume, en un solo valor, miles de millones de decisiones individuales: amistades, conocidos, vínculos familiares, antiguos compañeros, contactos laborales y conexiones&nbsp;improbables.</p>
+<p>La distancia promedio entre dos personas en Facebook es, por tanto, de apenas unos pocos saltos, típicamente entre <strong>4 y 4.7</strong>. Esto confirma, con datos masivos, la intuición detrás de los seis grados de separación: las redes humanas son mucho más compactas de lo que su tamaño&nbsp;sugiere.</p>
+<p>La razón no es mágica. Es teoría de grafos. Las comunidades locales generan clustering; los enlaces de largo alcance generan atajos; los hubs reducen distancias; y la combinación de todos estos ingredientes produce una red de mundo&nbsp;pequeño.</p>
+<p>Así que sí: probablemente estás a cuatro o cinco saltos de casi cualquier persona en Facebook. Lo cual es matemáticamente fascinante, socialmente inquietante y, dependiendo de la persona, quizá también una buena razón para revisar la configuración de&nbsp;privacidad.</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -279,19 +343,12 @@ $$</div>
             
             
 <div class="nn-author-box">
-    <div class="nn-author-box__avatar">
-        <img src="https://napkinnotes.es/images/duvier.jpeg" alt="Duvier Suarez Fontanella">
-    </div>
 
     <div class="nn-author-box__content">
         <div class="nn-author-box__label">Autor</div>
-        <h3 class="nn-author-box__name">Duvier Suarez Fontanella</h3>
+        <h3 class="nn-author-box__name">Duvier Suárez Fontanella</h3>
 
-        <p class="nn-author-box__bio">Físico teórico y curioso incorregible, dedicado a rastrear las leyes secretas que gobiernan tanto al cosmos como a los detalles más triviales de la vida diaria. Sus textos buscan lo mismo que la antigua Fundación: preservar el conocimiento, iluminar lo oculto y demostrar que incluso en una servilleta puede comenzar una nueva era científica.</p>
 
-        <a class="nn-author-box__link" href="https://produccioncientifica.usal.es/investigadores/819473/detalle" target="_blank" rel="noopener noreferrer">
-            Ver perfil
-        </a>
     </div>
 </div>
 

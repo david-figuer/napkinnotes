@@ -78,6 +78,7 @@ CATEGORY_FEED_ATOM = None
 CATEGORY_FEED_RSS = None
 
 # Social
+"""
 SOCIAL = (
     ("Github", "https://github.com/Pelican-Elegant/", "Elegant Github Repository"),
     ("RSS", SITEURL + "/feeds/all.atom.xml"),
@@ -87,7 +88,7 @@ SOCIAL = (
         "Elegant Project Roadmap",
     ),
 )
-
+"""
 # Elegant theme
 STATIC_PATHS = ["theme/images", "images", "extra", "extra/_redirects", "code"]
 

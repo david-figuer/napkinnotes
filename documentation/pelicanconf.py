@@ -188,7 +188,7 @@ PROJECTS = [
 LANDING_PAGE_TITLE = "Napkin Notes"
 
 AUTHORS = {
-    "Duvier Suarez Fontanella": {
+    "Duvier Suárez Fontanella": {
         "url": "https://produccioncientifica.usal.es/investigadores/819473/detalle",
         "role": "Creador, Desarrollador Web",
         "blurb": "Físico teórico y curioso incorregible, dedicado a rastrear las leyes secretas que gobiernan tanto al cosmos como a los detalles más triviales de la vida diaria. Sus textos buscan lo mismo que la antigua Fundación: preservar el conocimiento, iluminar lo oculto y demostrar que incluso en una servilleta puede comenzar una nueva era científica.",

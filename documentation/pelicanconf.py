@@ -85,6 +85,7 @@ SOCIAL = (
 # Elegant theme
 STATIC_PATHS = ["theme/images", "images", "extra", "extra/_redirects", "code"]
 
+#metadata de netlify
 """EXTRA_PATH_METADATA = {
     "extra/custom-about.css": {"path": "theme/custom-about.css"},
     "extra/custom.css": {"path": "theme/css/custom.css"},
@@ -96,12 +97,17 @@ EXTRA_PATH_METADATA = {
     "extra/custom.css": {"path": "theme/css/custom.css"},
 }
 
-if os.environ.get("CONTEXT") == "production":
+#problema con indexacion en google
+"""if os.environ.get("CONTEXT") == "production":
     STATIC_PATHS.append("extra/robots.txt")
     EXTRA_PATH_METADATA["extra/robots.txt"] = {"path": "robots.txt"}
 else:
     STATIC_PATHS.append("extra/robots_deny.txt")
     EXTRA_PATH_METADATA["extra/robots_deny.txt"] = {"path": "robots.txt"}
+"""
+
+STATIC_PATHS.append("extra/robots.txt")
+EXTRA_PATH_METADATA["extra/robots.txt"] = {"path": "robots.txt"}
 
 DIRECT_TEMPLATES = ["index", "tags", "categories", "archives", "search", "explorar", "404"]
 TAG_SAVE_AS = ""

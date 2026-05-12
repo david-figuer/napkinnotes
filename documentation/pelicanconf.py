@@ -198,8 +198,8 @@ AUTHORS = {
      "Ruchika": {
         "url": "https://produccioncientifica.usal.es/investigadores/1999168/detalle",
         "role": "Colaboradora",
-        "blurb": "Ruchika Ruchika Ruchika",
-        "avatar": "images/gabriel.jpeg",
+        "blurb": "¡Conoce a la Dra. Ruchika! Actualmente es investigadora postdoctoral en la Universidad de Salamanca, en España. Antes trabajó como investigadora INFN en la Universidad La Sapienza de Roma, en Italia, y previamente en el IIT Bombay, en la India, tras completar su doctorado. La Dra. Ruchika está fascinada por las grandes preguntas sobre nuestro universo. Le encanta estudiar cómo las galaxias se alejan unas de otras, un fenómeno que conocemos como la expansión del universo, y cómo también se agrupan en enormes cúmulos, dando lugar a la hermosa estructura en forma de red del cosmos. Su investigación se sitúa en el punto de encuentro entre la observación del cielo y la comprensión de las leyes más profundas de la física. Estudia dos de los grandes misterios de la ciencia actual: la materia oscura, el 'pegamento' invisible que mantiene unidas a las galaxias, y la energía oscura, la misteriosa fuerza que hace que el universo se expanda cada vez más rápido. Lo que más la entusiasma es descubrir qué son realmente estos ingredientes invisibles del universo y distinguir cuidadosamente los descubrimientos verdaderamente nuevos de los efectos engañosos producidos por errores de medición.",
+        "avatar": "images/Ruchika.jpeg",
     },
 }
 

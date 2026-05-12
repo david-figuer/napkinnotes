@@ -85,10 +85,15 @@ SOCIAL = (
 # Elegant theme
 STATIC_PATHS = ["theme/images", "images", "extra", "extra/_redirects", "code"]
 
-EXTRA_PATH_METADATA = {
+"""EXTRA_PATH_METADATA = {
     "extra/custom-about.css": {"path": "theme/custom-about.css"},
     "extra/custom.css": {"path": "theme/css/custom.css"},
     "extra/_redirects": {"path": "_redirects"},
+}"""
+
+EXTRA_PATH_METADATA = {
+    "extra/custom-about.css": {"path": "theme/custom-about.css"},
+    "extra/custom.css": {"path": "theme/css/custom.css"},
 }
 
 if os.environ.get("CONTEXT") == "production":

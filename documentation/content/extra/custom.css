@@ -3027,39 +3027,52 @@ footer a,
   }
 }
 
-/* HERO COMPACTO UNIFICADO: Artículos / Explorar / Nosotros */
+
+/* FIX FUERTE: igualar banner de Artículos con Explorar y Nosotros */
 
 .nn-archives-hero,
 .nn-explore-hero,
 .nn-squad-hero {
-  margin-bottom: 24px;
+  margin-bottom: 24px !important;
 }
 
 .nn-archives-hero__inner,
 .nn-explore-hero__inner,
 .nn-squad-hero__inner {
-  padding: 22px 38px;
-  border-radius: 28px;
-  box-shadow: var(--shadow);
+  padding: 18px 38px !important;
+  border-radius: 28px !important;
+  box-shadow: var(--shadow) !important;
 }
 
+/* Artículos puede tener h1/p sin las clases esperadas */
+.nn-archives-hero__inner h1,
 .nn-archives-hero__title,
 .nn-explore-hero__title,
 .nn-squad-hero__title {
-  margin: 0 0 6px;
-  font-size: clamp(2.4rem, 4.4vw, 3.7rem);
-  line-height: 0.98;
+  margin: 0 0 6px !important;
+  font-size: clamp(2.2rem, 4vw, 3.4rem) !important;
+  line-height: 0.95 !important;
 }
 
+/* Subtítulo / texto del banner */
+.nn-archives-hero__inner p,
 .nn-archives-hero__subtitle,
 .nn-explore-hero__subtitle,
 .nn-squad-hero__subtitle {
-  margin: 0;
-  font-size: 1.04rem;
-  line-height: 1.55;
+  margin: 0 !important;
+  font-size: 1rem !important;
+  line-height: 1.45 !important;
 }
 
-.nn-archives-hero__inner {
-  border: 1px solid var(--line);
-  background: linear-gradient(135deg, #fffdfa 0%, #f9efe4 100%);
+/* Evita márgenes heredados raros en Artículos */
+.nn-archives-hero__inner > *:first-child,
+.nn-explore-hero__inner > *:first-child,
+.nn-squad-hero__inner > *:first-child {
+  margin-top: 0 !important;
+}
+
+.nn-archives-hero__inner > *:last-child,
+.nn-explore-hero__inner > *:last-child,
+.nn-squad-hero__inner > *:last-child {
+  margin-bottom: 0 !important;
 }

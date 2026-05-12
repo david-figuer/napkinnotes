@@ -60,7 +60,7 @@ $$
 A \approx 2.54\times10^{-4}\,\text{m}^2.
 $$
 
-Usando $\Delta P \approx 5\times10^5\,\text{Pa}$,
+Usando \(\Delta P \approx 5\times10^5\,\text{Pa}\),
 
 $$
 F \approx (5\times10^5)(2.54\times10^{-4}) \approx 130\,\text{N}.

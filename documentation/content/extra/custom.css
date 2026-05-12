@@ -3039,7 +3039,7 @@ footer a,
 .nn-archives-hero__inner,
 .nn-explore-hero__inner,
 .nn-squad-hero__inner {
-  padding: 24px 38px !important;
+  padding: 24px 40px !important;
   border-radius: 28px !important;
   box-shadow: var(--shadow) !important;
 }
@@ -3050,8 +3050,8 @@ footer a,
 .nn-explore-hero__title,
 .nn-squad-hero__title {
   margin: 0 0 8px !important;
-  font-size: clamp(2.3rem, 4.1vw, 3.55rem) !important;
-  line-height: 0.98 !important;
+  font-size: clamp(2.45rem, 4.3vw, 3.75rem) !important;
+  line-height: 1 !important;
 }
 
 /* Subtítulo / texto del banner */

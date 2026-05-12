@@ -153,44 +153,8 @@ SITE_DESCRIPTION = (
 SHARE_LINKS = [("twitter", "Twitter"), ("facebook", "Facebook"), ("email", "Email")]
 
 # Landing Page
-PROJECTS_TITLE = "Related Projects"
-PROJECTS = [
-    {
-        "name": "Elegant",
-        "url": "https://github.com/Pelican-Elegant/elegant",
-        "description": "Source code of Elegant theme",
-    },
-    {
-        "name": "Issue Tracker",
-        "url": "https://github.com/Pelican-Elegant/elegant/issues",
-        "description": "Give your feedback, ask questions or report issues",
-    },
-    {
-        "name": "Roadmap",
-        "url": "https://github.com/Pelican-Elegant/elegant/milestones",
-        "description": "See planned features and estimated release dates",
-    },
-    {
-        "name": "Press Kit",
-        "url": "https://github.com/Pelican-Elegant/elegant/tree/master/elegant-logo",
-        "description": "Writing an article on Elegant? Get Elegant logo from here",
-    },
-    {
-        "name": "onCrashReboot",
-        "url": "https://www.oncrashreboot.com/",
-        "description": "Home page of Elegant creator and lead developer",
-    },
-    {
-        "name": "Pelican",
-        "url": "https://github.com/getpelican/pelican/",
-        "description": "Static site generator that powers Elegant",
-    },
-    {
-        "name": "Pelican Plugins",
-        "url": "https://github.com/getpelican/pelican-plugins",
-        "description": "Collection of plugins for the Pelican static site generator",
-    },
-]
+PROJECTS_TITLE = ""
+PROJECTS = []
 
 LANDING_PAGE_TITLE = "Napkin Notes"
 

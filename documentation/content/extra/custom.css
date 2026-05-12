@@ -2798,13 +2798,6 @@ footer a,
     line-height: 1.68;
   }
 }
-/* HERO COMPACTO: Archivo / Artículos */
-
-.nn-archives-hero__inner {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 
 /* DESKTOP: header más grande sin aumentar demasiado la barra */
 
@@ -3033,16 +3026,40 @@ footer a,
     display: block;
   }
 }
-/* HERO COMPACTO: Artículos / Explorar / Nosotros */
 
-.nn-archives-hero__title,
-.nn-explore-hero__title,
-.nn-squad-hero__title {
-  margin-bottom: 6px;
-}
+/* HERO COMPACTO UNIFICADO: Artículos / Explorar / Nosotros */
 
 .nn-archives-hero,
 .nn-explore-hero,
 .nn-squad-hero {
   margin-bottom: 24px;
+}
+
+.nn-archives-hero__inner,
+.nn-explore-hero__inner,
+.nn-squad-hero__inner {
+  padding: 22px 38px;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.nn-archives-hero__title,
+.nn-explore-hero__title,
+.nn-squad-hero__title {
+  margin: 0 0 6px;
+  font-size: clamp(2.4rem, 4.4vw, 3.7rem);
+  line-height: 0.98;
+}
+
+.nn-archives-hero__subtitle,
+.nn-explore-hero__subtitle,
+.nn-squad-hero__subtitle {
+  margin: 0;
+  font-size: 1.04rem;
+  line-height: 1.55;
+}
+
+.nn-archives-hero__inner {
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, #fffdfa 0%, #f9efe4 100%);
 }

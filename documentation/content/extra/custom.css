@@ -1272,7 +1272,7 @@ footer a,
 .nn-squad-hero__inner {
   position: relative;
   overflow: hidden;
-  padding: 32px 38px;
+  padding: 22px 38px;  
   border-radius: 28px;
   background:
     linear-gradient(135deg, rgba(149, 11, 14, 0.96) 0%, rgba(97, 9, 11, 0.96) 100%);
@@ -2009,7 +2009,7 @@ footer a,
 }
 
 .nn-explore-hero__inner {
-  padding: 30px 36px;
+  padding: 22px 36px;
   border: 1px solid var(--line);
   border-radius: 28px;
   background: linear-gradient(135deg, #fffdfa 0%, #f9efe4 100%);
@@ -3032,4 +3032,17 @@ footer a,
   .site-search-row {
     display: block;
   }
+}
+/* HERO COMPACTO: Artículos / Explorar / Nosotros */
+
+.nn-archives-hero__title,
+.nn-explore-hero__title,
+.nn-squad-hero__title {
+  margin-bottom: 6px;
+}
+
+.nn-archives-hero,
+.nn-explore-hero,
+.nn-squad-hero {
+  margin-bottom: 24px;
 }

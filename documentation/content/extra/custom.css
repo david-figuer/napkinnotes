@@ -1127,10 +1127,13 @@ footer a,
   margin: 30px 0;
 }
 
-.nn-article-content .math,
 .nn-article-content .MathJax_Display {
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+.nn-article-content .math {
+  overflow: visible;
 }
 
 /* TOC REAL GENERADO DENTRO DEL CONTENIDO */

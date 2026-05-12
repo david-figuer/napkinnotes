@@ -637,7 +637,7 @@ $$&lt;/div&gt;
 &lt;div class="math"&gt;$$
 A \approx 2.54\times10^{-4}\,\text{m}^2.
 $$&lt;/div&gt;
-&lt;p&gt;Usando (\Delta P \approx&amp;nbsp;5\times10^5\,\text{Pa}),&lt;/p&gt;
+&lt;p&gt;Usando &lt;span class="math"&gt;\(\Delta P \approx 5\times10^5\,\text{Pa}\)&lt;/span&gt;,&lt;/p&gt;
 &lt;div class="math"&gt;$$
 F \approx (5\times10^5)(2.54\times10^{-4}) \approx 130\,\text{N}.
 $$&lt;/div&gt;

@@ -47,11 +47,7 @@ PLUGINS = [
 MATH_JAX = {
     "auto_insert": True,
 }
-SITEMAP = {
-    "format": "xml",
-    "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
-    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
-}
+
 
 # Appearance
 THEME = "../"
@@ -95,6 +91,8 @@ STATIC_PATHS = ["theme/images", "images", "extra", "extra/_redirects", "code"]
 EXTRA_PATH_METADATA = {
     "extra/custom-about.css": {"path": "theme/custom-about.css"},
     "extra/custom.css": {"path": "theme/css/custom.css"},
+    "extra/robots.txt": {"path": "robots.txt"},
+    "extra/sitemap.xml": {"path": "sitemap.xml"},
 }
 
 #problema con indexacion en google

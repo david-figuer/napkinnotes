@@ -43,6 +43,7 @@ PLUGINS = [
     "share_post",
     "tipue_search",
     "yaml_metadata",
+    "sitemap",
 ]
 MATH_JAX = {
     "auto_insert": True,

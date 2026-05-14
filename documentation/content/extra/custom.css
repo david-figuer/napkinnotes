@@ -3084,3 +3084,15 @@ footer a,
 [id$="-ref"] {
   scroll-margin-top: 180px;
 }
+/* Evita que las categorías se monten al hacer click en un ancla */
+
+.category-list,
+.category-list li,
+.archive-entry,
+.tag-cloud,
+.category-list [id$="-ref"],
+.archive-entry[id$="-ref"] {
+  clear: both;
+  position: relative;
+  overflow: visible;
+}

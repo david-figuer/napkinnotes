@@ -203,14 +203,14 @@ AUTHORS = {
         "role": "Colaboradora",
         "blurb": "María es estudiante de doctorado en cosmología, y le apasiona intentar desentrañar los misterios del cosmos y de la vida en general. Su trabajo consiste en estudiar los ingredientes fundamentales que conforman el universo, y de qué manera interactúan para dar lugar a las formaciones de galaxias que observamos hoy en día. Sus textos aspiran a arrojar un poco de luz sobre ese sector todavía oscuro del universo, despertando la curiosidad y el pensamiento crítico en quienes se acercan a explorarlo.",
         "avatar": "images/maria.jpeg",
-        "articles_url": "autor/Maria-prrez-vicente",       
+        "articles_url": "autor/Maria-perez-vicente",       
     },
      "Ruchika": {
         "url": "https://produccioncientifica.usal.es/investigadores/1999168/detalle",
         "role": "Colaboradora",
         "blurb": "La Dra. Ruchika es investigadora postdoctoral en la Universidad de Salamanca, antes investigadora INFN en la Universidad La Sapienza de Roma y en el IIT Bombay. Le fascinan las grandes preguntas sobre nuestro universo y estudia cómo las galaxias se alejan unas de otras y cómo también se agrupan en enormes cúmulos, dando lugar a la hermosa estructura en forma de red del cosmos. Su investigación se sitúa en el punto de encuentro entre la observación del cielo y la comprensión de las leyes más profundas de la física, estudiando dos de los grandes misterios de la ciencia actual: la materia oscura y la energía oscura. Lo que más la entusiasma es descubrir qué son realmente estos ingredientes invisibles del universo y distinguir cuidadosamente los descubrimientos verdaderamente nuevos de los efectos engañosos producidos por errores de medición.",
         "avatar": "images/Ruchika.jpeg",
-        "articles_url": "autor/ruchika-ruchika-ruchika",       
+        "articles_url": "autor/ruchika",       
     },
 }
 

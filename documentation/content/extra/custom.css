@@ -3070,3 +3070,17 @@ footer a,
 .nn-squad-hero__inner > *:last-child {
   margin-bottom: 0 !important;
 }
+/* FIX DEFINITIVO ANCLAS CATEGORÍAS/TAGS: evitar solapes */
+
+[id$="-ref"]::before,
+[id$="-ref"]:target::before {
+  content: none !important;
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+[id$="-ref"] {
+  scroll-margin-top: 180px;
+}

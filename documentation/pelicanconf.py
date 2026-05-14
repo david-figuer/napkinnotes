@@ -43,7 +43,6 @@ PLUGINS = [
     "share_post",
     "tipue_search",
     "yaml_metadata",
-    "sitemap",
 ]
 MATH_JAX = {
     "auto_insert": True,
@@ -102,6 +101,9 @@ EXTRA_PATH_METADATA = {
 """if os.environ.get("CONTEXT") == "production":
     STATIC_PATHS.append("extra/robots.txt")
     EXTRA_PATH_METADATA["extra/robots.txt"] = {"path": "robots.txt"}
+
+    STATIC_PATHS.append("extra/sitemap.xml")
+    EXTRA_PATH_METADATA["extra/sitemap.xml"] = {"path": "sitemap.xml"}
 else:
     STATIC_PATHS.append("extra/robots_deny.txt")
     EXTRA_PATH_METADATA["extra/robots_deny.txt"] = {"path": "robots.txt"}

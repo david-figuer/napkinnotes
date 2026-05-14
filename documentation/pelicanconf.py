@@ -111,7 +111,8 @@ EXTRA_PATH_METADATA["extra/robots.txt"] = {"path": "robots.txt"}
 
 DIRECT_TEMPLATES = ["index", "tags", "categories", "archives", "search", "explorar", "404"]
 TAG_SAVE_AS = ""
-AUTHOR_SAVE_AS = ""
+AUTHOR_URL = "autor/{slug}"
+AUTHOR_SAVE_AS = "autor/{slug}.html"
 CATEGORY_SAVE_AS = ""
 USE_SHORTCUT_ICONS = False
 

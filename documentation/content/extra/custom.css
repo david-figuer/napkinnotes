@@ -2605,21 +2605,15 @@ footer a,
   background: var(--paper);
   box-shadow: var(--shadow);
 }
-/* OFFSET REAL PARA ANCLAS DE TAGS Y CATEGORÍAS */
+/* OFFSET LIMPIO PARA ANCLAS DE TAGS Y CATEGORÍAS */
 
-[id$="-ref"]:target::before {
-  content: "";
-  display: block;
-  height: 170px;
-  margin-top: -170px;
-  visibility: hidden;
-  pointer-events: none;
+[id$="-ref"] {
+  scroll-margin-top: 170px;
 }
 
 @media (max-width: 640px) {
-  [id$="-ref"]:target::before {
-    height: 150px;
-    margin-top: -150px;
+  [id$="-ref"] {
+    scroll-margin-top: 150px;
   }
 }
 .nn-comments {

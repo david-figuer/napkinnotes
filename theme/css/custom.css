@@ -3096,3 +3096,40 @@ footer a,
   position: relative;
   overflow: visible;
 }
+/* FIX: impedir que Categorías/Tags se contraigan al hacer click */
+
+.category-list .collapse,
+.tag-cloud .collapse,
+.archive-entry .collapse,
+.categories .collapse,
+.tags .collapse,
+#categories .collapse,
+#tags .collapse,
+.collapse[id$="-ref"] {
+  display: block !important;
+  height: auto !important;
+  overflow: visible !important;
+  visibility: visible !important;
+}
+
+.category-list .accordion-body,
+.tag-cloud .accordion-body,
+#categories .accordion-body,
+#tags .accordion-body {
+  display: block !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+/* Evita solapes cuando el ancla apunta a una categoría */
+
+[id$="-ref"] {
+  scroll-margin-top: 180px;
+  display: block;
+  position: relative;
+}
+
+[id$="-ref"]::before,
+[id$="-ref"]:target::before {
+  content: none !important;
+  display: none !important;
+}

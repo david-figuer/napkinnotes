@@ -51,12 +51,19 @@
                         {{ author_data.blurb }}
                     </div>
                     {% endif %}
+<div class="nn-player-card__links">
+    {% if author_data.url %}
+    <a class="nn-player-card__link" href="{{ author_data.url }}" target="_blank" rel="noopener noreferrer">
+        Ver perfil
+    </a>
+    {% endif %}
 
-                    {% if author_data.url %}
-                    <a class="nn-player-card__link" href="{{ author_data.url }}" target="_blank" rel="noopener noreferrer">
-                        Ver perfil
-                    </a>
-                    {% endif %}
+    {% if author_data.articles_url %}
+    <a class="nn-player-card__link" href="{{ SITEURL }}/{{ author_data.articles_url }}">
+        Ver artículos
+    </a>
+    {% endif %}
+</div>
                 </div>
             </div>
         </article>

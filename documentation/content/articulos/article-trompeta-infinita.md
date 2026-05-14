@@ -93,7 +93,7 @@ Volumen finito. Área infinita. A esto se le puede llamar *una paradoja*.
 
 ---
 
-## Conclusiones
+## Un trabajo bien hecho
 
 Has resuelto el encargo. Llenas la trompeta y la sellas. Desde fuera, la pieza se ve roja, uniforme, impecable. El hombre trajeado regresa, asiente en silencio y desaparece sin añadir una palabra.  
 

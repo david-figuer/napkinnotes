@@ -11,15 +11,15 @@ Artículos escritos por {{ author }} en {{ SITENAME|striptags|e }}.
 {% block content %}
 <div class="container-archives">
 
-  <section class="nn-archives-hero">
-    <div class="nn-archives-hero__inner">
-      <div class="nn-kicker">Autor</div>
-      <h1 class="nn-archives-hero__title">{{ author }}</h1>
-      <p class="nn-archives-hero__subtitle">
-        Todos los artículos publicados por {{ author }} en Napkin Notes.
-      </p>
-    </div>
-  </section>
+<section class="nn-author-hero">
+  <div class="nn-author-hero__inner">
+    <div class="nn-kicker">Autor</div>
+    <h1 class="nn-author-hero__title">{{ author }}</h1>
+    <p class="nn-author-hero__subtitle">
+      Todos los artículos publicados por {{ author }} en Napkin Notes.
+    </p>
+  </div>
+</section>
 
   {% if articles %}
   <div class="articles-grid">

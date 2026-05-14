@@ -40,53 +40,34 @@ Todas las categorías del {{ SITENAME|striptags|e }} blog.
 
 <div class="row-fluid">
     <div class="span8 offset2">
-        <div class="accordion" id="accordion2">
-            {% for category, articles in categories %}
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
-                       {% set num = articles|count %}
-                       {{ category }} ({{ num }})
-                    </a>
-                </div>
-                <div id="{{ category.slug }}-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-under-tag-category">
-                            {% for article in articles %}
-                            <li itemscope>
-                                    <a href="{{ SITEURL }}/{{ article.url }}">
-                                        {{ article.title }}
-                                        {% if article.subtitle %}
-                                        <small class="subtitle">
-                                            {{ article.subtitle }}
-                                        </small>
-                                        {% endif %}
-                                    </a>
-                                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
-                                    {{ article.locale_date }}
-                                </time>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="nn-category-list">
+    {% for category, articles in categories %}
+    <section id="{{ category.slug }}-ref" class="nn-category-block">
+        <h2 class="nn-category-title">
+            {% set num = articles|count %}
+            {{ category }} <span>({{ num }})</span>
+        </h2>
+
+        <ul class="list-articles-under-tag-category">
+            {% for article in articles %}
+            <li itemscope>
+                <a href="{{ SITEURL }}/{{ article.url }}">
+                    {{ article.title }}
+                    {% if article.subtitle %}
+                    <small class="subtitle">
+                        {{ article.subtitle }}
+                    </small>
+                    {% endif %}
+                </a>
+                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
+                    {{ article.locale_date }}
+                </time>
+            </li>
             {% endfor %}
-        </div>
+        </ul>
+    </section>
+    {% endfor %}
+</div>
     </div>
 </div>
 {% endblock content %}
-{% block script %}
-{{ super() }}
-<script>
-    function uncollapse() {
-            $(window.location.hash).collapse({
-                toggle: true
-            })
-    }
-</script>
-
-<script>
-    uncollapse();
-</script>
-{% endblock script %}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://napkinnotes.es/</loc>
+  </url>
+
+  <url>
+    <loc>https://napkinnotes.es/archives</loc>
+  </url>
+
+  <url>
+    <loc>https://napkinnotes.es/explorar</loc>
+  </url>
+
+  <url>
+    <loc>https://napkinnotes.es/about</loc>
+  </url>
+
+  <url>
+    <loc>https://napkinnotes.es/categories</loc>
+  </url>
+
+  <url>
+    <loc>https://napkinnotes.es/tags</loc>
+  </url>
+
+</urlset>

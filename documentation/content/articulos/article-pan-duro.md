@@ -28,7 +28,7 @@ Lo que ocurre no es un único proceso dramático. Son dos mecanismos trabajando 
 
 ---
 
-## Desarrollo
+## Una historia, dos villanos
 
 ### Villano 1: El aire te roba el agua
 
@@ -100,7 +100,7 @@ La física no tiene empatía. Sentido del humor, puede. Pero empatía, ninguna.
 
 ---
 
-## Conclusiones
+## ¿Qué hacer la próxima vez?
 
 Resumen práctico, sin drama innecesario:
 

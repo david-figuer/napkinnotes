@@ -3204,3 +3204,21 @@ footer a,
     margin-top: 4px;
   }
 }
+/* BOTONES EN CARDS DE AUTORES */
+
+.nn-player-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nn-player-card__links .nn-player-card__link {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 640px) {
+  .nn-player-card__links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

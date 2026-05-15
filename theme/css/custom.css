@@ -3287,3 +3287,100 @@ footer a,
     line-height: 1.5;
   }
 }
+/* =========================
+   AUTHOR PAGE HERO
+========================= */
+
+.nn-author-hero {
+  margin-bottom: 28px;
+}
+
+.nn-author-hero__inner {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  align-items: center;
+  gap: 28px;
+  padding: 28px 40px;
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(149, 11, 14, 0.96) 0%, rgba(97, 9, 11, 0.96) 100%);
+  box-shadow: var(--shadow);
+  color: var(--satinsheengold);
+}
+
+.nn-author-hero__inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top right, rgba(196, 154, 102, 0.22), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.06), transparent 28%);
+}
+
+.nn-author-hero__text,
+.nn-author-hero__avatar {
+  position: relative;
+  z-index: 1;
+}
+
+.nn-author-hero__title {
+  margin: 0 0 10px;
+  color: var(--satinsheengold);
+  font-size: clamp(2.5rem, 4.5vw, 3.9rem);
+  line-height: 1;
+}
+
+.nn-author-hero__subtitle {
+  max-width: 86ch;
+  margin: 0;
+  color: rgba(196, 154, 102, 0.95);
+  font-size: 1rem;
+  line-height: 1.55;
+  text-align: justify;
+}
+
+.nn-author-hero__avatar {
+  justify-self: end;
+}
+
+.nn-author-hero__avatar img {
+  display: block;
+  width: 145px;
+  height: 145px;
+  border: 2px solid rgba(196, 154, 102, 0.45);
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 18px 42px rgba(20, 10, 10, 0.22);
+}
+
+@media (max-width: 760px) {
+  .nn-author-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 24px 22px;
+    border-radius: 20px;
+  }
+
+  .nn-author-hero__avatar {
+    justify-self: center;
+    order: -1;
+  }
+
+  .nn-author-hero__avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+  }
+
+  .nn-author-hero__title,
+  .nn-author-hero__subtitle {
+    text-align: left;
+  }
+
+  .nn-author-hero__subtitle {
+    font-size: 0.98rem;
+  }
+}

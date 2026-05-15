@@ -210,6 +210,13 @@ AUTHORS = {
         "avatar": "images/Ruchika.jpeg",
         "articles_url": "autor/ruchika",       
     },
+      "David Barba González": {
+        "url": "https://www.linkedin.com/in/david-barba-gonz%C3%A1lez-854101215/",
+        "role": "Colaboradoa",
+        "blurb": "David es doctor en astrofísica, y actualmente trabaja como investigador postdoctoral en la Universidad Hebrea de Jerusalén. Es experto en metalurgia galáctica, es decir, en las propiedades de los sólidos y líquidos más densos y poderosos del universo, que se encuentran en los corazones de estrellas muertas. Su trabajo de investigación intenta entender cómo podemos aprender más de estos materiales a través de observaciones astronómicas, tanto a través de la luz como de otros mensajeros, como neutrinos u ondas gravitacionales.",
+        "avatar": "images/Barba.jpeg",
+        "articles_url": "autor/david-barba-gonzalez",       
+    },
 }
 
 

@@ -1821,18 +1821,7 @@ footer a,
     min-height: auto;
   }
 
-  .nn-player-card__expanded {
-    position: static;
-    display: block;
-    width: 100%;
-    margin-top: 0;
-    opacity: 1;
-    pointer-events: auto;
-    border-top: 1px solid var(--line);
-    border-radius: 0 0 24px 24px;
-    box-shadow: none;
-    transform: none;
-  }
+
 
   .nn-player-card:hover .nn-player-card__preview {
     opacity: 1;
@@ -2607,9 +2596,7 @@ footer a,
 }
 /* OFFSET LIMPIO PARA ANCLAS DE TAGS Y CATEGORÍAS */
 
-[id$="-ref"] {
-  scroll-margin-top: 170px;
-}
+
 
 @media (max-width: 640px) {
   [id$="-ref"] {
@@ -3081,45 +3068,9 @@ footer a,
   padding: 0 !important;
 }
 
-[id$="-ref"] {
-  scroll-margin-top: 180px;
-}
-/* Evita que las categorías se monten al hacer click en un ancla */
 
-.category-list,
-.category-list li,
-.archive-entry,
-.tag-cloud,
-.category-list [id$="-ref"],
-.archive-entry[id$="-ref"] {
-  clear: both;
-  position: relative;
-  overflow: visible;
-}
-/* FIX: impedir que Categorías/Tags se contraigan al hacer click */
 
-.category-list .collapse,
-.tag-cloud .collapse,
-.archive-entry .collapse,
-.categories .collapse,
-.tags .collapse,
-#categories .collapse,
-#tags .collapse,
-.collapse[id$="-ref"] {
-  display: block !important;
-  height: auto !important;
-  overflow: visible !important;
-  visibility: visible !important;
-}
 
-.category-list .accordion-body,
-.tag-cloud .accordion-body,
-#categories .accordion-body,
-#tags .accordion-body {
-  display: block !important;
-  height: auto !important;
-  overflow: visible !important;
-}
 /* Evita solapes cuando el ancla apunta a una categoría */
 
 [id$="-ref"] {
@@ -3222,71 +3173,7 @@ footer a,
     align-items: flex-start;
   }
 }
-/* =========================
-   AUTHOR PAGE HERO
-========================= */
 
-.nn-author-hero {
-  margin-bottom: 24px;
-}
-
-.nn-author-hero__inner {
-  position: relative;
-  overflow: hidden;
-  padding: 24px 40px;
-  border-radius: 28px;
-  background:
-    linear-gradient(135deg, rgba(149, 11, 14, 0.96) 0%, rgba(97, 9, 11, 0.96) 100%);
-  box-shadow: var(--shadow);
-  color: var(--satinsheengold);
-}
-
-.nn-author-hero__inner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at top right, rgba(196, 154, 102, 0.22), transparent 30%),
-    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.06), transparent 28%);
-}
-
-.nn-author-hero .nn-kicker,
-.nn-author-hero__title,
-.nn-author-hero__subtitle {
-  position: relative;
-  z-index: 1;
-}
-
-.nn-author-hero__title {
-  margin: 0 0 8px;
-  color: var(--satinsheengold);
-  font-size: clamp(2.45rem, 4.3vw, 3.75rem);
-  line-height: 1;
-}
-
-.nn-author-hero__subtitle {
-  margin: 0;
-  color: rgba(196, 154, 102, 0.95);
-  font-size: 1rem;
-  line-height: 1.45;
-}
-
-@media (max-width: 640px) {
-  .nn-author-hero__inner {
-    padding: 22px;
-    border-radius: 20px;
-  }
-
-  .nn-author-hero__title {
-    font-size: 2.1rem;
-  }
-
-  .nn-author-hero__subtitle {
-    font-size: 0.98rem;
-    line-height: 1.5;
-  }
-}
 /* =========================
    AUTHOR PAGE HERO
 ========================= */

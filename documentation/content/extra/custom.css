@@ -2091,27 +2091,27 @@ footer a,
   gap: 16px;
   min-height: 54px;
   padding: 13px 15px;
-  border: 1px solid rgba(196, 154, 102, 0.36);
+  border: 1px solid var(--line);
   border-radius: 17px;
-  background: linear-gradient(135deg, rgba(149, 11, 14, 0.94), rgba(97, 9, 11, 0.94));
-  color: var(--satinsheengold);
-  box-shadow: 0 10px 22px rgba(20, 10, 10, 0.10);
+  background: rgba(255, 253, 249, 0.82);
+  color: var(--richcarmine);
+  box-shadow: 0 8px 20px rgba(20, 10, 10, 0.04);
   transition:
     transform 0.2s ease,
     border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    filter 0.2s ease;
+    background 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .nn-explore-list__item a:hover {
   transform: translateY(-2px);
-  border-color: rgba(196, 154, 102, 0.68);
-  filter: brightness(1.06);
-  box-shadow: 0 16px 32px rgba(20, 10, 10, 0.14);
+  border-color: rgba(196, 154, 102, 0.55);
+  background: #fffdf9;
+  box-shadow: 0 14px 28px rgba(20, 10, 10, 0.08);
 }
 
 .nn-explore-list__name {
-  color: var(--satinsheengold);
+  color: var(--richcarmine);
   font-weight: 800;
   line-height: 1.25;
 }
@@ -2123,10 +2123,10 @@ footer a,
   min-width: 38px;
   height: 34px;
   padding: 0 11px;
-  border: 1px solid rgba(196, 154, 102, 0.48);
+  border: 1px solid rgba(149, 11, 14, 0.16);
   border-radius: 999px;
-  background: rgba(196, 154, 102, 0.14);
-  color: var(--satinsheengold);
+  background: var(--satinsheengold);
+  color: var(--richcarmine);
   font-size: 0.92rem;
   font-weight: 900;
 }

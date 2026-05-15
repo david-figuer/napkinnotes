@@ -53,18 +53,6 @@ Todos los temas del {{ SITENAME|striptags|e }} blog.
         <form class="nn-tags-search-form">
             <input type="text" class="filterinput" placeholder="Buscar un tag">
         </form>
-
-        <ul class="nn-tags-cloud list-of-tags">
-            {% for tag, articles in tags|sort %}
-            <li>
-                {% set num = articles|count %}
-                <a href="#{{ tag.slug }}-ref">
-                    <span>{{ tag }}</span>
-                    <strong>{{ num }}</strong>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
     </section>
 
     <section class="nn-tag-list">
@@ -99,34 +87,26 @@ Todos los temas del {{ SITENAME|striptags|e }} blog.
 {% block script %}
 {{ super() }}
 
+{% block script %}
+{{ super() }}
+
 <script>
-    (function ($) {
-        jQuery.expr[':'].Contains = function(a,i,m){
-            return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
-        };
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.querySelector(".filterinput");
+    const blocks = Array.from(document.querySelectorAll(".nn-tag-block"));
 
-        function listFilter() {
-            $('.filterinput')
-            .change(function () {
-                var filter = $(this).val();
+    if (!input || !blocks.length) return;
 
-                if (filter) {
-                    $('.list-of-tags').find("a:not(:Contains(" + filter + "))").parent().hide();
-                    $('.list-of-tags').find("a:Contains(" + filter + ")").parent().show();
-                } else {
-                    $('.list-of-tags').find("li").show();
-                }
+    input.addEventListener("input", function () {
+        const filter = input.value.trim().toLowerCase();
 
-                return false;
-            })
-            .keyup(function () {
-                $(this).change();
-            });
-        }
+        blocks.forEach(function (block) {
+            const title = block.querySelector(".nn-tag-title");
+            const text = title ? title.textContent.toLowerCase() : "";
 
-        $(function () {
-            listFilter($());
+            block.style.display = text.includes(filter) ? "" : "none";
         });
-    }(jQuery));
+    });
+});
 </script>
 {% endblock script %}

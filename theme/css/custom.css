@@ -3251,6 +3251,211 @@ footer a,
 
 
 }
+
+/* =========================
+   TAGS PAGE
+========================= */
+
+.nn-tags-page {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.nn-tags-hero {
+  margin-bottom: 24px;
+}
+
+.nn-tags-search-card {
+  margin-bottom: 26px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 253, 249, 0.88);
+  box-shadow: var(--shadow);
+}
+
+.nn-tags-search-card__header {
+  margin-bottom: 16px;
+}
+
+.nn-tags-search-card__header h2 {
+  margin: 0 0 6px;
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+}
+
+.nn-tags-search-card__header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.nn-tags-search-form {
+  margin-bottom: 18px;
+}
+
+.nn-tags-search-form input {
+  box-sizing: border-box;
+  width: min(420px, 100%);
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+.nn-tags-search-form input:focus {
+  outline: none;
+  border-color: var(--satinsheengold);
+  box-shadow: 0 0 0 3px rgba(196, 154, 102, 0.15);
+}
+
+.nn-tags-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nn-tags-cloud li {
+  margin: 0;
+}
+
+.nn-tags-cloud a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 40px;
+  padding: 8px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 253, 249, 0.82);
+  color: var(--richcarmine);
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(20, 10, 10, 0.04);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.nn-tags-cloud a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(149, 11, 14, 0.18);
+  background: var(--satinsheengold);
+  color: var(--richcarmine);
+  box-shadow: 0 14px 28px rgba(20, 10, 10, 0.10);
+}
+
+.nn-tags-cloud strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 8px;
+  border: 1px solid rgba(149, 11, 14, 0.16);
+  border-radius: 999px;
+  background: var(--satinsheengold);
+  color: var(--richcarmine);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.nn-tags-cloud a:hover strong {
+  background: rgba(255, 253, 249, 0.46);
+}
+
+.nn-tag-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: start;
+}
+
+.nn-tag-block {
+  scroll-margin-top: 180px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 253, 249, 0.86);
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.nn-tag-block:hover {
+  transform: translateY(-3px);
+  border-color: rgba(149, 11, 14, 0.18);
+  background: var(--satinsheengold);
+  box-shadow: 0 18px 40px rgba(20, 10, 10, 0.13);
+}
+
+.nn-tag-title {
+  margin: 0 0 16px;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
+.nn-tag-title span {
+  color: var(--muted);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nn-tag-block .list-articles-under-tag-category {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.nn-tag-block .list-articles-under-tag-category li {
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.nn-tag-block .list-articles-under-tag-category li:first-child {
+  border-top: 0;
+}
+
+.nn-tag-block .list-articles-under-tag-category a {
+  font-weight: 600;
+}
+
+.nn-tag-block:hover .nn-tag-title,
+.nn-tag-block:hover .nn-tag-title span,
+.nn-tag-block:hover .list-articles-under-tag-category a {
+  color: var(--richcarmine);
+}
+
+@media (max-width: 760px) {
+  .nn-tag-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .nn-tags-search-card,
+  .nn-tag-block {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .nn-tag-block {
+    scroll-margin-top: 150px;
+  }
+
+  .nn-tags-cloud a {
+    min-height: 38px;
+    padding: 7px 12px;
+  }
+}
 /* BOTONES EN CARDS DE AUTORES */
 
 .nn-player-card__links {

@@ -1984,7 +1984,6 @@ footer a,
     font-size: 1.8rem;
   }
 }
-
 /* =========================
    EXPLORE PAGE
 ========================= */
@@ -1997,6 +1996,9 @@ footer a,
   margin-bottom: 30px;
 }
 
+/* El banner de Explorar usa también clases de .nn-squad-hero.
+   Dejamos estas clases por compatibilidad, pero el estilo fuerte del banner
+   se controla en el bloque común de banners. */
 .nn-explore-hero__inner {
   padding: 22px 36px;
   border: 1px solid var(--line);
@@ -2026,71 +2028,105 @@ footer a,
 }
 
 .nn-explore-card {
-  padding: 28px;
-  border: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  border: 1px solid rgba(231, 216, 200, 0.95);
   border-radius: 24px;
-  background: var(--paper);
+  background: linear-gradient(180deg, #fffdfa 0%, #fff8f1 100%);
   box-shadow: var(--shadow);
 }
 
+.nn-explore-card::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  right: -90px;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(196, 154, 102, 0.16), transparent 68%);
+  pointer-events: none;
+}
+
 .nn-explore-card__header {
-  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
 }
 
 .nn-explore-card__header h2 {
   margin: 0 0 8px;
+  font-size: clamp(2rem, 3vw, 2.6rem);
 }
 
 .nn-explore-card__header p {
+  max-width: 48ch;
   margin: 0;
   color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.6;
 }
 
 .nn-explore-list {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 12px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .nn-explore-list__item + .nn-explore-list__item {
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .nn-explore-list__item a {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
   gap: 16px;
-  padding: 12px 14px;
-  border: 1px solid transparent;
-  border-radius: 16px;
-  background: #fffaf4;
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  min-height: 54px;
+  padding: 13px 15px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: rgba(255, 253, 249, 0.78);
+  box-shadow: 0 8px 20px rgba(20, 10, 10, 0.04);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .nn-explore-list__item a:hover {
-  transform: translateY(-1px);
-  border-color: rgba(196, 154, 102, 0.45);
-  box-shadow: 0 10px 22px rgba(20, 10, 10, 0.08);
+  transform: translateY(-2px);
+  border-color: rgba(196, 154, 102, 0.55);
+  background: #fffdf9;
+  box-shadow: 0 14px 28px rgba(20, 10, 10, 0.08);
 }
 
 .nn-explore-list__name {
   color: var(--ink);
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .nn-explore-list__count {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 34px;
+  min-width: 38px;
   height: 34px;
-  padding: 0 10px;
+  padding: 0 11px;
   border-radius: 999px;
-  background: rgba(196, 154, 102, 0.14);
+  background: rgba(196, 154, 102, 0.16);
   color: var(--richcarmine);
   font-size: 0.92rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 @media (max-width: 980px) {
@@ -2105,7 +2141,16 @@ footer a,
   }
 }
 
-/* ABOUT PROJECT LOGO */
+@media (max-width: 640px) {
+  .nn-explore-card {
+    padding: 20px;
+  }
+
+  .nn-explore-list__item a {
+    min-height: 50px;
+    padding: 12px 13px;
+  }
+}
 
 .nn-about-project__content::after {
   content: "";

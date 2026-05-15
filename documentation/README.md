@@ -1,4 +1,4 @@
-# Pelican-Elegant Documentation
+# Pelican-Elegant Documentation 
 
 This folder is the source code of [Elegant theme](https://github.com/Pelican-Elegant/elegant) documentation.
 

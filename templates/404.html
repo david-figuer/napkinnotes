@@ -1,32 +1,39 @@
-{% macro comments_section(article) %}
+{% extends "base.html" %}
 
-{% set use_commentbox = COMMENTBOX_PROJECT and article.commentbox_filter != "on" %}
+{% block title %}
+Página no encontrada · {{ super() }}
+{% endblock title %}
 
-{% set identifier = article.url %}
-{% if article.comment_id %}
-    {% set identifier = article.comment_id %}
-{% endif %}
+{% block head_description %}
+La página que buscas no existe en {{ SITENAME|striptags|e }}.
+{% endblock head_description %}
 
-{% if article.status != 'draft' and article.comments != 'False' and use_commentbox %}
-<section class="nn-comments">
-    <h2 class="nn-comments__title">Comentarios</h2>
-    <p class="nn-comments__intro">
-        ¿Qué te ha parecido? Déjanos tu comentario aquí abajo.
-    </p>
+{% block content %}
+<section class="nn-error-page">
+  <div class="nn-error-card">
+    <img
+      class="nn-error-card__image"
+      src="{{ SITEURL }}/images/404-napkinnotes.png"
+      alt="Página no encontrada en Napkin Notes"
+    >
 
-    <div class="nn-comments__box">
-        <div class="commentbox" id="{{ identifier|replace('/', '-') }}"></div>
-        <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-        <script>
-            commentBox('{{ COMMENTBOX_PROJECT }}', {
-                className: 'commentbox',
-                defaultBoxId: '{{ identifier|replace("/", "-") }}'
-            });
-        </script>
+    <div class="nn-error-card__content">
+      <div class="nn-kicker">Error 404</div>
+      <h1>Esta servilleta no existe</h1>
+      <p>
+        La página que buscas no está disponible. Puede que el enlace esté mal escrito,
+        que la página se haya movido o que esa nota todavía no exista.
+      </p>
+
+      <div class="nn-error-card__actions">
+        <a class="nn-button nn-button--primary" href="{{ SITEURL }}/">
+          Volver a portada
+        </a>
+        <a class="nn-button nn-button--ghost" href="{{ SITEURL }}/archives">
+          Ver artículos
+        </a>
+      </div>
     </div>
+  </div>
 </section>
-{% endif %}
-{% endmacro %}
-
-{% macro comments_script() %}
-{% endmacro %}
+{% endblock content %}

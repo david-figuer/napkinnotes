@@ -22,9 +22,10 @@ Explora todas las categorías y tags de Napkin Notes en una sola página.
 
     <div class="nn-explore-grid">
         <section class="nn-explore-card">
-            <div class="nn-explore-card__header">
-                <h2>Categorías</h2>
-            </div>
+          <div class="nn-explore-card__header">
+            <h2>Categorías</h2>
+            <p>Grandes rutas para explorar Napkin Notes por temas principales.</p>
+          </div>
 
             <ul class="nn-explore-list">
                 {% for category, articles in categories|sort %}
@@ -41,6 +42,7 @@ Explora todas las categorías y tags de Napkin Notes en una sola página.
         <section class="nn-explore-card">
             <div class="nn-explore-card__header">
                 <h2>Tags</h2>
+                <p>Conceptos y palabras clave que conectan artículos entre sí.</p>
             </div>
 
             <ul class="nn-explore-list">

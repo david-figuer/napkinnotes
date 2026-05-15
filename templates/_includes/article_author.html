@@ -16,14 +16,22 @@
         <h3 class="nn-author-box__name">{{ author_key }}</h3>
 
         {% if author_data and author_data.blurb %}
-        <p class="nn-author-box__bio">{{ author_data.blurb }}</p>
+        <p class="nn-author-box__bio">{{ author_data.blurb|safe }}</p>
         {% endif %}
 
-        {% if author_data and author_data.url %}
-        <a class="nn-author-box__link" href="{{ author_data.url }}" target="_blank" rel="noopener noreferrer">
-            Ver perfil
-        </a>
-        {% endif %}
+        <div class="nn-author-box__links">
+            {% if author_data and author_data.url %}
+            <a class="nn-author-box__link" href="{{ author_data.url }}" target="_blank" rel="noopener noreferrer">
+                Ver perfil
+            </a>
+            {% endif %}
+
+            {% if author_data and author_data.articles_url %}
+            <a class="nn-author-box__link" href="{{ SITEURL }}/{{ author_data.articles_url }}">
+                Ver artículos
+            </a>
+            {% endif %}
+        </div>
     </div>
 </div>
 {% endif %}

@@ -31,53 +31,69 @@ Todos los temas del {{ SITENAME|striptags|e }} blog.
 
 {% block content %}
 {% from '_includes/_defaults.html' import TAGS_URL with context %}
-<div class="row-fluid">
-    <header class="page-header span10 offset2">
-    <h1><a href="{{ SITEURL }}/{{ TAGS_URL }}">Todos los Tags</a></h1>
+
+<section class="nn-tags-page">
+
+    <header class="nn-squad-hero nn-tags-hero">
+        <div class="nn-squad-hero__inner">
+            <div class="nn-kicker">Temas</div>
+            <h1 class="nn-squad-hero__title">Todos los Tags</h1>
+            <p class="nn-squad-hero__subtitle">
+                Explora los temas de Napkin Notes y encuentra artículos relacionados por ideas, preguntas y conceptos.
+            </p>
+        </div>
     </header>
-</div>
-<div class="row-fluid">
-    <div class="span8 offset2">
-        <form class="form-search">
-            <input type="text" class="input-medium search-query filterinput" placeholder="Buscar un tag">
+
+    <section class="nn-tags-search-card">
+        <div class="nn-tags-search-card__header">
+            <h2>Buscar un tag</h2>
+            <p>Filtra rápidamente la lista de temas disponibles.</p>
+        </div>
+
+        <form class="nn-tags-search-form">
+            <input type="text" class="filterinput" placeholder="Buscar un tag">
         </form>
-        <ul class="list-of-tags">
+
+        <ul class="nn-tags-cloud list-of-tags">
             {% for tag, articles in tags|sort %}
             <li>
-            {% set num = articles|count %}
-               <a href="#{{ tag.slug }}-ref">{{ tag }} ({{ num }})</a>            
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-</div>
-
-<div class="row-fluid">
-    <div class="span8 offset2">
-        {% for tag, articles in tags|sort %}
-        <h2 id="{{ tag.slug }}-ref" class="tag-title">{{ tag }}</h2>
-        <ul class="list-articles-under-tag-category">
-            {% for article in articles|sort(reverse = true, attribute = 'date') %}
-            <li itemscope>
-                <a href="{{ SITEURL }}/{{ article.url }}">
-                    {{ article.title }}
-                    {% if article.subtitle %}
-                    <small class="subtitle">
-                        {{ article.subtitle }}
-                    </small>
-                    {% endif %}
+                {% set num = articles|count %}
+                <a href="#{{ tag.slug }}-ref">
+                    <span>{{ tag }}</span>
+                    <strong>{{ num }}</strong>
                 </a>
-                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
-                    {{ article.locale_date }}
-                </time>
             </li>
             {% endfor %}
         </ul>
+    </section>
 
+    <section class="nn-tag-list">
+        {% for tag, articles in tags|sort %}
+        <article id="{{ tag.slug }}-ref" class="nn-tag-block">
+            <h2 class="nn-tag-title">
+                {{ tag }}
+                <span>{{ articles|count }}</span>
+            </h2>
+
+            <ul class="list-articles-under-tag-category">
+                {% for article in articles|sort(reverse = true, attribute = 'date') %}
+                <li itemscope>
+                    <a href="{{ SITEURL }}/{{ article.url }}">
+                        {{ article.title }}
+                        {% if article.subtitle %}
+                        <small class="subtitle">
+                            {{ article.subtitle }}
+                        </small>
+                        {% endif %}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </article>
         {% endfor %}
-    </div>
-</div>
+    </section>
 
+</section>
 {% endblock content %}
 
 {% block script %}
@@ -85,39 +101,32 @@ Todos los temas del {{ SITENAME|striptags|e }} blog.
 
 <script>
     (function ($) {
-        // custom css expression for a case-insensitive contains()
         jQuery.expr[':'].Contains = function(a,i,m){
             return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
         };
 
         function listFilter() {
-
             $('.filterinput')
-            .change( function () {
+            .change(function () {
                 var filter = $(this).val();
-                if(filter) {
-                    // this finds all links in a list that contain the input,
-                    // and hide the ones not containing the input while showing the ones that do
+
+                if (filter) {
                     $('.list-of-tags').find("a:not(:Contains(" + filter + "))").parent().hide();
                     $('.list-of-tags').find("a:Contains(" + filter + ")").parent().show();
-                    } else {
+                } else {
                     $('.list-of-tags').find("li").show();
                 }
+
                 return false;
             })
-            .keyup( function () {
-                // fire the above change event after every letter
+            .keyup(function () {
                 $(this).change();
             });
         }
 
-        //ondomready
         $(function () {
             listFilter($());
         });
     }(jQuery));
-
 </script>
-
-
 {% endblock script %}

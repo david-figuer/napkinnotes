@@ -11,13 +11,31 @@ Artículos escritos por {{ author }} en {{ SITENAME|striptags|e }}.
 {% block content %}
 <div class="container-archives">
 
+{% set author_data = AUTHORS.get(author|string) %}
+
 <section class="nn-author-hero">
   <div class="nn-author-hero__inner">
-    <div class="nn-kicker">Autor</div>
-    <h1 class="nn-author-hero__title">{{ author }}</h1>
-    <p class="nn-author-hero__subtitle">
-      Todos los artículos publicados por {{ author }} en Napkin Notes.
-    </p>
+    <div class="nn-author-hero__text">
+      <div class="nn-kicker">Autor</div>
+
+      <h1 class="nn-author-hero__title">{{ author }}</h1>
+
+      {% if author_data and author_data.blurb %}
+      <div class="nn-author-hero__subtitle">
+        {{ author_data.blurb }}
+      </div>
+      {% else %}
+      <p class="nn-author-hero__subtitle">
+        Todos los artículos publicados por {{ author }} en Napkin Notes.
+      </p>
+      {% endif %}
+    </div>
+
+    {% if author_data and author_data.avatar %}
+    <div class="nn-author-hero__avatar">
+      <img src="{{ SITEURL }}/{{ author_data.avatar }}" alt="{{ author }}">
+    </div>
+    {% endif %}
   </div>
 </section>
 

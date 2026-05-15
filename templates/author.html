@@ -22,7 +22,7 @@ Artículos escritos por {{ author }} en {{ SITENAME|striptags|e }}.
 
       {% if author_data and author_data.blurb %}
       <div class="nn-author-hero__subtitle">
-        {{ author_data.blurb }}
+        {{ author_data.blurb|safe }}      
       </div>
       {% else %}
       <p class="nn-author-hero__subtitle">

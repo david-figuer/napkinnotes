@@ -59,9 +59,7 @@ Todas las categorías del {{ SITENAME|striptags|e }} blog.
                     </small>
                     {% endif %}
                 </a>
-                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
-                    {{ article.locale_date }}
-                </time>
+
             </li>
             {% endfor %}
         </ul>
